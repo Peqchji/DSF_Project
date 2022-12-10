@@ -1,0 +1,144 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml BasicLogicGate.twx BasicLogicGate.ncd -o
+BasicLogicGate.twr BasicLogicGate.pcf -ucf BasicLogicGate.ucf
+
+Design file:              BasicLogicGate.ncd
+Physical constraint file: BasicLogicGate.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock CLKin_100Hz to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Digit0      |         8.530(R)|      SLOW  |         4.772(R)|      FAST  |XLXN_417          |   0.000|
+Digit1      |         9.041(R)|      SLOW  |         5.020(R)|      FAST  |XLXN_417          |   0.000|
+SegmentA    |        11.602(R)|      SLOW  |         6.773(R)|      FAST  |XLXN_417          |   0.000|
+SegmentB    |        11.714(R)|      SLOW  |         6.817(R)|      FAST  |XLXN_417          |   0.000|
+SegmentC    |         9.824(R)|      SLOW  |         5.461(R)|      FAST  |XLXN_417          |   0.000|
+SegmentD    |         9.955(R)|      SLOW  |         5.593(R)|      FAST  |XLXN_417          |   0.000|
+SegmentE    |        11.532(R)|      SLOW  |         6.699(R)|      FAST  |XLXN_417          |   0.000|
+SegmentF    |        10.934(R)|      SLOW  |         6.324(R)|      FAST  |XLXN_417          |   0.000|
+SegmentG    |         9.639(R)|      SLOW  |         5.368(R)|      FAST  |XLXN_417          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock CLKin_100Hz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKin_100Hz    |    0.922|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+SW0            |SegmentB       |   12.443|
+SW0            |SegmentC       |   12.618|
+SW0            |SegmentD       |   12.801|
+SW0            |SegmentG       |   12.027|
+SW1            |SegmentB       |   12.700|
+SW1            |SegmentC       |   12.875|
+SW1            |SegmentD       |   13.058|
+SW1            |SegmentG       |   12.284|
+SW2            |SegmentB       |   10.703|
+SW2            |SegmentC       |   10.878|
+SW2            |SegmentD       |   11.061|
+SW2            |SegmentG       |   10.287|
+State_1        |SegmentA       |   12.137|
+State_1        |SegmentB       |   12.640|
+State_1        |SegmentC       |   12.815|
+State_1        |SegmentD       |   12.998|
+State_1        |SegmentE       |   12.211|
+State_1        |SegmentF       |   11.973|
+State_1        |SegmentG       |   12.224|
+State_2        |SegmentA       |   12.674|
+State_2        |SegmentB       |   12.789|
+State_2        |SegmentC       |   13.056|
+State_2        |SegmentD       |   13.147|
+State_2        |SegmentE       |   12.524|
+State_2        |SegmentF       |   11.641|
+State_2        |SegmentG       |   12.373|
+State_3        |SegmentA       |   12.156|
+State_3        |SegmentB       |   12.271|
+State_3        |SegmentC       |   12.538|
+State_3        |SegmentD       |   12.629|
+State_3        |SegmentE       |   12.013|
+State_3        |SegmentF       |   11.775|
+State_3        |SegmentG       |   11.855|
+State_4        |SegmentA       |   12.350|
+State_4        |SegmentB       |   12.368|
+State_4        |SegmentC       |   12.892|
+State_4        |SegmentD       |   12.717|
+State_4        |SegmentE       |   12.141|
+State_4        |SegmentF       |   11.903|
+State_4        |SegmentG       |   11.943|
+State_5        |SegmentA       |   12.084|
+State_5        |SegmentB       |   12.282|
+State_5        |SegmentC       |   12.626|
+State_5        |SegmentD       |   12.640|
+State_5        |SegmentE       |   11.853|
+State_5        |SegmentF       |   11.615|
+State_5        |SegmentG       |   11.866|
+State_6        |SegmentA       |   12.291|
+State_6        |SegmentB       |   12.329|
+State_6        |SegmentC       |   12.833|
+State_6        |SegmentD       |   12.687|
+State_6        |SegmentE       |   11.990|
+State_6        |SegmentF       |   11.662|
+State_6        |SegmentG       |   11.913|
+State_7        |SegmentA       |   12.424|
+State_7        |SegmentB       |   12.551|
+State_7        |SegmentC       |   12.806|
+State_7        |SegmentD       |   12.863|
+State_7        |SegmentE       |   12.331|
+State_7        |SegmentF       |   12.093|
+State_7        |SegmentG       |   12.077|
+State_8        |SegmentA       |   13.467|
+State_8        |SegmentB       |   13.485|
+State_8        |SegmentC       |   14.009|
+State_8        |SegmentD       |   13.749|
+State_8        |SegmentE       |   13.166|
+State_8        |SegmentF       |   12.701|
+State_8        |SegmentG       |   12.794|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Dec 11 01:11:51 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4572 MB
+
+
+

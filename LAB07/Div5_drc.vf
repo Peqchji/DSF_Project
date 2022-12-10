@@ -1,0 +1,79 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Div5_drc.vf
+// /___/   /\     Timestamp : 10/23/2022 18:38:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog Div5_drc.vf -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div5.sch"
+//Design Name: Div5
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CJ4CE_HXILINX_Div5(Q0, Q1, Q2, Q3, C, CE, CLR) ;
+   
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+          {Q3, Q2, Q1, Q0} <= { Q2, Q1, Q0, (!Q3) };
+     end
+   
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Div5(C, 
+            TC);
+
+    input C;
+   output TC;
+   
+   wire XLXN_125;
+   wire XLXN_127;
+   wire XLXN_128;
+   wire XLXN_130;
+   wire XLXN_131;
+   wire TC_DUMMY;
+   
+   assign TC = TC_DUMMY;
+   (* HU_SET = "XLXI_53_0" *) 
+   CJ4CE_HXILINX_Div5  XLXI_53 (.C(C), 
+                               .CE(XLXN_125), 
+                               .CLR(TC_DUMMY), 
+                               .Q0(XLXN_127), 
+                               .Q1(XLXN_128), 
+                               .Q2(XLXN_130), 
+                               .Q3(XLXN_131));
+   VCC  XLXI_54 (.P(XLXN_125));
+   AND4B2  XLXI_55 (.I0(XLXN_130), 
+                   .I1(XLXN_127), 
+                   .I2(XLXN_131), 
+                   .I3(XLXN_128), 
+                   .O(TC_DUMMY));
+endmodule

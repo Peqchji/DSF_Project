@@ -1,0 +1,267 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml lab9.twx lab9.ncd -o lab9.twr lab9.pcf -ucf lab9.ucf
+
+Design file:              lab9.ncd
+Physical constraint file: lab9.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock SW2_P46
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+SW1_P45     |    1.105(R)|      SLOW  |   -0.482(R)|      FAST  |XLXN_407          |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock SW3_P47
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+SW1_P45     |    0.524(R)|      SLOW  |    0.348(R)|      SLOW  |XLXN_402          |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock SW4_P48
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+SW1_P45     |    0.971(R)|      SLOW  |   -0.376(R)|      SLOW  |XLXN_391          |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock SW2_P46 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Data<0>     |        18.317(R)|      SLOW  |         7.946(R)|      FAST  |XLXN_407          |   0.000|
+Data<1>     |        18.092(R)|      SLOW  |         7.657(R)|      FAST  |XLXN_407          |   0.000|
+Data<2>     |        18.141(R)|      SLOW  |         7.592(R)|      FAST  |XLXN_407          |   0.000|
+Data<3>     |        18.148(R)|      SLOW  |         7.609(R)|      FAST  |XLXN_407          |   0.000|
+Data<4>     |        18.206(R)|      SLOW  |         7.581(R)|      FAST  |XLXN_407          |   0.000|
+Data<5>     |        17.407(R)|      SLOW  |         7.142(R)|      FAST  |XLXN_407          |   0.000|
+Data<6>     |        16.867(R)|      SLOW  |         6.967(R)|      FAST  |XLXN_407          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW3_P47 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Data<0>     |        22.487(R)|      SLOW  |        10.055(R)|      FAST  |XLXN_402          |   0.000|
+Data<1>     |        22.262(R)|      SLOW  |         9.928(R)|      FAST  |XLXN_402          |   0.000|
+Data<2>     |        22.014(R)|      SLOW  |         9.701(R)|      FAST  |XLXN_402          |   0.000|
+Data<3>     |        22.021(R)|      SLOW  |         9.718(R)|      FAST  |XLXN_402          |   0.000|
+Data<4>     |        21.985(R)|      SLOW  |         9.690(R)|      FAST  |XLXN_402          |   0.000|
+Data<5>     |        21.577(R)|      SLOW  |         9.561(R)|      FAST  |XLXN_402          |   0.000|
+Data<6>     |        21.020(R)|      SLOW  |         9.076(R)|      FAST  |XLXN_402          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock SW4_P48 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+Data<0>     |        19.627(R)|      SLOW  |         8.180(R)|      FAST  |XLXN_391          |   0.000|
+Data<1>     |        19.402(R)|      SLOW  |         7.891(R)|      FAST  |XLXN_391          |   0.000|
+Data<2>     |        19.154(R)|      SLOW  |         7.826(R)|      FAST  |XLXN_391          |   0.000|
+Data<3>     |        19.161(R)|      SLOW  |         7.843(R)|      FAST  |XLXN_391          |   0.000|
+Data<4>     |        19.125(R)|      SLOW  |         7.815(R)|      FAST  |XLXN_391          |   0.000|
+Data<5>     |        18.717(R)|      SLOW  |         7.376(R)|      FAST  |XLXN_391          |   0.000|
+Data<6>     |        18.160(R)|      SLOW  |         7.201(R)|      FAST  |XLXN_391          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock OSC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OSC            |    1.485|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW2_P46
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW2_P46        |    0.908|         |         |         |
+SW3_P47        |    1.003|    1.003|         |         |
+SW4_P48        |    1.271|    1.271|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW3_P47
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW2_P46        |    0.222|    0.222|         |         |
+SW3_P47        |    0.898|         |         |         |
+SW4_P48        |    0.702|    0.702|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SW4_P48
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SW2_P46        |    0.647|    0.647|         |         |
+SW3_P47        |    0.702|    0.702|         |         |
+SW4_P48        |    0.917|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Data<0>        |   14.526|
+A<0>           |Data<1>        |   14.122|
+A<0>           |Data<2>        |   14.556|
+A<0>           |Data<3>        |   14.563|
+A<0>           |Data<4>        |   14.580|
+A<0>           |Data<5>        |   13.630|
+A<0>           |Data<6>        |   13.282|
+A<1>           |Data<0>        |   14.498|
+A<1>           |Data<1>        |   14.094|
+A<1>           |Data<2>        |   14.528|
+A<1>           |Data<3>        |   14.535|
+A<1>           |Data<4>        |   14.552|
+A<1>           |Data<5>        |   13.602|
+A<1>           |Data<6>        |   13.254|
+A<2>           |Data<0>        |   14.580|
+A<2>           |Data<1>        |   14.176|
+A<2>           |Data<2>        |   14.610|
+A<2>           |Data<3>        |   14.617|
+A<2>           |Data<4>        |   14.634|
+A<2>           |Data<5>        |   13.684|
+A<2>           |Data<6>        |   13.336|
+A<3>           |Data<0>        |   14.574|
+A<3>           |Data<1>        |   14.170|
+A<3>           |Data<2>        |   14.604|
+A<3>           |Data<3>        |   14.611|
+A<3>           |Data<4>        |   14.628|
+A<3>           |Data<5>        |   13.678|
+A<3>           |Data<6>        |   13.330|
+A<4>           |Data<0>        |   14.500|
+A<4>           |Data<1>        |   14.072|
+A<4>           |Data<2>        |   14.506|
+A<4>           |Data<3>        |   14.513|
+A<4>           |Data<4>        |   14.557|
+A<4>           |Data<5>        |   13.580|
+A<4>           |Data<6>        |   13.232|
+A<5>           |Data<0>        |   15.045|
+A<5>           |Data<1>        |   14.611|
+A<5>           |Data<2>        |   15.039|
+A<5>           |Data<3>        |   15.046|
+A<5>           |Data<4>        |   15.102|
+A<5>           |Data<5>        |   14.113|
+A<5>           |Data<6>        |   13.765|
+A<6>           |Data<0>        |   14.883|
+A<6>           |Data<1>        |   14.449|
+A<6>           |Data<2>        |   14.867|
+A<6>           |Data<3>        |   14.874|
+A<6>           |Data<4>        |   14.940|
+A<6>           |Data<5>        |   13.941|
+A<6>           |Data<6>        |   13.593|
+A<7>           |Data<0>        |   14.717|
+A<7>           |Data<1>        |   14.283|
+A<7>           |Data<2>        |   14.320|
+A<7>           |Data<3>        |   14.510|
+A<7>           |Data<4>        |   14.774|
+A<7>           |Data<5>        |   13.355|
+A<7>           |Data<6>        |   13.364|
+B<0>           |Data<0>        |   15.657|
+B<0>           |Data<1>        |   15.432|
+B<0>           |Data<2>        |   15.184|
+B<0>           |Data<3>        |   15.191|
+B<0>           |Data<4>        |   15.155|
+B<0>           |Data<5>        |   14.747|
+B<0>           |Data<6>        |   14.190|
+B<1>           |Data<0>        |   15.417|
+B<1>           |Data<1>        |   15.192|
+B<1>           |Data<2>        |   14.944|
+B<1>           |Data<3>        |   14.951|
+B<1>           |Data<4>        |   14.915|
+B<1>           |Data<5>        |   14.507|
+B<1>           |Data<6>        |   13.950|
+B<2>           |Data<0>        |   15.468|
+B<2>           |Data<1>        |   15.243|
+B<2>           |Data<2>        |   14.995|
+B<2>           |Data<3>        |   15.002|
+B<2>           |Data<4>        |   14.966|
+B<2>           |Data<5>        |   14.558|
+B<2>           |Data<6>        |   14.001|
+B<3>           |Data<0>        |   15.016|
+B<3>           |Data<1>        |   14.791|
+B<3>           |Data<2>        |   14.588|
+B<3>           |Data<3>        |   14.595|
+B<3>           |Data<4>        |   14.514|
+B<3>           |Data<5>        |   14.106|
+B<3>           |Data<6>        |   13.549|
+B<4>           |Data<0>        |   15.142|
+B<4>           |Data<1>        |   14.917|
+B<4>           |Data<2>        |   14.850|
+B<4>           |Data<3>        |   14.857|
+B<4>           |Data<4>        |   14.746|
+B<4>           |Data<5>        |   14.232|
+B<4>           |Data<6>        |   13.675|
+B<5>           |Data<0>        |   15.005|
+B<5>           |Data<1>        |   14.780|
+B<5>           |Data<2>        |   14.713|
+B<5>           |Data<3>        |   14.720|
+B<5>           |Data<4>        |   14.609|
+B<5>           |Data<5>        |   14.095|
+B<5>           |Data<6>        |   13.538|
+B<6>           |Data<0>        |   14.325|
+B<6>           |Data<1>        |   13.921|
+B<6>           |Data<2>        |   14.355|
+B<6>           |Data<3>        |   14.362|
+B<6>           |Data<4>        |   14.324|
+B<6>           |Data<5>        |   13.429|
+B<6>           |Data<6>        |   13.138|
+B<7>           |Data<0>        |   13.706|
+B<7>           |Data<1>        |   13.129|
+B<7>           |Data<2>        |   13.367|
+B<7>           |Data<3>        |   13.717|
+B<7>           |Data<4>        |   13.757|
+B<7>           |Data<5>        |   12.489|
+B<7>           |Data<6>        |   12.571|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Nov 06 23:52:39 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

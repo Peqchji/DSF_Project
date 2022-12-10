@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Comparator.vf
+// /___/   /\     Timestamp : 10/12/2022 16:51:01
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Comparator.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Comparator.sch"
+//Design Name: Comparator
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module COMP4_HXILINX_Comparator (EQ, A0, A1, A2, A3, B0, B1, B2, B3);
+    
+
+   output EQ;
+
+   input A0;
+   input A1;
+   input A2;
+   input A3;
+   input B0;
+   input B1;
+   input B2;
+   input B3;
+
+   assign EQ = ((A0==B0) && (A1==B1) && (A2==B2) && (A3==B3)) ;
+
+endmodule
+`timescale 1ns / 1ps
+
+module Comparator(active, 
+                  Var1, 
+                  Var2, 
+                  results);
+
+    input active;
+    input [3:0] Var1;
+    input [3:0] Var2;
+   output results;
+   
+   wire XLXN_4;
+   
+   (* HU_SET = "XLXI_1_14" *) 
+   COMP4_HXILINX_Comparator  XLXI_1 (.A0(Var2[0]), 
+                                    .A1(Var2[1]), 
+                                    .A2(Var2[2]), 
+                                    .A3(Var2[3]), 
+                                    .B0(Var1[0]), 
+                                    .B1(Var1[1]), 
+                                    .B2(Var1[2]), 
+                                    .B3(Var1[3]), 
+                                    .EQ(XLXN_4));
+   AND2  XLXI_2 (.I0(XLXN_4), 
+                .I1(active), 
+                .O(results));
+endmodule

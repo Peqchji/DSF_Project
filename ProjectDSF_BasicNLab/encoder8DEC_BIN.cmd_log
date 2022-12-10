@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym encoder8DEC_BIN {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab/encoder8DEC_BIN.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab/encoder8DEC_BIN.sym} 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl encoder8DEC_BIN_drc.vhf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab/encoder8DEC_BIN.sch} 

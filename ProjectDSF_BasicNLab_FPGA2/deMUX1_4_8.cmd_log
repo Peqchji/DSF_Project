@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym deMUX1_4_8 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/deMUX1_4_8.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/deMUX1_4_8.sym} 

@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Sun Dec 11 01:04:10 2022
+# Process ID: 8420
+# Log file: C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P45 [get_ports Digit0]
+endgroup
+set_property package_pin "" [get_ports [list  Digit1]]
+set_property package_pin "" [get_ports [list  CLKin_100Hz]]
+startgroup
+set_property package_pin P44 [get_ports Digit0]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports CLKin_100Hz]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports Digit1]
+endgroup
+startgroup
+set_property package_pin P33 [get_ports Digit2]
+endgroup
+startgroup
+set_property package_pin P30 [get_ports Digit3]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports SegmentA]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports SegmentB]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports SegmentC]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports SegmentD]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports SegmentE]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports SegmentF]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports SegmentG]
+endgroup
+startgroup
+set_property package_pin P112 [get_ports State_1]
+endgroup
+startgroup
+set_property package_pin P111 [get_ports State_2]
+endgroup
+startgroup
+set_property package_pin P105 [get_ports State_3]
+endgroup
+startgroup
+set_property package_pin P104 [get_ports State_4]
+endgroup
+startgroup
+set_property package_pin P102 [get_ports State_5]
+endgroup
+startgroup
+set_property package_pin P101 [get_ports State_6]
+endgroup
+startgroup
+set_property package_pin P100 [get_ports State_7]
+endgroup
+startgroup
+set_property package_pin P99 [get_ports State_8]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports SW0]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports SW1]
+endgroup
+save_constraints
+startgroup
+set_property package_pin P61 [get_ports SW2]
+endgroup
+save_constraints

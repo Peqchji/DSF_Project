@@ -1,0 +1,522 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Reading design: BasicLogicGate.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "BasicLogicGate.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "BasicLogicGate"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : BasicLogicGate
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\MUX4_1_4.vhf" into library work
+Parsing entity <MUX4_1_4>.
+Parsing architecture <BEHAVIORAL> of entity <mux4_1_4>.
+Parsing VHDL file "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\encoder8DEC_BIN.vhf" into library work
+Parsing entity <encoder8DEC_BIN>.
+Parsing architecture <BEHAVIORAL> of entity <encoder8dec_bin>.
+Parsing VHDL file "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\decoder.vhf" into library work
+Parsing entity <decoder>.
+Parsing architecture <BEHAVIORAL> of entity <decoder>.
+Parsing VHDL file "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\MUX4_1_8.vhf" into library work
+Parsing entity <MUX4_1_8>.
+Parsing architecture <BEHAVIORAL> of entity <mux4_1_8>.
+Parsing VHDL file "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\BasicLogicGate.vhf" into library work
+Parsing entity <FTC_HXILINX_BasicLogicGate>.
+Parsing architecture <Behavioral> of entity <ftc_hxilinx_basiclogicgate>.
+Parsing entity <INV4_HXILINX_BasicLogicGate>.
+Parsing architecture <INV4_HXILINX_BasicLogicGate_V> of entity <inv4_hxilinx_basiclogicgate>.
+Parsing entity <OR8_HXILINX_BasicLogicGate>.
+Parsing architecture <OR8_HXILINX_BasicLogicGate_V> of entity <or8_hxilinx_basiclogicgate>.
+Parsing entity <AND6_HXILINX_BasicLogicGate>.
+Parsing architecture <AND6_HXILINX_BasicLogicGate_V> of entity <and6_hxilinx_basiclogicgate>.
+Parsing entity <AND7_HXILINX_BasicLogicGate>.
+Parsing architecture <AND7_HXILINX_BasicLogicGate_V> of entity <and7_hxilinx_basiclogicgate>.
+Parsing entity <AND8_HXILINX_BasicLogicGate>.
+Parsing architecture <AND8_HXILINX_BasicLogicGate_V> of entity <and8_hxilinx_basiclogicgate>.
+Parsing entity <BasicLogicGate>.
+Parsing architecture <BEHAVIORAL> of entity <basiclogicgate>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <BasicLogicGate> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <AND6_HXILINX_BasicLogicGate> (architecture <AND6_HXILINX_BasicLogicGate_V>) from library <work>.
+
+Elaborating entity <AND7_HXILINX_BasicLogicGate> (architecture <AND7_HXILINX_BasicLogicGate_V>) from library <work>.
+
+Elaborating entity <INV4_HXILINX_BasicLogicGate> (architecture <INV4_HXILINX_BasicLogicGate_V>) from library <work>.
+
+Elaborating entity <AND8_HXILINX_BasicLogicGate> (architecture <AND8_HXILINX_BasicLogicGate_V>) from library <work>.
+
+Elaborating entity <decoder> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <OR8_HXILINX_BasicLogicGate> (architecture <OR8_HXILINX_BasicLogicGate_V>) from library <work>.
+
+Elaborating entity <encoder8DEC_BIN> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <MUX4_1_8> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <MUX4_1_4> (architecture <BEHAVIORAL>) from library <work>.
+
+Elaborating entity <FTC_HXILINX_BasicLogicGate> (architecture <Behavioral>) with generics from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <BasicLogicGate>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\BasicLogicGate.vhf".
+    Set property "HU_SET = XLXI_5_0" for instance <XLXI_5>.
+    Set property "HU_SET = XLXI_6_1" for instance <XLXI_6>.
+    Set property "HU_SET = XLXI_26_2" for instance <XLXI_26>.
+    Set property "HU_SET = XLXI_27_3" for instance <XLXI_27>.
+    Set property "HU_SET = XLXI_33_4" for instance <XLXI_33>.
+    Set property "HU_SET = XLXI_34_5" for instance <XLXI_34>.
+    Set property "HU_SET = XLXI_92_6" for instance <XLXI_92>.
+    Set property "HU_SET = XLXI_98_7" for instance <XLXI_98>.
+    Summary:
+	no macro.
+Unit <BasicLogicGate> synthesized.
+
+Synthesizing Unit <AND6_HXILINX_BasicLogicGate>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\BasicLogicGate.vhf".
+    Summary:
+	no macro.
+Unit <AND6_HXILINX_BasicLogicGate> synthesized.
+
+Synthesizing Unit <AND7_HXILINX_BasicLogicGate>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\BasicLogicGate.vhf".
+    Summary:
+	no macro.
+Unit <AND7_HXILINX_BasicLogicGate> synthesized.
+
+Synthesizing Unit <INV4_HXILINX_BasicLogicGate>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\BasicLogicGate.vhf".
+    Summary:
+	no macro.
+Unit <INV4_HXILINX_BasicLogicGate> synthesized.
+
+Synthesizing Unit <AND8_HXILINX_BasicLogicGate>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\BasicLogicGate.vhf".
+    Summary:
+	no macro.
+Unit <AND8_HXILINX_BasicLogicGate> synthesized.
+
+Synthesizing Unit <decoder>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\decoder.vhf".
+    Summary:
+	no macro.
+Unit <decoder> synthesized.
+
+Synthesizing Unit <OR8_HXILINX_BasicLogicGate>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\BasicLogicGate.vhf".
+    Summary:
+	no macro.
+Unit <OR8_HXILINX_BasicLogicGate> synthesized.
+
+Synthesizing Unit <encoder8DEC_BIN>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\encoder8DEC_BIN.vhf".
+    Summary:
+	no macro.
+Unit <encoder8DEC_BIN> synthesized.
+
+Synthesizing Unit <MUX4_1_8>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\MUX4_1_8.vhf".
+    Summary:
+	no macro.
+Unit <MUX4_1_8> synthesized.
+
+Synthesizing Unit <MUX4_1_4>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\MUX4_1_4.vhf".
+    Summary:
+	no macro.
+Unit <MUX4_1_4> synthesized.
+
+Synthesizing Unit <FTC_HXILINX_BasicLogicGate>.
+    Related source file is "C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\ProjectDSF_BasicNLab_FPGA2\BasicLogicGate.vhf".
+        INIT = '0'
+    Found 1-bit register for signal <q_tmp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <FTC_HXILINX_BasicLogicGate> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ 1-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <BasicLogicGate> ...
+
+Optimizing unit <decoder> ...
+
+Optimizing unit <MUX4_1_4> ...
+
+Optimizing unit <AND8_HXILINX_BasicLogicGate> ...
+
+Optimizing unit <AND7_HXILINX_BasicLogicGate> ...
+
+Optimizing unit <AND6_HXILINX_BasicLogicGate> ...
+
+Optimizing unit <INV4_HXILINX_BasicLogicGate> ...
+
+Optimizing unit <FTC_HXILINX_BasicLogicGate> ...
+
+Optimizing unit <OR8_HXILINX_BasicLogicGate> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block BasicLogicGate, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : BasicLogicGate.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 144
+#      AND2                        : 64
+#      AND2B1                      : 1
+#      AND3                        : 2
+#      AND3B2                      : 1
+#      AND4B3                      : 1
+#      AND5B4                      : 1
+#      BUF                         : 12
+#      GND                         : 1
+#      INV                         : 30
+#      LUT2                        : 1
+#      LUT3                        : 2
+#      LUT6                        : 4
+#      OR2                         : 4
+#      OR3                         : 3
+#      OR4                         : 14
+#      OR5                         : 1
+#      VCC                         : 1
+#      XOR2                        : 1
+# FlipFlops/Latches                : 1
+#      FDCE                        : 1
+# Clock Buffers                    : 1
+#      BUFH                        : 1
+# IO Buffers                       : 23
+#      IBUF                        : 12
+#      OBUF                        : 11
+# Logical                          : 5
+#      NAND2                       : 4
+#      NOR2                        : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               1  out of  11440     0%  
+ Number of Slice LUTs:                   37  out of   5720     0%  
+    Number used as Logic:                37  out of   5720     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     38
+   Number with an unused Flip Flop:      37  out of     38    97%  
+   Number with an unused LUT:             1  out of     38     2%  
+   Number of fully used LUT-FF pairs:     0  out of     38     0%  
+   Number of unique control sets:         1
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    102    22%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLKin_100Hz                        | IBUF+BUFH              | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.216ns (Maximum Frequency: 451.233MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 9.738ns
+   Maximum combinational path delay: 15.628ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKin_100Hz'
+  Clock period: 2.216ns (frequency: 451.233MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.216ns (Levels of Logic = 1)
+  Source:            XLXI_98/q_tmp (FF)
+  Destination:       XLXI_98/q_tmp (FF)
+  Source Clock:      CLKin_100Hz rising
+  Destination Clock: CLKin_100Hz rising
+
+  Data Path: XLXI_98/q_tmp to XLXI_98/q_tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.447   0.882  q_tmp (q_tmp)
+     INV:I->O              1   0.206   0.579  q_tmp_INV_5_o1_INV_0 (q_tmp_INV_5_o)
+     FDCE:D                    0.102          q_tmp
+    ----------------------------------------
+    Total                      2.216ns (0.755ns logic, 1.461ns route)
+                                       (34.1% logic, 65.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKin_100Hz'
+  Total number of paths / destination ports: 30 / 9
+-------------------------------------------------------------------------
+Offset:              9.738ns (Levels of Logic = 7)
+  Source:            XLXI_98/q_tmp (FF)
+  Destination:       SegmentA (PAD)
+  Source Clock:      CLKin_100Hz rising
+
+  Data Path: XLXI_98/q_tmp to SegmentA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.447   0.882  q_tmp (q_tmp)
+     end scope: 'XLXI_98:Q'
+     INV:I->O              1   0.568   0.944  XLXI_95/XLXI_2/XLXI_8 (XLXI_95/XLXI_2/XLXN_80)
+     AND2:I0->O            4   0.203   1.048  XLXI_95/XLXI_2/XLXI_4 (XLXI_95/XLXI_2/XLXN_121)
+     AND2:I0->O            1   0.203   0.808  XLXI_95/XLXI_2/XLXI_24 (XLXI_95/XLXI_2/XLXN_158)
+     OR4:I3->O             1   0.339   0.579  XLXI_95/XLXI_2/XLXI_89 (ABCD<3>)
+     BUF:I->O              1   0.568   0.579  XLXI_141 (SegmentD_OBUF)
+     OBUF:I->O                 2.571          SegmentD_OBUF (SegmentD)
+    ----------------------------------------
+    Total                      9.738ns (4.899ns logic, 4.839ns route)
+                                       (50.3% logic, 49.7% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1459 / 8
+-------------------------------------------------------------------------
+Delay:               15.628ns (Levels of Logic = 14)
+  Source:            State_7 (PAD)
+  Destination:       SegmentA (PAD)
+
+  Data Path: State_7 to SegmentA
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.222   0.773  State_7_IBUF (State_7_IBUF)
+     begin scope: 'XLXI_33:I1'
+     INV:I->O              1   0.206   0.808  O11_INV_0 (O1)
+     end scope: 'XLXI_33:O1'
+     begin scope: 'XLXI_34:I1'
+     LUT3:I0->O            1   0.205   0.580  O_SW0 (N01)
+     LUT6:I5->O            2   0.205   0.845  O (O)
+     end scope: 'XLXI_34:O'
+     OR4:I3->O             6   0.339   1.109  XLXI_94/XLXI_1 (XLXN_254)
+     NAND2:I0->O           9   0.203   1.174  XLXI_42/XLXI_4 (XLXI_42/XLXN_13)
+     AND2:I1->O            1   0.223   0.924  XLXI_42/XLXI_19 (XLXI_42/XLXN_40)
+     OR2:I1->O             1   0.223   0.944  XLXI_42/XLXI_20 (Mode<4>)
+     AND2:I0->O            1   0.203   0.827  XLXI_95/XLXI_1/XLXI_36 (XLXI_95/XLXI_1/XLXN_183)
+     OR4:I2->O             1   0.320   0.579  XLXI_95/XLXI_1/XLXI_92 (EFG<0>)
+     BUF:I->O              1   0.568   0.579  XLXI_130 (SegmentE_OBUF)
+     OBUF:I->O                 2.571          SegmentE_OBUF (SegmentE)
+    ----------------------------------------
+    Total                     15.628ns (6.488ns logic, 9.140ns route)
+                                       (41.5% logic, 58.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLKin_100Hz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKin_100Hz    |    2.216|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 31.00 secs
+Total CPU time to Xst completion: 30.83 secs
+ 
+--> 
+
+Total memory usage is 4533432 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

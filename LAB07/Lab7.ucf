@@ -1,0 +1,18 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Common0" LOC = P44;
+NET "Common1" LOC = P43;
+NET "Common2" LOC = P33;
+NET "Common3" LOC = P30;
+NET "OSC" LOC = P123;
+NET "Reset" LOC = P46;
+NET "StartStop" LOC = P45;
+NET "XLXN_10" LOC = P41;
+NET "XLXN_11" LOC = P40;
+NET "XLXN_12" LOC = P35;
+NET "XLXN_13" LOC = P34;
+NET "XLXN_14" LOC = P32;
+NET "XLXN_15" LOC = P29;
+NET "XLXN_17" LOC = P26;
+NET "XLXN_16" LOC = P27;

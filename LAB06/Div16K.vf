@@ -1,0 +1,149 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Div16K.vf
+// /___/   /\     Timestamp : 10/12/2022 16:51:04
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div16K.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div16K.sch"
+//Design Name: Div16K
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CE_HXILINX_Div16K(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module counter0_9_MUSER_Div16K(C, 
+                               count, 
+                               TC);
+
+    input C;
+   output [3:0] count;
+   output TC;
+   
+   wire XLXN_3;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire TC_DUMMY;
+   
+   assign TC = TC_DUMMY;
+   (* HU_SET = "XLXI_10_20" *) 
+   CB4CE_HXILINX_Div16K  XLXI_10 (.C(C), 
+                                 .CE(XLXN_3), 
+                                 .CLR(TC_DUMMY), 
+                                 .CEO(), 
+                                 .Q0(XLXN_51), 
+                                 .Q1(XLXN_49), 
+                                 .Q2(XLXN_50), 
+                                 .Q3(XLXN_48), 
+                                 .TC());
+   VCC  XLXI_11 (.P(XLXN_3));
+   AND4  XLXI_16 (.I0(XLXN_48), 
+                 .I1(XLXN_49), 
+                 .I2(XLXN_20), 
+                 .I3(XLXN_21), 
+                 .O(TC_DUMMY));
+   INV  XLXI_17 (.I(XLXN_50), 
+                .O(XLXN_20));
+   INV  XLXI_18 (.I(XLXN_51), 
+                .O(XLXN_21));
+   BUF  XLXI_27 (.I(XLXN_51), 
+                .O(count[0]));
+   BUF  XLXI_28 (.I(XLXN_49), 
+                .O(count[1]));
+   BUF  XLXI_29 (.I(XLXN_50), 
+                .O(count[2]));
+   BUF  XLXI_30 (.I(XLXN_48), 
+                .O(count[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module Div1k_MUSER_Div16K(In_CLK, 
+                          Out_CLK);
+
+    input In_CLK;
+   output Out_CLK;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   
+   counter0_9_MUSER_Div16K  XLXI_1 (.C(In_CLK), 
+                                   .count(), 
+                                   .TC(XLXN_1));
+   counter0_9_MUSER_Div16K  XLXI_2 (.C(XLXN_1), 
+                                   .count(), 
+                                   .TC(XLXN_2));
+   counter0_9_MUSER_Div16K  XLXI_3 (.C(XLXN_2), 
+                                   .count(), 
+                                   .TC(Out_CLK));
+endmodule
+`timescale 1ns / 1ps
+
+module Div16K(In_CLK, 
+              Out_CLK);
+
+    input In_CLK;
+   output Out_CLK;
+   
+   wire XLXN_1;
+   wire XLXN_3;
+   
+   Div1k_MUSER_Div16K  XLXI_1 (.In_CLK(In_CLK), 
+                              .Out_CLK(XLXN_1));
+   (* HU_SET = "XLXI_2_21" *) 
+   CB4CE_HXILINX_Div16K  XLXI_2 (.C(XLXN_1), 
+                                .CE(XLXN_3), 
+                                .CLR(), 
+                                .CEO(), 
+                                .Q0(), 
+                                .Q1(), 
+                                .Q2(), 
+                                .Q3(), 
+                                .TC(Out_CLK));
+   VCC  XLXI_3 (.P(XLXN_3));
+endmodule

@@ -1,0 +1,15 @@
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog displayer_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} 
+sch2hdl -intstyle ise -family spartan6 -verilog displayer_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog displayer_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym displayer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/displayer.sym} 

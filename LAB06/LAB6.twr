@@ -1,0 +1,105 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml LAB6.twx LAB6.ncd -o LAB6.twr LAB6.pcf -ucf LAB6.ucf
+
+Design file:              LAB6.ncd
+Physical constraint file: LAB6.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock button to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+a_P41       |        10.112(R)|      SLOW  |         5.559(R)|      FAST  |XLXI_53/XLXN_13   |   0.000|
+            |        12.405(R)|      SLOW  |         7.071(R)|      FAST  |XLXI_53/XLXN_14   |   0.000|
+            |        12.366(R)|      SLOW  |         7.130(R)|      FAST  |XLXI_53/XLXN_15   |   0.000|
+b_P40       |        10.122(R)|      SLOW  |         5.663(R)|      FAST  |XLXI_53/XLXN_13   |   0.000|
+            |        12.469(R)|      SLOW  |         7.157(R)|      FAST  |XLXI_53/XLXN_14   |   0.000|
+            |        12.370(R)|      SLOW  |         7.216(R)|      FAST  |XLXI_53/XLXN_15   |   0.000|
+buzzer      |        11.972(R)|      SLOW  |         6.915(R)|      FAST  |XLXI_53/XLXN_14   |   0.000|
+            |        11.972(R)|      SLOW  |         6.690(R)|      FAST  |XLXI_53/XLXN_15   |   0.000|
+c_P35       |        10.185(R)|      SLOW  |         5.760(R)|      FAST  |XLXI_53/XLXN_13   |   0.000|
+            |        12.561(R)|      SLOW  |         7.193(R)|      FAST  |XLXI_53/XLXN_14   |   0.000|
+            |        12.507(R)|      SLOW  |         7.252(R)|      FAST  |XLXI_53/XLXN_15   |   0.000|
+d_P34       |        10.126(R)|      SLOW  |         5.602(R)|      FAST  |XLXI_53/XLXN_13   |   0.000|
+            |        12.659(R)|      SLOW  |         7.123(R)|      FAST  |XLXI_53/XLXN_14   |   0.000|
+            |        12.605(R)|      SLOW  |         7.024(R)|      FAST  |XLXI_53/XLXN_15   |   0.000|
+e_P32       |         9.788(R)|      SLOW  |         5.515(R)|      FAST  |XLXI_53/XLXN_13   |   0.000|
+            |        12.187(R)|      SLOW  |         7.012(R)|      FAST  |XLXI_53/XLXN_14   |   0.000|
+            |        12.133(R)|      SLOW  |         6.937(R)|      FAST  |XLXI_53/XLXN_15   |   0.000|
+f_P29       |        10.478(R)|      SLOW  |         5.819(R)|      FAST  |XLXI_53/XLXN_13   |   0.000|
+            |        12.853(R)|      SLOW  |         7.252(R)|      FAST  |XLXI_53/XLXN_14   |   0.000|
+            |        12.799(R)|      SLOW  |         7.311(R)|      FAST  |XLXI_53/XLXN_15   |   0.000|
+g_P27       |        10.435(R)|      SLOW  |         5.673(R)|      FAST  |XLXI_53/XLXN_13   |   0.000|
+            |        12.782(R)|      SLOW  |         7.106(R)|      FAST  |XLXI_53/XLXN_14   |   0.000|
+            |        12.560(R)|      SLOW  |         7.165(R)|      FAST  |XLXI_53/XLXN_15   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock OSC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OSC            |    2.077|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock button
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+button         |    1.829|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+button         |a_P41          |    9.653|
+button         |b_P40          |    9.490|
+button         |buzzer         |    9.645|
+button         |c_P35          |    9.553|
+button         |d_P34          |    9.515|
+button         |e_P32          |    9.238|
+button         |f_P29          |   10.019|
+button         |g_P27          |    9.847|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 12 16:35:43 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

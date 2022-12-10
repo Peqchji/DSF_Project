@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Div100k_drc.vf -w C:/Users/Chaks/Desktop/Lab6/Lab6/Div100k.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Div100k C:/Users/Chaks/Desktop/Lab6/Lab6/Div100k.sch C:/Users/Chaks/Desktop/Lab6/Lab6/Div100k.sym 

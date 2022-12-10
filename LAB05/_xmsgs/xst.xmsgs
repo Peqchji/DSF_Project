@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 404: Assignment to <arg fmt="%s" index="1">XLXN_1049</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 407: Assignment to <arg fmt="%s" index="1">XLXN_1048</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 410: Assignment to <arg fmt="%s" index="1">XLXN_1047</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 413: Assignment to <arg fmt="%s" index="1">XLXN_1046</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 416: Assignment to <arg fmt="%s" index="1">XLXN_1045</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 419: Assignment to <arg fmt="%s" index="1">XLXN_1044</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 422: Assignment to <arg fmt="%s" index="1">XLXN_1050</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 429: Assignment to <arg fmt="%s" index="1">XLXN_1044</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 430: Assignment to <arg fmt="%s" index="1">XLXN_1045</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 431: Assignment to <arg fmt="%s" index="1">XLXN_1046</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 432: Assignment to <arg fmt="%s" index="1">XLXN_1047</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 433: Assignment to <arg fmt="%s" index="1">XLXN_1048</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 434: Assignment to <arg fmt="%s" index="1">XLXN_1049</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="1127" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf" Line 435: Assignment to <arg fmt="%s" index="1">XLXN_1050</arg> ignored, since the identifier is never used
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf</arg>&quot; line <arg fmt="%s" index="2">403</arg>: Output port &lt;<arg fmt="%s" index="3">XLXN_8</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_651</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf</arg>&quot; line <arg fmt="%s" index="2">406</arg>: Output port &lt;<arg fmt="%s" index="3">XLXN_8</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_652</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf</arg>&quot; line <arg fmt="%s" index="2">409</arg>: Output port &lt;<arg fmt="%s" index="3">XLXN_8</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_653</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf</arg>&quot; line <arg fmt="%s" index="2">412</arg>: Output port &lt;<arg fmt="%s" index="3">XLXN_8</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_654</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf</arg>&quot; line <arg fmt="%s" index="2">415</arg>: Output port &lt;<arg fmt="%s" index="3">XLXN_8</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_655</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf</arg>&quot; line <arg fmt="%s" index="2">418</arg>: Output port &lt;<arg fmt="%s" index="3">XLXN_8</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_656</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB05\Lab05_no2.vf</arg>&quot; line <arg fmt="%s" index="2">421</arg>: Output port &lt;<arg fmt="%s" index="3">XLXN_8</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_657</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

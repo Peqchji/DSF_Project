@@ -1,0 +1,3 @@
+MODULE fullCircuit
+	SUBMODULE DIsplay
+		INSTANCE XLXI_19

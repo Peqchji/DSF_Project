@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 12 16:52:04 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "d_P34" LOCATE = SITE "P34" LEVEL 1;
+COMP "e_P32" LOCATE = SITE "P32" LEVEL 1;
+COMP "buzzer" LOCATE = SITE "P83" LEVEL 1;
+COMP "f_P29" LOCATE = SITE "P29" LEVEL 1;
+COMP "OSC" LOCATE = SITE "P123" LEVEL 1;
+COMP "g_P27" LOCATE = SITE "P27" LEVEL 1;
+COMP "a_P41" LOCATE = SITE "P41" LEVEL 1;
+COMP "button" LOCATE = SITE "P47" LEVEL 1;
+COMP "b_P40" LOCATE = SITE "P40" LEVEL 1;
+COMP "common0" LOCATE = SITE "P44" LEVEL 1;
+COMP "common1" LOCATE = SITE "P43" LEVEL 1;
+COMP "common2" LOCATE = SITE "P33" LEVEL 1;
+COMP "common3" LOCATE = SITE "P30" LEVEL 1;
+COMP "c_P35" LOCATE = SITE "P35" LEVEL 1;
+SCHEMATIC END;
+

@@ -1,0 +1,5 @@
+select figure at 2156 899 8 -branches -sn=1
+select figure at 2148 909 8 -branches -sn=1
+select figure at 2148 909 8 -branches -all -sn=1
+delete selection -sn=1
+add instance decoder 1936 1168 R0 -sn=1

@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/LAB00/Lab_00.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/LAB00/Lab_00.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab_00Pin.ucf -uc Lab_00.ucf -p xc6slx9-tqg144-3 "Lab_00.ngc" Lab_00.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab_00_map.ncd Lab_00.ngd Lab_00.pcf 
+par -w -intstyle ise -ol high -mt off Lab_00_map.ncd Lab_00.ncd Lab_00.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab_00.twx Lab_00.ncd -o Lab_00.twr Lab_00.pcf -ucf Lab_00Pin.ucf -ucf Lab_00.ucf 
+bitgen -intstyle ise -f Lab_00.ut Lab_00.ncd 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB00/Lab_00.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB00/Lab_00.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab_00.ucf -p xc6slx9-tqg144-3 "Lab_00.ngc" Lab_00.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab_00_map.ncd Lab_00.ngd Lab_00.pcf 
+par -w -intstyle ise -ol high -mt off Lab_00_map.ncd Lab_00.ncd Lab_00.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab_00.twx Lab_00.ncd -o Lab_00.twr Lab_00.pcf -ucf Lab_00.ucf 
+bitgen -intstyle ise -f Lab_00.ut Lab_00.ncd 

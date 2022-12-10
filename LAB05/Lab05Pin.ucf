@@ -1,0 +1,13 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "a_P41" LOC = P41;
+NET "b_P40" LOC = P40;
+NET "c_P35" LOC = P35;
+NET "Clock_P45" LOC = P45;
+NET "d_P34" LOC = P34;
+NET "D_P55" LOC = P55;
+NET "e_P32" LOC = P32;
+NET "f_P29" LOC = P29;
+NET "g_P27" LOC = P27;
+NET "Hold1_P56" LOC = P56;

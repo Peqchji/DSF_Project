@@ -1,0 +1,154 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : fullCircuit_drc.vf
+// /___/   /\     Timestamp : 10/23/2022 23:24:57
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog fullCircuit_drc.vf -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/fullCircuit.sch"
+//Design Name: fullCircuit
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module ADD8_HXILINX_fullCircuit (CO, OFL, S, A, B, CI);
+
+
+   output 	      CO;
+   output 	      OFL;
+   output [7:0]       S;
+
+   input  [7:0]       A;
+   input  [7:0]       B;
+   input              CI;
+
+   assign   {CO, S} = A + B + CI;
+   assign   OFL     = ( A[7] & B[7] & (~S[7])) | ((~A[7]) & (~B[7]) & S[7]);
+
+endmodule
+`timescale 100 ps / 10 ps
+
+module CB2CE_HXILINX_fullCircuit(CEO, Q0, Q1, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module DIsplay_MUSER_fullCircuit(Bit0, 
+                                 Bit1, 
+                                 Bit2, 
+                                 Bit3, 
+                                 CLK_Display, 
+                                 Data);
+
+    input [3:0] Bit0;
+    input [3:0] Bit1;
+    input [3:0] Bit2;
+    input [3:0] Bit3;
+    input CLK_Display;
+   output [6:0] Data;
+   
+   wire [3:0] XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_10;
+   wire XLXN_12;
+   
+   MUX4_1_4  XLXI_2 (.Q0(Bit0[3:0]), 
+                    .Q1(Bit1[3:0]), 
+                    .Q2(Bit2[3:0]), 
+                    .Q3(Bit3[3:0]), 
+                    .S0(XLXN_3), 
+                    .S1(XLXN_4), 
+                    .Y(XLXN_2[3:0]));
+   (* HU_SET = "XLXI_3_0" *) 
+   CB2CE_HXILINX_fullCircuit  XLXI_3 (.C(XLXN_10), 
+                                     .CE(XLXN_5), 
+                                     .CLR(XLXN_12), 
+                                     .CEO(), 
+                                     .Q0(XLXN_3), 
+                                     .Q1(XLXN_4), 
+                                     .TC());
+   GND  XLXI_4 (.G(XLXN_12));
+   VCC  XLXI_5 (.P(XLXN_5));
+   Div100k  XLXI_6 (.CLR(XLXN_12), 
+                   .In_CLK(CLK_Display), 
+                   .Out_CLK(XLXN_10));
+   HEX_decoder  XLXI_7 (.BCD(XLXN_2[3:0]), 
+                       .segments(Data[6:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module fullCircuit(A, 
+                   B, 
+                   OSC, 
+                   Data, 
+                   XLXN_35);
+
+    input [7:0] A;
+    input [7:0] B;
+    input OSC;
+   output [6:0] Data;
+   output XLXN_35;
+   
+   wire [3:0] Bit2;
+   wire [3:0] Bit3;
+   wire [7:0] S;
+   wire XLXN_3;
+   
+   GND  XLXI_1 (.G(XLXN_3));
+   (* HU_SET = "XLXI_6_1" *) 
+   ADD8_HXILINX_fullCircuit  XLXI_6 (.A(A[7:0]), 
+                                    .B(B[7:0]), 
+                                    .CI(XLXN_3), 
+                                    .CO(Bit2[0]), 
+                                    .OFL(XLXN_35), 
+                                    .S(S[7:0]));
+   DIsplay_MUSER_fullCircuit  XLXI_19 (.Bit0(S[3:0]), 
+                                      .Bit1(S[7:4]), 
+                                      .Bit2(Bit2[3:0]), 
+                                      .Bit3(Bit3[3:0]), 
+                                      .CLK_Display(OSC), 
+                                      .Data(Data[6:0]));
+   GND  XLXI_37 (.G(Bit2[1]));
+   GND  XLXI_38 (.G(Bit2[2]));
+   GND  XLXI_39 (.G(Bit2[3]));
+   GND  XLXI_41 (.G(Bit3[1]));
+   GND  XLXI_42 (.G(Bit3[2]));
+   GND  XLXI_44 (.G(Bit3[3]));
+   GND  XLXI_45 (.G(Bit3[0]));
+endmodule

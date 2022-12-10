@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : MUX4_1_8.vf
+// /___/   /\     Timestamp : 11/06/2022 22:28:47
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB09/MUX4_1_8.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/MUX4_1_8.sch"
+//Design Name: MUX4_1_8
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module MUX4_1_8(N0, 
+                N1, 
+                N2, 
+                N3, 
+                Sel0, 
+                Sel1, 
+                Q3_0, 
+                Q7_4);
+
+    input [7:0] N0;
+    input [7:0] N1;
+    input [7:0] N2;
+    input [7:0] N3;
+    input Sel0;
+    input Sel1;
+   output [3:0] Q3_0;
+   output [3:0] Q7_4;
+   
+   
+   MUX4_1_4  XLXI_1 (.Q0(N0[7:4]), 
+                    .Q1(N1[7:4]), 
+                    .Q2(N2[7:4]), 
+                    .Q3(N3[7:4]), 
+                    .S0(Sel0), 
+                    .S1(Sel1), 
+                    .Y(Q7_4[3:0]));
+   MUX4_1_4  XLXI_2 (.Q0(N0[3:0]), 
+                    .Q1(N1[3:0]), 
+                    .Q2(N2[3:0]), 
+                    .Q3(N3[3:0]), 
+                    .S0(Sel0), 
+                    .S1(Sel1), 
+                    .Y(Q3_0[3:0]));
+endmodule

@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf
+
+Design file:              Lab6.ncd
+Physical constraint file: Lab6.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock PB3_P47 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+BZ_P83      |        11.279(R)|      SLOW  |         5.830(R)|      FAST  |XLXI_5/XLXN_3     |   0.000|
+Segments<0> |        10.873(R)|      SLOW  |         5.798(R)|      FAST  |XLXI_5/XLXN_3     |   0.000|
+Segments<1> |        10.628(R)|      SLOW  |         5.815(R)|      FAST  |XLXI_5/XLXN_3     |   0.000|
+Segments<2> |        10.477(R)|      SLOW  |         5.701(R)|      FAST  |XLXI_5/XLXN_3     |   0.000|
+Segments<3> |        10.498(R)|      SLOW  |         5.600(R)|      FAST  |XLXI_5/XLXN_3     |   0.000|
+Segments<4> |        10.122(R)|      SLOW  |         5.576(R)|      FAST  |XLXI_5/XLXN_3     |   0.000|
+Segments<5> |        11.012(R)|      SLOW  |         5.853(R)|      FAST  |XLXI_5/XLXN_3     |   0.000|
+Segments<6> |        11.205(R)|      SLOW  |         5.754(R)|      FAST  |XLXI_5/XLXN_3     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock OSC_P123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OSC_P123       |    1.447|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PB3_P47
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB3_P47        |    1.568|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+PB3_P47        |BZ_P83         |    8.385|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 12 13:00:14 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4573 MB
+
+
+

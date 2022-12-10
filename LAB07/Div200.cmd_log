@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Div200_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div200.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div200 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div200.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div200.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div200 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div200.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div200.sym} 

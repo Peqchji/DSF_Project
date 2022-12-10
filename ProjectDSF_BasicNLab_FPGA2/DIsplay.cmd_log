@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym DIsplay {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/DIsplay.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/DIsplay.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym DIsplay {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/DIsplay.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/DIsplay.sym} 

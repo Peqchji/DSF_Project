@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="State_1" Dir="IN"/>
+		<Port Id="State_2" Dir="IN"/>
+		<Port Id="State_3" Dir="IN"/>
+		<Port Id="State_4" Dir="IN"/>
+		<Port Id="State_5" Dir="IN"/>
+		<Port Id="State_6" Dir="IN"/>
+		<Port Id="State_7" Dir="IN"/>
+		<Port Id="State_8" Dir="IN"/>
+		<Port Id="Digit0" Dir="OUT"/>
+		<Port Id="Digit1" Dir="OUT"/>
+		<Port Id="Digit2" Dir="OUT"/>
+		<Port Id="Digit3" Dir="OUT"/>
+		<Port Id="L2_P80" Dir="OUT"/>
+		<Port Id="L3_P79" Dir="OUT"/>
+		<Port Id="L4_P78" Dir="OUT"/>
+		<Port Id="L5_P75" Dir="OUT"/>
+		<Port Id="P5" Dir="OUT"/>
+		<Port Id="P7" Dir="OUT"/>
+		<Port Id="P9" Dir="OUT"/>
+		<Port Id="P11" Dir="OUT"/>
+		<Port Id="Segment0" Dir="OUT"/>
+		<Port Id="Segment1" Dir="OUT"/>
+		<Port Id="Segment2" Dir="OUT"/>
+		<Port Id="Segment3" Dir="OUT"/>
+		<Port Id="Segment4" Dir="OUT"/>
+		<Port Id="Segment5" Dir="OUT"/>
+		<Port Id="Segment6" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="CLKin_100Hz" Dir="IN"/>
+		<Port Id="State_1" Dir="IN"/>
+		<Port Id="State_2" Dir="IN"/>
+		<Port Id="State_3" Dir="IN"/>
+		<Port Id="State_4" Dir="IN"/>
+		<Port Id="State_5" Dir="IN"/>
+		<Port Id="State_6" Dir="IN"/>
+		<Port Id="State_7" Dir="IN"/>
+		<Port Id="State_8" Dir="IN"/>
+		<Port Id="SW0" Dir="IN"/>
+		<Port Id="SW1" Dir="IN"/>
+		<Port Id="SW2" Dir="IN"/>
+		<Port Id="Digit0" Dir="OUT"/>
+		<Port Id="Digit1" Dir="OUT"/>
+		<Port Id="Digit2" Dir="OUT"/>
+		<Port Id="Digit3" Dir="OUT"/>
+		<Port Id="SegmentA" Dir="OUT"/>
+		<Port Id="SegmentB" Dir="OUT"/>
+		<Port Id="SegmentC" Dir="OUT"/>
+		<Port Id="SegmentD" Dir="OUT"/>
+		<Port Id="SegmentE" Dir="OUT"/>
+		<Port Id="SegmentF" Dir="OUT"/>
+		<Port Id="SegmentG" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Comparator_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Comparator.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Comparator {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Comparator.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Comparator.sym} 

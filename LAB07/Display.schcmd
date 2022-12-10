@@ -1,0 +1,46 @@
+select figure at 2860 1622 8 -branches -sn=1
+delete selection -sn=1
+add instance and2 2624 1088 R0 -sn=1
+add autowire 1824 1248 2624 1024 8 -sn=1
+select figure at 2268 984 8 -branches -sn=1
+delete selection -sn=1
+select figure at 2803 1120 8 -branches -sn=1
+select figure at 2813 1112 8 -branches -sn=1
+delete selection -sn=1
+select figure at 1993 1194 8 -branches -sn=1
+select figure at 2032 1109 8 -branches -sn=1
+delete selection -sn=1
+select figure at 2061 1041 8 -branches -sn=1
+delete selection -sn=1
+select figure at 2007 973 8 -branches -sn=1
+delete selection -sn=1
+add autowire 2608 1296 1840 1616 8 -sn=1
+add autowire 1792 1616 1824 1616 8 -sn=1
+select figure at 1458 1416 8 -branches -sn=1
+select figure at 1444 1437 8 -branches -sn=1
+select figure at 1458 1433 8 -branches -sn=1
+select figure at 1458 1433 8 -branches -all -sn=1
+move wire at 1456 1296 1456 1552 to 1824 1296 1824 1552 -keepConn -sn=1
+add autowire 1824 1296 2640 1040 8 -sn=1
+add autowire 2608 1040 2608 1024 8 -sn=1
+undo
+undo
+add autowire 2624 1024 1824 1296 8 -sn=1
+add autowire 608 1952 560 2432 8 -sn=1
+undo
+add autowire 608 1952 592 2480 8 -sn=1
+add autowire 592 2480 1104 2480 8 -sn=1
+select figure at 591 2491 8 -branches -sn=1
+move wire at 592 2480 592 2496 to 608 2480 608 2496 -keepConn -sn=1
+move branchpt at 1104 2480 to 1104 2496 -keepConn -sn=1
+select figure at 1708 1102 8 -wires -sn=1
+select figure at 1697 1212 8 -wires -sn=1
+select figure at 1729 1187 8 -wires -sn=1
+select figure at 1726 1194 8 -wires -sn=1
+delete selection -sn=1
+add instance Div200 1104 2528 R0 -sn=1
+add autowire 160 2192 1104 2560 8 -sn=1
+add autowire 2624 960 1488 2496 8 -sn=1
+select figure at 2075 1426 8 -wires -sn=1
+move wire at 2080 960 2080 2496 to 2400 960 2400 2496 -keepConn -sn=1
+add autowire 2880 992 2928 1120 8 -sn=1

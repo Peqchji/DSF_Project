@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog DIsplay_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/DIsplay.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym DIsplay {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/DIsplay.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/DIsplay.sym} 

@@ -1,0 +1,9 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog Counter_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sym} 

@@ -1,0 +1,128 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : XOR_8.vf
+// /___/   /\     Timestamp : 11/06/2022 02:15:15
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/XOR_8.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/XOR_8.sch"
+//Design Name: XOR_8
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module XOR_8(A, 
+             B, 
+             Output);
+
+    input [7:0] A;
+    input [7:0] B;
+   output [7:0] Output;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_18;
+   wire XLXN_40;
+   wire XLXN_41;
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_55;
+   wire XLXN_93;
+   wire XLXN_94;
+   wire XLXN_95;
+   wire XLXN_96;
+   wire XLXN_97;
+   wire XLXN_98;
+   wire XLXN_99;
+   
+   XOR2  XLXI_3 (.I0(XLXN_55), 
+                .I1(XLXN_18), 
+                .O(XLXN_1));
+   XOR2  XLXI_4 (.I0(XLXN_93), 
+                .I1(XLXN_40), 
+                .O(XLXN_2));
+   XOR2  XLXI_5 (.I0(XLXN_94), 
+                .I1(XLXN_41), 
+                .O(XLXN_3));
+   XOR2  XLXI_6 (.I0(XLXN_95), 
+                .I1(XLXN_42), 
+                .O(XLXN_4));
+   XOR2  XLXI_7 (.I0(XLXN_96), 
+                .I1(XLXN_43), 
+                .O(XLXN_5));
+   XOR2  XLXI_8 (.I0(XLXN_97), 
+                .I1(XLXN_44), 
+                .O(XLXN_6));
+   XOR2  XLXI_9 (.I0(XLXN_99), 
+                .I1(XLXN_45), 
+                .O(XLXN_7));
+   XOR2  XLXI_10 (.I0(XLXN_98), 
+                 .I1(XLXN_46), 
+                 .O(XLXN_8));
+   BUF  XLXI_12 (.I(XLXN_1), 
+                .O(Output[7]));
+   BUF  XLXI_13 (.I(XLXN_2), 
+                .O(Output[6]));
+   BUF  XLXI_14 (.I(XLXN_3), 
+                .O(Output[5]));
+   BUF  XLXI_15 (.I(XLXN_4), 
+                .O(Output[4]));
+   BUF  XLXI_16 (.I(XLXN_5), 
+                .O(Output[3]));
+   BUF  XLXI_17 (.I(XLXN_6), 
+                .O(Output[2]));
+   BUF  XLXI_18 (.I(XLXN_7), 
+                .O(Output[1]));
+   BUF  XLXI_19 (.I(XLXN_8), 
+                .O(Output[0]));
+   BUF  XLXI_20 (.I(A[7]), 
+                .O(XLXN_18));
+   BUF  XLXI_22 (.I(A[6]), 
+                .O(XLXN_40));
+   BUF  XLXI_23 (.I(A[5]), 
+                .O(XLXN_41));
+   BUF  XLXI_24 (.I(A[4]), 
+                .O(XLXN_42));
+   BUF  XLXI_25 (.I(A[3]), 
+                .O(XLXN_43));
+   BUF  XLXI_26 (.I(A[2]), 
+                .O(XLXN_44));
+   BUF  XLXI_27 (.I(A[1]), 
+                .O(XLXN_45));
+   BUF  XLXI_29 (.I(A[0]), 
+                .O(XLXN_46));
+   BUF  XLXI_30 (.I(B[7]), 
+                .O(XLXN_55));
+   BUF  XLXI_31 (.I(B[6]), 
+                .O(XLXN_93));
+   BUF  XLXI_34 (.I(B[5]), 
+                .O(XLXN_94));
+   BUF  XLXI_35 (.I(B[4]), 
+                .O(XLXN_95));
+   BUF  XLXI_36 (.I(B[3]), 
+                .O(XLXN_96));
+   BUF  XLXI_37 (.I(B[2]), 
+                .O(XLXN_97));
+   BUF  XLXI_38 (.I(B[1]), 
+                .O(XLXN_99));
+   BUF  XLXI_39 (.I(B[0]), 
+                .O(XLXN_98));
+endmodule

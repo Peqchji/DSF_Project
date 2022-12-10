@@ -1,0 +1,203 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Lab8.twx Lab8.ncd -o Lab8.twr Lab8.pcf -ucf Lab8.ucf
+
+Design file:              Lab8.ncd
+Physical constraint file: Lab8.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock OSC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OSC            |    1.333|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |Buzzer         |   10.046|
+A<0>           |Data<0>        |   11.916|
+A<0>           |Data<1>        |   12.029|
+A<0>           |Data<2>        |   11.989|
+A<0>           |Data<3>        |   11.685|
+A<0>           |Data<4>        |   11.576|
+A<0>           |Data<5>        |   11.336|
+A<0>           |Data<6>        |   11.319|
+A<0>           |XLXN_35        |   10.233|
+A<1>           |Buzzer         |   10.445|
+A<1>           |Data<0>        |   12.315|
+A<1>           |Data<1>        |   12.428|
+A<1>           |Data<2>        |   12.388|
+A<1>           |Data<3>        |   12.084|
+A<1>           |Data<4>        |   11.975|
+A<1>           |Data<5>        |   11.735|
+A<1>           |Data<6>        |   11.718|
+A<1>           |XLXN_35        |   10.632|
+A<2>           |Buzzer         |    9.838|
+A<2>           |Data<0>        |   11.708|
+A<2>           |Data<1>        |   11.821|
+A<2>           |Data<2>        |   11.781|
+A<2>           |Data<3>        |   11.477|
+A<2>           |Data<4>        |   11.368|
+A<2>           |Data<5>        |   11.128|
+A<2>           |Data<6>        |   11.111|
+A<2>           |XLXN_35        |   10.025|
+A<3>           |Buzzer         |    9.398|
+A<3>           |Data<0>        |   11.268|
+A<3>           |Data<1>        |   11.381|
+A<3>           |Data<2>        |   11.341|
+A<3>           |Data<3>        |   11.037|
+A<3>           |Data<4>        |   10.928|
+A<3>           |Data<5>        |   10.688|
+A<3>           |Data<6>        |   10.671|
+A<3>           |XLXN_35        |    9.585|
+A<4>           |Buzzer         |    9.758|
+A<4>           |Data<0>        |   11.628|
+A<4>           |Data<1>        |   11.782|
+A<4>           |Data<2>        |   11.742|
+A<4>           |Data<3>        |   11.397|
+A<4>           |Data<4>        |   11.329|
+A<4>           |Data<5>        |   11.089|
+A<4>           |Data<6>        |   11.072|
+A<4>           |XLXN_35        |    9.945|
+A<5>           |Buzzer         |    9.636|
+A<5>           |Data<0>        |   11.506|
+A<5>           |Data<1>        |   11.653|
+A<5>           |Data<2>        |   11.613|
+A<5>           |Data<3>        |   11.275|
+A<5>           |Data<4>        |   11.200|
+A<5>           |Data<5>        |   10.960|
+A<5>           |Data<6>        |   10.943|
+A<5>           |XLXN_35        |    9.823|
+A<6>           |Buzzer         |    9.743|
+A<6>           |Data<0>        |   11.613|
+A<6>           |Data<1>        |   11.806|
+A<6>           |Data<2>        |   11.766|
+A<6>           |Data<3>        |   11.408|
+A<6>           |Data<4>        |   11.353|
+A<6>           |Data<5>        |   11.113|
+A<6>           |Data<6>        |   11.096|
+A<6>           |XLXN_35        |    9.930|
+A<7>           |Buzzer         |    9.579|
+A<7>           |Data<0>        |   11.449|
+A<7>           |Data<1>        |   11.644|
+A<7>           |Data<2>        |   11.604|
+A<7>           |Data<3>        |   11.246|
+A<7>           |Data<4>        |   11.191|
+A<7>           |Data<5>        |   10.951|
+A<7>           |Data<6>        |   10.934|
+A<7>           |XLXN_35        |    9.766|
+B<0>           |Buzzer         |   10.929|
+B<0>           |Data<0>        |   12.799|
+B<0>           |Data<1>        |   12.912|
+B<0>           |Data<2>        |   12.872|
+B<0>           |Data<3>        |   12.568|
+B<0>           |Data<4>        |   12.459|
+B<0>           |Data<5>        |   12.219|
+B<0>           |Data<6>        |   12.202|
+B<0>           |XLXN_35        |   11.116|
+B<1>           |Buzzer         |   11.172|
+B<1>           |Data<0>        |   13.042|
+B<1>           |Data<1>        |   13.155|
+B<1>           |Data<2>        |   13.115|
+B<1>           |Data<3>        |   12.811|
+B<1>           |Data<4>        |   12.702|
+B<1>           |Data<5>        |   12.462|
+B<1>           |Data<6>        |   12.445|
+B<1>           |XLXN_35        |   11.359|
+B<2>           |Buzzer         |   11.042|
+B<2>           |Data<0>        |   12.912|
+B<2>           |Data<1>        |   13.025|
+B<2>           |Data<2>        |   12.985|
+B<2>           |Data<3>        |   12.681|
+B<2>           |Data<4>        |   12.572|
+B<2>           |Data<5>        |   12.332|
+B<2>           |Data<6>        |   12.315|
+B<2>           |XLXN_35        |   11.229|
+B<3>           |Buzzer         |   11.270|
+B<3>           |Data<0>        |   13.140|
+B<3>           |Data<1>        |   13.253|
+B<3>           |Data<2>        |   13.213|
+B<3>           |Data<3>        |   12.909|
+B<3>           |Data<4>        |   12.800|
+B<3>           |Data<5>        |   12.560|
+B<3>           |Data<6>        |   12.543|
+B<3>           |XLXN_35        |   11.457|
+B<4>           |Buzzer         |   11.539|
+B<4>           |Data<0>        |   13.409|
+B<4>           |Data<1>        |   13.563|
+B<4>           |Data<2>        |   13.523|
+B<4>           |Data<3>        |   13.178|
+B<4>           |Data<4>        |   13.110|
+B<4>           |Data<5>        |   12.870|
+B<4>           |Data<6>        |   12.853|
+B<4>           |XLXN_35        |   11.726|
+B<5>           |Buzzer         |   11.310|
+B<5>           |Data<0>        |   13.180|
+B<5>           |Data<1>        |   13.327|
+B<5>           |Data<2>        |   13.287|
+B<5>           |Data<3>        |   12.949|
+B<5>           |Data<4>        |   12.874|
+B<5>           |Data<5>        |   12.634|
+B<5>           |Data<6>        |   12.617|
+B<5>           |XLXN_35        |   11.497|
+B<6>           |Buzzer         |   11.188|
+B<6>           |Data<0>        |   13.058|
+B<6>           |Data<1>        |   13.251|
+B<6>           |Data<2>        |   13.211|
+B<6>           |Data<3>        |   12.853|
+B<6>           |Data<4>        |   12.798|
+B<6>           |Data<5>        |   12.558|
+B<6>           |Data<6>        |   12.541|
+B<6>           |XLXN_35        |   11.375|
+B<7>           |Buzzer         |   11.182|
+B<7>           |Data<0>        |   13.052|
+B<7>           |Data<1>        |   13.247|
+B<7>           |Data<2>        |   13.207|
+B<7>           |Data<3>        |   12.849|
+B<7>           |Data<4>        |   12.794|
+B<7>           |Data<5>        |   12.554|
+B<7>           |Data<6>        |   12.537|
+B<7>           |XLXN_35        |   11.369|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Oct 24 00:19:36 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

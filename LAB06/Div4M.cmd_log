@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Div4M_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div4M.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div4M {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div4M.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div4M.sym} 

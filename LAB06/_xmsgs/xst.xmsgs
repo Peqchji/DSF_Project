@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf" Line 48: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf" Line 545: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf" Line 575: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf" Line 158: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf" Line 598: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf" Line 519: Input port <arg fmt="%s" index="1">CLR</arg> is not connected on this instance
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">634</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">637</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">640</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">454</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_10</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">454</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_10</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_2</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">545</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">545</arg>: Output port &lt;<arg fmt="%s" index="3">Q0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">545</arg>: Output port &lt;<arg fmt="%s" index="3">Q1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">545</arg>: Output port &lt;<arg fmt="%s" index="3">Q2</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">545</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">493</arg>: Output port &lt;<arg fmt="%s" index="3">count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">496</arg>: Output port &lt;<arg fmt="%s" index="3">count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">499</arg>: Output port &lt;<arg fmt="%s" index="3">count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_5</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">570</arg>: Output port &lt;<arg fmt="%s" index="3">count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_3</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">598</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">598</arg>: Output port &lt;<arg fmt="%s" index="3">Q0</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">598</arg>: Output port &lt;<arg fmt="%s" index="3">Q1</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CLR</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_3</arg>&apos;, is tied to GND.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">524</arg>: Output port &lt;<arg fmt="%s" index="3">count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB06\LAB6.vf</arg>&quot; line <arg fmt="%s" index="2">527</arg>: Output port &lt;<arg fmt="%s" index="3">count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_6</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+</msg>
+
+</messages>
+

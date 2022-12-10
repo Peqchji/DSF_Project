@@ -1,0 +1,339 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Counter.vf
+// /___/   /\     Timestamp : 10/23/2022 20:30:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Counter.sch"
+//Design Name: Counter
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_Counter(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Counter(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module COUNTER0_9_MUSER_Counter(CLK, 
+                                Clr, 
+                                bit, 
+                                TC);
+
+    input CLK;
+    input Clr;
+   output [3:0] bit;
+   output TC;
+   
+   wire XLXN_3;
+   wire XLXN_62;
+   wire XLXN_63;
+   wire XLXN_65;
+   wire XLXN_93;
+   wire XLXN_95;
+   wire XLXN_96;
+   wire [3:0] bit_DUMMY;
+   
+   assign bit[3:0] = bit_DUMMY[3:0];
+   (* HU_SET = "XLXI_1_29" *) 
+   FJKC_HXILINX_Counter  XLXI_1 (.C(CLK), 
+                                .CLR(Clr), 
+                                .J(XLXN_3), 
+                                .K(XLXN_3), 
+                                .Q(bit_DUMMY[0]));
+   VCC  XLXI_3 (.P(XLXN_3));
+   (* HU_SET = "XLXI_4_30" *) 
+   FJKC_HXILINX_Counter  XLXI_4 (.C(CLK), 
+                                .CLR(Clr), 
+                                .J(XLXN_62), 
+                                .K(bit_DUMMY[0]), 
+                                .Q(bit_DUMMY[1]));
+   (* HU_SET = "XLXI_5_31" *) 
+   FJKC_HXILINX_Counter  XLXI_5 (.C(CLK), 
+                                .CLR(Clr), 
+                                .J(XLXN_63), 
+                                .K(XLXN_63), 
+                                .Q(bit_DUMMY[2]));
+   (* HU_SET = "XLXI_9_32" *) 
+   FJKC_HXILINX_Counter  XLXI_9 (.C(CLK), 
+                                .CLR(Clr), 
+                                .J(XLXN_65), 
+                                .K(bit_DUMMY[0]), 
+                                .Q(bit_DUMMY[3]));
+   AND2B1  XLXI_37 (.I0(bit_DUMMY[3]), 
+                   .I1(bit_DUMMY[0]), 
+                   .O(XLXN_62));
+   AND2  XLXI_38 (.I0(bit_DUMMY[1]), 
+                 .I1(bit_DUMMY[0]), 
+                 .O(XLXN_63));
+   AND3  XLXI_40 (.I0(bit_DUMMY[2]), 
+                 .I1(bit_DUMMY[1]), 
+                 .I2(bit_DUMMY[0]), 
+                 .O(XLXN_65));
+   OR2  XLXI_53 (.I0(bit_DUMMY[1]), 
+                .I1(bit_DUMMY[0]), 
+                .O(XLXN_95));
+   OR2  XLXI_54 (.I0(bit_DUMMY[3]), 
+                .I1(bit_DUMMY[2]), 
+                .O(XLXN_96));
+   OR2  XLXI_55 (.I0(XLXN_96), 
+                .I1(XLXN_95), 
+                .O(XLXN_93));
+   INV  XLXI_56 (.I(XLXN_93), 
+                .O(TC));
+endmodule
+`timescale 1ns / 1ps
+
+module counter0_5_MUSER_Counter(C, 
+                                Clr, 
+                                bits, 
+                                TC);
+
+    input C;
+    input Clr;
+   output [3:0] bits;
+   output TC;
+   
+   wire XLXN_6;
+   wire XLXN_9;
+   wire XLXN_16;
+   wire [3:0] bits_DUMMY;
+   
+   assign bits[3:0] = bits_DUMMY[3:0];
+   (* HU_SET = "XLXI_1_33" *) 
+   FJKC_HXILINX_Counter  XLXI_1 (.C(C), 
+                                .CLR(Clr), 
+                                .J(XLXN_6), 
+                                .K(XLXN_6), 
+                                .Q(bits_DUMMY[0]));
+   (* HU_SET = "XLXI_2_34" *) 
+   FJKC_HXILINX_Counter  XLXI_2 (.C(C), 
+                                .CLR(Clr), 
+                                .J(XLXN_9), 
+                                .K(bits_DUMMY[0]), 
+                                .Q(bits_DUMMY[1]));
+   (* HU_SET = "XLXI_3_35" *) 
+   FJKC_HXILINX_Counter  XLXI_3 (.C(C), 
+                                .CLR(Clr), 
+                                .J(XLXN_16), 
+                                .K(bits_DUMMY[0]), 
+                                .Q(bits_DUMMY[2]));
+   VCC  XLXI_8 (.P(XLXN_6));
+   AND2B1  XLXI_9 (.I0(bits_DUMMY[2]), 
+                  .I1(bits_DUMMY[0]), 
+                  .O(XLXN_9));
+   AND2  XLXI_10 (.I0(bits_DUMMY[1]), 
+                 .I1(bits_DUMMY[0]), 
+                 .O(XLXN_16));
+   GND  XLXI_12 (.G(bits_DUMMY[3]));
+   NOR3  XLXI_14 (.I0(bits_DUMMY[2]), 
+                 .I1(bits_DUMMY[1]), 
+                 .I2(bits_DUMMY[0]), 
+                 .O(TC));
+endmodule
+`timescale 1ns / 1ps
+
+module Div100k_MUSER_Counter(CLR, 
+                             In_CLK, 
+                             Out_CLK);
+
+    input CLR;
+    input In_CLK;
+   output Out_CLK;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_11;
+   
+   COUNTER0_9_MUSER_Counter  XLXI_1 (.CLK(In_CLK), 
+                                    .Clr(CLR), 
+                                    .bit(), 
+                                    .TC(XLXN_1));
+   COUNTER0_9_MUSER_Counter  XLXI_2 (.CLK(XLXN_1), 
+                                    .Clr(CLR), 
+                                    .bit(), 
+                                    .TC(XLXN_2));
+   COUNTER0_9_MUSER_Counter  XLXI_3 (.CLK(XLXN_2), 
+                                    .Clr(CLR), 
+                                    .bit(), 
+                                    .TC(XLXN_3));
+   COUNTER0_9_MUSER_Counter  XLXI_4 (.CLK(XLXN_3), 
+                                    .Clr(CLR), 
+                                    .bit(), 
+                                    .TC(XLXN_11));
+   COUNTER0_9_MUSER_Counter  XLXI_5 (.CLK(XLXN_11), 
+                                    .Clr(CLR), 
+                                    .bit(), 
+                                    .TC(Out_CLK));
+endmodule
+`timescale 1ns / 1ps
+
+module Div200_MUSER_Counter(CLR, 
+                            In_CLK, 
+                            Out_CLK);
+
+    input CLR;
+    input In_CLK;
+   output Out_CLK;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   
+   COUNTER0_9_MUSER_Counter  XLXI_1 (.CLK(In_CLK), 
+                                    .Clr(CLR), 
+                                    .bit(), 
+                                    .TC(XLXN_1));
+   COUNTER0_9_MUSER_Counter  XLXI_2 (.CLK(XLXN_1), 
+                                    .Clr(CLR), 
+                                    .bit(), 
+                                    .TC(XLXN_2));
+   (* HU_SET = "XLXI_3_36" *) 
+   FTC_HXILINX_Counter  XLXI_3 (.C(XLXN_2), 
+                               .CLR(CLR), 
+                               .T(XLXN_3), 
+                               .Q(Out_CLK));
+   VCC  XLXI_4 (.P(XLXN_3));
+endmodule
+`timescale 1ns / 1ps
+
+module Counter(activator, 
+               Clear, 
+               CLK_C, 
+               CLEARER, 
+               Hold_Dp, 
+               Min1, 
+               Min10, 
+               Sec1, 
+               Sec10);
+
+    input activator;
+    input Clear;
+    input CLK_C;
+   output CLEARER;
+   output Hold_Dp;
+   output [3:0] Min1;
+   output [3:0] Min10;
+   output [3:0] Sec1;
+   output [3:0] Sec10;
+   
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_34;
+   wire XLXN_39;
+   wire XLXN_42;
+   wire XLXN_47;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire XLXN_130;
+   wire CLEARER_DUMMY;
+   
+   assign CLEARER = CLEARER_DUMMY;
+   counter0_5_MUSER_Counter  XLXI_4 (.C(XLXN_39), 
+                                    .Clr(CLEARER_DUMMY), 
+                                    .bits(Sec10[3:0]), 
+                                    .TC(XLXN_42));
+   (* HU_SET = "XLXI_5_37" *) 
+   FTC_HXILINX_Counter  XLXI_5 (.C(activator), 
+                               .CLR(XLXN_34), 
+                               .T(XLXN_5), 
+                               .Q(XLXN_4));
+   AND2  XLXI_6 (.I0(Clear), 
+                .I1(XLXN_3), 
+                .O(CLEARER_DUMMY));
+   AND2  XLXI_7 (.I0(CLK_C), 
+                .I1(XLXN_4), 
+                .O(XLXN_50));
+   INV  XLXI_8 (.I(XLXN_4), 
+               .O(XLXN_3));
+   VCC  XLXI_9 (.P(XLXN_5));
+   GND  XLXI_12 (.G(XLXN_34));
+   COUNTER0_9_MUSER_Counter  XLXI_13 (.CLK(XLXN_47), 
+                                     .Clr(CLEARER_DUMMY), 
+                                     .bit(Min10[3:0]), 
+                                     .TC());
+   COUNTER0_9_MUSER_Counter  XLXI_14 (.CLK(XLXN_130), 
+                                     .Clr(CLEARER_DUMMY), 
+                                     .bit(Sec1[3:0]), 
+                                     .TC(XLXN_39));
+   COUNTER0_9_MUSER_Counter  XLXI_15 (.CLK(XLXN_42), 
+                                     .Clr(CLEARER_DUMMY), 
+                                     .bit(Min1[3:0]), 
+                                     .TC(XLXN_47));
+   INV  XLXI_16 (.I(XLXN_4), 
+                .O(Hold_Dp));
+   Div100k_MUSER_Counter  XLXI_17 (.CLR(CLEARER_DUMMY), 
+                                  .In_CLK(XLXN_50), 
+                                  .Out_CLK(XLXN_51));
+   Div200_MUSER_Counter  XLXI_18 (.CLR(CLEARER_DUMMY), 
+                                 .In_CLK(XLXN_51), 
+                                 .Out_CLK(XLXN_130));
+endmodule

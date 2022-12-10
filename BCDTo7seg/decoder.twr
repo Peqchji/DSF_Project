@@ -1,0 +1,77 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml decoder.twx decoder.ncd -o decoder.twr decoder.pcf -ucf
+decoder.ucf
+
+Design file:              decoder.ncd
+Physical constraint file: decoder.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+XLXN_1         |a              |    6.865|
+XLXN_1         |d              |    7.279|
+XLXN_1         |f              |    8.088|
+XLXN_1         |g              |    8.227|
+XLXN_6         |a              |    7.199|
+XLXN_6         |b              |    6.940|
+XLXN_6         |c              |    7.065|
+XLXN_6         |d              |    7.498|
+XLXN_6         |e              |    7.210|
+XLXN_6         |f              |    7.923|
+XLXN_6         |g              |    8.119|
+XLXN_9         |a              |    6.920|
+XLXN_9         |b              |    6.893|
+XLXN_9         |c              |    6.831|
+XLXN_9         |d              |    6.893|
+XLXN_9         |e              |    7.520|
+XLXN_9         |f              |    8.335|
+XLXN_9         |g              |    8.120|
+XLXN_12        |a              |    7.359|
+XLXN_12        |b              |    7.370|
+XLXN_12        |c              |    7.714|
+XLXN_12        |d              |    7.485|
+XLXN_12        |e              |    7.721|
+XLXN_12        |f              |    8.673|
+XLXN_12        |g              |    8.991|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Sep 22 20:52:52 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4557 MB
+
+
+

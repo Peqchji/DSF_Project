@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/decoder.sym} 

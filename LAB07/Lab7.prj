@@ -1,0 +1,8 @@
+verilog work "Div200.vf"
+verilog work "Div100k.vf"
+verilog work "counter0_5.vf"
+verilog work "MUX4_1_4.vf"
+verilog work "decoder.vf"
+verilog work "Display.vf"
+verilog work "Counter.vf"
+verilog work "Lab7.vf"

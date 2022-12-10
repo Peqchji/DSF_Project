@@ -1,0 +1,6 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Div1M_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div1M.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div1M {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div1M.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div1M.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog Div1M_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div1M.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div1M {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div1M.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div1M.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog Div1M_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div1M.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div1M {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div1M.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div1M.sym} 

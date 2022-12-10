@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog BCDTo7seg_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/BCDTo7seg.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym BCDTo7seg {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/BCDTo7seg.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/BCDTo7seg.sym} 

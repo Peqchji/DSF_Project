@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog deMUX1_4_8_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/deMUX1_4_8.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym deMUX1_4_8 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/deMUX1_4_8.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB09/deMUX1_4_8.sym} 

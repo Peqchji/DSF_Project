@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family spartan6 -verilog decoder_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/decoder.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog decoder_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch} 
+sch2hdl -intstyle ise -family spartan6 -verilog decoder_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/decoder.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog decoder_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/decoder.sym} 

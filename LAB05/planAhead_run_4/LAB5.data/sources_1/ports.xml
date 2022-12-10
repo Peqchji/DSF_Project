@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Interface Version="1" Minor="1">
+	<Ifc Id="ROOT" Top="1">
+		<Port Id="Clock_P46" Dir="IN"/>
+		<Port Id="Clock_P47" Dir="IN"/>
+		<Port Id="Pin123" Dir="IN"/>
+		<Port Id="Toggle_P56" Dir="IN"/>
+		<Port Id="a_P41" Dir="OUT"/>
+		<Port Id="b_P40" Dir="OUT"/>
+		<Port Id="c_P35" Dir="OUT"/>
+		<Port Id="d_P34" Dir="OUT"/>
+		<Port Id="e_P32" Dir="OUT"/>
+		<Port Id="f_P29" Dir="OUT"/>
+		<Port Id="g_P27" Dir="OUT"/>
+		<Port Id="XLXN_923" Dir="OUT"/>
+		<Port Id="XLXN_926" Dir="OUT"/>
+		<Port Id="XLXN_927" Dir="OUT"/>
+		<Port Id="XLXN_928" Dir="OUT"/>
+	</Ifc>
+</Interface>
+

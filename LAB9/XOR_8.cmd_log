@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog XOR_8_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/XOR_8.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym XOR_8 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/XOR_8.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/XOR_8.sym} 

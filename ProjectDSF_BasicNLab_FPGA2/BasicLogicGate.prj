@@ -1,0 +1,5 @@
+vhdl work "MUX4_1_4.vhf"
+vhdl work "encoder8DEC_BIN.vhf"
+vhdl work "decoder.vhf"
+vhdl work "MUX4_1_8.vhf"
+vhdl work "BasicLogicGate.vhf"

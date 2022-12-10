@@ -1,0 +1,63 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Lab09_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.sch} 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+sch2hdl -intstyle ise -family spartan6 -verilog Lab09_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.sch} 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/Lab09.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab09.ucf -p xc6slx9-tqg144-3 "Lab09.ngc" Lab09.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab09_map.ncd Lab09.ngd Lab09.pcf 
+par -w -intstyle ise -ol high -mt off Lab09_map.ncd Lab09.ncd Lab09.pcf 

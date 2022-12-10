@@ -1,0 +1,149 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Main.twx Main.ncd -o Main.twr Main.pcf -ucf Main.ucf
+
+Design file:              Main.ncd
+Physical constraint file: Main.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+State_1        |L0_P82         |    9.073|
+State_1        |P11            |    7.648|
+State_1        |Segment0       |    8.704|
+State_1        |Segment1       |    9.023|
+State_1        |Segment2       |    8.573|
+State_1        |Segment3       |    8.836|
+State_1        |Segment4       |    8.583|
+State_1        |Segment5       |    9.448|
+State_1        |Segment6       |    9.843|
+State_2        |L0_P82         |    8.460|
+State_2        |L1_P81         |   10.825|
+State_2        |P9             |   11.890|
+State_2        |P11            |    7.035|
+State_2        |Segment0       |    9.350|
+State_2        |Segment1       |    9.357|
+State_2        |Segment2       |    8.962|
+State_2        |Segment3       |    9.427|
+State_2        |Segment4       |    8.828|
+State_2        |Segment5       |   10.115|
+State_2        |Segment6       |   10.388|
+State_3        |L0_P82         |    9.251|
+State_3        |L1_P81         |   10.799|
+State_3        |P9             |   11.864|
+State_3        |P11            |    7.826|
+State_3        |Segment0       |    9.324|
+State_3        |Segment1       |    9.331|
+State_3        |Segment2       |    8.936|
+State_3        |Segment3       |    9.401|
+State_3        |Segment4       |    8.802|
+State_3        |Segment5       |   10.089|
+State_3        |Segment6       |   10.362|
+State_4        |L0_P82         |    9.640|
+State_4        |L1_P81         |   11.188|
+State_4        |L2_P80         |    8.778|
+State_4        |P7             |   12.113|
+State_4        |P9             |   12.253|
+State_4        |P11            |    8.215|
+State_4        |Segment0       |    9.713|
+State_4        |Segment1       |    9.720|
+State_4        |Segment2       |    9.325|
+State_4        |Segment3       |    9.790|
+State_4        |Segment4       |    9.191|
+State_4        |Segment5       |   10.478|
+State_4        |Segment6       |   10.751|
+State_5        |L0_P82         |    9.259|
+State_5        |L1_P81         |   10.807|
+State_5        |L2_P80         |    8.667|
+State_5        |P7             |   12.002|
+State_5        |P9             |   11.872|
+State_5        |P11            |    7.834|
+State_5        |Segment0       |    9.332|
+State_5        |Segment1       |    9.339|
+State_5        |Segment2       |    8.944|
+State_5        |Segment3       |    9.409|
+State_5        |Segment4       |    8.810|
+State_5        |Segment5       |   10.097|
+State_5        |Segment6       |   10.422|
+State_6        |L0_P82         |    9.490|
+State_6        |L1_P81         |   11.051|
+State_6        |L2_P80         |    9.289|
+State_6        |P7             |   12.624|
+State_6        |P9             |   12.116|
+State_6        |P11            |    8.065|
+State_6        |Segment0       |    9.580|
+State_6        |Segment1       |    9.689|
+State_6        |Segment2       |    9.429|
+State_6        |Segment3       |    9.653|
+State_6        |Segment4       |    9.054|
+State_6        |Segment5       |   10.483|
+State_6        |Segment6       |   11.044|
+State_7        |L0_P82         |    9.796|
+State_7        |L1_P81         |   11.143|
+State_7        |L2_P80         |    9.321|
+State_7        |P7             |   12.656|
+State_7        |P9             |   12.208|
+State_7        |P11            |    8.371|
+State_7        |Segment0       |    9.668|
+State_7        |Segment1       |    9.746|
+State_7        |Segment2       |    9.461|
+State_7        |Segment3       |    9.745|
+State_7        |Segment4       |    9.306|
+State_7        |Segment5       |   10.515|
+State_7        |Segment6       |   11.076|
+State_8        |L0_P82         |    9.619|
+State_8        |L1_P81         |   11.357|
+State_8        |L2_P80         |    9.293|
+State_8        |L3_P79         |    6.480|
+State_8        |P5             |    9.989|
+State_8        |P7             |   12.628|
+State_8        |P9             |   12.422|
+State_8        |P11            |    8.194|
+State_8        |Segment0       |    9.882|
+State_8        |Segment1       |    9.889|
+State_8        |Segment2       |    9.494|
+State_8        |Segment3       |    9.959|
+State_8        |Segment4       |    9.360|
+State_8        |Segment5       |   10.647|
+State_8        |Segment6       |   11.048|
+---------------+---------------+---------+
+
+
+Analysis completed Sat Dec 10 21:55:13 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

@@ -1,0 +1,9 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Div100k_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100k {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100k {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100k {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100k {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100k {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100k {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100k {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100k {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sym} 

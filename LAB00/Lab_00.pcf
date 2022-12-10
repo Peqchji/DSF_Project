@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Oct 04 14:55:41 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "XLXN_2" LOCATE = SITE "P56" LEVEL 1;
+COMP "XLXN_3" LOCATE = SITE "P57" LEVEL 1;
+COMP "XLXN_4" LOCATE = SITE "P67" LEVEL 1;
+SCHEMATIC END;
+

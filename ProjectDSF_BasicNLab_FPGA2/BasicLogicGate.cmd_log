@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.syr" 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc BasicLogicGate.ucf -p xc6slx9-tqg144-3 "BasicLogicGate.ngc" BasicLogicGate.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o BasicLogicGate_map.ncd BasicLogicGate.ngd BasicLogicGate.pcf 
+par -w -intstyle ise -ol high -mt off BasicLogicGate_map.ncd BasicLogicGate.ncd BasicLogicGate.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml BasicLogicGate.twx BasicLogicGate.ncd -o BasicLogicGate.twr BasicLogicGate.pcf -ucf BasicLogicGate.ucf 
+bitgen -intstyle ise -f BasicLogicGate.ut BasicLogicGate.ncd 

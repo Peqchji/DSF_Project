@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym MUX4_1_4 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/MUX4_1_4.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/MUX4_1_4.sym} 

@@ -1,0 +1,3 @@
+vhdl work "encoder8DEC_BIN.vhf"
+vhdl work "decoder.vhf"
+vhdl work "Main.vhf"

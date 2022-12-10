@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Div16K_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div16K.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Div16K {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div16K.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Div16K.sym} 

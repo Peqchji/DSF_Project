@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -verilog MUX4_1_8_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/MUX4_1_8.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym MUX4_1_8 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/MUX4_1_8.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/MUX4_1_8.sym} 

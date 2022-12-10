@@ -1,0 +1,12 @@
+sch2sym -intstyle ise -family spartan6 -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2hdl -intstyle ise -family spartan6 -verilog HEX_decoder_drc.vf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym HEX_decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/HEX_decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB08/HEX_decoder.sym} 

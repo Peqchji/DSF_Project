@@ -1,0 +1,30 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sun Dec 11 01:11:27 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Digit0" LOCATE = SITE "P44" LEVEL 1;
+COMP "State_1" LOCATE = SITE "P112" LEVEL 1;
+COMP "Digit1" LOCATE = SITE "P43" LEVEL 1;
+COMP "State_2" LOCATE = SITE "P111" LEVEL 1;
+COMP "Digit2" LOCATE = SITE "P33" LEVEL 1;
+COMP "State_3" LOCATE = SITE "P105" LEVEL 1;
+COMP "Digit3" LOCATE = SITE "P30" LEVEL 1;
+COMP "State_4" LOCATE = SITE "P104" LEVEL 1;
+COMP "State_5" LOCATE = SITE "P102" LEVEL 1;
+COMP "State_6" LOCATE = SITE "P101" LEVEL 1;
+COMP "State_7" LOCATE = SITE "P100" LEVEL 1;
+COMP "State_8" LOCATE = SITE "P99" LEVEL 1;
+COMP "SegmentA" LOCATE = SITE "P41" LEVEL 1;
+COMP "SegmentB" LOCATE = SITE "P40" LEVEL 1;
+COMP "SegmentC" LOCATE = SITE "P35" LEVEL 1;
+COMP "SegmentD" LOCATE = SITE "P34" LEVEL 1;
+COMP "SegmentE" LOCATE = SITE "P32" LEVEL 1;
+COMP "SegmentF" LOCATE = SITE "P29" LEVEL 1;
+COMP "SegmentG" LOCATE = SITE "P27" LEVEL 1;
+COMP "SW0" LOCATE = SITE "P66" LEVEL 1;
+COMP "SW1" LOCATE = SITE "P62" LEVEL 1;
+COMP "SW2" LOCATE = SITE "P61" LEVEL 1;
+COMP "CLKin_100Hz" LOCATE = SITE "P45" LEVEL 1;
+SCHEMATIC END;
+

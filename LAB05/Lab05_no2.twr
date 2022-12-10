@@ -1,0 +1,94 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml Lab05_no2.twx Lab05_no2.ncd -o Lab05_no2.twr Lab05_no2.pcf
+-ucf Lab05.ucf
+
+Design file:              Lab05_no2.ncd
+Physical constraint file: Lab05_no2.pcf
+Device,package,speed:     xc6slx9,tqg144,C,-3 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clock_P46
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Toggle_P56  |    0.782(R)|      SLOW  |    0.496(R)|      SLOW  |XLXN_1060         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clock_P46 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+a_P41       |         9.259(R)|      SLOW  |         4.971(R)|      FAST  |XLXN_1060         |   0.000|
+b_P40       |         8.604(R)|      SLOW  |         4.767(R)|      FAST  |XLXN_1060         |   0.000|
+c_P35       |         8.791(R)|      SLOW  |         4.778(R)|      FAST  |XLXN_1060         |   0.000|
+d_P34       |         8.515(R)|      SLOW  |         4.553(R)|      FAST  |XLXN_1060         |   0.000|
+e_P32       |         8.897(R)|      SLOW  |         4.634(R)|      FAST  |XLXN_1060         |   0.000|
+f_P29       |         9.710(R)|      SLOW  |         4.920(R)|      FAST  |XLXN_1060         |   0.000|
+g_P27       |         9.320(R)|      SLOW  |         5.081(R)|      FAST  |XLXN_1060         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clock_P46
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock_P46      |    2.605|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Clock_P47
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock_P47      |    0.867|         |         |         |
+Pin123         |    0.867|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock Pin123
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clock_P47      |    0.867|         |         |         |
+Pin123         |    0.867|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon Oct 03 14:05:39 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4571 MB
+
+
+

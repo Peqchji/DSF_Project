@@ -1,0 +1,198 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : countDown9_0_drc.vf
+// /___/   /\     Timestamp : 11/25/2022 23:31:13
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family spartan6 -verilog countDown9_0_drc.vf -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/moduleForDSF/countDown9_0.sch"
+//Design Name: countDown9_0
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CLED_HXILINX_countDown9_0(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR, D0, D1, D2, D3, L, UP);
+
+   parameter TERMINAL_COUNT_UP = 4'b1111;
+   parameter TERMINAL_COUNT_DOWN = 4'b0000;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+   
+   input 	      C;
+   input 	      CE;
+   input 	      CLR;
+   input              D0;
+   input              D1;
+   input              D2;
+   input              D3;
+   input 	      L;	
+   input 	      UP;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (L)
+	  {Q3, Q2, Q1, Q0} <= {D3, D2, D1, D0};
+	else if (CE)
+	  begin
+	     if (UP)
+	       {Q3, Q2, Q1, Q0} <= {Q3, Q2, Q1, Q0} + 1;
+	     else if (!UP)
+	       {Q3, Q2, Q1, Q0} <= {Q3, Q2, Q1, Q0} - 1;
+	  end
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = CLR ? 1'b0 : ( ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT_UP && UP) || ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT_DOWN && !UP) );
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module ADSU4_HXILINX_countDown9_0 (CO, OFL, S0, S1, S2, S3, A0, A1, A2, A3, ADD, B0, B1, B2, B3, CI);
+
+   output      CO;
+   output      OFL;
+   output      S0;
+   output      S1;
+   output      S2;
+   output      S3;
+
+   input       A0;
+   input       A1;
+   input       A2;
+   input       A3;
+   input       ADD;
+   input       B0;
+   input       B1;
+   input       B2;
+   input       B3;
+   input       CI;
+
+   reg [4:0]   adsu_tmp;
+     
+   always @(A0, A1, A2, A3, ADD, B0, B1, B2, B3, CI) begin
+      
+      if (ADD)
+       	adsu_tmp = {A3, A2, A1, A0} + {B3, B2, B1, B0} + CI;
+      else
+	adsu_tmp = {A3, A2, A1, A0} - (!CI) - {B3, B2, B1, B0};
+      
+   end 
+   
+   assign {S3, S2, S1, S0} = adsu_tmp [3:0];
+   assign CO =  ADD ? adsu_tmp[4] : ~adsu_tmp[4];
+   assign OFL = ADD ? ( (A3 & B3 & (~S3)) | ((~A3) & (~B3) & S3) ) : ( (A3 & (~B3) & (~S3)) | ((~A3) & B3 & S3) );
+   
+endmodule
+`timescale 1ns / 1ps
+
+module countDown9_0(Clear, 
+                    CLK, 
+                    Q0, 
+                    Q1, 
+                    Q2, 
+                    Q3);
+
+    input Clear;
+    input CLK;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   
+   wire O0;
+   wire O1;
+   wire O2;
+   wire O3;
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_17;
+   wire XLXN_22;
+   wire XLXN_29;
+   wire XLXN_30;
+   wire XLXN_31;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_60;
+   wire XLXN_61;
+   wire XLXN_66;
+   wire XLXN_74;
+   
+   (* HU_SET = "XLXI_2_0" *) 
+   CB4CLED_HXILINX_countDown9_0  XLXI_2 (.C(XLXN_66), 
+                                        .CE(XLXN_22), 
+                                        .CLR(XLXN_74), 
+                                        .D0(XLXN_4), 
+                                        .D1(XLXN_3), 
+                                        .D2(XLXN_2), 
+                                        .D3(XLXN_1), 
+                                        .L(XLXN_17), 
+                                        .UP(XLXN_17), 
+                                        .CEO(), 
+                                        .Q0(O0), 
+                                        .Q1(O1), 
+                                        .Q2(O2), 
+                                        .Q3(O3), 
+                                        .TC());
+   GND  XLXI_3 (.G(XLXN_1));
+   GND  XLXI_4 (.G(XLXN_2));
+   GND  XLXI_5 (.G(XLXN_3));
+   GND  XLXI_6 (.G(XLXN_4));
+   GND  XLXI_7 (.G(XLXN_17));
+   VCC  XLXI_8 (.P(XLXN_22));
+   (* HU_SET = "XLXI_9_1" *) 
+   ADSU4_HXILINX_countDown9_0  XLXI_9 (.ADD(XLXN_34), 
+                                      .A0(O0), 
+                                      .A1(O1), 
+                                      .A2(O2), 
+                                      .A3(O3), 
+                                      .B0(XLXN_29), 
+                                      .B1(XLXN_30), 
+                                      .B2(XLXN_31), 
+                                      .B3(XLXN_33), 
+                                      .CI(XLXN_60), 
+                                      .CO(), 
+                                      .OFL(), 
+                                      .S0(Q0), 
+                                      .S1(Q1), 
+                                      .S2(Q2), 
+                                      .S3(Q3));
+   VCC  XLXI_11 (.P(XLXN_30));
+   VCC  XLXI_12 (.P(XLXN_31));
+   GND  XLXI_14 (.G(XLXN_34));
+   BUFH  XLXI_32 (.I(CLK), 
+                 .O(XLXN_66));
+   GND  XLXI_33 (.G(XLXN_33));
+   AND4B2  XLXI_39 (.I0(O0), 
+                   .I1(O3), 
+                   .I2(O1), 
+                   .I3(O2), 
+                   .O(XLXN_61));
+   GND  XLXI_40 (.G(XLXN_60));
+   GND  XLXI_41 (.G(XLXN_29));
+   OR2  XLXI_43 (.I0(Clear), 
+                .I1(XLXN_61), 
+                .O(XLXN_74));
+endmodule

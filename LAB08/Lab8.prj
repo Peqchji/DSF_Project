@@ -1,0 +1,6 @@
+verilog work "COUNTER0_9.vf"
+verilog work "Div100k.vf"
+verilog work "MUX4_1_4.vf"
+verilog work "HEX_decoder.vf"
+verilog work "DIsplay.vf"
+verilog work "Lab8.vf"

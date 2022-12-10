@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl Display_drc.vhf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Display.sch} 
+sch2sym -intstyle ise -family spartan6 -refsym Display {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Display.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab/Display.sym} 
