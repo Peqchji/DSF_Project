@@ -1,0 +1,17 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Buzzer" LOC = P83;
+NET "CLKin_20MHz" LOC = P123;
+NET "Digit0" LOC = P44;
+NET "Digit2" LOC = P33;
+NET "Digit3" LOC = P30;
+NET "Digit1" LOC = P43;
+NET "PB3" LOC = P47;
+NET "SegmentG" LOC = P27;
+NET "SegmentF" LOC = P29;
+NET "SegmentE" LOC = P32;
+NET "SegmentD" LOC = P34;
+NET "SegmentC" LOC = P35;
+NET "SegmentB" LOC = P40;
+NET "SegmentA" LOC = P41;

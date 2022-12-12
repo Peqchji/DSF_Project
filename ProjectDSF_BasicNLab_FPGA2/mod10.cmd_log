@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl mod10_drc.vhf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab02/mod10.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym mod10 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab02/mod10.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/mod10.sym} 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl mod10_drc.vhf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab02/mod10.sch} 
+sch2sym -intstyle ise -family spartan6 -w -refsym mod10 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab02/mod10.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/mod10.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym mod10 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab02/mod10.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/mod10.sym} 

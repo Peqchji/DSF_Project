@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : decoder.vf
-// /___/   /\     Timestamp : 10/12/2022 16:50:58
+// /___/   /\     Timestamp : 12/12/2022 01:59:01
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/decoder.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder.sch"
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/decoder.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/moduleForDSF/decoder.sch"
 //Design Name: decoder
 //Device: spartan6
 //Purpose:

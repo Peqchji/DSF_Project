@@ -63,6 +63,10 @@
         <signal name="L5_P75" />
         <signal name="L6_P74" />
         <signal name="L7_P67" />
+        <signal name="XLXN_121" />
+        <signal name="OSC" />
+        <signal name="XLXN_123" />
+        <signal name="Driver" />
         <port polarity="Input" name="State_7" />
         <port polarity="Input" name="State_8" />
         <port polarity="Output" name="L1_P81" />
@@ -94,6 +98,8 @@
         <port polarity="Output" name="L5_P75" />
         <port polarity="Output" name="L6_P74" />
         <port polarity="Output" name="L7_P67" />
+        <port polarity="Input" name="OSC" />
+        <port polarity="Output" name="Driver" />
         <blockdef name="decoder">
             <timestamp>2022-12-10T13:13:30</timestamp>
             <line x2="384" y1="-416" y2="-416" x1="320" />
@@ -471,6 +477,14 @@
             <blockpin signalname="L4_P78" name="I" />
             <blockpin signalname="L7_P67" name="O" />
         </block>
+        <block symbolname="inv" name="XLXI_54">
+            <blockpin signalname="OSC" name="I" />
+            <blockpin signalname="XLXN_121" name="O" />
+        </block>
+        <block symbolname="inv" name="XLXI_55">
+            <blockpin signalname="XLXN_121" name="I" />
+            <blockpin signalname="Driver" name="O" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="5440">
         <instance x="1632" y="1488" name="XLXI_11" orien="R0">
@@ -771,8 +785,7 @@
             <wire x2="2160" y1="1168" y2="1168" x1="2016" />
             <wire x2="2160" y1="1168" y2="1632" x1="2160" />
             <wire x2="2592" y1="1632" y2="1632" x1="2160" />
-            <wire x2="2160" y1="1632" y2="2112" x1="2160" />
-            <wire x2="2160" y1="2112" y2="2160" x1="2160" />
+            <wire x2="2160" y1="1632" y2="2160" x1="2160" />
             <wire x2="2576" y1="2160" y2="2160" x1="2160" />
             <wire x2="2272" y1="1104" y2="1104" x1="2160" />
             <wire x2="2160" y1="1104" y2="1168" x1="2160" />
@@ -781,8 +794,7 @@
             <wire x2="2224" y1="1040" y2="1040" x1="2016" />
             <wire x2="2224" y1="1040" y2="1568" x1="2224" />
             <wire x2="2592" y1="1568" y2="1568" x1="2224" />
-            <wire x2="2224" y1="1568" y2="2240" x1="2224" />
-            <wire x2="2224" y1="2240" y2="2304" x1="2224" />
+            <wire x2="2224" y1="1568" y2="2304" x1="2224" />
             <wire x2="2576" y1="2304" y2="2304" x1="2224" />
             <wire x2="2272" y1="1040" y2="1040" x1="2224" />
         </branch>
@@ -811,14 +823,13 @@
         <branch name="L4_P78">
             <wire x2="2016" y1="2864" y2="2912" x1="2016" />
             <wire x2="2144" y1="2864" y2="2864" x1="2016" />
-            <wire x2="2192" y1="2864" y2="2864" x1="2144" />
-            <wire x2="2304" y1="2864" y2="2864" x1="2192" />
             <wire x2="2144" y1="2864" y2="2976" x1="2144" />
             <wire x2="2160" y1="2976" y2="2976" x1="2144" />
             <wire x2="2144" y1="2976" y2="3040" x1="2144" />
             <wire x2="2160" y1="3040" y2="3040" x1="2144" />
             <wire x2="2144" y1="3040" y2="3104" x1="2144" />
             <wire x2="2160" y1="3104" y2="3104" x1="2144" />
+            <wire x2="2304" y1="2864" y2="2864" x1="2144" />
         </branch>
         <instance x="2160" y="3008" name="XLXI_51" orien="R0" />
         <instance x="2160" y="3072" name="XLXI_52" orien="R0" />
@@ -835,5 +846,18 @@
         <iomarker fontsize="28" x="2400" y="3040" name="L6_P74" orien="R0" />
         <iomarker fontsize="28" x="2400" y="3104" name="L7_P67" orien="R0" />
         <iomarker fontsize="28" x="2400" y="2976" name="L5_P75" orien="R0" />
+        <branch name="XLXN_121">
+            <wire x2="1424" y1="3648" y2="3648" x1="1392" />
+        </branch>
+        <iomarker fontsize="28" x="1104" y="3648" name="OSC" orien="R180" />
+        <branch name="OSC">
+            <wire x2="1168" y1="3648" y2="3648" x1="1104" />
+        </branch>
+        <instance x="1424" y="3680" name="XLXI_55" orien="R0" />
+        <instance x="1168" y="3680" name="XLXI_54" orien="R0" />
+        <branch name="Driver">
+            <wire x2="1680" y1="3648" y2="3648" x1="1648" />
+        </branch>
+        <iomarker fontsize="28" x="1680" y="3648" name="Driver" orien="R0" />
     </sheet>
 </drawing>

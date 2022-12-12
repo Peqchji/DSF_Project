@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sat Dec 10 21:54:52 2022
+// Written by: Map P.20131013 on Mon Dec 12 22:44:59 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -29,7 +29,9 @@ COMP "State_6" LOCATE = SITE "P61" LEVEL 1;
 COMP "State_7" LOCATE = SITE "P62" LEVEL 1;
 COMP "State_8" LOCATE = SITE "P66" LEVEL 1;
 COMP "L3_P79" LOCATE = SITE "P79" LEVEL 1;
+COMP "P11" LOCATE = SITE "P11" LEVEL 1;
 COMP "L4_P78" LOCATE = SITE "P78" LEVEL 1;
+COMP "Driver" LOCATE = SITE "P23" LEVEL 1;
 COMP "L5_P75" LOCATE = SITE "P75" LEVEL 1;
 COMP "L6_P74" LOCATE = SITE "P74" LEVEL 1;
 COMP "L0_P82" LOCATE = SITE "P82" LEVEL 1;

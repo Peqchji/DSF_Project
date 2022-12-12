@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym counterRandomCir {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/counterRandomCir.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/counterRandomCir.sym} 

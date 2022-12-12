@@ -1,1 +1,3 @@
 MODULE counter0_9
+	SUBMODULE counter0_9
+		INSTANCE XLXI_34

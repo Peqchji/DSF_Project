@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : encoder8DEC_BIN.vhf
--- /___/   /\     Timestamp : 12/11/2022 01:03:48
+-- /___/   /\     Timestamp : 12/13/2022 00:09:15
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/encoder8DEC_BIN.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab/encoder8DEC_BIN.sch"
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/encoder8DEC_BIN.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/encoder8DEC_BIN.sch"
 --Design Name: encoder8DEC_BIN
 --Device: spartan6
 --Purpose:

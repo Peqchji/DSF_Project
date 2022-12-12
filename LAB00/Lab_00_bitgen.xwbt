@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB00\Lab_00.ncd
-OUTFILE=C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB00\Lab_00.bit
-FAMILY=Spartan6
-PART=xc6slx9-3tqg144
-WORKINGDIR=C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF\LAB00
-LICENSE=WebPack
-USER_INFO=__0_0_0

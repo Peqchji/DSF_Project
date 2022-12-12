@@ -9,39 +9,46 @@ INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_
 Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
 start_gui
-source {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/pa.fromHdl.tcl}
-# create_project -name ProjectDSF_BasicNLab_FPGA2 -dir "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/planAhead_run_1" -part xc6slx9tqg144-3
-create_project: Time (s): elapsed = 00:00:06 . Memory (MB): peak = 448.668 ; gain = 30.059
+source {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/pa.fromHdl.tcl}
+# create_project -name ProjectDSF_BasicNLab_FPGA2 -dir "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/planAhead_run_1" -part xc6slx9tqg144-3
+create_project: Time (s): elapsed = 00:00:05 . Memory (MB): peak = 450.645 ; gain = 28.031
 # set_param project.pinAheadLayout yes
 # set srcset [get_property srcset [current_run -impl]]
-# set_property target_constrs_file "BasicLogicGate.ucf" [current_fileset -constrset]
-Adding file 'C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.ucf' to fileset 'constrs_1'
+# set_property target_constrs_file "moduleLab02.ucf" [current_fileset -constrset]
+Adding file 'C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/moduleLab02.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {HEX_decoder.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
 # set hdlfile [add_files [list {MUX4_1_4.vhf}]]
 # set_property file_type VHDL $hdlfile
 # set_property library work $hdlfile
-# set hdlfile [add_files [list {encoder8DEC_BIN.vhf}]]
+# set hdlfile [add_files [list {mod10.vhf}]]
 # set_property file_type VHDL $hdlfile
 # set_property library work $hdlfile
-# set hdlfile [add_files [list {decoder.vhf}]]
+# set hdlfile [add_files [list {DIsplay.vhf}]]
 # set_property file_type VHDL $hdlfile
 # set_property library work $hdlfile
-# set hdlfile [add_files [list {MUX4_1_8.vhf}]]
+# set hdlfile [add_files [list {COUNTER0_9.vhf}]]
 # set_property file_type VHDL $hdlfile
 # set_property library work $hdlfile
-# set hdlfile [add_files [list {BasicLogicGate.vhf}]]
+# set hdlfile [add_files [list {ADJCLK.vhf}]]
 # set_property file_type VHDL $hdlfile
 # set_property library work $hdlfile
-# set_property top BasicLogicGate $srcset
-# add_files [list {BasicLogicGate.ucf}] -fileset [get_property constrset [current_run]]
+# set hdlfile [add_files [list {moduleLab02.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top moduleLab02 $srcset
+# add_files [list {moduleLab02.ucf}] -fileset [get_property constrset [current_run]]
 # open_rtl_design -part xc6slx9tqg144-3
 Using Verific elaboration
 Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
 Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
-Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/MUX4_1_4.vhf" into library work
-Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/MUX4_1_8.vhf" into library work
-Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/encoder8DEC_BIN.vhf" into library work
-Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/decoder.vhf" into library work
-Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.vhf" into library work
+Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/MUX4_1_4.vhf" into library work
+Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/HEX_decoder.vhf" into library work
+Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/DIsplay.vhf" into library work
+Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/COUNTER0_9.vhf" into library work
+Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/ADJCLK.vhf" into library work
+Parsing VHDL file "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/moduleLab02.vhf" into library work
 Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
 Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
 Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/PinFunctions.xml...
@@ -49,27 +56,28 @@ Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/
 Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/IOStandards.xml
 Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan6/ConfigModes.xml
 Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan6/drc.xml
-Parsing UCF File [C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.ucf]
-Finished Parsing UCF File [C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.ucf]
+Parsing UCF File [C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/moduleLab02.ucf]
+Finished Parsing UCF File [C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/moduleLab02.ucf]
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Phase 0 | Netlist Checksum: 3cd1c0ba
-open_rtl_design: Time (s): elapsed = 00:00:20 . Memory (MB): peak = 556.113 ; gain = 92.035
+Phase 0 | Netlist Checksum: 86601052
+open_rtl_design: Time (s): elapsed = 00:00:18 . Memory (MB): peak = 568.422 ; gain = 102.719
 update_compile_order -fileset sim_1
 startgroup
-set_property package_pin P45 [get_ports Digit0]
-endgroup
-set_property package_pin "" [get_ports [list  Digit1]]
-set_property package_pin "" [get_ports [list  CLKin_100Hz]]
-startgroup
-set_property package_pin P44 [get_ports Digit0]
+set_property package_pin P123 [get_ports CLKin_20MHz]
 endgroup
 startgroup
-set_property package_pin P45 [get_ports CLKin_100Hz]
+set_property package_pin P48 [get_ports CLKin_100Hz]
 endgroup
 startgroup
-set_property package_pin P43 [get_ports Digit1]
+set_property package_pin P40 [get_ports Digit0]
+endgroup
+startgroup
+set_property package_pin P44 [get_ports Digit1]
+endgroup
+startgroup
+set_property package_pin P43 [get_ports Digit0]
 endgroup
 startgroup
 set_property package_pin P33 [get_ports Digit2]
@@ -99,41 +107,31 @@ startgroup
 set_property package_pin P27 [get_ports SegmentG]
 endgroup
 startgroup
-set_property package_pin P112 [get_ports State_1]
+set_property package_pin P55 [get_ports State_1]
 endgroup
 startgroup
-set_property package_pin P111 [get_ports State_2]
+set_property package_pin P56 [get_ports State_2]
 endgroup
 startgroup
-set_property package_pin P105 [get_ports State_3]
+set_property package_pin P57 [get_ports State_3]
 endgroup
 startgroup
-set_property package_pin P104 [get_ports State_4]
+set_property package_pin P58 [get_ports State_4]
 endgroup
 startgroup
-set_property package_pin P102 [get_ports State_5]
+set_property package_pin P59 [get_ports State_5]
 endgroup
 startgroup
-set_property package_pin P101 [get_ports State_6]
+set_property package_pin P61 [get_ports State_6]
 endgroup
 startgroup
-set_property package_pin P100 [get_ports State_7]
+set_property package_pin P62 [get_ports State_7]
 endgroup
 startgroup
-set_property package_pin P99 [get_ports State_8]
-endgroup
-startgroup
-set_property package_pin P66 [get_ports SW0]
-endgroup
-startgroup
-set_property package_pin P62 [get_ports SW1]
-endgroup
-save_constraints
-startgroup
-set_property package_pin P61 [get_ports SW2]
+set_property package_pin P66 [get_ports State_8]
 endgroup
 save_constraints
 exit
 ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
-INFO: [Common 17-206] Exiting PlanAhead at Sun Dec 11 01:09:13 2022...
+INFO: [Common 17-206] Exiting PlanAhead at Sun Dec 11 21:19:24 2022...
 INFO: [Common 17-83] Releasing license: PlanAhead

@@ -41,3 +41,47 @@ map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -reg
 par -w -intstyle ise -ol high -mt off Lab05_no2_map.ncd Lab05_no2.ncd Lab05_no2.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab05_no2.twx Lab05_no2.ncd -o Lab05_no2.twr Lab05_no2.pcf -ucf Lab05.ucf 
 bitgen -intstyle ise -f Lab05_no2.ut Lab05_no2.ncd 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab05.ucf -p xc6slx9-tqg144-3 "Lab05_no2.ngc" Lab05_no2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab05_no2_map.ncd Lab05_no2.ngd Lab05_no2.pcf 
+par -w -intstyle ise -ol high -mt off Lab05_no2_map.ncd Lab05_no2.ncd Lab05_no2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab05_no2.twx Lab05_no2.ncd -o Lab05_no2.twr Lab05_no2.pcf -ucf Lab05.ucf 
+bitgen -intstyle ise -f Lab05_no2.ut Lab05_no2.ncd 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab05.ucf -p xc6slx9-tqg144-3 "Lab05_no2.ngc" Lab05_no2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab05_no2_map.ncd Lab05_no2.ngd Lab05_no2.pcf 
+par -w -intstyle ise -ol high -mt off Lab05_no2_map.ncd Lab05_no2.ncd Lab05_no2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab05_no2.twx Lab05_no2.ncd -o Lab05_no2.twr Lab05_no2.pcf -ucf Lab05.ucf 
+bitgen -intstyle ise -f Lab05_no2.ut Lab05_no2.ncd 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab05.ucf -p xc6slx9-tqg144-3 "Lab05_no2.ngc" Lab05_no2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab05_no2_map.ncd Lab05_no2.ngd Lab05_no2.pcf 
+par -w -intstyle ise -ol high -mt off Lab05_no2_map.ncd Lab05_no2.ncd Lab05_no2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab05_no2.twx Lab05_no2.ncd -o Lab05_no2.twr Lab05_no2.pcf -ucf Lab05.ucf 
+bitgen -intstyle ise -f Lab05_no2.ut Lab05_no2.ncd 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab05.ucf -p xc6slx9-tqg144-3 "Lab05_no2.ngc" Lab05_no2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab05_no2_map.ncd Lab05_no2.ngd Lab05_no2.pcf 
+par -w -intstyle ise -ol high -mt off Lab05_no2_map.ncd Lab05_no2.ncd Lab05_no2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab05_no2.twx Lab05_no2.ncd -o Lab05_no2.twr Lab05_no2.pcf -ucf Lab05.ucf 
+bitgen -intstyle ise -f Lab05_no2.ut Lab05_no2.ncd 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab05.ucf -p xc6slx9-tqg144-3 "Lab05_no2.ngc" Lab05_no2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab05.ucf -p xc6slx9-tqg144-3 "Lab05_no2.ngc" Lab05_no2.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab05.ucf -p xc6slx9-tqg144-3 "Lab05_no2.ngc" Lab05_no2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab05_no2_map.ncd Lab05_no2.ngd Lab05_no2.pcf 
+par -w -intstyle ise -ol high -mt off Lab05_no2_map.ncd Lab05_no2.ncd Lab05_no2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab05_no2.twx Lab05_no2.ncd -o Lab05_no2.twr Lab05_no2.pcf -ucf Lab05.ucf 
+bitgen -intstyle ise -f Lab05_no2.ut Lab05_no2.ncd 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab05.ucf -p xc6slx9-tqg144-3 "Lab05_no2.ngc" Lab05_no2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab05_no2_map.ncd Lab05_no2.ngd Lab05_no2.pcf 
+par -w -intstyle ise -ol high -mt off Lab05_no2_map.ncd Lab05_no2.ncd Lab05_no2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab05_no2.twx Lab05_no2.ncd -o Lab05_no2.twr Lab05_no2.pcf -ucf Lab05.ucf 
+bitgen -intstyle ise -f Lab05_no2.ut Lab05_no2.ncd 
+xst -intstyle ise -ifn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.xst" -ofn "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab05.ucf -p xc6slx9-tqg144-3 "Lab05_no2.ngc" Lab05_no2.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab05_no2_map.ncd Lab05_no2.ngd Lab05_no2.pcf 
+par -w -intstyle ise -ol high -mt off Lab05_no2_map.ncd Lab05_no2.ncd Lab05_no2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab05_no2.twx Lab05_no2.ncd -o Lab05_no2.twr Lab05_no2.pcf -ucf Lab05.ucf 
+bitgen -intstyle ise -f Lab05_no2.ut Lab05_no2.ncd 

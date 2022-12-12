@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : BasicLogicGate.vhf
--- /___/   /\     Timestamp : 12/11/2022 01:10:02
+-- /___/   /\     Timestamp : 12/13/2022 00:09:17
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.sch"
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/BasicLogicGate.sch"
 --Design Name: BasicLogicGate
 --Device: spartan6
 --Purpose:
@@ -200,80 +200,70 @@ entity BasicLogicGate is
           SW0         : in    std_logic; 
           SW1         : in    std_logic; 
           SW2         : in    std_logic; 
-          Digit0      : out   std_logic; 
-          Digit1      : out   std_logic; 
-          Digit2      : out   std_logic; 
-          Digit3      : out   std_logic; 
-          SegmentA    : out   std_logic; 
-          SegmentB    : out   std_logic; 
-          SegmentC    : out   std_logic; 
-          SegmentD    : out   std_logic; 
-          SegmentE    : out   std_logic; 
-          SegmentF    : out   std_logic; 
-          SegmentG    : out   std_logic);
+          Digit       : out   std_logic_vector (3 downto 0); 
+          Segment     : out   std_logic_vector (6 downto 0));
 end BasicLogicGate;
 
 architecture BEHAVIORAL of BasicLogicGate is
-   attribute BOX_TYPE    : string ;
-   attribute HU_SET      : string ;
-   signal ABCD         : std_logic_vector (3 downto 0);
-   signal EFG          : std_logic_vector (3 downto 0);
-   signal HiLo         : std_logic_vector (7 downto 0);
-   signal Mode         : std_logic_vector (7 downto 0);
-   signal NotUse1      : std_logic_vector (7 downto 0);
-   signal NotUse2      : std_logic_vector (7 downto 0);
-   signal XLXN_1       : std_logic;
-   signal XLXN_2       : std_logic;
-   signal XLXN_3       : std_logic;
-   signal XLXN_4       : std_logic;
-   signal XLXN_5       : std_logic;
-   signal XLXN_6       : std_logic;
-   signal XLXN_7       : std_logic;
-   signal XLXN_35      : std_logic;
-   signal XLXN_40      : std_logic;
-   signal XLXN_41      : std_logic;
-   signal XLXN_42      : std_logic;
-   signal XLXN_68      : std_logic;
-   signal XLXN_69      : std_logic;
-   signal XLXN_70      : std_logic;
-   signal XLXN_71      : std_logic;
-   signal XLXN_72      : std_logic;
-   signal XLXN_73      : std_logic;
-   signal XLXN_74      : std_logic;
-   signal XLXN_135     : std_logic;
-   signal XLXN_139     : std_logic;
-   signal XLXN_186     : std_logic;
-   signal XLXN_188     : std_logic;
-   signal XLXN_190     : std_logic;
-   signal XLXN_191     : std_logic;
-   signal XLXN_196     : std_logic;
-   signal XLXN_197     : std_logic;
-   signal XLXN_201     : std_logic;
-   signal XLXN_214     : std_logic;
-   signal XLXN_220     : std_logic;
-   signal XLXN_221     : std_logic;
-   signal XLXN_222     : std_logic;
-   signal XLXN_223     : std_logic;
-   signal XLXN_224     : std_logic;
-   signal XLXN_225     : std_logic;
-   signal XLXN_226     : std_logic;
-   signal XLXN_227     : std_logic;
-   signal XLXN_251     : std_logic;
-   signal XLXN_252     : std_logic;
-   signal XLXN_253     : std_logic;
-   signal XLXN_254     : std_logic;
-   signal XLXN_292     : std_logic;
-   signal XLXN_328     : std_logic;
-   signal XLXN_330     : std_logic;
-   signal XLXN_334     : std_logic;
-   signal XLXN_335     : std_logic;
-   signal XLXN_336     : std_logic;
-   signal XLXN_337     : std_logic;
-   signal XLXN_338     : std_logic;
-   signal XLXN_339     : std_logic;
-   signal XLXN_340     : std_logic;
-   signal XLXN_417     : std_logic;
-   signal Digit0_DUMMY : std_logic;
+   attribute BOX_TYPE   : string ;
+   attribute HU_SET     : string ;
+   signal ABCD        : std_logic_vector (3 downto 0);
+   signal EFG         : std_logic_vector (3 downto 0);
+   signal HiLo        : std_logic_vector (7 downto 0);
+   signal Mode        : std_logic_vector (7 downto 0);
+   signal NotUse1     : std_logic_vector (7 downto 0);
+   signal NotUse2     : std_logic_vector (7 downto 0);
+   signal XLXN_1      : std_logic;
+   signal XLXN_2      : std_logic;
+   signal XLXN_3      : std_logic;
+   signal XLXN_4      : std_logic;
+   signal XLXN_5      : std_logic;
+   signal XLXN_6      : std_logic;
+   signal XLXN_7      : std_logic;
+   signal XLXN_35     : std_logic;
+   signal XLXN_40     : std_logic;
+   signal XLXN_41     : std_logic;
+   signal XLXN_42     : std_logic;
+   signal XLXN_68     : std_logic;
+   signal XLXN_69     : std_logic;
+   signal XLXN_70     : std_logic;
+   signal XLXN_71     : std_logic;
+   signal XLXN_72     : std_logic;
+   signal XLXN_73     : std_logic;
+   signal XLXN_74     : std_logic;
+   signal XLXN_135    : std_logic;
+   signal XLXN_139    : std_logic;
+   signal XLXN_186    : std_logic;
+   signal XLXN_188    : std_logic;
+   signal XLXN_190    : std_logic;
+   signal XLXN_191    : std_logic;
+   signal XLXN_196    : std_logic;
+   signal XLXN_197    : std_logic;
+   signal XLXN_201    : std_logic;
+   signal XLXN_214    : std_logic;
+   signal XLXN_220    : std_logic;
+   signal XLXN_221    : std_logic;
+   signal XLXN_222    : std_logic;
+   signal XLXN_223    : std_logic;
+   signal XLXN_224    : std_logic;
+   signal XLXN_225    : std_logic;
+   signal XLXN_226    : std_logic;
+   signal XLXN_227    : std_logic;
+   signal XLXN_251    : std_logic;
+   signal XLXN_252    : std_logic;
+   signal XLXN_253    : std_logic;
+   signal XLXN_254    : std_logic;
+   signal XLXN_292    : std_logic;
+   signal XLXN_328    : std_logic;
+   signal XLXN_330    : std_logic;
+   signal XLXN_334    : std_logic;
+   signal XLXN_335    : std_logic;
+   signal XLXN_336    : std_logic;
+   signal XLXN_337    : std_logic;
+   signal XLXN_338    : std_logic;
+   signal XLXN_339    : std_logic;
+   signal XLXN_340    : std_logic;
+   signal XLXN_425    : std_logic;
    component AND4B3
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -484,22 +474,15 @@ architecture BEHAVIORAL of BasicLogicGate is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   component BUFH
-      port ( I : in    std_logic; 
-             O : out   std_logic);
-   end component;
-   attribute BOX_TYPE of BUFH : component is "BLACK_BOX";
-   
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_0";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_1";
-   attribute HU_SET of XLXI_26 : label is "XLXI_26_2";
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_3";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_4";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_5";
-   attribute HU_SET of XLXI_92 : label is "XLXI_92_6";
-   attribute HU_SET of XLXI_98 : label is "XLXI_98_7";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_100";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_101";
+   attribute HU_SET of XLXI_26 : label is "XLXI_26_102";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_103";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_104";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_105";
+   attribute HU_SET of XLXI_92 : label is "XLXI_92_106";
+   attribute HU_SET of XLXI_98 : label is "XLXI_98_107";
 begin
-   Digit0 <= Digit0_DUMMY;
    XLXI_3 : AND4B3
       port map (I0=>State_8,
                 I1=>State_7,
@@ -740,20 +723,20 @@ begin
                 N1(7 downto 0)=>Mode(7 downto 0),
                 N2(7 downto 0)=>NotUse1(7 downto 0),
                 N3(7 downto 0)=>NotUse2(7 downto 0),
-                Sel0=>Digit0_DUMMY,
+                Sel0=>XLXN_425,
                 Sel1=>XLXN_292,
                 Q3_0(3 downto 0)=>ABCD(3 downto 0),
                 Q7_4(3 downto 0)=>EFG(3 downto 0));
    
    XLXI_98 : FTC_HXILINX_BasicLogicGate
-      port map (C=>XLXN_417,
+      port map (C=>CLKin_100Hz,
                 CLR=>XLXN_135,
                 T=>XLXN_139,
-                Q=>Digit0_DUMMY);
+                Q=>XLXN_425);
    
    XLXI_105 : INV
-      port map (I=>Digit0_DUMMY,
-                O=>Digit1);
+      port map (I=>XLXN_425,
+                O=>Digit(1));
    
    XLXI_116 : GND
       port map (G=>XLXN_292);
@@ -799,31 +782,31 @@ begin
    
    XLXI_128 : BUF
       port map (I=>EFG(2),
-                O=>SegmentG);
+                O=>Segment(6));
    
    XLXI_129 : BUF
       port map (I=>EFG(1),
-                O=>SegmentF);
+                O=>Segment(5));
    
    XLXI_130 : BUF
       port map (I=>EFG(0),
-                O=>SegmentE);
+                O=>Segment(4));
    
    XLXI_141 : BUF
       port map (I=>ABCD(3),
-                O=>SegmentD);
+                O=>Segment(3));
    
    XLXI_142 : BUF
       port map (I=>ABCD(2),
-                O=>SegmentC);
+                O=>Segment(2));
    
    XLXI_143 : BUF
       port map (I=>ABCD(1),
-                O=>SegmentB);
+                O=>Segment(1));
    
    XLXI_144 : BUF
       port map (I=>ABCD(0),
-                O=>SegmentA);
+                O=>Segment(0));
    
    XLXI_145 : GND
       port map (G=>NotUse1(0));
@@ -873,15 +856,15 @@ begin
    XLXI_168 : GND
       port map (G=>NotUse2(6));
    
-   XLXI_169 : BUFH
-      port map (I=>CLKin_100Hz,
-                O=>XLXN_417);
-   
    XLXI_174 : VCC
-      port map (P=>Digit2);
+      port map (P=>Digit(2));
    
    XLXI_175 : VCC
-      port map (P=>Digit3);
+      port map (P=>Digit(3));
+   
+   XLXI_176 : BUF
+      port map (I=>XLXN_425,
+                O=>Digit(0));
    
 end BEHAVIORAL;
 

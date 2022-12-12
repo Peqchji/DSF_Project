@@ -1,2 +1,5 @@
-verilog work "mod10.vf"
+verilog work "COUNTER0_9.vf"
+verilog work "Div200.vf"
+verilog work "Div100k.vf"
 verilog work "Lab05_no2.vf"
+verilog work "mod10.vf"

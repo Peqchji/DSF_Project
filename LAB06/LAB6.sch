@@ -30,6 +30,8 @@
         <signal name="common3" />
         <signal name="common2" />
         <signal name="XLXN_45" />
+        <signal name="XLXN_46" />
+        <signal name="XLXN_47" />
         <port polarity="Input" name="OSC" />
         <port polarity="Input" name="button" />
         <port polarity="Output" name="buzzer" />
@@ -54,45 +56,8 @@
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
         </blockdef>
-        <blockdef name="Display">
-            <timestamp>2022-10-12T9:22:51</timestamp>
-            <rect width="256" x="64" y="-512" height="512" />
-            <line x2="0" y1="-480" y2="-480" x1="64" />
-            <line x2="0" y1="-400" y2="-400" x1="64" />
-            <rect width="64" x="0" y="-332" height="24" />
-            <line x2="0" y1="-320" y2="-320" x1="64" />
-            <rect width="64" x="0" y="-252" height="24" />
-            <line x2="0" y1="-240" y2="-240" x1="64" />
-            <rect width="64" x="0" y="-172" height="24" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <rect width="64" x="0" y="-92" height="24" />
-            <line x2="0" y1="-80" y2="-80" x1="64" />
-            <rect width="64" x="320" y="-492" height="24" />
-            <line x2="384" y1="-480" y2="-480" x1="320" />
-            <line x2="384" y1="-416" y2="-416" x1="320" />
-            <line x2="384" y1="-352" y2="-352" x1="320" />
-            <line x2="384" y1="-288" y2="-288" x1="320" />
-            <line x2="384" y1="-224" y2="-224" x1="320" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
-        <blockdef name="counter">
-            <timestamp>2022-10-11T17:50:47</timestamp>
-            <rect width="320" x="64" y="-256" height="256" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="384" y="-236" height="24" />
-            <line x2="448" y1="-224" y2="-224" x1="384" />
-            <rect width="64" x="384" y="-172" height="24" />
-            <line x2="448" y1="-160" y2="-160" x1="384" />
-            <rect width="64" x="384" y="-108" height="24" />
-            <line x2="448" y1="-96" y2="-96" x1="384" />
-            <rect width="64" x="384" y="-44" height="24" />
-            <line x2="448" y1="-32" y2="-32" x1="384" />
-        </blockdef>
         <blockdef name="Div1M">
-            <timestamp>2022-10-12T9:49:41</timestamp>
+            <timestamp>2022-12-11T18:41:2</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
@@ -120,14 +85,43 @@
             <line x2="64" y1="0" y2="-32" x1="64" />
             <line x2="32" y1="-64" y2="-64" x1="96" />
         </blockdef>
-        <block symbolname="counter" name="XLXI_53">
-            <blockpin signalname="button" name="start" />
-            <blockpin signalname="OSC" name="C_CLK" />
-            <blockpin signalname="XLXN_28(3:0)" name="normalcounter10(3:0)" />
-            <blockpin signalname="XLXN_29(3:0)" name="normalcounter1(3:0)" />
-            <blockpin signalname="XLXN_31(3:0)" name="random10(3:0)" />
-            <blockpin signalname="XLXN_32(3:0)" name="random1(3:0)" />
-        </block>
+        <blockdef name="counterRandomCir">
+            <timestamp>2022-12-11T18:5:17</timestamp>
+            <rect width="320" x="64" y="-256" height="256" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="384" y="-236" height="24" />
+            <line x2="448" y1="-224" y2="-224" x1="384" />
+            <rect width="64" x="384" y="-172" height="24" />
+            <line x2="448" y1="-160" y2="-160" x1="384" />
+            <rect width="64" x="384" y="-108" height="24" />
+            <line x2="448" y1="-96" y2="-96" x1="384" />
+            <rect width="64" x="384" y="-44" height="24" />
+            <line x2="448" y1="-32" y2="-32" x1="384" />
+        </blockdef>
+        <blockdef name="DisplayRandomCir">
+            <timestamp>2022-12-11T18:5:26</timestamp>
+            <rect width="256" x="64" y="-512" height="512" />
+            <line x2="0" y1="-480" y2="-480" x1="64" />
+            <line x2="0" y1="-400" y2="-400" x1="64" />
+            <rect width="64" x="0" y="-332" height="24" />
+            <line x2="0" y1="-320" y2="-320" x1="64" />
+            <rect width="64" x="0" y="-252" height="24" />
+            <line x2="0" y1="-240" y2="-240" x1="64" />
+            <rect width="64" x="0" y="-172" height="24" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-92" height="24" />
+            <line x2="0" y1="-80" y2="-80" x1="64" />
+            <rect width="64" x="320" y="-492" height="24" />
+            <line x2="384" y1="-480" y2="-480" x1="320" />
+            <line x2="384" y1="-416" y2="-416" x1="320" />
+            <line x2="384" y1="-352" y2="-352" x1="320" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="Div1M" name="XLXI_55">
             <blockpin signalname="OSC" name="In_CLK" />
             <blockpin signalname="XLXN_22" name="Out_CLK" />
@@ -141,22 +135,6 @@
             <blockpin signalname="XLXN_31(3:0)" name="Var2(3:0)" />
             <blockpin signalname="XLXN_32(3:0)" name="Var1(3:0)" />
             <blockpin signalname="buzzer" name="results" />
-        </block>
-        <block symbolname="Display" name="XLXI_59">
-            <blockpin signalname="XLXN_22" name="Scanclk" />
-            <blockpin signalname="button" name="control" />
-            <blockpin signalname="XLXN_28(3:0)" name="Nctr10(3:0)" />
-            <blockpin signalname="XLXN_29(3:0)" name="Nctr1(3:0)" />
-            <blockpin signalname="XLXN_31(3:0)" name="rand10(3:0)" />
-            <blockpin signalname="XLXN_32(3:0)" name="rand1(3:0)" />
-            <blockpin signalname="Digit(1:0)" name="Digit(1:0)" />
-            <blockpin signalname="g_P27" name="g" />
-            <blockpin signalname="f_P29" name="f" />
-            <blockpin signalname="e_P32" name="e" />
-            <blockpin signalname="d_P34" name="d" />
-            <blockpin signalname="c_P35" name="c" />
-            <blockpin signalname="b_P40" name="b" />
-            <blockpin signalname="a_P41" name="a" />
         </block>
         <block symbolname="buf" name="XLXI_60">
             <blockpin signalname="Digit(0)" name="I" />
@@ -176,12 +154,34 @@
             <blockpin signalname="XLXN_45" name="I" />
             <blockpin signalname="common0" name="O" />
         </block>
+        <block symbolname="counterRandomCir" name="XLXI_65">
+            <blockpin signalname="button" name="start" />
+            <blockpin signalname="OSC" name="C_CLK" />
+            <blockpin signalname="XLXN_28(3:0)" name="normalcounter10(3:0)" />
+            <blockpin signalname="XLXN_29(3:0)" name="normalcounter1(3:0)" />
+            <blockpin signalname="XLXN_31(3:0)" name="random10(3:0)" />
+            <blockpin signalname="XLXN_32(3:0)" name="random1(3:0)" />
+        </block>
+        <block symbolname="DisplayRandomCir" name="XLXI_66">
+            <blockpin signalname="XLXN_22" name="Scanclk" />
+            <blockpin signalname="button" name="control" />
+            <blockpin signalname="XLXN_28(3:0)" name="Nctr10(3:0)" />
+            <blockpin signalname="XLXN_29(3:0)" name="Nctr1(3:0)" />
+            <blockpin signalname="XLXN_31(3:0)" name="rand10(3:0)" />
+            <blockpin signalname="XLXN_32(3:0)" name="rand1(3:0)" />
+            <blockpin signalname="Digit(1:0)" name="Digit(1:0)" />
+            <blockpin signalname="g_P27" name="g" />
+            <blockpin signalname="f_P29" name="f" />
+            <blockpin signalname="e_P32" name="e" />
+            <blockpin signalname="d_P34" name="d" />
+            <blockpin signalname="c_P35" name="c" />
+            <blockpin signalname="b_P40" name="b" />
+            <blockpin signalname="a_P41" name="a" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="2720" height="1760">
         <attr value="Inch" name="LengthUnitName" />
         <attr value="10" name="GridsPerUnit" />
-        <instance x="464" y="624" name="XLXI_53" orien="R0">
-        </instance>
         <instance x="560" y="848" name="XLXI_55" orien="R0">
         </instance>
         <branch name="button">
@@ -211,8 +211,6 @@
             <wire x2="2144" y1="400" y2="400" x1="1808" />
         </branch>
         <iomarker fontsize="28" x="2144" y="400" name="buzzer" orien="R0" />
-        <instance x="1440" y="1296" name="XLXI_59" orien="R0">
-        </instance>
         <branch name="XLXN_22">
             <wire x2="1440" y1="816" y2="816" x1="944" />
         </branch>
@@ -303,18 +301,19 @@
             <wire x2="2256" y1="1648" y2="1648" x1="2144" />
         </branch>
         <iomarker fontsize="28" x="2256" y="1648" name="common2" orien="R0" />
-        <iomarker fontsize="28" x="2576" y="816" name="common0" orien="R0" />
         <iomarker fontsize="28" x="2576" y="672" name="common1" orien="R0" />
-        <branch name="common0">
-            <wire x2="2528" y1="752" y2="816" x1="2528" />
-            <wire x2="2576" y1="816" y2="816" x1="2528" />
-            <wire x2="2560" y1="752" y2="752" x1="2528" />
-            <wire x2="2560" y1="752" y2="864" x1="2560" />
-            <wire x2="2656" y1="864" y2="864" x1="2560" />
-            <wire x2="2656" y1="864" y2="928" x1="2656" />
-            <wire x2="2656" y1="928" y2="928" x1="2592" />
-        </branch>
         <instance x="2368" y="960" name="XLXI_64" orien="R0" />
+        <instance x="464" y="624" name="XLXI_65" orien="R0">
+        </instance>
+        <instance x="1440" y="1296" name="XLXI_66" orien="R0">
+        </instance>
+        <branch name="common0">
+            <wire x2="2576" y1="800" y2="800" x1="2496" />
+            <wire x2="2496" y1="800" y2="880" x1="2496" />
+            <wire x2="2608" y1="880" y2="880" x1="2496" />
+            <wire x2="2608" y1="880" y2="928" x1="2608" />
+            <wire x2="2608" y1="928" y2="928" x1="2592" />
+        </branch>
         <branch name="XLXN_45">
             <wire x2="2304" y1="864" y2="928" x1="2304" />
             <wire x2="2368" y1="928" y2="928" x1="2304" />
@@ -322,5 +321,6 @@
             <wire x2="2464" y1="816" y2="816" x1="2400" />
             <wire x2="2464" y1="816" y2="864" x1="2464" />
         </branch>
+        <iomarker fontsize="28" x="2576" y="800" name="common0" orien="R0" />
     </sheet>
 </drawing>

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : decoder.vhf
--- /___/   /\     Timestamp : 12/10/2022 21:05:54
+-- /___/   /\     Timestamp : 12/12/2022 19:30:13
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab/decoder.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/BCDTo7seg/decoder/decoder.sch"
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/decoder.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/BCDTo7seg/decoder/decoder.sch"
 --Design Name: decoder
 --Device: spartan6
 --Purpose:

@@ -7,17 +7,41 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Lab05_no2.vf
-// /___/   /\     Timestamp : 09/19/2022 18:32:11
+// /___/   /\     Timestamp : 12/11/2022 19:18:10
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/LAB5/Lab05_no2.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/LAB5/Lab05_no2.sch"
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB05/Lab05_no2.sch"
 //Design Name: Lab05_no2
 //Device: spartan6
 //Purpose:
 //    This verilog netlist is translated from an ECS schematic.It can be 
 //    synthesized and simulated, but it should not be modified. 
 //
+`timescale 100 ps / 10 ps
+
+module FTC_HXILINX_Lab05_no2(Q, C, CLR, T);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              T;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+  
+   
+ 
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else if(T)
+          Q <= !Q;
+     end
+   
+endmodule
 `timescale 100 ps / 10 ps
 
 module FJKC_HXILINX_Lab05_no2(Q, C, CLR, J, K);
@@ -57,60 +81,9 @@ module FJKC_HXILINX_Lab05_no2(Q, C, CLR, J, K);
 endmodule
 `timescale 1ns / 1ps
 
-module mod10_MUSER_Lab05_no2(P123, 
-                             XLXN_8, 
-                             XLXN_19);
-
-    input P123;
-   output XLXN_8;
-   output XLXN_19;
-   
-   wire XLXN_1;
-   wire XLXN_2;
-   wire XLXN_3;
-   wire XLXN_4;
-   wire XLXN_5;
-   wire XLXN_6;
-   wire XLXN_9;
-   wire XLXN_19_DUMMY;
-   wire XLXN_8_DUMMY;
-   
-   assign XLXN_8 = XLXN_8_DUMMY;
-   assign XLXN_19 = XLXN_19_DUMMY;
-   INV  XLXI_1 (.I(XLXN_1), 
-               .O(XLXN_9));
-   INV  XLXI_2 (.I(XLXN_3), 
-               .O(XLXN_2));
-   INV  XLXI_3 (.I(XLXN_5), 
-               .O(XLXN_4));
-   INV  XLXI_4 (.I(XLXN_8_DUMMY), 
-               .O(XLXN_6));
-   AND2  XLXI_11 (.I0(XLXN_3), 
-                 .I1(XLXN_8_DUMMY), 
-                 .O(XLXN_19_DUMMY));
-   FDC  XLXI_12 (.C(P123), 
-                .CLR(XLXN_19_DUMMY), 
-                .D(XLXN_9), 
-                .Q(XLXN_1));
-   FDC  XLXI_14 (.C(XLXN_9), 
-                .CLR(XLXN_19_DUMMY), 
-                .D(XLXN_2), 
-                .Q(XLXN_3));
-   FDC  XLXI_15 (.C(XLXN_2), 
-                .CLR(XLXN_19_DUMMY), 
-                .D(XLXN_4), 
-                .Q(XLXN_5));
-   FDC  XLXI_16 (.C(XLXN_4), 
-                .CLR(XLXN_19_DUMMY), 
-                .D(XLXN_6), 
-                .Q(XLXN_8_DUMMY));
-endmodule
-`timescale 1ns / 1ps
-
 module Lab05_no2(Clock_P46, 
                  Clock_P47, 
                  Pin123, 
-                 Toggle_P56, 
                  a_P41, 
                  b_P40, 
                  c_P35, 
@@ -126,7 +99,6 @@ module Lab05_no2(Clock_P46,
     input Clock_P46;
     input Clock_P47;
     input Pin123;
-    input Toggle_P56;
    output a_P41;
    output b_P40;
    output c_P35;
@@ -193,24 +165,15 @@ module Lab05_no2(Clock_P46,
    wire XLXN_920;
    wire XLXN_921;
    wire XLXN_1032;
-   wire XLXN_1034;
-   wire XLXN_1035;
-   wire XLXN_1036;
-   wire XLXN_1038;
-   wire XLXN_1039;
-   wire XLXN_1040;
-   wire XLXN_1041;
-   wire XLXN_1042;
-   wire XLXN_1044;
-   wire XLXN_1045;
-   wire XLXN_1046;
-   wire XLXN_1047;
-   wire XLXN_1048;
-   wire XLXN_1049;
-   wire XLXN_1050;
    wire XLXN_1060;
-   wire XLXN_1061;
    wire XLXN_1063;
+   wire XLXN_1064;
+   wire XLXN_1069;
+   wire XLXN_1075;
+   wire XLXN_1076;
+   wire XLXN_1083;
+   wire XLXN_1084;
+   wire XLXN_1088;
    wire XLXN_923_DUMMY;
    
    assign XLXN_923 = XLXN_923_DUMMY;
@@ -340,8 +303,8 @@ module Lab05_no2(Clock_P46,
    (* HU_SET = "XLXI_513_0" *) 
    FJKC_HXILINX_Lab05_no2  XLXI_513 (.C(XLXN_1060), 
                                     .CLR(XLXN_1032), 
-                                    .J(Toggle_P56), 
-                                    .K(Toggle_P56), 
+                                    .J(XLXN_1084), 
+                                    .K(XLXN_1084), 
                                     .Q(XLXN_879));
    (* HU_SET = "XLXI_514_1" *) 
    FJKC_HXILINX_Lab05_no2  XLXI_514 (.C(XLXN_1060), 
@@ -355,7 +318,7 @@ module Lab05_no2(Clock_P46,
                                     .J(XLXN_920), 
                                     .K(XLXN_912), 
                                     .Q(C_P56));
-   INV  XLXI_518 (.I(Toggle_P56), 
+   INV  XLXI_518 (.I(XLXN_1084), 
                  .O(XLXN_1032));
    INV  XLXI_524 (.I(XLXN_879), 
                  .O(A_P58));
@@ -396,44 +359,29 @@ module Lab05_no2(Clock_P46,
                  .O(XLXN_926));
    INV  XLXI_564 (.I(XLXN_923_DUMMY), 
                  .O(XLXN_928));
-   OR2  XLXI_638 (.I0(Clock_P46), 
-                 .I1(XLXN_1061), 
+   OR2  XLXI_638 (.I0(XLXN_1083), 
+                 .I1(XLXN_1076), 
                  .O(XLXN_1060));
    GND  XLXI_650 (.G(D_P55));
-   mod10_MUSER_Lab05_no2  XLXI_651 (.P123(XLXN_1034), 
-                                   .XLXN_8(XLXN_1049), 
-                                   .XLXN_19(XLXN_1035));
-   mod10_MUSER_Lab05_no2  XLXI_652 (.P123(XLXN_1035), 
-                                   .XLXN_8(XLXN_1048), 
-                                   .XLXN_19(XLXN_1036));
-   mod10_MUSER_Lab05_no2  XLXI_653 (.P123(XLXN_1036), 
-                                   .XLXN_8(XLXN_1047), 
-                                   .XLXN_19(XLXN_1038));
-   mod10_MUSER_Lab05_no2  XLXI_654 (.P123(XLXN_1038), 
-                                   .XLXN_8(XLXN_1046), 
-                                   .XLXN_19(XLXN_1039));
-   mod10_MUSER_Lab05_no2  XLXI_655 (.P123(XLXN_1039), 
-                                   .XLXN_8(XLXN_1045), 
-                                   .XLXN_19(XLXN_1040));
-   mod10_MUSER_Lab05_no2  XLXI_656 (.P123(XLXN_1040), 
-                                   .XLXN_8(XLXN_1044), 
-                                   .XLXN_19(XLXN_1041));
-   mod10_MUSER_Lab05_no2  XLXI_657 (.P123(XLXN_1063), 
-                                   .XLXN_8(XLXN_1050), 
-                                   .XLXN_19(XLXN_1034));
-   FD #( .INIT(1'b0) ) XLXI_658 (.C(XLXN_1041), 
-                .D(XLXN_1042), 
-                .Q(XLXN_1061));
-   INV  XLXI_659 (.I(XLXN_1061), 
-                 .O(XLXN_1042));
-   GND  XLXI_660 (.G(XLXN_1044));
-   GND  XLXI_661 (.G(XLXN_1045));
-   GND  XLXI_662 (.G(XLXN_1046));
-   GND  XLXI_663 (.G(XLXN_1047));
-   GND  XLXI_664 (.G(XLXN_1048));
-   GND  XLXI_665 (.G(XLXN_1049));
-   GND  XLXI_666 (.G(XLXN_1050));
    AND2  XLXI_667 (.I0(Clock_P47), 
                   .I1(Pin123), 
                   .O(XLXN_1063));
+   Div100k  XLXI_670 (.CLR(XLXN_1069), 
+                     .In_CLK(XLXN_1063), 
+                     .Out_CLK(XLXN_1064));
+   Div200  XLXI_671 (.CLR(XLXN_1069), 
+                    .In_CLK(XLXN_1064), 
+                    .Out_CLK(XLXN_1075));
+   INV  XLXI_672 (.I(Clock_P47), 
+                 .O(XLXN_1069));
+   AND2B1  XLXI_675 (.I0(Clock_P47), 
+                    .I1(Clock_P46), 
+                    .O(XLXN_1083));
+   VCC  XLXI_676 (.P(XLXN_1084));
+   (* HU_SET = "XLXI_678_3" *) 
+   FTC_HXILINX_Lab05_no2  XLXI_678 (.C(XLXN_1075), 
+                                   .CLR(XLXN_1069), 
+                                   .T(XLXN_1088), 
+                                   .Q(XLXN_1076));
+   VCC  XLXI_679 (.P(XLXN_1088));
 endmodule

@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Chaks\Desktop\Lab6\Lab6\Lab6.ncd
-OUTFILE=C:\Users\Chaks\Desktop\Lab6\Lab6\Lab6.bit
-FAMILY=Spartan6
-PART=xc6slx9-3tqg144
-WORKINGDIR=C:\Users\Chaks\Desktop\Lab6\Lab6
-LICENSE=WebPack
-USER_INFO=__0_0_0

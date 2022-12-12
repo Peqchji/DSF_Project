@@ -7,20 +7,33 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/DisplayRandomCir C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|DisplayRandomCir.sch</ClosedNode>
          <ClosedNode>/Div16K C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF|LAB06|Div16K.sch</ClosedNode>
          <ClosedNode>/Div1M C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF|LAB06|Div1M.sch/XLXI_1 - Div1k</ClosedNode>
          <ClosedNode>/Div1M C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF|LAB06|Div1M.sch/XLXI_2 - Div1k</ClosedNode>
          <ClosedNode>/Div20K C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF|LAB06|Div20K.sch</ClosedNode>
          <ClosedNode>/Div4M C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF|LAB06|Div4M.sch</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_53 - counter/XLXI_7 - Div16K/XLXI_1 - Div1k</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_53 - counter/XLXI_8 - Div20K/XLXI_1 - Div1k</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_53 - counter/XLXI_9 - Div4M</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_53 - counter/XLXI_9 - Div4M/XLXI_1 - Div1k</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_53 - counter/XLXI_9 - Div4M/XLXI_2 - Div1k</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_55 - Div1M</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_55 - Div1M/XLXI_1 - Div1k</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_59 - Display</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_65 - counterRandomCir</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_65 - counterRandomCir/XLXI_9 - Div4M/XLXI_1 - Div1k</ClosedNode>
+         <ClosedNode>/LAB6 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|LAB6.sch/XLXI_65 - counterRandomCir/XLXI_9 - Div4M/XLXI_2 - Div1k</ClosedNode>
+         <ClosedNode>/counterRandomCir C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|LAB06|counterRandomCir.sch</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>XLXI_53 - counter (C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/counter.sch)</SelectedItem>
+         <SelectedItem>LAB6 (C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/LAB6.sch)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000157000000020000000000000000000000000200000064ffffffff000000810000000300000002000001570000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000175000000020000000000000000000000000200000064ffffffff000000810000000300000002000001750000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>XLXI_53 - counter (C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/counter.sch)</CurrentItem>
+      <CurrentItem>LAB6 (C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/LAB6.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -31,13 +44,13 @@
          <ClosedNode>Synthesize - XST</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Generate Programming File</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >12</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000121000000010000000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000171000000010000000100000000000000000000000064ffffffff000000810000000000000001000001710000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Generate Programming File</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -72,11 +85,11 @@
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000121000000010000000100000000000000000000000064ffffffff000000810000000000000001000001210000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000182000000010000000100000000000000000000000064ffffffff000000810000000000000001000001820000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>Compile HDL Simulation Libraries</CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff000000000000000200000154000000f401000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000000d40000008b01000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
       <ClosedNodes>

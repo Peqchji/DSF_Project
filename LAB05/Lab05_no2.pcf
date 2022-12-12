@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Oct 03 14:05:20 2022
+// Written by: Map P.20131013 on Sun Dec 11 19:18:59 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -11,7 +11,6 @@ COMP "XLXN_926" LOCATE = SITE "P33" LEVEL 1;
 COMP "XLXN_927" LOCATE = SITE "P43" LEVEL 1;
 COMP "XLXN_928" LOCATE = SITE "P30" LEVEL 1;
 COMP "f_P29" LOCATE = SITE "P29" LEVEL 1;
-COMP "Toggle_P56" LOCATE = SITE "P56" LEVEL 1;
 COMP "g_P27" LOCATE = SITE "P27" LEVEL 1;
 COMP "a_P41" LOCATE = SITE "P41" LEVEL 1;
 COMP "Clock_P46" LOCATE = SITE "P45" LEVEL 1;

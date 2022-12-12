@@ -35,3 +35,5 @@ NET "L0_P82" LOC = P82;
 NET "P5" LOC = P5;
 NET "P7" LOC = P7;
 NET "P9" LOC = P9;
+NET "P11" LOC = P11;
+NET "Driver" LOC = P23;

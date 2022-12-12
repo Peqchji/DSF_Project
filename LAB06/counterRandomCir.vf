@@ -1,0 +1,286 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : counterRandomCir.vf
+// /___/   /\     Timestamp : 12/12/2022 02:20:54
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/counterRandomCir.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/counterRandomCir.sch"
+//Design Name: counterRandomCir
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4CE_HXILINX_counterRandomCir(CEO, Q0, Q1, Q2, Q3, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3, Q2, Q1,Q0} <= {Q3, Q2, Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3, Q2, Q1, Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_counterRandomCir(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 100 ps / 10 ps
+
+module CB2CE_HXILINX_counterRandomCir(CEO, Q0, Q1, TC, C, CE, CLR);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+
+   input 	      C;	
+   input 	      CE;	
+   input 	      CLR;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT);
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Div1k_MUSER_counterRandomCir(In_CLK, 
+                                    Out_CLK);
+
+    input In_CLK;
+   output Out_CLK;
+   
+   wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_8;
+   
+   COUNTER0_9  XLXI_4 (.CLK(In_CLK), 
+                      .Clr(XLXN_8), 
+                      .bit(), 
+                      .TC(XLXN_4));
+   GND  XLXI_7 (.G(XLXN_8));
+   COUNTER0_9  XLXI_8 (.CLK(XLXN_4), 
+                      .Clr(XLXN_8), 
+                      .bit(), 
+                      .TC(XLXN_2));
+   COUNTER0_9  XLXI_9 (.CLK(XLXN_2), 
+                      .Clr(XLXN_8), 
+                      .bit(), 
+                      .TC(Out_CLK));
+endmodule
+`timescale 1ns / 1ps
+
+module Div16K_MUSER_counterRandomCir(In_CLK, 
+                                     Out_CLK);
+
+    input In_CLK;
+   output Out_CLK;
+   
+   wire XLXN_1;
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   Div1k_MUSER_counterRandomCir  XLXI_1 (.In_CLK(In_CLK), 
+                                        .Out_CLK(XLXN_1));
+   (* HU_SET = "XLXI_2_8" *) 
+   CB4CE_HXILINX_counterRandomCir  XLXI_2 (.C(XLXN_1), 
+                                          .CE(XLXN_3), 
+                                          .CLR(XLXN_4), 
+                                          .CEO(), 
+                                          .Q0(), 
+                                          .Q1(), 
+                                          .Q2(), 
+                                          .Q3(), 
+                                          .TC(Out_CLK));
+   VCC  XLXI_3 (.P(XLXN_3));
+   GND  XLXI_4 (.G(XLXN_4));
+endmodule
+`timescale 1ns / 1ps
+
+module Div20K_MUSER_counterRandomCir(In_CLK, 
+                                     Out_CLK);
+
+    input In_CLK;
+   output Out_CLK;
+   
+   wire XLXN_3;
+   wire XLXN_6;
+   wire XLXN_8;
+   wire XLXN_11;
+   
+   Div1k_MUSER_counterRandomCir  XLXI_1 (.In_CLK(In_CLK), 
+                                        .Out_CLK(XLXN_8));
+   COUNTER0_9  XLXI_2 (.CLK(XLXN_8), 
+                      .Clr(XLXN_6), 
+                      .bit(), 
+                      .TC(XLXN_11));
+   VCC  XLXI_4 (.P(XLXN_3));
+   (* HU_SET = "XLXI_5_9" *) 
+   FJKC_HXILINX_counterRandomCir  XLXI_5 (.C(XLXN_11), 
+                                         .CLR(XLXN_6), 
+                                         .J(XLXN_3), 
+                                         .K(XLXN_3), 
+                                         .Q(Out_CLK));
+   GND  XLXI_6 (.G(XLXN_6));
+endmodule
+`timescale 1ns / 1ps
+
+module Div4M_MUSER_counterRandomCir(In_CLK, 
+                                    Out_CLK);
+
+    input In_CLK;
+   output Out_CLK;
+   
+   wire XLXN_1;
+   wire XLXN_4;
+   wire XLXN_12;
+   
+   Div1k_MUSER_counterRandomCir  XLXI_1 (.In_CLK(In_CLK), 
+                                        .Out_CLK(XLXN_1));
+   Div1k_MUSER_counterRandomCir  XLXI_2 (.In_CLK(XLXN_1), 
+                                        .Out_CLK(XLXN_12));
+   (* HU_SET = "XLXI_3_10" *) 
+   CB2CE_HXILINX_counterRandomCir  XLXI_3 (.C(XLXN_12), 
+                                          .CE(XLXN_4), 
+                                          .CLR(), 
+                                          .CEO(), 
+                                          .Q0(), 
+                                          .Q1(), 
+                                          .TC(Out_CLK));
+   VCC  XLXI_4 (.P(XLXN_4));
+endmodule
+`timescale 1ns / 1ps
+
+module counterRandomCir(C_CLK, 
+                        start, 
+                        normalcounter1, 
+                        normalcounter10, 
+                        random1, 
+                        random10);
+
+    input C_CLK;
+    input start;
+   output [3:0] normalcounter1;
+   output [3:0] normalcounter10;
+   output [3:0] random1;
+   output [3:0] random10;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_17;
+   wire XLXN_18;
+   wire XLXN_19;
+   wire XLXN_21;
+   wire XLXN_24;
+   
+   Div16K_MUSER_counterRandomCir  XLXI_7 (.In_CLK(C_CLK), 
+                                         .Out_CLK(XLXN_18));
+   Div20K_MUSER_counterRandomCir  XLXI_8 (.In_CLK(C_CLK), 
+                                         .Out_CLK(XLXN_17));
+   Div4M_MUSER_counterRandomCir  XLXI_9 (.In_CLK(C_CLK), 
+                                        .Out_CLK(XLXN_19));
+   AND2  XLXI_13 (.I0(start), 
+                 .I1(XLXN_19), 
+                 .O(XLXN_13));
+   AND2  XLXI_14 (.I0(start), 
+                 .I1(XLXN_17), 
+                 .O(XLXN_14));
+   AND2  XLXI_15 (.I0(XLXN_18), 
+                 .I1(start), 
+                 .O(XLXN_15));
+   COUNTER0_9  XLXI_16 (.CLK(XLXN_13), 
+                       .Clr(XLXN_24), 
+                       .bit(normalcounter1[3:0]), 
+                       .TC(XLXN_21));
+   COUNTER0_9  XLXI_17 (.CLK(XLXN_21), 
+                       .Clr(XLXN_24), 
+                       .bit(normalcounter10[3:0]), 
+                       .TC());
+   COUNTER0_9  XLXI_18 (.CLK(XLXN_14), 
+                       .Clr(XLXN_24), 
+                       .bit(random10[3:0]), 
+                       .TC());
+   COUNTER0_9  XLXI_19 (.CLK(XLXN_15), 
+                       .Clr(XLXN_24), 
+                       .bit(random1[3:0]), 
+                       .TC());
+   GND  XLXI_20 (.G(XLXN_24));
+endmodule

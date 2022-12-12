@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Wed Oct 12 16:51:53 2022
+Mapped Date    : Mon Dec 12 02:34:53 2022
 
 Design Summary
 --------------
@@ -22,24 +22,24 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        124 out of   5,720    2%
-    Number used as logic:                      124 out of   5,720    2%
-      Number using O6 output only:             101
+  Number of Slice LUTs:                        143 out of   5,720    2%
+    Number used as logic:                      143 out of   5,720    2%
+      Number using O6 output only:             142
       Number using O5 output only:               0
-      Number using O5 and O6:                   23
+      Number using O5 and O6:                    1
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    44 out of   1,430    3%
+  Number of occupied Slices:                    58 out of   1,430    4%
   Number of MUXCYs used:                         0 out of   2,860    0%
-  Number of LUT Flip Flop pairs used:          124
-    Number with an unused Flip Flop:            51 out of     124   41%
-    Number with an unused LUT:                   0 out of     124    0%
-    Number of fully used LUT-FF pairs:          73 out of     124   58%
-    Number of unique control sets:              26
+  Number of LUT Flip Flop pairs used:          143
+    Number with an unused Flip Flop:            48 out of     143   33%
+    Number with an unused LUT:                   0 out of     143    0%
+    Number of fully used LUT-FF pairs:          95 out of     143   66%
+    Number of unique control sets:              23
     Number of slice register sites lost
-      to control set restrictions:             112 out of  11,440    1%
+      to control set restrictions:              96 out of  11,440    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -76,11 +76,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.93
+Average Fanout of Non-Clock Nets:                3.52
 
 Peak Memory Usage:  4509 MB
-Total REAL time to MAP completion:  10 secs 
-Total CPU time to MAP completion:   10 secs 
+Total REAL time to MAP completion:  9 secs 
+Total CPU time to MAP completion:   9 secs 
 
 Table of Contents
 -----------------
@@ -103,80 +103,88 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_55/XLXN_1 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_55/XLXN_23 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_53/XLXI_9/XLXI_1/XLXN_1 is sourced by a combinatorial pin. This is not
+   XLXI_65/XLXI_9/XLXI_1/XLXI_9/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_55/XLXI_1/XLXI_8/XLXN_93 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_53/XLXI_8/XLXI_1/XLXN_1 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
+   XLXI_65/XLXI_8/XLXI_1/XLXI_4/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_53/XLXI_8/XLXI_1/XLXN_2 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
+   XLXI_65/XLXI_8/XLXI_1/XLXI_8/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_53/XLXI_9/XLXI_1/XLXN_2 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_55/XLXI_1/XLXN_1 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXI_8/XLXN_1 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXI_9/XLXN_1 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_55/XLXI_1/XLXN_2 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXI_8/XLXN_2 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
+   XLXI_65/XLXI_9/XLXI_2/XLXI_4/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_53/XLXI_9/XLXI_2/XLXN_1 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
+   XLXI_65/XLXI_9/XLXI_2/XLXI_8/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_53/XLXI_7/XLXI_1/XLXN_2 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXI_7/XLXN_1 is
-   sourced by a combinatorial pin. This is not good design practice. Use the CE
-   pin to control the loading of data into the flip-flop.
+   XLXI_65/XLXI_7/XLXI_1/XLXI_4/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_53/XLXI_9/XLXI_2/XLXN_2 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_55/XLXN_2 is sourced
+   XLXI_65/XLXI_9/XLXI_1/XLXI_4/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_65/XLXN_13 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_53/XLXI_7/XLXI_1/XLXN_1 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXI_9/XLXN_12 is
+   XLXI_65/XLXI_7/XLXI_1/XLXI_8/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_65/XLXI_9/XLXI_1/XLXI_8/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_65/XLXI_16/XLXN_93 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXN_1 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_65/XLXI_8/XLXI_1/XLXI_9/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_65/XLXN_14 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXN_15 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_65/XLXN_15 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXN_14 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_53/XLXN_13 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
-   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_55/XLXI_1/XLXI_9/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_55/XLXI_5/XLXN_93 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_55/XLXI_1/XLXI_4/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_65/XLXI_9/XLXI_2/XLXI_9/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_55/XLXI_6/XLXN_93 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_65/XLXI_8/XLXI_2/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_65/XLXI_7/XLXI_1/XLXI_9/XLXN_93 is sourced by a combinatorial pin. This
+   is not good design practice. Use the CE pin to control the loading of data
+   into the flip-flop.
 
 Section 3 - Informational
 -------------------------
@@ -194,9 +202,9 @@ INFO:Pack:1650 - Map created a placed design.
 
 Section 4 - Removed Logic Summary
 ---------------------------------
-  72 block(s) removed
+  12 block(s) removed
    2 block(s) optimized away
-   1 signal(s) removed
+  10 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -211,90 +219,39 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_1/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_1/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_1/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_1/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_2/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_2/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_2/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_2/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_3/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_3/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_3/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_7/XLXI_1/XLXI_3/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_1/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_1/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_1/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_1/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_2/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_2/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_2/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_2/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_3/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_3/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_3/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_1/XLXI_3/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_2/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_2/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_2/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_8/XLXI_2/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_1/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_1/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_1/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_1/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_2/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_2/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_2/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_2/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_3/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_3/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_3/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_1/XLXI_3/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_1/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_1/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_1/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_1/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_2/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_2/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_2/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_2/XLXI_30" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_3/XLXI_27" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_3/XLXI_28" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_3/XLXI_29" (BUF) removed.
-Loadless block "XLXI_53/XLXI_9/XLXI_2/XLXI_3/XLXI_30" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_1/XLXI_27" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_1/XLXI_28" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_1/XLXI_29" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_1/XLXI_30" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_2/XLXI_27" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_2/XLXI_28" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_2/XLXI_29" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_2/XLXI_30" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_3/XLXI_27" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_3/XLXI_28" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_3/XLXI_29" (BUF) removed.
-Loadless block "XLXI_55/XLXI_1/XLXI_3/XLXI_30" (BUF) removed.
-Loadless block "XLXI_55/XLXI_5/XLXI_27" (BUF) removed.
-Loadless block "XLXI_55/XLXI_5/XLXI_28" (BUF) removed.
-Loadless block "XLXI_55/XLXI_5/XLXI_29" (BUF) removed.
-Loadless block "XLXI_55/XLXI_5/XLXI_30" (BUF) removed.
-Loadless block "XLXI_55/XLXI_6/XLXI_27" (BUF) removed.
-Loadless block "XLXI_55/XLXI_6/XLXI_28" (BUF) removed.
-Loadless block "XLXI_55/XLXI_6/XLXI_29" (BUF) removed.
-Loadless block "XLXI_55/XLXI_6/XLXI_30" (BUF) removed.
+Loadless block "XLXI_65/XLXI_17/XLXI_56" (BUF) removed.
+ The signal "XLXI_65/XLXI_17/XLXN_93" is loadless and has been removed.
+  Loadless block "XLXI_65/XLXI_17/XLXI_55" (OR) removed.
+   The signal "XLXI_65/XLXI_17/XLXN_96" is loadless and has been removed.
+    Loadless block "XLXI_65/XLXI_17/XLXI_54" (OR) removed.
+   The signal "XLXI_65/XLXI_17/XLXN_95" is loadless and has been removed.
+    Loadless block "XLXI_65/XLXI_17/XLXI_53" (OR) removed.
+Loadless block "XLXI_65/XLXI_18/XLXI_56" (BUF) removed.
+ The signal "XLXI_65/XLXI_18/XLXN_93" is loadless and has been removed.
+  Loadless block "XLXI_65/XLXI_18/XLXI_55" (OR) removed.
+   The signal "XLXI_65/XLXI_18/XLXN_96" is loadless and has been removed.
+    Loadless block "XLXI_65/XLXI_18/XLXI_54" (OR) removed.
+   The signal "XLXI_65/XLXI_18/XLXN_95" is loadless and has been removed.
+    Loadless block "XLXI_65/XLXI_18/XLXI_53" (OR) removed.
+Loadless block "XLXI_65/XLXI_19/XLXI_56" (BUF) removed.
+ The signal "XLXI_65/XLXI_19/XLXN_93" is loadless and has been removed.
+  Loadless block "XLXI_65/XLXI_19/XLXI_55" (OR) removed.
+   The signal "XLXI_65/XLXI_19/XLXN_96" is loadless and has been removed.
+    Loadless block "XLXI_65/XLXI_19/XLXI_54" (OR) removed.
+   The signal "XLXI_65/XLXI_19/XLXN_95" is loadless and has been removed.
+    Loadless block "XLXI_65/XLXI_19/XLXI_53" (OR) removed.
 
 The trimmed logic reported below is either:
    1. part of a cycle
    2. part of disabled logic
    3. a side-effect of other trimmed logic
 
-The signal "N0" is unused and has been removed.
+The signal "XLXI_55/XLXN_26" is unused and has been removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
-VCC 		XLXI_55/XLXI_5/XLXI_11
-GND 		XST_GND
+VCC 		XLXI_55/XLXI_4
+GND 		XLXI_55/XLXI_7
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.

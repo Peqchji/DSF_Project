@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Comparator.vf
-// /___/   /\     Timestamp : 10/12/2022 16:51:01
+// /___/   /\     Timestamp : 12/12/2022 01:58:18
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Comparator.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/Comparator.sch"
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/Comparator.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/Comparator.sch"
 //Design Name: Comparator
 //Device: spartan6
 //Purpose:
@@ -51,7 +51,7 @@ module Comparator(active,
    
    wire XLXN_4;
    
-   (* HU_SET = "XLXI_1_14" *) 
+   (* HU_SET = "XLXI_1_6" *) 
    COMP4_HXILINX_Comparator  XLXI_1 (.A0(Var2[0]), 
                                     .A1(Var2[1]), 
                                     .A2(Var2[2]), 

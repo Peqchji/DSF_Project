@@ -32,26 +32,32 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
-Setup/Hold to clock Clock_P46
-------------+------------+------------+------------+------------+------------------+--------+
-            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
-Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
-------------+------------+------------+------------+------------+------------------+--------+
-Toggle_P56  |    0.782(R)|      SLOW  |    0.496(R)|      SLOW  |XLXN_1060         |   0.000|
-------------+------------+------------+------------+------------+------------------+--------+
-
 Clock Clock_P46 to Pad
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-a_P41       |         9.259(R)|      SLOW  |         4.971(R)|      FAST  |XLXN_1060         |   0.000|
-b_P40       |         8.604(R)|      SLOW  |         4.767(R)|      FAST  |XLXN_1060         |   0.000|
-c_P35       |         8.791(R)|      SLOW  |         4.778(R)|      FAST  |XLXN_1060         |   0.000|
-d_P34       |         8.515(R)|      SLOW  |         4.553(R)|      FAST  |XLXN_1060         |   0.000|
-e_P32       |         8.897(R)|      SLOW  |         4.634(R)|      FAST  |XLXN_1060         |   0.000|
-f_P29       |         9.710(R)|      SLOW  |         4.920(R)|      FAST  |XLXN_1060         |   0.000|
-g_P27       |         9.320(R)|      SLOW  |         5.081(R)|      FAST  |XLXN_1060         |   0.000|
+a_P41       |         8.552(R)|      SLOW  |         4.711(R)|      FAST  |XLXN_1060         |   0.000|
+b_P40       |         8.368(R)|      SLOW  |         4.652(R)|      FAST  |XLXN_1060         |   0.000|
+c_P35       |         8.523(R)|      SLOW  |         4.640(R)|      FAST  |XLXN_1060         |   0.000|
+d_P34       |         8.170(R)|      SLOW  |         4.547(R)|      FAST  |XLXN_1060         |   0.000|
+e_P32       |         8.044(R)|      SLOW  |         4.399(R)|      FAST  |XLXN_1060         |   0.000|
+f_P29       |         8.699(R)|      SLOW  |         4.780(R)|      FAST  |XLXN_1060         |   0.000|
+g_P27       |         8.772(R)|      SLOW  |         4.978(R)|      FAST  |XLXN_1060         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock Clock_P47 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+a_P41       |         8.893(R)|      SLOW  |         4.956(R)|      FAST  |XLXN_1060         |   0.000|
+b_P40       |         8.709(R)|      SLOW  |         4.897(R)|      FAST  |XLXN_1060         |   0.000|
+c_P35       |         8.864(R)|      SLOW  |         4.885(R)|      FAST  |XLXN_1060         |   0.000|
+d_P34       |         8.511(R)|      SLOW  |         4.792(R)|      FAST  |XLXN_1060         |   0.000|
+e_P32       |         8.385(R)|      SLOW  |         4.644(R)|      FAST  |XLXN_1060         |   0.000|
+f_P29       |         9.040(R)|      SLOW  |         5.025(R)|      FAST  |XLXN_1060         |   0.000|
+g_P27       |         9.113(R)|      SLOW  |         5.223(R)|      FAST  |XLXN_1060         |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Clock_P46
@@ -59,7 +65,8 @@ Clock to Setup on destination clock Clock_P46
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clock_P46      |    2.605|         |         |         |
+Clock_P46      |    2.717|         |         |         |
+Clock_P47      |    2.717|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Clock_P47
@@ -67,8 +74,9 @@ Clock to Setup on destination clock Clock_P47
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clock_P47      |    0.867|         |         |         |
-Pin123         |    0.867|         |         |         |
+Clock_P46      |    2.717|         |         |         |
+Clock_P47      |    2.849|   -0.037|         |         |
+Pin123         |    2.849|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Pin123
@@ -76,12 +84,12 @@ Clock to Setup on destination clock Pin123
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clock_P47      |    0.867|         |         |         |
-Pin123         |    0.867|         |         |         |
+Clock_P47      |    2.849|    2.685|         |         |
+Pin123         |    2.849|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Mon Oct 03 14:05:39 2022 
+Analysis completed Sun Dec 11 19:19:20 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

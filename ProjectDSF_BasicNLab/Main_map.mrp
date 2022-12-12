@@ -10,7 +10,7 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Sat Dec 10 21:54:43 2022
+Mapped Date    : Mon Dec 12 22:44:45 2022
 
 Design Summary
 --------------
@@ -27,7 +27,7 @@ Slice Logic Utilization:
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    11 out of   1,430    1%
+  Number of occupied Slices:                    10 out of   1,430    1%
   Number of MUXCYs used:                         0 out of   2,860    0%
   Number of LUT Flip Flop pairs used:           19
     Number with an unused Flip Flop:            19 out of      19  100%
@@ -43,8 +43,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        31 out of     102   30%
-    Number of LOCed IOBs:                       30 out of      31   96%
+  Number of bonded IOBs:                        33 out of     102   32%
+    Number of LOCed IOBs:                       32 out of      33   96%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -69,11 +69,11 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.30
+Average Fanout of Non-Clock Nets:                3.21
 
 Peak Memory Usage:  4493 MB
-Total REAL time to MAP completion:  9 secs 
-Total CPU time to MAP completion:   9 secs 
+Total REAL time to MAP completion:  14 secs 
+Total CPU time to MAP completion:   11 secs 
 
 Table of Contents
 -----------------
@@ -109,7 +109,7 @@ INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
    1.260 Volts)
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
-INFO:Place:834 - Only a subset of IOs are locked. Out of 31 IOs, 30 are locked
+INFO:Place:834 - Only a subset of IOs are locked. Out of 33 IOs, 32 are locked
    and 1 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
 INFO:Pack:1650 - Map created a placed design.
@@ -146,6 +146,7 @@ Section 6 - IOB Properties
 | Digit1                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | Digit2                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | Digit3                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| Driver                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | L0_P82                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | L1_P81                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | L2_P80                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -154,6 +155,7 @@ Section 6 - IOB Properties
 | L5_P75                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | L6_P74                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | L7_P67                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| OSC                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | P5                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | P7                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | P9                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

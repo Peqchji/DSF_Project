@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym DisplayRandomCir {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/DisplayRandomCir.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/DisplayRandomCir.sym} 

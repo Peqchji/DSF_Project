@@ -1,7 +1,7 @@
 Release 14.7 - par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Oct 03 14:05:31 2022
+Sun Dec 11 19:19:12 2022
 
 
 # NOTE: This file is designed to be imported into a spreadsheet program
@@ -74,7 +74,7 @@ P52|||VCCINT||||||||1.2||||
 P53|||VCCAUX||||||||2.5||||
 P54|||GND||||||||||||
 P55||IOBS|IO_L30N_GCLK0_USERCCLK_2|UNUSED||2|||||||||
-P56|Toggle_P56|IOB|IO_L30P_GCLK1_D13_2|INPUT|LVCMOS25*|2||||NONE||LOCATED|NO|NONE|
+P56||IOBM|IO_L30P_GCLK1_D13_2|UNUSED||2|||||||||
 P57||IOBS|IO_L14N_D12_2|UNUSED||2|||||||||
 P58||IOBM|IO_L14P_D11_2|UNUSED||2|||||||||
 P59||IOBS|IO_L13N_D10_2|UNUSED||2|||||||||

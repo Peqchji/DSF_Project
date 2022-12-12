@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Main.vhf
--- /___/   /\     Timestamp : 12/10/2022 21:51:11
+-- /___/   /\     Timestamp : 12/12/2022 22:43:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab/Main.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab/Main.sch"
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/Main.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/Main.sch"
 --Design Name: Main
 --Device: spartan6
 --Purpose:
@@ -193,7 +193,8 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity Main is
-   port ( State_1  : in    std_logic; 
+   port ( OSC      : in    std_logic; 
+          State_1  : in    std_logic; 
           State_2  : in    std_logic; 
           State_3  : in    std_logic; 
           State_4  : in    std_logic; 
@@ -205,6 +206,7 @@ entity Main is
           Digit1   : out   std_logic; 
           Digit2   : out   std_logic; 
           Digit3   : out   std_logic; 
+          Driver   : out   std_logic; 
           L0_P82   : out   std_logic; 
           L1_P81   : out   std_logic; 
           L2_P80   : out   std_logic; 
@@ -255,6 +257,7 @@ architecture BEHAVIORAL of Main is
    signal XLXN_110     : std_logic;
    signal XLXN_111     : std_logic;
    signal XLXN_119     : std_logic;
+   signal XLXN_121     : std_logic;
    signal L3_P79_DUMMY : std_logic;
    signal L0_P82_DUMMY : std_logic;
    signal L2_P80_DUMMY : std_logic;
@@ -586,6 +589,14 @@ begin
    XLXI_53 : BUF
       port map (I=>L4_P78_DUMMY,
                 O=>L7_P67);
+   
+   XLXI_54 : INV
+      port map (I=>OSC,
+                O=>XLXN_121);
+   
+   XLXI_55 : INV
+      port map (I=>XLXN_121,
+                O=>Driver);
    
 end BEHAVIORAL;
 

@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : LAB6.vf
-// /___/   /\     Timestamp : 10/12/2022 16:51:09
+// /___/   /\     Timestamp : 12/12/2022 02:34:12
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/LAB6.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/LAB6.sch"
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/LAB6.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/LAB6.sch"
 //Design Name: LAB6
 //Device: spartan6
 //Purpose:
@@ -164,13 +164,13 @@ module CB2CE_HXILINX_LAB6(CEO, Q0, Q1, TC, C, CE, CLR);
 endmodule
 `timescale 1ns / 1ps
 
-module MUX4_1_bus4_MUSER_LAB6(Q0, 
-                              Q1, 
-                              Q2, 
-                              Q3, 
-                              S0, 
-                              S1, 
-                              Y);
+module MUX4_1_4_MUSER_LAB6(Q0, 
+                           Q1, 
+                           Q2, 
+                           Q3, 
+                           S0, 
+                           S1, 
+                           Y);
 
     input [3:0] Q0;
     input [3:0] Q1;
@@ -205,34 +205,34 @@ module MUX4_1_bus4_MUSER_LAB6(Q0,
    wire XLXN_190;
    wire XLXN_191;
    
-   AND2  XLXI_1 (.I0(S0), 
+   AND2  XLXI_4 (.I0(XLXN_80), 
+                .I1(XLXN_190), 
+                .O(XLXN_121));
+   AND2  XLXI_5 (.I0(S0), 
                 .I1(XLXN_191), 
                 .O(XLXN_142));
-   AND2  XLXI_2 (.I0(XLXN_83), 
+   AND2  XLXI_6 (.I0(XLXN_83), 
                 .I1(S1), 
                 .O(XLXN_148));
-   AND2  XLXI_3 (.I0(S0), 
+   AND2  XLXI_7 (.I0(S0), 
                 .I1(S1), 
                 .O(XLXN_150));
-   INV  XLXI_4 (.I(S0), 
+   INV  XLXI_8 (.I(S0), 
                .O(XLXN_80));
-   INV  XLXI_5 (.I(S0), 
+   INV  XLXI_9 (.I(S0), 
                .O(XLXN_83));
-   AND2  XLXI_6 (.I0(XLXN_121), 
-                .I1(Q0[3]), 
-                .O(XLXN_158));
-   AND2  XLXI_7 (.I0(XLXN_121), 
-                .I1(Q0[2]), 
-                .O(XLXN_162));
-   AND2  XLXI_8 (.I0(XLXN_121), 
-                .I1(Q0[1]), 
-                .O(XLXN_173));
-   AND2  XLXI_9 (.I0(XLXN_121), 
-                .I1(Q0[0]), 
-                .O(XLXN_182));
-   AND2  XLXI_22 (.I0(XLXN_80), 
-                 .I1(XLXN_190), 
-                 .O(XLXN_121));
+   AND2  XLXI_24 (.I0(XLXN_121), 
+                 .I1(Q0[3]), 
+                 .O(XLXN_158));
+   AND2  XLXI_25 (.I0(XLXN_121), 
+                 .I1(Q0[2]), 
+                 .O(XLXN_162));
+   AND2  XLXI_26 (.I0(XLXN_121), 
+                 .I1(Q0[1]), 
+                 .O(XLXN_173));
+   AND2  XLXI_28 (.I0(XLXN_121), 
+                 .I1(Q0[0]), 
+                 .O(XLXN_182));
    AND2  XLXI_33 (.I0(Q1[3]), 
                  .I1(XLXN_142), 
                  .O(XLXN_159));
@@ -296,20 +296,20 @@ module MUX4_1_bus4_MUSER_LAB6(Q0,
 endmodule
 `timescale 1ns / 1ps
 
-module Display_MUSER_LAB6(control, 
-                          Nctr1, 
-                          Nctr10, 
-                          rand1, 
-                          rand10, 
-                          Scanclk, 
-                          a, 
-                          b, 
-                          c, 
-                          d, 
-                          Digit, 
-                          e, 
-                          f, 
-                          g);
+module DisplayRandomCir_MUSER_LAB6(control, 
+                                   Nctr1, 
+                                   Nctr10, 
+                                   rand1, 
+                                   rand10, 
+                                   Scanclk, 
+                                   a, 
+                                   b, 
+                                   c, 
+                                   d, 
+                                   Digit, 
+                                   e, 
+                                   f, 
+                                   g);
 
     input control;
     input [3:0] Nctr1;
@@ -392,92 +392,15 @@ module Display_MUSER_LAB6(control,
                      .e(e), 
                      .f(f), 
                      .g(g));
-   MUX4_1_bus4_MUSER_LAB6  XLXI_106 (.Q0(Q0[3:0]), 
-                                    .Q1(Q1[3:0]), 
-                                    .Q2(Q2[3:0]), 
-                                    .Q3(Q3[3:0]), 
-                                    .S0(Scanclk), 
-                                    .S1(XLXN_218), 
-                                    .Y(Y[3:0]));
    BUF  XLXI_107 (.I(Scanclk), 
                  .O(Digit[0]));
-endmodule
-`timescale 1ns / 1ps
-
-module Comparator_MUSER_LAB6(active, 
-                             Var1, 
-                             Var2, 
-                             results);
-
-    input active;
-    input [3:0] Var1;
-    input [3:0] Var2;
-   output results;
-   
-   wire XLXN_4;
-   
-   (* HU_SET = "XLXI_1_28" *) 
-   COMP4_HXILINX_LAB6  XLXI_1 (.A0(Var2[0]), 
-                              .A1(Var2[1]), 
-                              .A2(Var2[2]), 
-                              .A3(Var2[3]), 
-                              .B0(Var1[0]), 
-                              .B1(Var1[1]), 
-                              .B2(Var1[2]), 
-                              .B3(Var1[3]), 
-                              .EQ(XLXN_4));
-   AND2  XLXI_2 (.I0(XLXN_4), 
-                .I1(active), 
-                .O(results));
-endmodule
-`timescale 1ns / 1ps
-
-module counter0_9_MUSER_LAB6(C, 
-                             count, 
-                             TC);
-
-    input C;
-   output [3:0] count;
-   output TC;
-   
-   wire XLXN_3;
-   wire XLXN_20;
-   wire XLXN_21;
-   wire XLXN_48;
-   wire XLXN_49;
-   wire XLXN_50;
-   wire XLXN_51;
-   wire TC_DUMMY;
-   
-   assign TC = TC_DUMMY;
-   (* HU_SET = "XLXI_10_29" *) 
-   CB4CE_HXILINX_LAB6  XLXI_10 (.C(C), 
-                               .CE(XLXN_3), 
-                               .CLR(TC_DUMMY), 
-                               .CEO(), 
-                               .Q0(XLXN_51), 
-                               .Q1(XLXN_49), 
-                               .Q2(XLXN_50), 
-                               .Q3(XLXN_48), 
-                               .TC());
-   VCC  XLXI_11 (.P(XLXN_3));
-   AND4  XLXI_16 (.I0(XLXN_48), 
-                 .I1(XLXN_49), 
-                 .I2(XLXN_20), 
-                 .I3(XLXN_21), 
-                 .O(TC_DUMMY));
-   INV  XLXI_17 (.I(XLXN_50), 
-                .O(XLXN_20));
-   INV  XLXI_18 (.I(XLXN_51), 
-                .O(XLXN_21));
-   BUF  XLXI_27 (.I(XLXN_51), 
-                .O(count[0]));
-   BUF  XLXI_28 (.I(XLXN_49), 
-                .O(count[1]));
-   BUF  XLXI_29 (.I(XLXN_50), 
-                .O(count[2]));
-   BUF  XLXI_30 (.I(XLXN_48), 
-                .O(count[3]));
+   MUX4_1_4_MUSER_LAB6  XLXI_109 (.Q0(Q0[3:0]), 
+                                 .Q1(Q1[3:0]), 
+                                 .Q2(Q2[3:0]), 
+                                 .Q3(Q3[3:0]), 
+                                 .S0(Scanclk), 
+                                 .S1(XLXN_218), 
+                                 .Y(Y[3:0]));
 endmodule
 `timescale 1ns / 1ps
 
@@ -487,46 +410,23 @@ module Div1k_MUSER_LAB6(In_CLK,
     input In_CLK;
    output Out_CLK;
    
-   wire XLXN_1;
    wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_8;
    
-   counter0_9_MUSER_LAB6  XLXI_1 (.C(In_CLK), 
-                                 .count(), 
-                                 .TC(XLXN_1));
-   counter0_9_MUSER_LAB6  XLXI_2 (.C(XLXN_1), 
-                                 .count(), 
-                                 .TC(XLXN_2));
-   counter0_9_MUSER_LAB6  XLXI_3 (.C(XLXN_2), 
-                                 .count(), 
-                                 .TC(Out_CLK));
-endmodule
-`timescale 1ns / 1ps
-
-module Div1M_MUSER_LAB6(In_CLK, 
-                        Out_CLK);
-
-    input In_CLK;
-   output Out_CLK;
-   
-   wire XLXN_1;
-   wire XLXN_2;
-   wire XLXN_19;
-   wire XLXN_23;
-   
-   Div1k_MUSER_LAB6  XLXI_1 (.In_CLK(In_CLK), 
-                            .Out_CLK(XLXN_1));
-   (* HU_SET = "XLXI_3_30" *) 
-   FTC_HXILINX_LAB6  XLXI_3 (.C(XLXN_2), 
-                            .CLR(), 
-                            .T(XLXN_19), 
-                            .Q(Out_CLK));
-   VCC  XLXI_4 (.P(XLXN_19));
-   counter0_9_MUSER_LAB6  XLXI_5 (.C(XLXN_1), 
-                                 .count(), 
-                                 .TC(XLXN_23));
-   counter0_9_MUSER_LAB6  XLXI_6 (.C(XLXN_23), 
-                                 .count(), 
-                                 .TC(XLXN_2));
+   COUNTER0_9  XLXI_4 (.CLK(In_CLK), 
+                      .Clr(XLXN_8), 
+                      .bit(), 
+                      .TC(XLXN_4));
+   GND  XLXI_7 (.G(XLXN_8));
+   COUNTER0_9  XLXI_8 (.CLK(XLXN_4), 
+                      .Clr(XLXN_8), 
+                      .bit(), 
+                      .TC(XLXN_2));
+   COUNTER0_9  XLXI_9 (.CLK(XLXN_2), 
+                      .Clr(XLXN_8), 
+                      .bit(), 
+                      .TC(Out_CLK));
 endmodule
 `timescale 1ns / 1ps
 
@@ -538,13 +438,14 @@ module Div16K_MUSER_LAB6(In_CLK,
    
    wire XLXN_1;
    wire XLXN_3;
+   wire XLXN_4;
    
    Div1k_MUSER_LAB6  XLXI_1 (.In_CLK(In_CLK), 
                             .Out_CLK(XLXN_1));
-   (* HU_SET = "XLXI_2_31" *) 
+   (* HU_SET = "XLXI_2_0" *) 
    CB4CE_HXILINX_LAB6  XLXI_2 (.C(XLXN_1), 
                               .CE(XLXN_3), 
-                              .CLR(), 
+                              .CLR(XLXN_4), 
                               .CEO(), 
                               .Q0(), 
                               .Q1(), 
@@ -552,6 +453,7 @@ module Div16K_MUSER_LAB6(In_CLK,
                               .Q3(), 
                               .TC(Out_CLK));
    VCC  XLXI_3 (.P(XLXN_3));
+   GND  XLXI_4 (.G(XLXN_4));
 endmodule
 `timescale 1ns / 1ps
 
@@ -561,22 +463,25 @@ module Div20K_MUSER_LAB6(In_CLK,
     input In_CLK;
    output Out_CLK;
    
-   wire XLXN_1;
-   wire XLXN_2;
    wire XLXN_3;
+   wire XLXN_6;
+   wire XLXN_8;
+   wire XLXN_11;
    
    Div1k_MUSER_LAB6  XLXI_1 (.In_CLK(In_CLK), 
-                            .Out_CLK(XLXN_1));
-   counter0_9_MUSER_LAB6  XLXI_2 (.C(XLXN_1), 
-                                 .count(), 
-                                 .TC(XLXN_2));
+                            .Out_CLK(XLXN_8));
+   COUNTER0_9  XLXI_2 (.CLK(XLXN_8), 
+                      .Clr(XLXN_6), 
+                      .bit(), 
+                      .TC(XLXN_11));
    VCC  XLXI_4 (.P(XLXN_3));
-   (* HU_SET = "XLXI_5_32" *) 
-   FJKC_HXILINX_LAB6  XLXI_5 (.C(XLXN_2), 
-                             .CLR(), 
+   (* HU_SET = "XLXI_5_1" *) 
+   FJKC_HXILINX_LAB6  XLXI_5 (.C(XLXN_11), 
+                             .CLR(XLXN_6), 
                              .J(XLXN_3), 
                              .K(XLXN_3), 
                              .Q(Out_CLK));
+   GND  XLXI_6 (.G(XLXN_6));
 endmodule
 `timescale 1ns / 1ps
 
@@ -594,7 +499,7 @@ module Div4M_MUSER_LAB6(In_CLK,
                             .Out_CLK(XLXN_1));
    Div1k_MUSER_LAB6  XLXI_2 (.In_CLK(XLXN_1), 
                             .Out_CLK(XLXN_12));
-   (* HU_SET = "XLXI_3_33" *) 
+   (* HU_SET = "XLXI_3_2" *) 
    CB2CE_HXILINX_LAB6  XLXI_3 (.C(XLXN_12), 
                               .CE(XLXN_4), 
                               .CLR(), 
@@ -606,12 +511,12 @@ module Div4M_MUSER_LAB6(In_CLK,
 endmodule
 `timescale 1ns / 1ps
 
-module counter_MUSER_LAB6(C_CLK, 
-                          start, 
-                          normalcounter1, 
-                          normalcounter10, 
-                          random1, 
-                          random10);
+module counterRandomCir_MUSER_LAB6(C_CLK, 
+                                   start, 
+                                   normalcounter1, 
+                                   normalcounter10, 
+                                   random1, 
+                                   random10);
 
     input C_CLK;
     input start;
@@ -620,26 +525,15 @@ module counter_MUSER_LAB6(C_CLK,
    output [3:0] random1;
    output [3:0] random10;
    
-   wire XLXN_1;
    wire XLXN_13;
    wire XLXN_14;
    wire XLXN_15;
    wire XLXN_17;
    wire XLXN_18;
    wire XLXN_19;
+   wire XLXN_21;
+   wire XLXN_24;
    
-   counter0_9_MUSER_LAB6  XLXI_1 (.C(XLXN_13), 
-                                 .count(normalcounter1[3:0]), 
-                                 .TC(XLXN_1));
-   counter0_9_MUSER_LAB6  XLXI_2 (.C(XLXN_1), 
-                                 .count(normalcounter10[3:0]), 
-                                 .TC());
-   counter0_9_MUSER_LAB6  XLXI_3 (.C(XLXN_14), 
-                                 .count(random10[3:0]), 
-                                 .TC());
-   counter0_9_MUSER_LAB6  XLXI_4 (.C(XLXN_15), 
-                                 .count(random1[3:0]), 
-                                 .TC());
    Div16K_MUSER_LAB6  XLXI_7 (.In_CLK(C_CLK), 
                              .Out_CLK(XLXN_18));
    Div20K_MUSER_LAB6  XLXI_8 (.In_CLK(C_CLK), 
@@ -655,6 +549,83 @@ module counter_MUSER_LAB6(C_CLK,
    AND2  XLXI_15 (.I0(XLXN_18), 
                  .I1(start), 
                  .O(XLXN_15));
+   COUNTER0_9  XLXI_16 (.CLK(XLXN_13), 
+                       .Clr(XLXN_24), 
+                       .bit(normalcounter1[3:0]), 
+                       .TC(XLXN_21));
+   COUNTER0_9  XLXI_17 (.CLK(XLXN_21), 
+                       .Clr(XLXN_24), 
+                       .bit(normalcounter10[3:0]), 
+                       .TC());
+   COUNTER0_9  XLXI_18 (.CLK(XLXN_14), 
+                       .Clr(XLXN_24), 
+                       .bit(random10[3:0]), 
+                       .TC());
+   COUNTER0_9  XLXI_19 (.CLK(XLXN_15), 
+                       .Clr(XLXN_24), 
+                       .bit(random1[3:0]), 
+                       .TC());
+   GND  XLXI_20 (.G(XLXN_24));
+endmodule
+`timescale 1ns / 1ps
+
+module Comparator_MUSER_LAB6(active, 
+                             Var1, 
+                             Var2, 
+                             results);
+
+    input active;
+    input [3:0] Var1;
+    input [3:0] Var2;
+   output results;
+   
+   wire XLXN_4;
+   
+   (* HU_SET = "XLXI_1_3" *) 
+   COMP4_HXILINX_LAB6  XLXI_1 (.A0(Var2[0]), 
+                              .A1(Var2[1]), 
+                              .A2(Var2[2]), 
+                              .A3(Var2[3]), 
+                              .B0(Var1[0]), 
+                              .B1(Var1[1]), 
+                              .B2(Var1[2]), 
+                              .B3(Var1[3]), 
+                              .EQ(XLXN_4));
+   AND2  XLXI_2 (.I0(XLXN_4), 
+                .I1(active), 
+                .O(results));
+endmodule
+`timescale 1ns / 1ps
+
+module Div1M_MUSER_LAB6(In_CLK, 
+                        Out_CLK);
+
+    input In_CLK;
+   output Out_CLK;
+   
+   wire XLXN_2;
+   wire XLXN_19;
+   wire XLXN_24;
+   wire XLXN_25;
+   wire XLXN_26;
+   
+   Div1k_MUSER_LAB6  XLXI_1 (.In_CLK(In_CLK), 
+                            .Out_CLK(XLXN_24));
+   (* HU_SET = "XLXI_3_4" *) 
+   FTC_HXILINX_LAB6  XLXI_3 (.C(XLXN_2), 
+                            .CLR(XLXN_26), 
+                            .T(XLXN_19), 
+                            .Q(Out_CLK));
+   VCC  XLXI_4 (.P(XLXN_19));
+   COUNTER0_9  XLXI_5 (.CLK(XLXN_24), 
+                      .Clr(XLXN_26), 
+                      .bit(), 
+                      .TC(XLXN_25));
+   COUNTER0_9  XLXI_6 (.CLK(XLXN_25), 
+                      .Clr(XLXN_26), 
+                      .bit(), 
+                      .TC(XLXN_2));
+   GND  XLXI_7 (.G(XLXN_26));
 endmodule
 `timescale 1ns / 1ps
 
@@ -697,12 +668,6 @@ module LAB6(button,
    wire [3:0] XLXN_32;
    wire XLXN_45;
    
-   counter_MUSER_LAB6  XLXI_53 (.C_CLK(OSC), 
-                               .start(button), 
-                               .normalcounter1(XLXN_29[3:0]), 
-                               .normalcounter10(XLXN_28[3:0]), 
-                               .random1(XLXN_32[3:0]), 
-                               .random10(XLXN_31[3:0]));
    Div1M_MUSER_LAB6  XLXI_55 (.In_CLK(OSC), 
                              .Out_CLK(XLXN_22));
    INV  XLXI_57 (.I(button), 
@@ -711,20 +676,6 @@ module LAB6(button,
                                   .Var1(XLXN_32[3:0]), 
                                   .Var2(XLXN_31[3:0]), 
                                   .results(buzzer));
-   Display_MUSER_LAB6  XLXI_59 (.control(button), 
-                               .Nctr1(XLXN_29[3:0]), 
-                               .Nctr10(XLXN_28[3:0]), 
-                               .rand1(XLXN_32[3:0]), 
-                               .rand10(XLXN_31[3:0]), 
-                               .Scanclk(XLXN_22), 
-                               .a(a_P41), 
-                               .b(b_P40), 
-                               .c(c_P35), 
-                               .d(d_P34), 
-                               .Digit(Digit[1:0]), 
-                               .e(e_P32), 
-                               .f(f_P29), 
-                               .g(g_P27));
    BUF  XLXI_60 (.I(Digit[0]), 
                 .O(XLXN_45));
    BUF  XLXI_61 (.I(Digit[1]), 
@@ -733,4 +684,24 @@ module LAB6(button,
    VCC  XLXI_63 (.P(common2));
    INV  XLXI_64 (.I(XLXN_45), 
                 .O(common0));
+   counterRandomCir_MUSER_LAB6  XLXI_65 (.C_CLK(OSC), 
+                                        .start(button), 
+                                        .normalcounter1(XLXN_29[3:0]), 
+                                        .normalcounter10(XLXN_28[3:0]), 
+                                        .random1(XLXN_32[3:0]), 
+                                        .random10(XLXN_31[3:0]));
+   DisplayRandomCir_MUSER_LAB6  XLXI_66 (.control(button), 
+                                        .Nctr1(XLXN_29[3:0]), 
+                                        .Nctr10(XLXN_28[3:0]), 
+                                        .rand1(XLXN_32[3:0]), 
+                                        .rand10(XLXN_31[3:0]), 
+                                        .Scanclk(XLXN_22), 
+                                        .a(a_P41), 
+                                        .b(b_P40), 
+                                        .c(c_P35), 
+                                        .d(d_P34), 
+                                        .Digit(Digit[1:0]), 
+                                        .e(e_P32), 
+                                        .f(f_P29), 
+                                        .g(g_P27));
 endmodule

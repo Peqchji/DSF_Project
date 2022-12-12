@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : MUX4_1_bus4.vf
-// /___/   /\     Timestamp : 10/12/2022 16:50:58
+// /___/   /\     Timestamp : 12/12/2022 01:59:01
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/MUX4_1_bus4.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB06/MUX4_1_bus4.sch"
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/MUX4_1_bus4.vf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB06/MUX4_1_bus4.sch"
 //Design Name: MUX4_1_bus4
 //Device: spartan6
 //Purpose:
