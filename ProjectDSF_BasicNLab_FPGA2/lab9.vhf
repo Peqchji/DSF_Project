@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : lab9.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:04
+-- /___/   /\     Timestamp : 12/13/2022 10:04:38
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -357,12 +357,12 @@ architecture BEHAVIORAL of lab9 is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_56";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_57";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_58";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_59";
-   attribute HU_SET of XLXI_82 : label is "XLXI_82_60";
-   attribute HU_SET of XLXI_84 : label is "XLXI_84_61";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_3";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_4";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_5";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_6";
+   attribute HU_SET of XLXI_82 : label is "XLXI_82_7";
+   attribute HU_SET of XLXI_84 : label is "XLXI_84_8";
 begin
    XLXI_1 : OR3
       port map (I0=>SW4_P48,

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : encoder.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:05
+-- /___/   /\     Timestamp : 12/13/2022 10:04:39
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

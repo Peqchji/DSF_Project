@@ -1,12 +1,13 @@
 
 
-NET "Segment6" LOC = P27;
-NET "Segment5" LOC = P29;
-NET "Segment4" LOC = P32;
-NET "Segment3" LOC = P34;
-NET "Segment2" LOC = P35;
-NET "Segment1" LOC = P40;
-NET "Segment0" LOC = P41;
+NET "Segment(6)"LOC = P27;
+NET "Segment(5)" LOC = P29;
+NET "Segment(4)" LOC = P32;
+NET "Segment(3)" LOC = P34;
+NET "Segment(2)" LOC = P35;
+NET "Segment(1)" LOC = P40;
+NET "Segment(0)" LOC = P41;
+NET "SegmentDp" LOC = P26;
 NET "State_2" LOC = P56;
 NET "State_1" LOC = P55;
 NET "State_3" LOC = P57;
@@ -36,4 +37,6 @@ NET "P5" LOC = P5;
 NET "P7" LOC = P7;
 NET "P9" LOC = P9;
 NET "P11" LOC = P11;
-NET "Driver" LOC = P23;
+NET "OSC" LOC = P123;
+NET "PB1" LOC = P45;
+NET "PB2" LOC =P46;

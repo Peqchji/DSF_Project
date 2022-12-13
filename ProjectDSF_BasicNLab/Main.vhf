@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Main.vhf
--- /___/   /\     Timestamp : 12/12/2022 22:43:46
+-- /___/   /\     Timestamp : 12/13/2022 08:29:15
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -193,44 +193,43 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity Main is
-   port ( OSC      : in    std_logic; 
-          State_1  : in    std_logic; 
-          State_2  : in    std_logic; 
-          State_3  : in    std_logic; 
-          State_4  : in    std_logic; 
-          State_5  : in    std_logic; 
-          State_6  : in    std_logic; 
-          State_7  : in    std_logic; 
-          State_8  : in    std_logic; 
-          Digit0   : out   std_logic; 
-          Digit1   : out   std_logic; 
-          Digit2   : out   std_logic; 
-          Digit3   : out   std_logic; 
-          Driver   : out   std_logic; 
-          L0_P82   : out   std_logic; 
-          L1_P81   : out   std_logic; 
-          L2_P80   : out   std_logic; 
-          L3_P79   : out   std_logic; 
-          L4_P78   : out   std_logic; 
-          L5_P75   : out   std_logic; 
-          L6_P74   : out   std_logic; 
-          L7_P67   : out   std_logic; 
-          P5       : out   std_logic; 
-          P7       : out   std_logic; 
-          P9       : out   std_logic; 
-          P11      : out   std_logic; 
-          Segment0 : out   std_logic; 
-          Segment1 : out   std_logic; 
-          Segment2 : out   std_logic; 
-          Segment3 : out   std_logic; 
-          Segment4 : out   std_logic; 
-          Segment5 : out   std_logic; 
-          Segment6 : out   std_logic);
+   port ( OSC       : in    std_logic; 
+          PB1       : in    std_logic; 
+          PB2       : in    std_logic; 
+          State_1   : in    std_logic; 
+          State_2   : in    std_logic; 
+          State_3   : in    std_logic; 
+          State_4   : in    std_logic; 
+          State_5   : in    std_logic; 
+          State_6   : in    std_logic; 
+          State_7   : in    std_logic; 
+          State_8   : in    std_logic; 
+          Digit0    : out   std_logic; 
+          Digit1    : out   std_logic; 
+          Digit2    : out   std_logic; 
+          Digit3    : out   std_logic; 
+          L0_P82    : out   std_logic; 
+          L1_P81    : out   std_logic; 
+          L2_P80    : out   std_logic; 
+          L3_P79    : out   std_logic; 
+          L4_P78    : out   std_logic; 
+          L5_P75    : out   std_logic; 
+          L6_P74    : out   std_logic; 
+          L7_P67    : out   std_logic; 
+          P5        : out   std_logic; 
+          P7        : out   std_logic; 
+          P9        : out   std_logic; 
+          P11       : out   std_logic; 
+          Segment   : out   std_logic_vector (6 downto 0); 
+          SegmentDp : out   std_logic);
 end Main;
 
 architecture BEHAVIORAL of Main is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
+   signal Common       : std_logic_vector (3 downto 0);
+   signal OtherMode    : std_logic_vector (3 downto 0);
+   signal SegmentMode  : std_logic_vector (6 downto 0);
    signal XLXN_28      : std_logic;
    signal XLXN_29      : std_logic;
    signal XLXN_30      : std_logic;
@@ -249,7 +248,6 @@ architecture BEHAVIORAL of Main is
    signal XLXN_72      : std_logic;
    signal XLXN_73      : std_logic;
    signal XLXN_74      : std_logic;
-   signal XLXN_105     : std_logic;
    signal XLXN_106     : std_logic;
    signal XLXN_107     : std_logic;
    signal XLXN_108     : std_logic;
@@ -257,7 +255,12 @@ architecture BEHAVIORAL of Main is
    signal XLXN_110     : std_logic;
    signal XLXN_111     : std_logic;
    signal XLXN_119     : std_logic;
-   signal XLXN_121     : std_logic;
+   signal XLXN_155     : std_logic;
+   signal XLXN_171     : std_logic_vector (3 downto 0);
+   signal XLXN_172     : std_logic;
+   signal XLXN_173     : std_logic;
+   signal XLXN_183     : std_logic;
+   signal XLXN_197     : std_logic_vector (6 downto 0);
    signal L3_P79_DUMMY : std_logic;
    signal L0_P82_DUMMY : std_logic;
    signal L2_P80_DUMMY : std_logic;
@@ -381,16 +384,46 @@ architecture BEHAVIORAL of Main is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
    component BUF
       port ( I : in    std_logic; 
              O : out   std_logic);
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
+   
+   component GND
+      port ( G : out   std_logic);
+   end component;
+   attribute BOX_TYPE of GND : component is "BLACK_BOX";
+   
+   component Lab7
+      port ( PB2_P46  : in    std_logic; 
+             OSC_P123 : in    std_logic; 
+             PB1_P45  : in    std_logic; 
+             common   : out   std_logic_vector (3 downto 0); 
+             dp       : out   std_logic; 
+             segments : out   std_logic_vector (6 downto 0));
+   end component;
+   
+   component DigitSel
+      port ( Sel       : in    std_logic; 
+             Mode7     : in    std_logic_vector (3 downto 0); 
+             OtherMode : in    std_logic_vector (3 downto 0); 
+             Common    : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component AND2
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
+   
+   component ModeSel
+      port ( Sel        : in    std_logic; 
+             Mode7      : in    std_logic_vector (6 downto 0); 
+             OthersMode : in    std_logic_vector (6 downto 0); 
+             Segment    : out   std_logic_vector (6 downto 0));
+   end component;
    
    attribute HU_SET of XLXI_16 : label is "XLXI_16_0";
    attribute HU_SET of XLXI_17 : label is "XLXI_17_1";
@@ -409,13 +442,13 @@ begin
                 A1=>L1_P81_DUMMY,
                 A2=>L2_P80_DUMMY,
                 A3=>L3_P79_DUMMY,
-                a=>Segment0,
-                b=>Segment1,
-                c=>Segment2,
-                d=>Segment3,
-                e=>Segment4,
-                f=>Segment5,
-                g=>Segment6);
+                a=>SegmentMode(0),
+                b=>SegmentMode(1),
+                c=>SegmentMode(2),
+                d=>SegmentMode(3),
+                e=>SegmentMode(4),
+                f=>SegmentMode(5),
+                g=>SegmentMode(6));
    
    XLXI_11 : encoder8DEC_BIN_MUSER_Main
       port map (D1=>XLXN_111,
@@ -424,7 +457,7 @@ begin
                 D4=>XLXN_108,
                 D5=>XLXN_107,
                 D6=>XLXN_106,
-                D7=>XLXN_105,
+                D7=>XLXN_155,
                 D8=>State_8,
                 B0=>L0_P82_DUMMY,
                 B1=>L1_P81_DUMMY,
@@ -474,7 +507,7 @@ begin
    XLXI_19 : AND2B1
       port map (I0=>State_8,
                 I1=>State_7,
-                O=>XLXN_105);
+                O=>XLXN_155);
    
    XLXI_26 : INV4_HXILINX_Main
       port map (I0=>State_8,
@@ -544,20 +577,17 @@ begin
    XLXI_39 : VCC
       port map (P=>XLXN_119);
    
-   XLXI_41 : GND
-      port map (G=>Digit0);
-   
    XLXI_43 : BUF
       port map (I=>XLXN_119,
-                O=>Digit3);
+                O=>OtherMode(3));
    
    XLXI_44 : BUF
       port map (I=>XLXN_119,
-                O=>Digit2);
+                O=>OtherMode(2));
    
    XLXI_45 : BUF
       port map (I=>XLXN_119,
-                O=>Digit1);
+                O=>OtherMode(1));
    
    XLXI_46 : BUF
       port map (I=>L0_P82_DUMMY,
@@ -590,13 +620,59 @@ begin
       port map (I=>L4_P78_DUMMY,
                 O=>L7_P67);
    
-   XLXI_54 : INV
-      port map (I=>OSC,
-                O=>XLXN_121);
+   XLXI_56 : Lab7
+      port map (OSC_P123=>OSC,
+                PB1_P45=>XLXN_173,
+                PB2_P46=>XLXN_172,
+                common(3 downto 0)=>XLXN_171(3 downto 0),
+                dp=>XLXN_183,
+                segments(6 downto 0)=>XLXN_197(6 downto 0));
    
-   XLXI_55 : INV
-      port map (I=>XLXN_121,
-                O=>Driver);
+   XLXI_70 : DigitSel
+      port map (Mode7(3 downto 0)=>XLXN_171(3 downto 0),
+                OtherMode(3 downto 0)=>OtherMode(3 downto 0),
+                Sel=>XLXN_155,
+                Common(3 downto 0)=>Common(3 downto 0));
+   
+   XLXI_76 : BUF
+      port map (I=>Common(3),
+                O=>Digit3);
+   
+   XLXI_77 : BUF
+      port map (I=>Common(2),
+                O=>Digit2);
+   
+   XLXI_78 : BUF
+      port map (I=>Common(1),
+                O=>Digit1);
+   
+   XLXI_79 : BUF
+      port map (I=>Common(0),
+                O=>Digit0);
+   
+   XLXI_80 : AND2
+      port map (I0=>XLXN_183,
+                I1=>XLXN_155,
+                O=>SegmentDp);
+   
+   XLXI_81 : AND2
+      port map (I0=>XLXN_155,
+                I1=>PB1,
+                O=>XLXN_173);
+   
+   XLXI_82 : AND2
+      port map (I0=>XLXN_155,
+                I1=>PB2,
+                O=>XLXN_172);
+   
+   XLXI_87 : GND
+      port map (G=>OtherMode(0));
+   
+   XLXI_92 : ModeSel
+      port map (Mode7(6 downto 0)=>XLXN_197(6 downto 0),
+                OthersMode(6 downto 0)=>SegmentMode(6 downto 0),
+                Sel=>XLXN_155,
+                Segment(6 downto 0)=>Segment(6 downto 0));
    
 end BEHAVIORAL;
 

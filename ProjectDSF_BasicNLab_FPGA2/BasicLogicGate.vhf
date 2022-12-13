@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : BasicLogicGate.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:17
+-- /___/   /\     Timestamp : 12/13/2022 10:04:51
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -474,14 +474,14 @@ architecture BEHAVIORAL of BasicLogicGate is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_100";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_101";
-   attribute HU_SET of XLXI_26 : label is "XLXI_26_102";
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_103";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_104";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_105";
-   attribute HU_SET of XLXI_92 : label is "XLXI_92_106";
-   attribute HU_SET of XLXI_98 : label is "XLXI_98_107";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_69";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_70";
+   attribute HU_SET of XLXI_26 : label is "XLXI_26_71";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_72";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_73";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_74";
+   attribute HU_SET of XLXI_92 : label is "XLXI_92_75";
+   attribute HU_SET of XLXI_98 : label is "XLXI_98_76";
 begin
    XLXI_3 : AND4B3
       port map (I0=>State_8,

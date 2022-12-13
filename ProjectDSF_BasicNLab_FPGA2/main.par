@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-Q2E8FTG::  Tue Dec 13 01:11:03 2022
+DESKTOP-Q2E8FTG::  Tue Dec 13 10:13:48 2022
 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 
@@ -26,26 +26,26 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                   286 out of  11,440    2%
-    Number used as Flip Flops:                 285
+  Number of Slice Registers:                   211 out of  11,440    1%
+    Number used as Flip Flops:                 210
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                1
-  Number of Slice LUTs:                        765 out of   5,720   13%
-    Number used as logic:                      765 out of   5,720   13%
-      Number using O6 output only:             640
+  Number of Slice LUTs:                        590 out of   5,720   10%
+    Number used as logic:                      590 out of   5,720   10%
+      Number using O6 output only:             503
       Number using O5 output only:               0
-      Number using O5 and O6:                  125
+      Number using O5 and O6:                   87
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                   367 out of   1,430   25%
+  Number of occupied Slices:                   270 out of   1,430   18%
   Number of MUXCYs used:                        24 out of   2,860    1%
-  Number of LUT Flip Flop pairs used:          767
-    Number with an unused Flip Flop:           489 out of     767   63%
-    Number with an unused LUT:                   2 out of     767    1%
-    Number of fully used LUT-FF pairs:         276 out of     767   35%
+  Number of LUT Flip Flop pairs used:          591
+    Number with an unused Flip Flop:           388 out of     591   65%
+    Number with an unused LUT:                   1 out of     591    1%
+    Number of fully used LUT-FF pairs:         202 out of     591   34%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -56,8 +56,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                        38 out of     102   37%
-    Number of LOCed IOBs:                       38 out of      38  100%
+  Number of bonded IOBs:                        37 out of     102   36%
+    Number of LOCed IOBs:                       37 out of      37  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -88,35 +88,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 11 secs 
-Finished initial Timing Analysis.  REAL time: 11 secs 
+Starting initial Timing Analysis.  REAL time: 5 secs 
+Finished initial Timing Analysis.  REAL time: 5 secs 
 
 Starting Router
 
 
-Phase  1  : 2872 unrouted;      REAL time: 12 secs 
+Phase  1  : 2180 unrouted;      REAL time: 5 secs 
 
-Phase  2  : 2735 unrouted;      REAL time: 13 secs 
+Phase  2  : 2085 unrouted;      REAL time: 5 secs 
 
-Phase  3  : 509 unrouted;      REAL time: 16 secs 
+Phase  3  : 430 unrouted;      REAL time: 7 secs 
 
-Phase  4  : 510 unrouted; (Par is working to improve performance)     REAL time: 17 secs 
+Phase  4  : 430 unrouted; (Par is working to improve performance)     REAL time: 7 secs 
 
 Updating file: main.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 8 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 19 secs 
-Total REAL time to Router completion: 19 secs 
-Total CPU time to Router completion: 14 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 9 secs 
+Total REAL time to Router completion: 9 secs 
+Total CPU time to Router completion: 9 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -136,247 +136,187 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.827ns|     N/A|           0
-  I_2/XLXN_106                              | HOLD        |     0.456ns|            |       0|           0
+  Autotimespec constraint for clock net OSC | SETUP       |         N/A|     2.692ns|     N/A|           0
+  _IBUF_BUFG                                | HOLD        |     0.412ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.899ns|     N/A|           0
-  I_2/XLXN_104                              | HOLD        |     0.457ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.736ns|     N/A|           0
+  I_2/XLXI_38/XLXN_5                        | HOLD        |     0.436ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.086ns|     N/A|           0
+  I_2/XLXI_38/XLXN_20                       | HOLD        |     0.460ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.761ns|     N/A|           0
-  I_2/XLXI_38/XLXN_2                        | HOLD        |     0.482ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.824ns|     N/A|           0
-  I_2/XLXI_38/XLXN_3                        | HOLD        |     0.477ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.771ns|     N/A|           0
-  N_381                                     | HOLD        |     0.416ns|            |       0|           0
+  I_2/XLXN_106                              | HOLD        |     0.456ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.739ns|     N/A|           0
-  I_2/XLXI_38/XLXN_5                        | HOLD        |     0.430ns|            |       0|           0
+  I_2/XLXI_38/XLXN_60                       | HOLD        |     0.430ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.069ns|     N/A|           0
-  I_2/XLXI_38/XLXN_20                       | HOLD        |     0.436ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.819ns|     N/A|           0
+  I_2/XLXI_38/XLXN_2                        | HOLD        |     0.477ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.030ns|     N/A|           0
-  I_2/XLXI_38/XLXN_60                       | HOLD        |     0.477ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.758ns|     N/A|           0
+  I_2/XLXI_38/XLXN_3                        | HOLD        |     0.482ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net OSC | SETUP       |         N/A|     2.930ns|     N/A|           0
-  _IBUFG                                    | HOLD        |     0.423ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.928ns|     N/A|           0
+  I_2/XLXN_104                              | HOLD        |     0.479ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.911ns|     N/A|           0
-  I_13/XLXN_24                              | HOLD        |     0.415ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.917ns|     N/A|           0
+  I_13/XLXN_24                              | HOLD        |     0.468ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.896ns|     N/A|           0
-  I_11/XLXI_35/XLXI_55/XLXI_1/XLXI_9/XLXN_9 | HOLD        |     0.326ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.076ns|     N/A|           0
+  I_11/XLXI_35/XLXI_55/XLXI_1/XLXI_9/XLXN_9 | HOLD        |     0.465ns|            |       0|           0
   3                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.352ns|     N/A|           0
-  I_11/XLXN_112                             | HOLD        |     0.359ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.474ns|     N/A|           0
+  I_11/XLXN_112                             | HOLD        |     0.417ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.050ns|     N/A|           0
-  I_5/XLXI_1/XLXN_1063                      | HOLD        |     0.456ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.052ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXN_42                | HOLD        |     0.458ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.243ns|     N/A|           0
-  N_260                                     | HOLD        |     0.435ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.810ns|     N/A|           0
-  I_116/XLXI_4/XLXN_93                      | HOLD        |     0.445ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.194ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_8/XLXI_1/XLXI_8 | HOLD        |     0.427ns|            |       0|           0
-  /XLXN_93                                  |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.686ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXI_14/XLXN_93        | HOLD        |     0.440ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.438ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXN_14              | HOLD        |     0.419ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.045ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXI_17/XLXI_4/XLXN_93 | HOLD        |     0.450ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.009ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_1/XLXI_9 | HOLD        |     0.450ns|            |       0|           0
-  /XLXN_93                                  |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.002ns|     N/A|           0
-  I_12/XLXI_1/XLXI_7/XLXI_32/XLXI_4/XLXN_93 | HOLD        |     0.418ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.982ns|     N/A|           0
-  I_13/XLXN_14                              | HOLD        |     0.459ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.201ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXN_148_DUMMY         | HOLD        |     0.450ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.213ns|     N/A|           0
-  I_11/XLXI_35/XLXI_55/XLXI_1/XLXI_8/XLXN_9 | HOLD        |     0.403ns|            |       0|           0
-  3                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.017ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_2/XLXI_8 | HOLD        |     0.447ns|            |       0|           0
-  /XLXN_93                                  |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.160ns|     N/A|           0
-  I_116/XLXI_3/XLXN_93                      | HOLD        |     0.441ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.144ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_8/XLXI_1/XLXI_4 | HOLD        |     0.442ns|            |       0|           0
-  /XLXN_93                                  |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.683ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_16/XLXN_93      | HOLD        |     0.467ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.668ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXI_17/XLXI_3/XLXN_93 | HOLD        |     0.452ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.033ns|     N/A|           0
-  I_5/XLXI_1/XLXI_670/XLXI_4/XLXN_93        | HOLD        |     0.444ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.132ns|     N/A|           0
-  I_12/XLXI_1/XLXI_7/XLXI_32/XLXI_5/XLXN_93 | HOLD        |     0.436ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.124ns|     N/A|           0
-  I_12/XLXI_1/XLXI_7/XLXI_32/XLXI_3/XLXN_93 | HOLD        |     0.435ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.606ns|     N/A|           0
-  I_5/XLXI_1/XLXN_1060                      | HOLD        |     0.430ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.952ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXI_15/XLXN_93        | HOLD        |     0.286ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.926ns|     N/A|           0
-  I_12/XLXI_1/XLXI_7/XLXI_46/XLXI_1/XLXN_93 | HOLD        |     0.442ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.210ns|     N/A|           0
-  I_11/XLXI_35/XLXI_55/XLXI_1/XLXI_4/XLXN_9 | HOLD        |     0.447ns|            |       0|           0
-  3                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.093ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_2/XLXI_4 | HOLD        |     0.456ns|            |       0|           0
-  /XLXN_93                                  |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.958ns|     N/A|           0
-  I_116/XLXI_2/XLXN_93                      | HOLD        |     0.439ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.091ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXN_13              | HOLD        |     0.472ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.857ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXI_18/XLXI_1/XLXN_93 | HOLD        |     0.364ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.989ns|     N/A|           0
-  I_2/XLXI_48/XLXN_93                       | HOLD        |     0.432ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.734ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_1/XLXI_8 | HOLD        |     0.396ns|            |       0|           0
-  /XLXN_93                                  |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.149ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXI_17/XLXI_2/XLXN_93 | HOLD        |     0.433ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.264ns|     N/A|           0
+  N_423                                     | HOLD        |     0.438ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.073ns|     N/A|           0
-  I_5/XLXI_1/XLXI_670/XLXI_3/XLXN_93        | HOLD        |     0.331ns|            |       0|           0
+  I_5/XLXI_1/XLXI_677/XLXI_8/XLXN_72        | HOLD        |     0.433ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.008ns|     N/A|           0
-  I_2/XLXI_50/XLXN_93                       | HOLD        |     0.418ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.651ns|     N/A|           0
-  I_12/XLXI_1/XLXI_7/XLXI_32/XLXI_2/XLXN_93 | HOLD        |     0.418ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.878ns|     N/A|           0
-  I_116/XLXI_1/XLXN_93                      | HOLD        |     0.244ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.909ns|     N/A|           0
-  I_2/XLXN_108                              | HOLD        |     0.413ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.331ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXI_17/XLXI_5/XLXN_93 | HOLD        |     0.424ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.186ns|     N/A|           0
-  I_2/XLXN_118                              | HOLD        |     0.462ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.037ns|     N/A|           0
-  I_5/XLXI_1/XLXI_671/XLXI_1/XLXN_93        | HOLD        |     0.447ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.052ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_1/XLXI_4 | HOLD        |     0.319ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.941ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_8/XLXI_1/XLXI_8 | HOLD        |     0.436ns|            |       0|           0
   /XLXN_93                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.909ns|     N/A|           0
-  I_2/XLXN_103                              | HOLD        |     0.413ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.177ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXN_14              | HOLD        |     0.468ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.197ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXI_17/XLXI_1/XLXN_93 | HOLD        |     0.438ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.968ns|     N/A|           0
+  N_409                                     | HOLD        |     0.399ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.176ns|     N/A|           0
-  I_5/XLXI_1/XLXI_670/XLXI_2/XLXN_93        | HOLD        |     0.463ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.781ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_7/XLXI_1/XLXI_8 | HOLD        |     0.433ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.699ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_1/XLXI_9 | HOLD        |     0.422ns|            |       0|           0
   /XLXN_93                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.698ns|     N/A|           0
-  I_2/XLXI_49/XLXN_93                       | HOLD        |     0.445ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.898ns|     N/A|           0
+  I_13/XLXN_13                              | HOLD        |     0.456ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.814ns|     N/A|           0
-  I_12/XLXI_1/XLXI_7/XLXI_32/XLXI_1/XLXN_93 | HOLD        |     0.412ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.759ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_8/XLXI_1/XLXI_9 | HOLD        |     0.473ns|            |       0|           0
-  /XLXN_93                                  |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.486ns|     N/A|           0
-  I_11/XLXI_35/XLXI_55/XLXI_5/XLXN_93       | HOLD        |     0.210ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.249ns|     N/A|           0
-  I_5/XLXI_1/XLXI_670/XLXI_5/XLXN_93        | HOLD        |     0.444ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.875ns|     N/A|           0
+  I_13/XLXN_14                              | HOLD        |     0.438ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.855ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXN_146               | HOLD        |     0.316ns|            |       0|           0
+  I_11/XLXI_35/XLXI_55/XLXI_1/XLXI_8/XLXN_9 | HOLD        |     0.364ns|            |       0|           0
+  3                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.755ns|     N/A|           0
-  I_5/XLXI_1/XLXI_670/XLXI_1/XLXN_93        | HOLD        |     0.449ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.912ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_9/XLXN_21       | HOLD        |     0.416ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.045ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_7/XLXI_1/XLXI_4 | HOLD        |     0.456ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.720ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_2/XLXI_8 | HOLD        |     0.350ns|            |       0|           0
   /XLXN_93                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.010ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXN_15              | HOLD        |     0.436ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.973ns|     N/A|           0
+  I_5/XLXI_1/XLXI_677/XLXI_7/XLXN_72        | HOLD        |     0.448ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.908ns|     N/A|           0
-  I_12/XLXI_1/XLXI_7/XLXI_46/XLXI_2/XLXN_93 | HOLD        |     0.412ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.067ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_8/XLXI_1/XLXI_4 | HOLD        |     0.456ns|            |       0|           0
+  /XLXN_93                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.649ns|     N/A|           0
-  I_12/XLXI_1/XLXN_112                      | HOLD        |     0.470ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.945ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_16/XLXN_93      | HOLD        |     0.476ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.875ns|     N/A|           0
-  I_12/XLXI_1/XLXI_2/XLXI_18/XLXI_2/XLXN_93 | HOLD        |     0.438ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.587ns|     N/A|           0
+  I_5/XLXI_1/XLXN_1060                      | HOLD        |     0.454ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.919ns|     N/A|           0
-  I_5/XLXI_1/XLXI_671/XLXI_2/XLXN_93        | HOLD        |     0.470ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.966ns|     N/A|           0
+  I_165/XLXI_8/XLXN_72                      | HOLD        |     0.453ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.911ns|     N/A|           0
-  I_116/XLXI_5/XLXN_93                      | HOLD        |     0.415ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.762ns|     N/A|           0
+  I_11/XLXI_35/XLXI_55/XLXI_1/XLXI_4/XLXN_9 | HOLD        |     0.455ns|            |       0|           0
+  3                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.875ns|     N/A|           0
-  I_13/XLXN_13                              | HOLD        |     0.438ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.630ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_2/XLXI_4 | HOLD        |     0.287ns|            |       0|           0
+  /XLXN_93                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.875ns|     N/A|           0
-  I_11/XLXI_35/XLXI_55/XLXI_6/XLXN_93       | HOLD        |     0.438ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.894ns|     N/A|           0
+  I_5/XLXI_1/XLXI_677/XLXI_6/XLXN_72        | HOLD        |     0.474ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.994ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXN_13              | HOLD        |     0.133ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.079ns|     N/A|           0
+  I_2/XLXI_48/XLXN_93                       | HOLD        |     0.424ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.068ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_1/XLXI_8 | HOLD        |     0.423ns|            |       0|           0
+  /XLXN_93                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.071ns|     N/A|           0
+  I_2/XLXI_50/XLXN_93                       | HOLD        |     0.444ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.162ns|     N/A|           0
+  I_165/XLXI_7/XLXN_72                      | HOLD        |     0.444ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.009ns|     N/A|           0
+  I_5/XLXI_1/XLXN_1063                      | HOLD        |     0.449ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.896ns|     N/A|           0
+  I_2/XLXN_108                              | HOLD        |     0.454ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.935ns|     N/A|           0
+  I_2/XLXN_118                              | HOLD        |     0.465ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.981ns|     N/A|           0
+  I_5/XLXI_1/XLXI_671/XLXI_1/XLXN_93        | HOLD        |     0.417ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.118ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_1/XLXI_4 | HOLD        |     0.433ns|            |       0|           0
+  /XLXN_93                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.872ns|     N/A|           0
+  I_2/XLXN_103                              | HOLD        |     0.435ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.727ns|     N/A|           0
+  I_165/XLXI_9/XLXN_72                      | HOLD        |     0.456ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.125ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_7/XLXI_1/XLXI_8 | HOLD        |     0.431ns|            |       0|           0
+  /XLXN_93                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.214ns|     N/A|           0
+  I_2/XLXI_49/XLXN_93                       | HOLD        |     0.452ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.120ns|     N/A|           0
+  I_5/XLXI_1/XLXI_677/XLXI_9/XLXN_72        | HOLD        |     0.449ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.245ns|     N/A|           0
+  I_165/XLXI_6/XLXN_72                      | HOLD        |     0.424ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.197ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_8/XLXI_1/XLXI_9 | HOLD        |     0.312ns|            |       0|           0
+  /XLXN_93                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.060ns|     N/A|           0
+  I_11/XLXI_35/XLXI_55/XLXI_5/XLXN_93       | HOLD        |     0.446ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.104ns|     N/A|           0
+  I_5/XLXI_1/XLXI_677/XLXI_10/XLXN_72       | HOLD        |     0.441ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.948ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_2/XLXI_9 | HOLD        |     0.488ns|            |       0|           0
+  I_11/XLXI_35/XLXI_65/XLXI_9/XLXN_21       | HOLD        |     0.488ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.928ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_7/XLXI_1/XLXI_4 | HOLD        |     0.277ns|            |       0|           0
   /XLXN_93                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.527ns|     N/A|           0
-  I_11/XLXI_35/XLXI_65/XLXI_7/XLXI_1/XLXI_9 | HOLD        |     0.434ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     3.144ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXN_15              | HOLD        |     0.480ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.908ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_9/XLXI_2/XLXI_9 | HOLD        |     0.412ns|            |       0|           0
+  /XLXN_93                                  |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.876ns|     N/A|           0
+  I_5/XLXI_1/XLXI_671/XLXI_2/XLXN_93        | HOLD        |     0.439ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.979ns|     N/A|           0
+  I_11/XLXI_35/XLXI_55/XLXI_6/XLXN_93       | HOLD        |     0.510ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.876ns|     N/A|           0
+  I_165/XLXI_10/XLXN_72                     | HOLD        |     0.439ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.435ns|     N/A|           0
+  I_11/XLXI_35/XLXI_65/XLXI_7/XLXI_1/XLXI_9 | HOLD        |     0.435ns|            |       0|           0
   /XLXN_93                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.909ns|     N/A|           0
@@ -397,8 +337,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 21 secs 
-Total CPU time to PAR completion: 15 secs 
+Total REAL time to PAR completion: 10 secs 
+Total CPU time to PAR completion: 9 secs 
 
 Peak Memory Usage:  4472 MB
 

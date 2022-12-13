@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Div4M.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:11
+-- /___/   /\     Timestamp : 12/13/2022 10:04:40
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -153,8 +153,8 @@ architecture BEHAVIORAL of Div4M is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_82";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_83";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_11";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_12";
 begin
    XLXI_1 : Div1k_MUSER_Div4M
       port map (In_CLK=>In_CLK,

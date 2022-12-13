@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Mux4_1_4nn C:/Users/pinai/Downloads/Compressed/Lab7/Mux4_1_4nn.sch C:/Users/pinai/Downloads/Compressed/Lab7/Mux4_1_4nn.sym 

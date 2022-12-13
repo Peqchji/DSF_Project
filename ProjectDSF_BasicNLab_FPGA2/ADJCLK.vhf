@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ADJCLK.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:08:56
+-- /___/   /\     Timestamp : 12/13/2022 10:04:42
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -172,7 +172,7 @@ architecture BEHAVIORAL of mod10_MUSER_ADJCLK is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_23";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_24";
 begin
    CLK_Out <= CLK_Out_DUMMY;
    XLXI_1 : CB4CE_HXILINX_ADJCLK
@@ -270,11 +270,11 @@ architecture BEHAVIORAL of ADJCLK is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_21 : label is "XLXI_21_24";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_25";
-   attribute HU_SET of XLXI_38 : label is "XLXI_38_26";
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_28";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_27";
+   attribute HU_SET of XLXI_21 : label is "XLXI_21_25";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_26";
+   attribute HU_SET of XLXI_38 : label is "XLXI_38_27";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_29";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_28";
 begin
    mod2x10e5_100 <= mod2x10e5_100_DUMMY;
    mod2x10e7_1 <= mod2x10e7_1_DUMMY;

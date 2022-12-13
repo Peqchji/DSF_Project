@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : mod10.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:08:58
+-- /___/   /\     Timestamp : 12/13/2022 10:04:43
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -124,7 +124,7 @@ architecture BEHAVIORAL of mod10 is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_30";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_36";
 begin
    CLK_Out <= CLK_Out_DUMMY;
    XLXI_1 : CB4CE_HXILINX_mod10

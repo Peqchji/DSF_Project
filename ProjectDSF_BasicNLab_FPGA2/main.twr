@@ -36,58 +36,57 @@ Clock Mode_Bin<0> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                               | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)              | Phase  |
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
-Buzzer      |        14.412(R)|      SLOW  |         7.631(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        14.888(R)|      SLOW  |         8.174(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-Segment<0>  |        15.735(R)|      SLOW  |         8.971(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.578(R)|      SLOW  |         9.638(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.509(R)|      SLOW  |        10.188(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.663(R)|      SLOW  |        10.714(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        22.036(R)|      SLOW  |        10.429(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.094(R)|      SLOW  |        10.636(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        18.809(R)|      SLOW  |         8.670(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<1>  |        15.640(R)|      SLOW  |         8.819(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.525(R)|      SLOW  |         9.372(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.821(R)|      SLOW  |         9.942(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.547(R)|      SLOW  |        10.532(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.920(R)|      SLOW  |        10.247(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.029(R)|      SLOW  |        10.454(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        20.236(R)|      SLOW  |         9.697(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<2>  |        15.266(R)|      SLOW  |         8.735(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.151(R)|      SLOW  |         9.392(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.940(R)|      SLOW  |         9.962(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.381(R)|      SLOW  |        10.326(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.754(R)|      SLOW  |         9.992(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.812(R)|      SLOW  |        10.199(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.749(R)|      SLOW  |         9.359(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<3>  |        16.264(R)|      SLOW  |         9.152(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        18.149(R)|      SLOW  |         9.804(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.447(R)|      SLOW  |        10.277(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.246(R)|      SLOW  |        10.499(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.782(R)|      SLOW  |        10.293(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.164(R)|      SLOW  |        10.500(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        20.253(R)|      SLOW  |         9.521(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<4>  |        15.429(R)|      SLOW  |         8.958(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.298(R)|      SLOW  |         9.613(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.021(R)|      SLOW  |        10.183(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.038(R)|      SLOW  |        10.372(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.502(R)|      SLOW  |        10.166(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.884(R)|      SLOW  |        10.373(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.801(R)|      SLOW  |         9.156(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<5>  |        15.037(R)|      SLOW  |         8.601(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.922(R)|      SLOW  |         9.178(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.667(R)|      SLOW  |         9.651(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.669(R)|      SLOW  |         9.865(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.042(R)|      SLOW  |         9.531(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.100(R)|      SLOW  |         9.738(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.520(R)|      SLOW  |         9.282(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<6>  |        14.893(R)|      SLOW  |         8.519(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.778(R)|      SLOW  |         9.059(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.411(R)|      SLOW  |         9.532(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.399(R)|      SLOW  |         9.847(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        20.772(R)|      SLOW  |         9.615(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        20.830(R)|      SLOW  |         9.822(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.383(R)|      SLOW  |         9.101(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-SegmentDp   |        13.010(R)|      SLOW  |         7.631(R)|      FAST  |XLXI_12/XLXI_1/XLXN_112        |   0.000|
+Buzzer      |        13.675(R)|      SLOW  |         7.229(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        13.532(R)|      SLOW  |         7.320(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+Segment<0>  |        17.479(R)|      SLOW  |         9.358(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.119(R)|      SLOW  |        10.637(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.011(R)|      SLOW  |        10.534(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.205(R)|      SLOW  |        10.617(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        21.684(R)|      SLOW  |        10.096(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        21.971(R)|      SLOW  |        10.409(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        20.259(R)|      SLOW  |        11.646(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<1>  |        16.751(R)|      SLOW  |         8.956(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.270(R)|      SLOW  |        10.280(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.080(R)|      SLOW  |        10.130(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        23.234(R)|      SLOW  |        10.936(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.713(R)|      SLOW  |        10.429(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.745(R)|      SLOW  |        10.742(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        18.130(R)|      SLOW  |         9.764(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<2>  |        16.551(R)|      SLOW  |         9.263(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.070(R)|      SLOW  |        10.185(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        17.880(R)|      SLOW  |        10.214(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.399(R)|      SLOW  |        10.503(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        21.878(R)|      SLOW  |         9.871(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.165(R)|      SLOW  |        10.184(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.949(R)|      SLOW  |        10.077(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<3>  |        16.429(R)|      SLOW  |         8.380(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        17.140(R)|      SLOW  |         9.707(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        17.005(R)|      SLOW  |         9.554(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.720(R)|      SLOW  |        10.718(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.199(R)|      SLOW  |        10.086(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.486(R)|      SLOW  |        10.399(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.505(R)|      SLOW  |         9.273(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<4>  |        15.599(R)|      SLOW  |         8.324(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.872(R)|      SLOW  |         9.537(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.682(R)|      SLOW  |         9.498(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.699(R)|      SLOW  |        10.777(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.178(R)|      SLOW  |        10.145(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.210(R)|      SLOW  |        10.458(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.751(R)|      SLOW  |         9.950(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<5>  |        16.052(R)|      SLOW  |         8.215(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.599(R)|      SLOW  |         9.521(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.584(R)|      SLOW  |         9.389(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        21.380(R)|      SLOW  |        10.024(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        20.859(R)|      SLOW  |         9.598(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        21.146(R)|      SLOW  |         9.913(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.286(R)|      SLOW  |         9.535(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<6>  |        15.706(R)|      SLOW  |         8.120(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.352(R)|      SLOW  |         9.414(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.303(R)|      SLOW  |         9.294(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        21.344(R)|      SLOW  |         9.956(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        20.823(R)|      SLOW  |         9.527(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        21.110(R)|      SLOW  |         9.840(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.251(R)|      SLOW  |         9.491(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
 
 Clock Mode_Bin<1> to Pad
@@ -95,58 +94,57 @@ Clock Mode_Bin<1> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                               | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)              | Phase  |
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
-Buzzer      |        14.018(R)|      SLOW  |         7.326(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        14.494(R)|      SLOW  |         7.869(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-Segment<0>  |        15.341(R)|      SLOW  |         8.666(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.184(R)|      SLOW  |         9.333(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.115(R)|      SLOW  |         9.883(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.515(R)|      SLOW  |        10.611(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.888(R)|      SLOW  |        10.326(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.946(R)|      SLOW  |        10.533(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        18.483(R)|      SLOW  |         8.479(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<1>  |        15.246(R)|      SLOW  |         8.514(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.131(R)|      SLOW  |         9.067(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.427(R)|      SLOW  |         9.637(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.399(R)|      SLOW  |        10.429(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.772(R)|      SLOW  |        10.144(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.881(R)|      SLOW  |        10.351(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.910(R)|      SLOW  |         9.506(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<2>  |        14.872(R)|      SLOW  |         8.430(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.757(R)|      SLOW  |         9.087(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.546(R)|      SLOW  |         9.657(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.233(R)|      SLOW  |        10.223(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.606(R)|      SLOW  |         9.889(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.664(R)|      SLOW  |        10.096(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.423(R)|      SLOW  |         9.168(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<3>  |        15.870(R)|      SLOW  |         8.847(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.755(R)|      SLOW  |         9.499(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.053(R)|      SLOW  |         9.972(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.098(R)|      SLOW  |        10.396(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.634(R)|      SLOW  |        10.190(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.016(R)|      SLOW  |        10.397(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.927(R)|      SLOW  |         9.330(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<4>  |        15.035(R)|      SLOW  |         8.653(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.904(R)|      SLOW  |         9.308(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.627(R)|      SLOW  |         9.878(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.890(R)|      SLOW  |        10.269(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.354(R)|      SLOW  |        10.063(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.736(R)|      SLOW  |        10.270(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.475(R)|      SLOW  |         8.965(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<5>  |        14.643(R)|      SLOW  |         8.296(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.528(R)|      SLOW  |         8.873(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.273(R)|      SLOW  |         9.346(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.521(R)|      SLOW  |         9.762(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        20.894(R)|      SLOW  |         9.428(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        20.952(R)|      SLOW  |         9.635(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.194(R)|      SLOW  |         9.091(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<6>  |        14.499(R)|      SLOW  |         8.214(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.384(R)|      SLOW  |         8.754(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.017(R)|      SLOW  |         9.227(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.251(R)|      SLOW  |         9.744(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        20.624(R)|      SLOW  |         9.512(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        20.682(R)|      SLOW  |         9.719(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.057(R)|      SLOW  |         8.910(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-SegmentDp   |        12.878(R)|      SLOW  |         7.514(R)|      FAST  |XLXI_12/XLXI_1/XLXN_112        |   0.000|
+Buzzer      |        13.531(R)|      SLOW  |         7.122(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        13.388(R)|      SLOW  |         7.213(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+Segment<0>  |        17.335(R)|      SLOW  |         9.251(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        17.975(R)|      SLOW  |        10.530(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        17.867(R)|      SLOW  |        10.427(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.073(R)|      SLOW  |        10.464(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        21.552(R)|      SLOW  |         9.943(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        21.839(R)|      SLOW  |        10.256(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        19.755(R)|      SLOW  |        11.257(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<1>  |        16.607(R)|      SLOW  |         8.849(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.126(R)|      SLOW  |        10.173(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        17.936(R)|      SLOW  |        10.023(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        23.102(R)|      SLOW  |        10.783(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.581(R)|      SLOW  |        10.276(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.613(R)|      SLOW  |        10.589(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.626(R)|      SLOW  |         9.375(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<2>  |        16.407(R)|      SLOW  |         9.156(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        17.926(R)|      SLOW  |        10.078(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        17.736(R)|      SLOW  |        10.107(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.267(R)|      SLOW  |        10.350(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        21.746(R)|      SLOW  |         9.718(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.033(R)|      SLOW  |        10.031(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.445(R)|      SLOW  |         9.688(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<3>  |        16.285(R)|      SLOW  |         8.273(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.996(R)|      SLOW  |         9.600(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.861(R)|      SLOW  |         9.447(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.588(R)|      SLOW  |        10.565(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.067(R)|      SLOW  |         9.933(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.354(R)|      SLOW  |        10.246(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.001(R)|      SLOW  |         8.884(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<4>  |        15.455(R)|      SLOW  |         8.217(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.728(R)|      SLOW  |         9.430(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.538(R)|      SLOW  |         9.391(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.567(R)|      SLOW  |        10.624(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.046(R)|      SLOW  |         9.992(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.078(R)|      SLOW  |        10.305(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.247(R)|      SLOW  |         9.561(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<5>  |        15.908(R)|      SLOW  |         8.108(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.455(R)|      SLOW  |         9.414(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.440(R)|      SLOW  |         9.282(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        21.248(R)|      SLOW  |         9.871(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        20.727(R)|      SLOW  |         9.445(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        21.014(R)|      SLOW  |         9.760(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        16.782(R)|      SLOW  |         9.146(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<6>  |        15.562(R)|      SLOW  |         8.013(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.208(R)|      SLOW  |         9.307(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.159(R)|      SLOW  |         9.187(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        21.212(R)|      SLOW  |         9.803(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        20.691(R)|      SLOW  |         9.374(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        20.978(R)|      SLOW  |         9.687(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        16.747(R)|      SLOW  |         9.102(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
 
 Clock Mode_Bin<2> to Pad
@@ -154,58 +152,57 @@ Clock Mode_Bin<2> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                               | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)              | Phase  |
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
-Buzzer      |        14.684(R)|      SLOW  |         7.833(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        15.160(R)|      SLOW  |         8.376(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-Segment<0>  |        16.007(R)|      SLOW  |         9.173(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.850(R)|      SLOW  |         9.840(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.781(R)|      SLOW  |        10.390(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.972(R)|      SLOW  |        10.962(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        22.345(R)|      SLOW  |        10.677(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.403(R)|      SLOW  |        10.884(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        18.996(R)|      SLOW  |         8.880(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<1>  |        15.912(R)|      SLOW  |         9.021(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.797(R)|      SLOW  |         9.574(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.093(R)|      SLOW  |        10.144(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.856(R)|      SLOW  |        10.780(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        22.229(R)|      SLOW  |        10.495(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.338(R)|      SLOW  |        10.702(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        20.423(R)|      SLOW  |         9.907(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<2>  |        15.538(R)|      SLOW  |         8.937(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.423(R)|      SLOW  |         9.594(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.212(R)|      SLOW  |        10.164(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.690(R)|      SLOW  |        10.574(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        22.063(R)|      SLOW  |        10.240(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.121(R)|      SLOW  |        10.447(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.936(R)|      SLOW  |         9.569(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<3>  |        16.536(R)|      SLOW  |         9.354(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        18.421(R)|      SLOW  |        10.006(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.719(R)|      SLOW  |        10.479(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.555(R)|      SLOW  |        10.747(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        22.091(R)|      SLOW  |        10.541(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.473(R)|      SLOW  |        10.748(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        20.440(R)|      SLOW  |         9.731(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<4>  |        15.701(R)|      SLOW  |         9.160(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.570(R)|      SLOW  |         9.815(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.293(R)|      SLOW  |        10.385(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.347(R)|      SLOW  |        10.620(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.811(R)|      SLOW  |        10.414(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.193(R)|      SLOW  |        10.621(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.988(R)|      SLOW  |         9.366(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<5>  |        15.309(R)|      SLOW  |         8.803(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.194(R)|      SLOW  |         9.380(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.939(R)|      SLOW  |         9.853(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.978(R)|      SLOW  |        10.113(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.351(R)|      SLOW  |         9.779(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.409(R)|      SLOW  |         9.986(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.707(R)|      SLOW  |         9.492(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<6>  |        15.165(R)|      SLOW  |         8.721(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.050(R)|      SLOW  |         9.261(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.683(R)|      SLOW  |         9.734(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.708(R)|      SLOW  |        10.095(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.081(R)|      SLOW  |         9.863(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.139(R)|      SLOW  |        10.070(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.570(R)|      SLOW  |         9.311(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-SegmentDp   |        13.294(R)|      SLOW  |         7.851(R)|      FAST  |XLXI_12/XLXI_1/XLXN_112        |   0.000|
+Buzzer      |        13.984(R)|      SLOW  |         7.450(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        13.841(R)|      SLOW  |         7.541(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+Segment<0>  |        17.788(R)|      SLOW  |         9.579(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.428(R)|      SLOW  |        10.858(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.320(R)|      SLOW  |        10.755(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.430(R)|      SLOW  |        10.858(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        21.909(R)|      SLOW  |        10.337(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.196(R)|      SLOW  |        10.650(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        20.171(R)|      SLOW  |        11.660(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<1>  |        17.060(R)|      SLOW  |         9.177(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.579(R)|      SLOW  |        10.501(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.389(R)|      SLOW  |        10.351(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        23.459(R)|      SLOW  |        11.177(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.938(R)|      SLOW  |        10.670(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.970(R)|      SLOW  |        10.983(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        18.042(R)|      SLOW  |         9.778(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<2>  |        16.860(R)|      SLOW  |         9.484(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.379(R)|      SLOW  |        10.406(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.189(R)|      SLOW  |        10.435(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.624(R)|      SLOW  |        10.744(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.103(R)|      SLOW  |        10.112(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.390(R)|      SLOW  |        10.425(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.861(R)|      SLOW  |        10.091(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<3>  |        16.738(R)|      SLOW  |         8.601(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        17.449(R)|      SLOW  |         9.928(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        17.314(R)|      SLOW  |         9.775(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.945(R)|      SLOW  |        10.959(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.424(R)|      SLOW  |        10.327(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.711(R)|      SLOW  |        10.640(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.417(R)|      SLOW  |         9.287(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<4>  |        15.908(R)|      SLOW  |         8.545(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        17.181(R)|      SLOW  |         9.758(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.991(R)|      SLOW  |         9.719(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.924(R)|      SLOW  |        11.018(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.403(R)|      SLOW  |        10.386(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.435(R)|      SLOW  |        10.699(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.663(R)|      SLOW  |         9.964(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<5>  |        16.361(R)|      SLOW  |         8.436(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.908(R)|      SLOW  |         9.742(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.893(R)|      SLOW  |         9.610(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        21.605(R)|      SLOW  |        10.265(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        21.084(R)|      SLOW  |         9.839(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        21.371(R)|      SLOW  |        10.154(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.198(R)|      SLOW  |         9.549(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<6>  |        16.015(R)|      SLOW  |         8.341(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.661(R)|      SLOW  |         9.635(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.612(R)|      SLOW  |         9.515(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        21.569(R)|      SLOW  |        10.197(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        21.048(R)|      SLOW  |         9.768(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        21.335(R)|      SLOW  |        10.081(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.163(R)|      SLOW  |         9.505(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
 
 Clock Mode_Bin<3> to Pad
@@ -213,58 +210,57 @@ Clock Mode_Bin<3> to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                               | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)              | Phase  |
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
-Buzzer      |        14.578(R)|      SLOW  |         7.765(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        15.054(R)|      SLOW  |         8.308(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-Segment<0>  |        15.901(R)|      SLOW  |         9.105(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.744(R)|      SLOW  |         9.772(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.675(R)|      SLOW  |        10.322(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.543(R)|      SLOW  |        10.710(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.916(R)|      SLOW  |        10.425(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.974(R)|      SLOW  |        10.632(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        18.401(R)|      SLOW  |         8.542(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<1>  |        15.806(R)|      SLOW  |         8.953(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.691(R)|      SLOW  |         9.506(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.987(R)|      SLOW  |        10.076(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.427(R)|      SLOW  |        10.528(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.800(R)|      SLOW  |        10.243(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.909(R)|      SLOW  |        10.450(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.828(R)|      SLOW  |         9.569(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<2>  |        15.432(R)|      SLOW  |         8.869(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.317(R)|      SLOW  |         9.526(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.106(R)|      SLOW  |        10.096(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.261(R)|      SLOW  |        10.322(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.634(R)|      SLOW  |         9.988(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.692(R)|      SLOW  |        10.195(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.341(R)|      SLOW  |         9.231(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<3>  |        16.430(R)|      SLOW  |         9.286(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        18.315(R)|      SLOW  |         9.938(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.613(R)|      SLOW  |        10.411(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        22.126(R)|      SLOW  |        10.495(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.662(R)|      SLOW  |        10.289(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        22.044(R)|      SLOW  |        10.496(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.845(R)|      SLOW  |         9.393(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<4>  |        15.595(R)|      SLOW  |         9.092(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.464(R)|      SLOW  |         9.747(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        18.187(R)|      SLOW  |        10.317(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.918(R)|      SLOW  |        10.368(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        21.382(R)|      SLOW  |        10.162(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        21.764(R)|      SLOW  |        10.369(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.393(R)|      SLOW  |         9.028(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<5>  |        15.203(R)|      SLOW  |         8.735(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.088(R)|      SLOW  |         9.312(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.833(R)|      SLOW  |         9.785(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.549(R)|      SLOW  |         9.861(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        20.922(R)|      SLOW  |         9.527(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        20.980(R)|      SLOW  |         9.734(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        19.112(R)|      SLOW  |         9.154(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-Segment<6>  |        15.059(R)|      SLOW  |         8.653(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.944(R)|      SLOW  |         9.193(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.577(R)|      SLOW  |         9.666(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        21.279(R)|      SLOW  |         9.843(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-            |        20.652(R)|      SLOW  |         9.611(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
-            |        20.710(R)|      SLOW  |         9.818(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
-            |        18.975(R)|      SLOW  |         8.973(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
-SegmentDp   |        12.005(R)|      SLOW  |         7.050(R)|      FAST  |XLXI_12/XLXI_1/XLXN_112        |   0.000|
+Buzzer      |        13.929(R)|      SLOW  |         7.433(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        13.786(R)|      SLOW  |         7.524(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+Segment<0>  |        17.733(R)|      SLOW  |         9.562(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.373(R)|      SLOW  |        10.841(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.265(R)|      SLOW  |        10.738(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.948(R)|      SLOW  |        11.153(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.427(R)|      SLOW  |        10.632(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.714(R)|      SLOW  |        10.945(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        20.664(R)|      SLOW  |        11.945(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<1>  |        17.005(R)|      SLOW  |         9.160(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.524(R)|      SLOW  |        10.484(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.334(R)|      SLOW  |        10.334(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        23.977(R)|      SLOW  |        11.472(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        23.456(R)|      SLOW  |        10.965(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        23.488(R)|      SLOW  |        11.278(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        18.535(R)|      SLOW  |        10.063(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<2>  |        16.805(R)|      SLOW  |         9.467(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.324(R)|      SLOW  |        10.389(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.134(R)|      SLOW  |        10.418(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        23.142(R)|      SLOW  |        11.039(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.621(R)|      SLOW  |        10.407(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.908(R)|      SLOW  |        10.720(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        18.354(R)|      SLOW  |        10.376(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<3>  |        16.683(R)|      SLOW  |         8.584(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        17.394(R)|      SLOW  |         9.911(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        17.259(R)|      SLOW  |         9.758(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        23.463(R)|      SLOW  |        11.254(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.942(R)|      SLOW  |        10.622(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        23.229(R)|      SLOW  |        10.935(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.910(R)|      SLOW  |         9.572(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<4>  |        15.853(R)|      SLOW  |         8.528(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        17.126(R)|      SLOW  |         9.741(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.936(R)|      SLOW  |         9.702(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        23.442(R)|      SLOW  |        11.313(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        22.921(R)|      SLOW  |        10.681(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        22.953(R)|      SLOW  |        10.994(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        18.156(R)|      SLOW  |        10.249(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<5>  |        16.306(R)|      SLOW  |         8.419(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.853(R)|      SLOW  |         9.725(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.838(R)|      SLOW  |         9.593(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.123(R)|      SLOW  |        10.560(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        21.602(R)|      SLOW  |        10.134(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        21.889(R)|      SLOW  |        10.449(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.691(R)|      SLOW  |         9.834(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
+Segment<6>  |        15.960(R)|      SLOW  |         8.324(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.606(R)|      SLOW  |         9.618(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.557(R)|      SLOW  |         9.498(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        22.087(R)|      SLOW  |        10.492(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+            |        21.566(R)|      SLOW  |        10.063(R)|      FAST  |XLXI_13/XLXN_14                |   0.000|
+            |        21.853(R)|      SLOW  |        10.376(R)|      FAST  |XLXI_13/XLXN_24                |   0.000|
+            |        17.656(R)|      SLOW  |         9.790(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060        |   0.000|
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
 
 Clock OSC to Pad
@@ -272,14 +268,13 @@ Clock OSC to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        15.284(R)|      SLOW  |         7.526(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<1>  |        15.729(R)|      SLOW  |         7.826(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<2>  |        16.088(R)|      SLOW  |         8.362(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<3>  |        15.549(R)|      SLOW  |         7.790(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<4>  |        16.239(R)|      SLOW  |         8.571(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<5>  |        15.183(R)|      SLOW  |         7.353(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<6>  |        14.142(R)|      SLOW  |         7.046(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-SegmentDp   |         8.542(R)|      SLOW  |         4.511(R)|      FAST  |XLXN_381          |   0.000|
+Segment<0>  |        18.523(R)|      SLOW  |        10.584(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<1>  |        17.707(R)|      SLOW  |         9.821(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<2>  |        17.661(R)|      SLOW  |         9.951(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<3>  |        17.930(R)|      SLOW  |        10.311(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<4>  |        17.281(R)|      SLOW  |         9.659(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<5>  |        17.040(R)|      SLOW  |         9.255(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<6>  |        16.066(R)|      SLOW  |         9.021(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock PB1 to Pad
@@ -287,14 +282,13 @@ Clock PB1 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
 ------------+-----------------+------------+-----------------+------------+-----------------------+--------+
-Segment<0>  |        13.205(R)|      SLOW  |         7.361(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<1>  |        14.632(R)|      SLOW  |         8.388(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<2>  |        14.145(R)|      SLOW  |         8.050(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<3>  |        14.649(R)|      SLOW  |         8.212(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<4>  |        14.197(R)|      SLOW  |         7.847(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<5>  |        13.916(R)|      SLOW  |         7.973(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<6>  |        13.779(R)|      SLOW  |         7.792(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-SegmentDp   |        10.554(R)|      SLOW  |         6.148(R)|      FAST  |XLXI_12/XLXI_1/XLXN_112|   0.000|
+Segment<0>  |        16.681(R)|      SLOW  |         9.935(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<1>  |        14.552(R)|      SLOW  |         8.053(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<2>  |        14.371(R)|      SLOW  |         8.366(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<3>  |        13.927(R)|      SLOW  |         7.562(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<4>  |        14.173(R)|      SLOW  |         8.239(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<5>  |        13.708(R)|      SLOW  |         7.824(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<6>  |        13.673(R)|      SLOW  |         7.780(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
 ------------+-----------------+------------+-----------------+------------+-----------------------+--------+
 
 Clock PB2 to Pad
@@ -302,13 +296,13 @@ Clock PB2 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        19.201(R)|      SLOW  |         8.865(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
-Segment<1>  |        19.136(R)|      SLOW  |         8.683(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
-Segment<2>  |        18.919(R)|      SLOW  |         8.428(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
-Segment<3>  |        19.271(R)|      SLOW  |         8.729(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
-Segment<4>  |        18.991(R)|      SLOW  |         8.602(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
-Segment<5>  |        18.207(R)|      SLOW  |         7.967(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
-Segment<6>  |        17.937(R)|      SLOW  |         8.051(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
+Segment<0>  |        19.350(R)|      SLOW  |         8.876(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
+Segment<1>  |        20.124(R)|      SLOW  |         9.209(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
+Segment<2>  |        19.544(R)|      SLOW  |         8.651(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
+Segment<3>  |        19.865(R)|      SLOW  |         8.866(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
+Segment<4>  |        19.589(R)|      SLOW  |         8.925(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
+Segment<5>  |        18.525(R)|      SLOW  |         8.380(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
+Segment<6>  |        18.489(R)|      SLOW  |         8.307(R)|      FAST  |XLXI_13/XLXN_24   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock PB3 to Pad
@@ -316,36 +310,36 @@ Clock PB3 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                               | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)              | Phase  |
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
-Buzzer      |        13.545(R)|      SLOW  |         7.059(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        14.021(R)|      SLOW  |         7.602(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-Segment<0>  |        14.868(R)|      SLOW  |         8.399(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.711(R)|      SLOW  |         9.066(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.642(R)|      SLOW  |         9.616(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        19.676(R)|      SLOW  |         8.991(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-Segment<1>  |        14.773(R)|      SLOW  |         8.247(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.658(R)|      SLOW  |         8.800(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        16.954(R)|      SLOW  |         9.370(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        19.560(R)|      SLOW  |         8.809(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-Segment<2>  |        14.399(R)|      SLOW  |         8.163(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.284(R)|      SLOW  |         8.820(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.073(R)|      SLOW  |         9.390(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        19.394(R)|      SLOW  |         8.603(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-Segment<3>  |        15.397(R)|      SLOW  |         8.580(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        17.282(R)|      SLOW  |         9.232(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.580(R)|      SLOW  |         9.705(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        19.259(R)|      SLOW  |         8.776(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-Segment<4>  |        14.562(R)|      SLOW  |         8.386(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.431(R)|      SLOW  |         9.041(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        17.154(R)|      SLOW  |         9.611(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        19.051(R)|      SLOW  |         8.649(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-Segment<5>  |        14.170(R)|      SLOW  |         8.029(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        16.055(R)|      SLOW  |         8.606(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        16.800(R)|      SLOW  |         9.079(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        18.682(R)|      SLOW  |         8.142(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
-Segment<6>  |        14.026(R)|      SLOW  |         7.947(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
-            |        15.911(R)|      SLOW  |         8.487(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
-            |        16.544(R)|      SLOW  |         8.960(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
-            |        18.412(R)|      SLOW  |         8.124(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+Buzzer      |        14.071(R)|      SLOW  |         7.474(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        13.928(R)|      SLOW  |         7.565(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+Segment<0>  |        17.875(R)|      SLOW  |         9.603(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.515(R)|      SLOW  |        10.882(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.407(R)|      SLOW  |        10.779(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        19.169(R)|      SLOW  |         8.832(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+Segment<1>  |        17.147(R)|      SLOW  |         9.201(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.666(R)|      SLOW  |        10.525(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.476(R)|      SLOW  |        10.375(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        20.198(R)|      SLOW  |         9.151(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+Segment<2>  |        16.947(R)|      SLOW  |         9.508(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        18.466(R)|      SLOW  |        10.430(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        18.276(R)|      SLOW  |        10.459(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        19.363(R)|      SLOW  |         8.718(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+Segment<3>  |        16.825(R)|      SLOW  |         8.625(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        17.536(R)|      SLOW  |         9.952(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        17.401(R)|      SLOW  |         9.799(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        19.684(R)|      SLOW  |         8.933(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+Segment<4>  |        15.995(R)|      SLOW  |         8.569(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        17.268(R)|      SLOW  |         9.782(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        17.078(R)|      SLOW  |         9.743(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        19.663(R)|      SLOW  |         8.992(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+Segment<5>  |        16.448(R)|      SLOW  |         8.460(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.995(R)|      SLOW  |         9.766(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.980(R)|      SLOW  |         9.634(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        18.344(R)|      SLOW  |         8.239(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
+Segment<6>  |        16.102(R)|      SLOW  |         8.365(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_13|   0.000|
+            |        16.748(R)|      SLOW  |         9.659(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_14|   0.000|
+            |        16.699(R)|      SLOW  |         9.539(R)|      FAST  |XLXI_11/XLXI_35/XLXI_65/XLXN_15|   0.000|
+            |        18.308(R)|      SLOW  |         8.171(R)|      FAST  |XLXI_13/XLXN_13                |   0.000|
 ------------+-----------------+------------+-----------------+------------+-------------------------------+--------+
 
 Clock PB4 to Pad
@@ -353,20 +347,20 @@ Clock PB4 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                       | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)      | Phase  |
 ------------+-----------------+------------+-----------------+------------+-----------------------+--------+
-Segment<0>  |        20.189(R)|      SLOW  |         9.328(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
-            |        14.869(R)|      SLOW  |         8.420(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<1>  |        20.073(R)|      SLOW  |         9.146(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
-            |        16.296(R)|      SLOW  |         9.447(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<2>  |        19.907(R)|      SLOW  |         8.891(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
-            |        15.809(R)|      SLOW  |         9.109(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<3>  |        19.935(R)|      SLOW  |         9.192(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
-            |        16.313(R)|      SLOW  |         9.271(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<4>  |        19.655(R)|      SLOW  |         9.065(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
-            |        15.861(R)|      SLOW  |         8.906(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<5>  |        19.195(R)|      SLOW  |         8.430(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
-            |        15.580(R)|      SLOW  |         9.032(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
-Segment<6>  |        18.925(R)|      SLOW  |         8.514(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
-            |        15.443(R)|      SLOW  |         8.851(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<0>  |        19.221(R)|      SLOW  |         8.752(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
+            |        17.067(R)|      SLOW  |        10.199(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<1>  |        20.250(R)|      SLOW  |         9.085(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
+            |        14.938(R)|      SLOW  |         8.317(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<2>  |        19.415(R)|      SLOW  |         8.527(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
+            |        14.757(R)|      SLOW  |         8.630(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<3>  |        19.736(R)|      SLOW  |         8.742(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
+            |        14.313(R)|      SLOW  |         7.826(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<4>  |        19.715(R)|      SLOW  |         8.801(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
+            |        14.559(R)|      SLOW  |         8.503(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<5>  |        18.396(R)|      SLOW  |         8.254(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
+            |        14.094(R)|      SLOW  |         8.088(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
+Segment<6>  |        18.360(R)|      SLOW  |         8.183(R)|      FAST  |XLXI_13/XLXN_14        |   0.000|
+            |        14.059(R)|      SLOW  |         8.044(R)|      FAST  |XLXI_5/XLXI_1/XLXN_1060|   0.000|
 ------------+-----------------+------------+-----------------+------------+-----------------------+--------+
 
 Clock SW0 to Pad
@@ -374,13 +368,13 @@ Clock SW0 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        16.365(R)|      SLOW  |         7.770(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<1>  |        16.810(R)|      SLOW  |         8.070(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<2>  |        17.169(R)|      SLOW  |         8.606(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<3>  |        16.630(R)|      SLOW  |         8.034(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<4>  |        17.320(R)|      SLOW  |         8.815(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<5>  |        16.264(R)|      SLOW  |         7.597(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<6>  |        15.223(R)|      SLOW  |         7.290(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<0>  |        19.769(R)|      SLOW  |         9.685(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<1>  |        18.953(R)|      SLOW  |         8.922(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<2>  |        18.907(R)|      SLOW  |         9.052(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<3>  |        19.176(R)|      SLOW  |         9.412(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<4>  |        18.527(R)|      SLOW  |         8.760(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<5>  |        18.286(R)|      SLOW  |         8.356(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<6>  |        17.312(R)|      SLOW  |         8.122(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock SW1 to Pad
@@ -388,13 +382,13 @@ Clock SW1 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        16.499(R)|      SLOW  |         7.944(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<1>  |        16.944(R)|      SLOW  |         8.244(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<2>  |        17.303(R)|      SLOW  |         8.780(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<3>  |        16.764(R)|      SLOW  |         8.208(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<4>  |        17.454(R)|      SLOW  |         8.989(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<5>  |        16.398(R)|      SLOW  |         7.771(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<6>  |        15.357(R)|      SLOW  |         7.464(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<0>  |        18.305(R)|      SLOW  |         9.788(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<1>  |        17.489(R)|      SLOW  |         9.025(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<2>  |        17.443(R)|      SLOW  |         9.155(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<3>  |        17.712(R)|      SLOW  |         9.515(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<4>  |        17.063(R)|      SLOW  |         8.863(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<5>  |        16.822(R)|      SLOW  |         8.459(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<6>  |        15.848(R)|      SLOW  |         8.225(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock SW2 to Pad
@@ -402,13 +396,13 @@ Clock SW2 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        16.510(R)|      SLOW  |         7.697(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<1>  |        16.955(R)|      SLOW  |         7.997(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<2>  |        17.314(R)|      SLOW  |         8.533(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<3>  |        16.775(R)|      SLOW  |         7.961(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<4>  |        17.465(R)|      SLOW  |         8.742(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<5>  |        16.409(R)|      SLOW  |         7.524(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<6>  |        15.368(R)|      SLOW  |         7.217(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<0>  |        17.800(R)|      SLOW  |         9.675(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<1>  |        16.984(R)|      SLOW  |         8.912(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<2>  |        16.938(R)|      SLOW  |         9.042(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<3>  |        17.207(R)|      SLOW  |         9.402(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<4>  |        16.558(R)|      SLOW  |         8.750(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<5>  |        16.317(R)|      SLOW  |         8.346(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<6>  |        15.343(R)|      SLOW  |         8.112(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock SW3 to Pad
@@ -416,13 +410,13 @@ Clock SW3 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        15.776(R)|      SLOW  |         7.741(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<1>  |        16.221(R)|      SLOW  |         8.041(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<2>  |        16.580(R)|      SLOW  |         8.577(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<3>  |        16.041(R)|      SLOW  |         8.005(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<4>  |        16.731(R)|      SLOW  |         8.786(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<5>  |        15.675(R)|      SLOW  |         7.568(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<6>  |        14.634(R)|      SLOW  |         7.261(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<0>  |        17.792(R)|      SLOW  |         9.674(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<1>  |        16.976(R)|      SLOW  |         8.911(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<2>  |        16.930(R)|      SLOW  |         9.041(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<3>  |        17.199(R)|      SLOW  |         9.401(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<4>  |        16.550(R)|      SLOW  |         8.749(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<5>  |        16.309(R)|      SLOW  |         8.345(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<6>  |        15.335(R)|      SLOW  |         8.111(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock SW4 to Pad
@@ -430,13 +424,13 @@ Clock SW4 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        16.141(R)|      SLOW  |         7.841(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<1>  |        16.586(R)|      SLOW  |         8.141(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<2>  |        16.945(R)|      SLOW  |         8.677(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<3>  |        16.406(R)|      SLOW  |         8.105(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<4>  |        17.096(R)|      SLOW  |         8.886(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<5>  |        16.040(R)|      SLOW  |         7.668(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<6>  |        14.999(R)|      SLOW  |         7.361(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<0>  |        17.485(R)|      SLOW  |         9.510(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<1>  |        16.669(R)|      SLOW  |         8.747(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<2>  |        16.623(R)|      SLOW  |         8.877(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<3>  |        16.892(R)|      SLOW  |         9.237(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<4>  |        16.243(R)|      SLOW  |         8.585(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<5>  |        16.002(R)|      SLOW  |         8.181(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<6>  |        15.028(R)|      SLOW  |         7.947(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock SW5 to Pad
@@ -444,13 +438,13 @@ Clock SW5 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        15.517(R)|      SLOW  |         7.805(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<1>  |        15.962(R)|      SLOW  |         8.105(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<2>  |        16.321(R)|      SLOW  |         8.641(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<3>  |        15.782(R)|      SLOW  |         8.069(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<4>  |        16.472(R)|      SLOW  |         8.850(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<5>  |        15.416(R)|      SLOW  |         7.632(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<6>  |        14.375(R)|      SLOW  |         7.325(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<0>  |        17.598(R)|      SLOW  |         9.646(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<1>  |        16.782(R)|      SLOW  |         8.883(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<2>  |        16.736(R)|      SLOW  |         9.013(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<3>  |        17.005(R)|      SLOW  |         9.373(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<4>  |        16.356(R)|      SLOW  |         8.721(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<5>  |        16.115(R)|      SLOW  |         8.317(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<6>  |        15.141(R)|      SLOW  |         8.083(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock SW6 to Pad
@@ -458,13 +452,13 @@ Clock SW6 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        15.973(R)|      SLOW  |         8.045(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<1>  |        16.418(R)|      SLOW  |         8.345(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<2>  |        16.777(R)|      SLOW  |         8.881(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<3>  |        16.238(R)|      SLOW  |         8.309(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<4>  |        16.928(R)|      SLOW  |         9.090(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<5>  |        15.872(R)|      SLOW  |         7.872(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<6>  |        14.831(R)|      SLOW  |         7.565(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<0>  |        17.514(R)|      SLOW  |         9.927(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<1>  |        16.698(R)|      SLOW  |         9.164(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<2>  |        16.652(R)|      SLOW  |         9.294(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<3>  |        16.921(R)|      SLOW  |         9.654(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<4>  |        16.272(R)|      SLOW  |         9.002(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<5>  |        16.031(R)|      SLOW  |         8.598(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<6>  |        15.057(R)|      SLOW  |         8.364(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock SW7 to Pad
@@ -472,13 +466,13 @@ Clock SW7 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-Segment<0>  |        15.857(R)|      SLOW  |         8.332(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<1>  |        16.302(R)|      SLOW  |         8.632(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<2>  |        16.661(R)|      SLOW  |         9.168(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<3>  |        16.122(R)|      SLOW  |         8.596(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<4>  |        16.812(R)|      SLOW  |         9.377(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<5>  |        15.756(R)|      SLOW  |         8.159(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
-Segment<6>  |        14.715(R)|      SLOW  |         7.852(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<0>  |        17.217(R)|      SLOW  |         9.699(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<1>  |        16.401(R)|      SLOW  |         8.936(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<2>  |        16.355(R)|      SLOW  |         9.066(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<3>  |        16.624(R)|      SLOW  |         9.426(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<4>  |        15.975(R)|      SLOW  |         8.774(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<5>  |        15.734(R)|      SLOW  |         8.370(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
+Segment<6>  |        14.760(R)|      SLOW  |         8.136(R)|      FAST  |XLXI_2/XLXN_118   |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Mode_Bin<0>
@@ -486,15 +480,14 @@ Clock to Setup on destination clock Mode_Bin<0>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode_Bin<0>    |    3.438|    2.359|         |         |
-Mode_Bin<1>    |    3.438|    2.211|         |         |
-Mode_Bin<2>    |    3.438|    2.668|         |         |
-Mode_Bin<3>    |    3.438|    2.239|         |         |
-OSC            |    3.050|         |         |         |
-PB1            |    2.606|   -0.703|         |         |
-PB2            |    0.911|   -0.801|         |         |
-PB3            |    3.438|   -0.641|         |         |
-PB4            |    3.050|   -0.235|         |         |
+Mode_Bin<0>    |    3.177|    1.881|         |         |
+Mode_Bin<1>    |    3.177|    1.749|         |         |
+Mode_Bin<2>    |    3.177|    2.106|         |         |
+Mode_Bin<3>    |    3.177|    2.624|         |         |
+PB1            |    2.587|   -0.518|         |         |
+PB2            |    0.917|   -0.443|         |         |
+PB3            |    3.177|   -0.792|         |         |
+PB4            |    3.009|   -0.785|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Mode_Bin<1>
@@ -502,15 +495,14 @@ Clock to Setup on destination clock Mode_Bin<1>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode_Bin<0>    |    3.438|    2.504|         |         |
-Mode_Bin<1>    |    3.438|    2.356|         |         |
-Mode_Bin<2>    |    3.438|    2.813|         |         |
-Mode_Bin<3>    |    3.438|    2.384|         |         |
-OSC            |    3.050|         |         |         |
-PB1            |    2.606|   -0.600|         |         |
-PB2            |    0.911|   -0.698|         |         |
-PB3            |    3.438|   -0.538|         |         |
-PB4            |    3.050|   -0.132|         |         |
+Mode_Bin<0>    |    3.177|    2.010|         |         |
+Mode_Bin<1>    |    3.177|    1.878|         |         |
+Mode_Bin<2>    |    3.177|    2.235|         |         |
+Mode_Bin<3>    |    3.177|    2.753|         |         |
+PB1            |    2.587|   -0.365|         |         |
+PB2            |    0.917|   -0.290|         |         |
+PB3            |    3.177|   -0.639|         |         |
+PB4            |    3.009|   -0.632|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Mode_Bin<2>
@@ -518,15 +510,14 @@ Clock to Setup on destination clock Mode_Bin<2>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode_Bin<0>    |    3.438|    2.060|         |         |
-Mode_Bin<1>    |    3.438|    1.912|         |         |
-Mode_Bin<2>    |    3.438|    2.369|         |         |
-Mode_Bin<3>    |    3.438|    1.940|         |         |
-OSC            |    3.050|         |         |         |
-PB1            |    2.606|   -0.951|         |         |
-PB2            |    0.911|   -1.049|         |         |
-PB3            |    3.438|   -0.889|         |         |
-PB4            |    3.050|   -0.483|         |         |
+Mode_Bin<0>    |    3.177|    1.655|         |         |
+Mode_Bin<1>    |    3.177|    1.523|         |         |
+Mode_Bin<2>    |    3.177|    1.880|         |         |
+Mode_Bin<3>    |    3.177|    2.398|         |         |
+PB1            |    2.587|   -0.759|         |         |
+PB2            |    0.917|   -0.684|         |         |
+PB3            |    3.177|   -1.033|         |         |
+PB4            |    3.009|   -1.026|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock Mode_Bin<3>
@@ -534,15 +525,14 @@ Clock to Setup on destination clock Mode_Bin<3>
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode_Bin<0>    |    3.438|    2.467|         |         |
-Mode_Bin<1>    |    3.438|    2.319|         |         |
-Mode_Bin<2>    |    3.438|    2.776|         |         |
-Mode_Bin<3>    |    3.438|    2.347|         |         |
-OSC            |    3.050|         |         |         |
-PB1            |    2.606|   -0.699|         |         |
-PB2            |    0.911|   -0.676|         |         |
-PB3            |    3.438|   -0.637|         |         |
-PB4            |    3.050|   -0.231|         |         |
+Mode_Bin<0>    |    3.177|    1.164|         |         |
+Mode_Bin<1>    |    3.177|    1.032|         |         |
+Mode_Bin<2>    |    3.177|    1.389|         |         |
+Mode_Bin<3>    |    3.177|    1.907|         |         |
+PB1            |    2.587|   -1.054|         |         |
+PB2            |    0.917|   -0.979|         |         |
+PB3            |    3.177|   -1.328|         |         |
+PB4            |    3.009|   -1.321|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock OSC
@@ -550,22 +540,15 @@ Clock to Setup on destination clock OSC
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode_Bin<0>    |    9.103|    7.518|         |         |
-Mode_Bin<1>    |    9.103|    7.386|         |         |
-Mode_Bin<2>    |    9.103|    7.802|         |         |
-Mode_Bin<3>    |    9.103|    6.513|         |         |
-OSC            |    3.186|         |         |         |
-PB1            |    9.103|         |         |         |
-PB2            |    4.894|    4.894|         |         |
-PB4            |    3.050|    1.006|         |         |
-SW0            |    3.186|         |         |         |
-SW1            |    3.186|         |         |         |
-SW2            |    3.186|         |         |         |
-SW3            |    3.186|         |         |         |
-SW4            |    3.186|         |         |         |
-SW5            |    3.186|         |         |         |
-SW6            |    3.186|         |         |         |
-SW7            |    3.186|         |         |         |
+OSC            |    2.935|         |         |         |
+SW0            |    2.935|         |         |         |
+SW1            |    2.935|         |         |         |
+SW2            |    2.935|         |         |         |
+SW3            |    2.935|         |         |         |
+SW4            |    2.935|         |         |         |
+SW5            |    2.935|         |         |         |
+SW6            |    2.935|         |         |         |
+SW7            |    2.935|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock PB1
@@ -573,13 +556,12 @@ Clock to Setup on destination clock PB1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode_Bin<0>    |    3.129|    3.129|         |         |
-Mode_Bin<1>    |    2.997|    2.997|         |         |
-Mode_Bin<2>    |    3.413|    3.413|         |         |
-Mode_Bin<3>    |    2.606|    2.124|         |         |
-PB1            |    2.606|         |         |         |
-PB2            |    0.505|    0.505|         |         |
-PB4            |    2.606|         |         |         |
+Mode_Bin<0>    |    2.587|         |         |         |
+Mode_Bin<1>    |    2.587|         |         |         |
+Mode_Bin<2>    |    2.587|         |         |         |
+Mode_Bin<3>    |    2.587|         |         |         |
+PB1            |    2.587|         |         |         |
+PB4            |    2.587|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock PB2
@@ -587,14 +569,14 @@ Clock to Setup on destination clock PB2
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode_Bin<0>    |    4.445|    4.445|         |         |
-Mode_Bin<1>    |    4.297|    4.297|         |         |
-Mode_Bin<2>    |    4.754|    4.754|         |         |
-Mode_Bin<3>    |    4.325|    4.325|         |         |
-PB1            |    0.927|    0.927|         |         |
-PB2            |    0.911|         |         |         |
-PB3            |    1.458|    1.458|         |         |
-PB4            |    2.191|    2.191|         |         |
+Mode_Bin<0>    |    4.220|    4.220|         |         |
+Mode_Bin<1>    |    4.088|    4.088|         |         |
+Mode_Bin<2>    |    4.445|    4.445|         |         |
+Mode_Bin<3>    |    4.963|    4.963|         |         |
+PB1            |    1.212|    1.212|         |         |
+PB2            |    0.917|         |         |         |
+PB3            |    1.184|    1.184|         |         |
+PB4            |    1.219|    1.219|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock PB3
@@ -602,14 +584,14 @@ Clock to Setup on destination clock PB3
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode_Bin<0>    |    4.289|    4.289|         |         |
-Mode_Bin<1>    |    4.141|    4.141|         |         |
-Mode_Bin<2>    |    4.598|    4.598|         |         |
-Mode_Bin<3>    |    4.169|    4.169|         |         |
-PB1            |    0.900|    0.900|         |         |
-PB2            |    1.370|    1.370|         |         |
-PB3            |    3.438|         |         |         |
-PB4            |    2.442|    2.442|         |         |
+Mode_Bin<0>    |    4.137|    4.137|         |         |
+Mode_Bin<1>    |    4.005|    4.005|         |         |
+Mode_Bin<2>    |    4.362|    4.362|         |         |
+Mode_Bin<3>    |    4.880|    4.880|         |         |
+PB1            |    1.183|    1.183|         |         |
+PB2            |    1.516|    1.516|         |         |
+PB3            |    3.177|         |         |         |
+PB4            |    1.594|    1.594|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock PB4
@@ -617,15 +599,14 @@ Clock to Setup on destination clock PB4
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Mode_Bin<0>    |    4.126|    4.126|         |         |
-Mode_Bin<1>    |    3.961|    3.961|         |         |
-Mode_Bin<2>    |    4.418|    4.418|         |         |
-Mode_Bin<3>    |    3.989|    3.989|         |         |
-OSC            |    3.050|         |         |         |
-PB1            |    2.606|    0.848|         |         |
-PB2            |    0.850|    0.850|         |         |
-PB3            |    0.937|    0.937|         |         |
-PB4            |    3.050|    0.186|         |         |
+Mode_Bin<0>    |    4.210|    4.210|         |         |
+Mode_Bin<1>    |    4.078|    4.078|         |         |
+Mode_Bin<2>    |    4.435|    4.435|         |         |
+Mode_Bin<3>    |    4.953|    4.953|         |         |
+PB1            |    2.587|    1.418|         |         |
+PB2            |    1.589|    1.589|         |         |
+PB3            |    0.940|    0.940|         |         |
+PB4            |    3.009|   -0.042|         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW0
@@ -633,15 +614,15 @@ Clock to Setup on destination clock SW0
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    3.186|         |         |         |
-SW0            |    3.186|         |         |         |
-SW1            |    3.186|         |         |         |
-SW2            |    3.186|         |         |         |
-SW3            |    3.186|         |         |         |
-SW4            |    3.186|         |         |         |
-SW5            |    3.186|         |         |         |
-SW6            |    3.186|         |         |         |
-SW7            |    3.186|         |         |         |
+OSC            |    2.935|         |         |         |
+SW0            |    2.935|         |         |         |
+SW1            |    2.935|         |         |         |
+SW2            |    2.935|         |         |         |
+SW3            |    2.935|         |         |         |
+SW4            |    2.935|         |         |         |
+SW5            |    2.935|         |         |         |
+SW6            |    2.935|         |         |         |
+SW7            |    2.935|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW1
@@ -649,15 +630,15 @@ Clock to Setup on destination clock SW1
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    3.186|         |         |         |
-SW0            |    3.186|         |         |         |
-SW1            |    3.186|         |         |         |
-SW2            |    3.186|         |         |         |
-SW3            |    3.186|         |         |         |
-SW4            |    3.186|         |         |         |
-SW5            |    3.186|         |         |         |
-SW6            |    3.186|         |         |         |
-SW7            |    3.186|         |         |         |
+OSC            |    2.935|         |         |         |
+SW0            |    2.935|         |         |         |
+SW1            |    2.935|         |         |         |
+SW2            |    2.935|         |         |         |
+SW3            |    2.935|         |         |         |
+SW4            |    2.935|         |         |         |
+SW5            |    2.935|         |         |         |
+SW6            |    2.935|         |         |         |
+SW7            |    2.935|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW2
@@ -665,15 +646,15 @@ Clock to Setup on destination clock SW2
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    3.186|         |         |         |
-SW0            |    3.186|         |         |         |
-SW1            |    3.186|         |         |         |
-SW2            |    3.186|         |         |         |
-SW3            |    3.186|         |         |         |
-SW4            |    3.186|         |         |         |
-SW5            |    3.186|         |         |         |
-SW6            |    3.186|         |         |         |
-SW7            |    3.186|         |         |         |
+OSC            |    2.935|         |         |         |
+SW0            |    2.935|         |         |         |
+SW1            |    2.935|         |         |         |
+SW2            |    2.935|         |         |         |
+SW3            |    2.935|         |         |         |
+SW4            |    2.935|         |         |         |
+SW5            |    2.935|         |         |         |
+SW6            |    2.935|         |         |         |
+SW7            |    2.935|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW3
@@ -681,15 +662,15 @@ Clock to Setup on destination clock SW3
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    3.186|         |         |         |
-SW0            |    3.186|         |         |         |
-SW1            |    3.186|         |         |         |
-SW2            |    3.186|         |         |         |
-SW3            |    3.186|         |         |         |
-SW4            |    3.186|         |         |         |
-SW5            |    3.186|         |         |         |
-SW6            |    3.186|         |         |         |
-SW7            |    3.186|         |         |         |
+OSC            |    2.935|         |         |         |
+SW0            |    2.935|         |         |         |
+SW1            |    2.935|         |         |         |
+SW2            |    2.935|         |         |         |
+SW3            |    2.935|         |         |         |
+SW4            |    2.935|         |         |         |
+SW5            |    2.935|         |         |         |
+SW6            |    2.935|         |         |         |
+SW7            |    2.935|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW4
@@ -697,15 +678,15 @@ Clock to Setup on destination clock SW4
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    3.186|         |         |         |
-SW0            |    3.186|         |         |         |
-SW1            |    3.186|         |         |         |
-SW2            |    3.186|         |         |         |
-SW3            |    3.186|         |         |         |
-SW4            |    3.186|         |         |         |
-SW5            |    3.186|         |         |         |
-SW6            |    3.186|         |         |         |
-SW7            |    3.186|         |         |         |
+OSC            |    2.935|         |         |         |
+SW0            |    2.935|         |         |         |
+SW1            |    2.935|         |         |         |
+SW2            |    2.935|         |         |         |
+SW3            |    2.935|         |         |         |
+SW4            |    2.935|         |         |         |
+SW5            |    2.935|         |         |         |
+SW6            |    2.935|         |         |         |
+SW7            |    2.935|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW5
@@ -713,15 +694,15 @@ Clock to Setup on destination clock SW5
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    3.186|         |         |         |
-SW0            |    3.186|         |         |         |
-SW1            |    3.186|         |         |         |
-SW2            |    3.186|         |         |         |
-SW3            |    3.186|         |         |         |
-SW4            |    3.186|         |         |         |
-SW5            |    3.186|         |         |         |
-SW6            |    3.186|         |         |         |
-SW7            |    3.186|         |         |         |
+OSC            |    2.935|         |         |         |
+SW0            |    2.935|         |         |         |
+SW1            |    2.935|         |         |         |
+SW2            |    2.935|         |         |         |
+SW3            |    2.935|         |         |         |
+SW4            |    2.935|         |         |         |
+SW5            |    2.935|         |         |         |
+SW6            |    2.935|         |         |         |
+SW7            |    2.935|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW6
@@ -729,15 +710,15 @@ Clock to Setup on destination clock SW6
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    3.186|         |         |         |
-SW0            |    3.186|         |         |         |
-SW1            |    3.186|         |         |         |
-SW2            |    3.186|         |         |         |
-SW3            |    3.186|         |         |         |
-SW4            |    3.186|         |         |         |
-SW5            |    3.186|         |         |         |
-SW6            |    3.186|         |         |         |
-SW7            |    3.186|         |         |         |
+OSC            |    2.935|         |         |         |
+SW0            |    2.935|         |         |         |
+SW1            |    2.935|         |         |         |
+SW2            |    2.935|         |         |         |
+SW3            |    2.935|         |         |         |
+SW4            |    2.935|         |         |         |
+SW5            |    2.935|         |         |         |
+SW6            |    2.935|         |         |         |
+SW7            |    2.935|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock SW7
@@ -745,202 +726,198 @@ Clock to Setup on destination clock SW7
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    3.186|         |         |         |
-SW0            |    3.186|         |         |         |
-SW1            |    3.186|         |         |         |
-SW2            |    3.186|         |         |         |
-SW3            |    3.186|         |         |         |
-SW4            |    3.186|         |         |         |
-SW5            |    3.186|         |         |         |
-SW6            |    3.186|         |         |         |
-SW7            |    3.186|         |         |         |
+OSC            |    2.935|         |         |         |
+SW0            |    2.935|         |         |         |
+SW1            |    2.935|         |         |         |
+SW2            |    2.935|         |         |         |
+SW3            |    2.935|         |         |         |
+SW4            |    2.935|         |         |         |
+SW5            |    2.935|         |         |         |
+SW6            |    2.935|         |         |         |
+SW7            |    2.935|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-DIP1           |Segment<0>     |   15.274|
-DIP1           |Segment<1>     |   15.292|
-DIP1           |Segment<2>     |   14.973|
-DIP1           |Segment<3>     |   15.427|
-DIP1           |Segment<4>     |   15.147|
-DIP1           |Segment<5>     |   14.261|
-DIP1           |Segment<6>     |   14.074|
-DIP2           |Segment<0>     |   15.293|
-DIP2           |Segment<1>     |   15.311|
-DIP2           |Segment<2>     |   14.994|
-DIP2           |Segment<3>     |   15.446|
-DIP2           |Segment<4>     |   15.166|
-DIP2           |Segment<5>     |   14.282|
-DIP2           |Segment<6>     |   14.093|
-DIP3           |Segment<0>     |   15.410|
-DIP3           |Segment<1>     |   15.399|
-DIP3           |Segment<2>     |   15.128|
-DIP3           |Segment<3>     |   15.534|
-DIP3           |Segment<4>     |   15.254|
-DIP3           |Segment<5>     |   14.416|
-DIP3           |Segment<6>     |   14.181|
-DIP4           |Segment<0>     |   16.169|
-DIP4           |Segment<1>     |   16.165|
-DIP4           |Segment<2>     |   15.887|
-DIP4           |Segment<3>     |   16.300|
-DIP4           |Segment<4>     |   16.020|
-DIP4           |Segment<5>     |   15.175|
-DIP4           |Segment<6>     |   14.947|
-DIP5           |Segment<0>     |   15.693|
-DIP5           |Segment<1>     |   15.648|
-DIP5           |Segment<2>     |   15.411|
-DIP5           |Segment<3>     |   15.783|
-DIP5           |Segment<4>     |   15.503|
-DIP5           |Segment<5>     |   14.699|
-DIP5           |Segment<6>     |   14.430|
-DIP6           |Segment<0>     |   14.776|
-DIP6           |Segment<1>     |   14.731|
-DIP6           |Segment<2>     |   14.494|
-DIP6           |Segment<3>     |   14.866|
-DIP6           |Segment<4>     |   14.586|
-DIP6           |Segment<5>     |   13.782|
-DIP6           |Segment<6>     |   13.694|
-DIP7           |Segment<0>     |   15.641|
-DIP7           |Segment<1>     |   15.596|
-DIP7           |Segment<2>     |   15.359|
-DIP7           |Segment<3>     |   15.731|
-DIP7           |Segment<4>     |   15.451|
-DIP7           |Segment<5>     |   14.647|
-DIP7           |Segment<6>     |   14.676|
-DIP8           |Segment<0>     |   15.209|
-DIP8           |Segment<1>     |   15.164|
-DIP8           |Segment<2>     |   14.927|
-DIP8           |Segment<3>     |   15.299|
-DIP8           |Segment<4>     |   15.019|
-DIP8           |Segment<5>     |   14.215|
-DIP8           |Segment<6>     |   14.243|
-Mode_Bin<0>    |Buzzer         |   11.382|
-Mode_Bin<0>    |Digit<0>       |   11.459|
-Mode_Bin<0>    |Digit<1>       |   11.107|
-Mode_Bin<0>    |Digit<2>       |   10.824|
-Mode_Bin<0>    |Digit<3>       |    9.806|
-Mode_Bin<0>    |Segment<0>     |   16.238|
-Mode_Bin<0>    |Segment<1>     |   15.550|
-Mode_Bin<0>    |Segment<2>     |   15.669|
-Mode_Bin<0>    |Segment<3>     |   16.433|
-Mode_Bin<0>    |Segment<4>     |   15.750|
-Mode_Bin<0>    |Segment<5>     |   15.396|
-Mode_Bin<0>    |Segment<6>     |   15.171|
-Mode_Bin<0>    |SegmentDp      |   11.389|
-Mode_Bin<1>    |Buzzer         |   10.988|
-Mode_Bin<1>    |Digit<0>       |   11.346|
-Mode_Bin<1>    |Digit<1>       |   11.373|
-Mode_Bin<1>    |Digit<2>       |   10.978|
-Mode_Bin<1>    |Digit<3>       |   10.076|
-Mode_Bin<1>    |Segment<0>     |   15.844|
-Mode_Bin<1>    |Segment<1>     |   15.156|
-Mode_Bin<1>    |Segment<2>     |   15.275|
-Mode_Bin<1>    |Segment<3>     |   16.039|
-Mode_Bin<1>    |Segment<4>     |   15.356|
-Mode_Bin<1>    |Segment<5>     |   15.002|
-Mode_Bin<1>    |Segment<6>     |   14.777|
-Mode_Bin<1>    |SegmentDp      |   11.257|
-Mode_Bin<2>    |Buzzer         |   11.654|
-Mode_Bin<2>    |Digit<0>       |   11.538|
-Mode_Bin<2>    |Digit<1>       |   11.739|
-Mode_Bin<2>    |Digit<2>       |   11.656|
-Mode_Bin<2>    |Digit<3>       |   10.312|
-Mode_Bin<2>    |Segment<0>     |   16.510|
-Mode_Bin<2>    |Segment<1>     |   15.822|
-Mode_Bin<2>    |Segment<2>     |   15.941|
-Mode_Bin<2>    |Segment<3>     |   16.705|
-Mode_Bin<2>    |Segment<4>     |   16.022|
-Mode_Bin<2>    |Segment<5>     |   15.668|
-Mode_Bin<2>    |Segment<6>     |   15.443|
-Mode_Bin<2>    |SegmentDp      |   11.673|
-Mode_Bin<3>    |Buzzer         |   11.548|
-Mode_Bin<3>    |Digit<0>       |   10.087|
-Mode_Bin<3>    |Digit<1>       |   10.281|
-Mode_Bin<3>    |Digit<2>       |   10.123|
-Mode_Bin<3>    |Digit<3>       |    9.477|
-Mode_Bin<3>    |Segment<0>     |   16.404|
-Mode_Bin<3>    |Segment<1>     |   15.716|
-Mode_Bin<3>    |Segment<2>     |   15.835|
-Mode_Bin<3>    |Segment<3>     |   16.599|
-Mode_Bin<3>    |Segment<4>     |   15.916|
-Mode_Bin<3>    |Segment<5>     |   15.562|
-Mode_Bin<3>    |Segment<6>     |   15.337|
-Mode_Bin<3>    |SegmentDp      |   10.384|
-PB3            |Buzzer         |   10.515|
-PB3            |Segment<0>     |   15.371|
-PB3            |Segment<1>     |   14.683|
-PB3            |Segment<2>     |   14.802|
-PB3            |Segment<3>     |   15.566|
-PB3            |Segment<4>     |   14.883|
-PB3            |Segment<5>     |   14.529|
-PB3            |Segment<6>     |   14.304|
-SW0            |Segment<0>     |   17.080|
-SW0            |Segment<1>     |   16.964|
-SW0            |Segment<2>     |   16.798|
-SW0            |Segment<3>     |   16.786|
-SW0            |Segment<4>     |   16.506|
-SW0            |Segment<5>     |   16.086|
-SW0            |Segment<6>     |   15.816|
-SW1            |Segment<0>     |   15.835|
-SW1            |Segment<1>     |   15.719|
-SW1            |Segment<2>     |   15.553|
-SW1            |Segment<3>     |   15.435|
-SW1            |Segment<4>     |   15.210|
-SW1            |Segment<5>     |   14.841|
-SW1            |Segment<6>     |   14.571|
-SW2            |Segment<0>     |   16.138|
-SW2            |Segment<1>     |   16.022|
-SW2            |Segment<2>     |   15.856|
-SW2            |Segment<3>     |   15.721|
-SW2            |Segment<4>     |   15.513|
-SW2            |Segment<5>     |   15.144|
-SW2            |Segment<6>     |   14.874|
-SW3            |Buzzer         |    9.747|
-SW3            |Segment<0>     |   16.475|
-SW3            |Segment<1>     |   16.359|
-SW3            |Segment<2>     |   16.193|
-SW3            |Segment<3>     |   16.058|
-SW3            |Segment<4>     |   15.850|
-SW3            |Segment<5>     |   15.481|
-SW3            |Segment<6>     |   15.211|
-SW4            |Buzzer         |    9.947|
-SW4            |Segment<0>     |   16.426|
-SW4            |Segment<1>     |   16.310|
-SW4            |Segment<2>     |   16.144|
-SW4            |Segment<3>     |   16.009|
-SW4            |Segment<4>     |   15.801|
-SW4            |Segment<5>     |   15.432|
-SW4            |Segment<6>     |   15.162|
-SW5            |Buzzer         |    9.416|
-SW5            |Segment<0>     |   16.566|
-SW5            |Segment<1>     |   16.450|
-SW5            |Segment<2>     |   16.284|
-SW5            |Segment<3>     |   16.149|
-SW5            |Segment<4>     |   15.941|
-SW5            |Segment<5>     |   15.572|
-SW5            |Segment<6>     |   15.302|
-SW6            |Buzzer         |    9.346|
-SW6            |Segment<0>     |   16.040|
-SW6            |Segment<1>     |   15.924|
-SW6            |Segment<2>     |   15.758|
-SW6            |Segment<3>     |   15.623|
-SW6            |Segment<4>     |   15.415|
-SW6            |Segment<5>     |   15.046|
-SW6            |Segment<6>     |   14.662|
-SW7            |Buzzer         |    9.527|
-SW7            |Segment<0>     |   14.768|
-SW7            |Segment<1>     |   14.652|
-SW7            |Segment<2>     |   14.486|
-SW7            |Segment<3>     |   14.351|
-SW7            |Segment<4>     |   14.143|
-SW7            |Segment<5>     |   13.774|
-SW7            |Segment<6>     |   13.390|
+DIP1           |Segment<0>     |   16.600|
+DIP1           |Segment<1>     |   15.414|
+DIP1           |Segment<2>     |   15.374|
+DIP1           |Segment<3>     |   15.107|
+DIP1           |Segment<4>     |   14.718|
+DIP1           |Segment<5>     |   14.539|
+DIP1           |Segment<6>     |   14.362|
+DIP2           |Segment<0>     |   16.963|
+DIP2           |Segment<1>     |   15.754|
+DIP2           |Segment<2>     |   15.546|
+DIP2           |Segment<3>     |   15.377|
+DIP2           |Segment<4>     |   15.396|
+DIP2           |Segment<5>     |   14.833|
+DIP2           |Segment<6>     |   14.655|
+DIP3           |Segment<0>     |   15.745|
+DIP3           |Segment<1>     |   16.466|
+DIP3           |Segment<2>     |   15.582|
+DIP3           |Segment<3>     |   15.800|
+DIP3           |Segment<4>     |   15.931|
+DIP3           |Segment<5>     |   14.597|
+DIP3           |Segment<6>     |   14.514|
+DIP4           |Segment<0>     |   15.921|
+DIP4           |Segment<1>     |   16.049|
+DIP4           |Segment<2>     |   15.165|
+DIP4           |Segment<3>     |   15.383|
+DIP4           |Segment<4>     |   15.514|
+DIP4           |Segment<5>     |   14.180|
+DIP4           |Segment<6>     |   14.097|
+DIP5           |Segment<0>     |   15.583|
+DIP5           |Segment<1>     |   16.419|
+DIP5           |Segment<2>     |   15.535|
+DIP5           |Segment<3>     |   15.753|
+DIP5           |Segment<4>     |   15.884|
+DIP5           |Segment<5>     |   14.550|
+DIP5           |Segment<6>     |   14.467|
+DIP6           |Segment<0>     |   15.631|
+DIP6           |Segment<1>     |   16.490|
+DIP6           |Segment<2>     |   15.606|
+DIP6           |Segment<3>     |   15.824|
+DIP6           |Segment<4>     |   15.955|
+DIP6           |Segment<5>     |   14.621|
+DIP6           |Segment<6>     |   14.538|
+DIP7           |Segment<0>     |   16.105|
+DIP7           |Segment<1>     |   16.317|
+DIP7           |Segment<2>     |   15.433|
+DIP7           |Segment<3>     |   15.651|
+DIP7           |Segment<4>     |   15.782|
+DIP7           |Segment<5>     |   14.448|
+DIP7           |Segment<6>     |   14.365|
+DIP8           |Segment<0>     |   16.141|
+DIP8           |Segment<1>     |   16.531|
+DIP8           |Segment<2>     |   15.647|
+DIP8           |Segment<3>     |   15.865|
+DIP8           |Segment<4>     |   15.996|
+DIP8           |Segment<5>     |   14.662|
+DIP8           |Segment<6>     |   14.579|
+Mode_Bin<0>    |Buzzer         |   10.794|
+Mode_Bin<0>    |Digit<0>       |   11.367|
+Mode_Bin<0>    |Digit<1>       |   11.205|
+Mode_Bin<0>    |Digit<2>       |   10.451|
+Mode_Bin<0>    |Digit<3>       |   10.191|
+Mode_Bin<0>    |Segment<0>     |   16.770|
+Mode_Bin<0>    |Segment<1>     |   16.403|
+Mode_Bin<0>    |Segment<2>     |   16.338|
+Mode_Bin<0>    |Segment<3>     |   15.595|
+Mode_Bin<0>    |Segment<4>     |   15.302|
+Mode_Bin<0>    |Segment<5>     |   15.218|
+Mode_Bin<0>    |Segment<6>     |   14.872|
+Mode_Bin<1>    |Buzzer         |   10.650|
+Mode_Bin<1>    |Digit<0>       |   11.319|
+Mode_Bin<1>    |Digit<1>       |   10.610|
+Mode_Bin<1>    |Digit<2>       |   10.444|
+Mode_Bin<1>    |Digit<3>       |    9.848|
+Mode_Bin<1>    |Segment<0>     |   16.626|
+Mode_Bin<1>    |Segment<1>     |   16.259|
+Mode_Bin<1>    |Segment<2>     |   16.194|
+Mode_Bin<1>    |Segment<3>     |   15.451|
+Mode_Bin<1>    |Segment<4>     |   15.158|
+Mode_Bin<1>    |Segment<5>     |   15.074|
+Mode_Bin<1>    |Segment<6>     |   14.728|
+Mode_Bin<2>    |Buzzer         |   11.103|
+Mode_Bin<2>    |Digit<0>       |   11.752|
+Mode_Bin<2>    |Digit<1>       |   11.652|
+Mode_Bin<2>    |Digit<2>       |   11.222|
+Mode_Bin<2>    |Digit<3>       |   10.670|
+Mode_Bin<2>    |Segment<0>     |   17.079|
+Mode_Bin<2>    |Segment<1>     |   16.712|
+Mode_Bin<2>    |Segment<2>     |   16.647|
+Mode_Bin<2>    |Segment<3>     |   15.904|
+Mode_Bin<2>    |Segment<4>     |   15.611|
+Mode_Bin<2>    |Segment<5>     |   15.527|
+Mode_Bin<2>    |Segment<6>     |   15.181|
+Mode_Bin<3>    |Buzzer         |   11.048|
+Mode_Bin<3>    |Digit<0>       |   11.215|
+Mode_Bin<3>    |Digit<1>       |   11.099|
+Mode_Bin<3>    |Digit<2>       |   10.897|
+Mode_Bin<3>    |Digit<3>       |    9.888|
+Mode_Bin<3>    |Segment<0>     |   17.024|
+Mode_Bin<3>    |Segment<1>     |   16.657|
+Mode_Bin<3>    |Segment<2>     |   16.592|
+Mode_Bin<3>    |Segment<3>     |   15.849|
+Mode_Bin<3>    |Segment<4>     |   15.556|
+Mode_Bin<3>    |Segment<5>     |   15.472|
+Mode_Bin<3>    |Segment<6>     |   15.126|
+PB3            |Buzzer         |   11.190|
+PB3            |Segment<0>     |   17.166|
+PB3            |Segment<1>     |   16.799|
+PB3            |Segment<2>     |   16.734|
+PB3            |Segment<3>     |   15.991|
+PB3            |Segment<4>     |   15.698|
+PB3            |Segment<5>     |   15.614|
+PB3            |Segment<6>     |   15.268|
+SW0            |Segment<0>     |   16.780|
+SW0            |Segment<1>     |   17.558|
+SW0            |Segment<2>     |   17.095|
+SW0            |Segment<3>     |   17.295|
+SW0            |Segment<4>     |   17.023|
+SW0            |Segment<5>     |   15.955|
+SW0            |Segment<6>     |   16.204|
+SW1            |Segment<0>     |   16.387|
+SW1            |Segment<1>     |   17.161|
+SW1            |Segment<2>     |   16.581|
+SW1            |Segment<3>     |   16.902|
+SW1            |Segment<4>     |   16.626|
+SW1            |Segment<5>     |   15.562|
+SW1            |Segment<6>     |   15.526|
+SW2            |Segment<0>     |   16.030|
+SW2            |Segment<1>     |   16.800|
+SW2            |Segment<2>     |   16.224|
+SW2            |Segment<3>     |   16.545|
+SW2            |Segment<4>     |   16.265|
+SW2            |Segment<5>     |   15.205|
+SW2            |Segment<6>     |   15.169|
+SW3            |Buzzer         |    9.291|
+SW3            |Segment<0>     |   15.542|
+SW3            |Segment<1>     |   16.375|
+SW3            |Segment<2>     |   15.736|
+SW3            |Segment<3>     |   16.057|
+SW3            |Segment<4>     |   15.840|
+SW3            |Segment<5>     |   14.717|
+SW3            |Segment<6>     |   14.681|
+SW4            |Buzzer         |    9.509|
+SW4            |Segment<0>     |   15.612|
+SW4            |Segment<1>     |   16.513|
+SW4            |Segment<2>     |   15.806|
+SW4            |Segment<3>     |   16.127|
+SW4            |Segment<4>     |   15.978|
+SW4            |Segment<5>     |   14.787|
+SW4            |Segment<6>     |   14.751|
+SW5            |Buzzer         |    9.130|
+SW5            |Segment<0>     |   16.089|
+SW5            |Segment<1>     |   16.990|
+SW5            |Segment<2>     |   16.283|
+SW5            |Segment<3>     |   16.604|
+SW5            |Segment<4>     |   16.455|
+SW5            |Segment<5>     |   15.264|
+SW5            |Segment<6>     |   15.228|
+SW6            |Buzzer         |    9.657|
+SW6            |Segment<0>     |   15.208|
+SW6            |Segment<1>     |   16.322|
+SW6            |Segment<2>     |   15.438|
+SW6            |Segment<3>     |   15.656|
+SW6            |Segment<4>     |   15.787|
+SW6            |Segment<5>     |   14.453|
+SW6            |Segment<6>     |   14.370|
+SW7            |Buzzer         |    8.965|
+SW7            |Segment<0>     |   14.607|
+SW7            |Segment<1>     |   15.721|
+SW7            |Segment<2>     |   14.837|
+SW7            |Segment<3>     |   15.055|
+SW7            |Segment<4>     |   15.186|
+SW7            |Segment<5>     |   13.852|
+SW7            |Segment<6>     |   13.769|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Dec 13 01:12:01 2022 
+Analysis completed Tue Dec 13 10:14:05 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

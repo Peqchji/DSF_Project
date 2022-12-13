@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DIsplay.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:02
+-- /___/   /\     Timestamp : 12/13/2022 10:04:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -194,8 +194,8 @@ architecture BEHAVIORAL of DIsplay is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_50";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_51";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_1";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_2";
 begin
    XLXI_2 : MUX4_1_4
       port map (Q0(3 downto 0)=>Bit0(3 downto 0),

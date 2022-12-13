@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Div20K.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:11
+-- /___/   /\     Timestamp : 12/13/2022 10:04:40
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -169,7 +169,7 @@ architecture BEHAVIORAL of Div20K is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_81";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_9";
 begin
    XLXI_1 : Div1k_MUSER_Div20K
       port map (In_CLK=>In_CLK,

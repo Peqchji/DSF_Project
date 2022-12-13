@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : counterRandomCir.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:06
+-- /___/   /\     Timestamp : 12/13/2022 10:04:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -252,8 +252,8 @@ architecture BEHAVIORAL of Div4M_MUSER_counterRandomCir is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_62";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_63";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_48";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_49";
 begin
    XLXI_1 : Div1k_MUSER_counterRandomCir
       port map (In_CLK=>In_CLK,
@@ -332,7 +332,7 @@ architecture BEHAVIORAL of Div16K_MUSER_counterRandomCir is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_64";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_50";
 begin
    XLXI_1 : Div1k_MUSER_counterRandomCir
       port map (In_CLK=>In_CLK,
@@ -407,7 +407,7 @@ architecture BEHAVIORAL of Div20K_MUSER_counterRandomCir is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_65";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_51";
 begin
    XLXI_1 : Div1k_MUSER_counterRandomCir
       port map (In_CLK=>In_CLK,

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym mod10nn C:/Users/pinai/Downloads/Compressed/Lab7/mod10nn.sch C:/Users/pinai/Downloads/Compressed/Lab7/mod10nn.sym 

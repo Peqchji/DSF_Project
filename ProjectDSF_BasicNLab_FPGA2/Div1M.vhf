@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Div1M.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:07
+-- /___/   /\     Timestamp : 12/13/2022 10:04:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -159,7 +159,7 @@ architecture BEHAVIORAL of Div1M is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_67";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_47";
 begin
    XLXI_1 : Div1k_MUSER_Div1M
       port map (In_CLK=>In_CLK,

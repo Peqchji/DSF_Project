@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : main.vhf
--- /___/   /\     Timestamp : 12/13/2022 01:05:58
+-- /___/   /\     Timestamp : 12/13/2022 10:12:42
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -359,79 +359,6 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity moduleLab07_MUSER_main is
-   port ( CLKin_20MHz : in    std_logic; 
-          PB1         : in    std_logic; 
-          PB2         : in    std_logic; 
-          SelMode7    : in    std_logic; 
-          Digit       : out   std_logic_vector (3 downto 0); 
-          Segment     : out   std_logic_vector (6 downto 0); 
-          SegmentDp   : out   std_logic);
-end moduleLab07_MUSER_main;
-
-architecture BEHAVIORAL of moduleLab07_MUSER_main is
-   attribute BOX_TYPE   : string ;
-   signal XLXN_6      : std_logic;
-   component Lab7
-      port ( OSC       : in    std_logic; 
-             Reset     : in    std_logic; 
-             StartStop : in    std_logic; 
-             SelMode7  : in    std_logic; 
-             Common2   : out   std_logic; 
-             h         : out   std_logic; 
-             a         : out   std_logic; 
-             b         : out   std_logic; 
-             c         : out   std_logic; 
-             d         : out   std_logic; 
-             e         : out   std_logic; 
-             f         : out   std_logic; 
-             g         : out   std_logic; 
-             Common3   : out   std_logic; 
-             Common0   : out   std_logic; 
-             Common1   : out   std_logic);
-   end component;
-   
-   component AND2
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
-   
-begin
-   XLXI_1 : Lab7
-      port map (OSC=>CLKin_20MHz,
-                Reset=>PB2,
-                SelMode7=>SelMode7,
-                StartStop=>PB1,
-                a=>Segment(0),
-                b=>Segment(1),
-                c=>Segment(2),
-                Common0=>Digit(0),
-                Common1=>Digit(1),
-                Common2=>Digit(2),
-                Common3=>Digit(3),
-                d=>Segment(3),
-                e=>Segment(4),
-                f=>Segment(5),
-                g=>Segment(6),
-                h=>XLXN_6);
-   
-   XLXI_2 : AND2
-      port map (I0=>XLXN_6,
-                I1=>SelMode7,
-                O=>SegmentDp);
-   
-end BEHAVIORAL;
-
-
-
-library ieee;
-use ieee.std_logic_1164.ALL;
-use ieee.numeric_std.ALL;
-library UNISIM;
-use UNISIM.Vcomponents.ALL;
-
 entity moduleLab06_MUSER_main is
    port ( CLKin_20MHz : in    std_logic; 
           PB3         : in    std_logic; 
@@ -498,7 +425,7 @@ architecture BEHAVIORAL of moduleLab06_MUSER_main is
    end component;
    attribute BOX_TYPE of FD : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_39";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_0";
 begin
    XLXI_4 : FTC_HXILINX_main
       port map (C=>CLKin_20MHz,
@@ -1017,13 +944,13 @@ architecture BEHAVIORAL of moduleLab02_MUSER_main is
              Digit3      : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_40";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_41";
-   attribute HU_SET of XLXI_26 : label is "XLXI_26_42";
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_43";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_44";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_45";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_46";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_1";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_2";
+   attribute HU_SET of XLXI_26 : label is "XLXI_26_3";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_4";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_5";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_6";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_7";
 begin
    XLXI_1 : AND4B3
       port map (I0=>State_8,
@@ -1532,14 +1459,14 @@ architecture BEHAVIORAL of BasicLogicGate_MUSER_main is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_47";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_48";
-   attribute HU_SET of XLXI_26 : label is "XLXI_26_49";
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_50";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_51";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_52";
-   attribute HU_SET of XLXI_92 : label is "XLXI_92_53";
-   attribute HU_SET of XLXI_98 : label is "XLXI_98_54";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_8";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_9";
+   attribute HU_SET of XLXI_26 : label is "XLXI_26_10";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_11";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_12";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_13";
+   attribute HU_SET of XLXI_92 : label is "XLXI_92_14";
+   attribute HU_SET of XLXI_98 : label is "XLXI_98_15";
 begin
    XLXI_3 : AND4B3
       port map (I0=>State_8,
@@ -1935,115 +1862,107 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity main is
-   port ( DIP1      : in    std_logic; 
-          DIP2      : in    std_logic; 
-          DIP3      : in    std_logic; 
-          DIP4      : in    std_logic; 
-          DIP5      : in    std_logic; 
-          DIP6      : in    std_logic; 
-          DIP7      : in    std_logic; 
-          DIP8      : in    std_logic; 
-          Mode_Bin  : in    std_logic_vector (3 downto 0); 
-          OSC       : in    std_logic; 
-          PB1       : in    std_logic; 
-          PB2       : in    std_logic; 
-          PB3       : in    std_logic; 
-          PB4       : in    std_logic; 
-          SW0       : in    std_logic; 
-          SW1       : in    std_logic; 
-          SW2       : in    std_logic; 
-          SW3       : in    std_logic; 
-          SW4       : in    std_logic; 
-          SW5       : in    std_logic; 
-          SW6       : in    std_logic; 
-          SW7       : in    std_logic; 
-          Buzzer    : out   std_logic; 
-          Digit     : out   std_logic_vector (3 downto 0); 
-          Segment   : out   std_logic_vector (6 downto 0); 
-          SegmentDp : out   std_logic);
+   port ( DIP1     : in    std_logic; 
+          DIP2     : in    std_logic; 
+          DIP3     : in    std_logic; 
+          DIP4     : in    std_logic; 
+          DIP5     : in    std_logic; 
+          DIP6     : in    std_logic; 
+          DIP7     : in    std_logic; 
+          DIP8     : in    std_logic; 
+          Mode_Bin : in    std_logic_vector (3 downto 0); 
+          OSC      : in    std_logic; 
+          PB1      : in    std_logic; 
+          PB2      : in    std_logic; 
+          PB3      : in    std_logic; 
+          PB4      : in    std_logic; 
+          SW0      : in    std_logic; 
+          SW1      : in    std_logic; 
+          SW2      : in    std_logic; 
+          SW3      : in    std_logic; 
+          SW4      : in    std_logic; 
+          SW5      : in    std_logic; 
+          SW6      : in    std_logic; 
+          SW7      : in    std_logic; 
+          Buzzer   : out   std_logic; 
+          Digit    : out   std_logic_vector (3 downto 0); 
+          Segment  : out   std_logic_vector (6 downto 0));
 end main;
 
 architecture BEHAVIORAL of main is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal XLXN_1    : std_logic_vector (6 downto 0);
-   signal XLXN_2    : std_logic_vector (6 downto 0);
-   signal XLXN_3    : std_logic_vector (6 downto 0);
-   signal XLXN_4    : std_logic_vector (6 downto 0);
-   signal XLXN_5    : std_logic_vector (6 downto 0);
-   signal XLXN_8    : std_logic_vector (6 downto 0);
-   signal XLXN_9    : std_logic_vector (6 downto 0);
-   signal XLXN_17   : std_logic_vector (3 downto 0);
-   signal XLXN_21   : std_logic_vector (3 downto 0);
-   signal XLXN_22   : std_logic_vector (3 downto 0);
-   signal XLXN_23   : std_logic_vector (3 downto 0);
-   signal XLXN_24   : std_logic_vector (3 downto 0);
-   signal XLXN_25   : std_logic_vector (3 downto 0);
-   signal XLXN_26   : std_logic_vector (3 downto 0);
-   signal XLXN_35   : std_logic;
-   signal XLXN_36   : std_logic;
-   signal XLXN_37   : std_logic;
-   signal XLXN_69   : std_logic;
-   signal XLXN_70   : std_logic;
-   signal XLXN_182  : std_logic;
-   signal XLXN_183  : std_logic;
-   signal XLXN_184  : std_logic;
-   signal XLXN_185  : std_logic;
-   signal XLXN_186  : std_logic;
-   signal XLXN_187  : std_logic;
-   signal XLXN_188  : std_logic;
-   signal XLXN_189  : std_logic;
-   signal XLXN_190  : std_logic;
-   signal XLXN_195  : std_logic;
-   signal XLXN_196  : std_logic;
-   signal XLXN_197  : std_logic;
-   signal XLXN_198  : std_logic;
-   signal XLXN_217  : std_logic;
-   signal XLXN_218  : std_logic;
-   signal XLXN_219  : std_logic;
-   signal XLXN_220  : std_logic;
-   signal XLXN_225  : std_logic;
-   signal XLXN_226  : std_logic;
-   signal XLXN_227  : std_logic;
-   signal XLXN_228  : std_logic;
-   signal XLXN_229  : std_logic;
-   signal XLXN_230  : std_logic;
-   signal XLXN_231  : std_logic;
-   signal XLXN_232  : std_logic;
-   signal XLXN_241  : std_logic;
-   signal XLXN_242  : std_logic;
-   signal XLXN_243  : std_logic;
-   signal XLXN_244  : std_logic;
-   signal XLXN_245  : std_logic;
-   signal XLXN_246  : std_logic;
-   signal XLXN_247  : std_logic;
-   signal XLXN_248  : std_logic;
-   signal XLXN_249  : std_logic;
-   signal XLXN_250  : std_logic;
-   signal XLXN_251  : std_logic;
-   signal XLXN_252  : std_logic;
-   signal XLXN_254  : std_logic;
-   signal XLXN_258  : std_logic;
-   signal XLXN_260  : std_logic;
-   signal XLXN_322  : std_logic;
-   signal XLXN_326  : std_logic;
-   signal XLXN_328  : std_logic;
-   signal XLXN_329  : std_logic;
-   signal XLXN_339  : std_logic;
-   signal XLXN_340  : std_logic;
-   signal XLXN_341  : std_logic;
-   signal XLXN_342  : std_logic;
-   signal XLXN_343  : std_logic;
-   signal XLXN_344  : std_logic;
-   signal XLXN_345  : std_logic;
-   signal XLXN_346  : std_logic;
-   signal XLXN_381  : std_logic;
-   signal XLXN_385  : std_logic;
-   signal XLXN_386  : std_logic;
-   signal XLXN_390  : std_logic;
-   signal XLXN_391  : std_logic;
-   signal XLXN_392  : std_logic;
-   signal XLXN_395  : std_logic;
+   signal XLXN_1   : std_logic_vector (6 downto 0);
+   signal XLXN_2   : std_logic_vector (6 downto 0);
+   signal XLXN_3   : std_logic_vector (6 downto 0);
+   signal XLXN_4   : std_logic_vector (6 downto 0);
+   signal XLXN_5   : std_logic_vector (6 downto 0);
+   signal XLXN_9   : std_logic_vector (6 downto 0);
+   signal XLXN_17  : std_logic_vector (3 downto 0);
+   signal XLXN_22  : std_logic_vector (3 downto 0);
+   signal XLXN_23  : std_logic_vector (3 downto 0);
+   signal XLXN_24  : std_logic_vector (3 downto 0);
+   signal XLXN_25  : std_logic_vector (3 downto 0);
+   signal XLXN_26  : std_logic_vector (3 downto 0);
+   signal XLXN_35  : std_logic;
+   signal XLXN_37  : std_logic;
+   signal XLXN_69  : std_logic;
+   signal XLXN_70  : std_logic;
+   signal XLXN_182 : std_logic;
+   signal XLXN_183 : std_logic;
+   signal XLXN_184 : std_logic;
+   signal XLXN_185 : std_logic;
+   signal XLXN_186 : std_logic;
+   signal XLXN_187 : std_logic;
+   signal XLXN_188 : std_logic;
+   signal XLXN_189 : std_logic;
+   signal XLXN_190 : std_logic;
+   signal XLXN_195 : std_logic;
+   signal XLXN_196 : std_logic;
+   signal XLXN_197 : std_logic;
+   signal XLXN_198 : std_logic;
+   signal XLXN_217 : std_logic;
+   signal XLXN_218 : std_logic;
+   signal XLXN_219 : std_logic;
+   signal XLXN_220 : std_logic;
+   signal XLXN_225 : std_logic;
+   signal XLXN_226 : std_logic;
+   signal XLXN_227 : std_logic;
+   signal XLXN_228 : std_logic;
+   signal XLXN_229 : std_logic;
+   signal XLXN_230 : std_logic;
+   signal XLXN_231 : std_logic;
+   signal XLXN_232 : std_logic;
+   signal XLXN_241 : std_logic;
+   signal XLXN_242 : std_logic;
+   signal XLXN_243 : std_logic;
+   signal XLXN_244 : std_logic;
+   signal XLXN_245 : std_logic;
+   signal XLXN_246 : std_logic;
+   signal XLXN_247 : std_logic;
+   signal XLXN_248 : std_logic;
+   signal XLXN_249 : std_logic;
+   signal XLXN_250 : std_logic;
+   signal XLXN_251 : std_logic;
+   signal XLXN_252 : std_logic;
+   signal XLXN_322 : std_logic;
+   signal XLXN_326 : std_logic;
+   signal XLXN_329 : std_logic;
+   signal XLXN_339 : std_logic;
+   signal XLXN_340 : std_logic;
+   signal XLXN_341 : std_logic;
+   signal XLXN_342 : std_logic;
+   signal XLXN_343 : std_logic;
+   signal XLXN_344 : std_logic;
+   signal XLXN_345 : std_logic;
+   signal XLXN_346 : std_logic;
+   signal XLXN_395 : std_logic;
+   signal XLXN_397 : std_logic;
+   signal XLXN_409 : std_logic;
+   signal XLXN_411 : std_logic;
+   signal XLXN_423 : std_logic;
+   signal XLXN_425 : std_logic;
+   signal XLXN_427 : std_logic;
    component BasicLogicGate_MUSER_main
       port ( State_6     : in    std_logic; 
              State_2     : in    std_logic; 
@@ -2112,16 +2031,6 @@ architecture BEHAVIORAL of main is
              Digit       : out   std_logic_vector (3 downto 0));
    end component;
    
-   component moduleLab07_MUSER_main
-      port ( CLKin_20MHz : in    std_logic; 
-             PB1         : in    std_logic; 
-             PB2         : in    std_logic; 
-             SelMode7    : in    std_logic; 
-             SegmentDp   : out   std_logic; 
-             Digit       : out   std_logic_vector (3 downto 0); 
-             Segment     : out   std_logic_vector (6 downto 0));
-   end component;
-   
    component moduleLab08_09_MUSER_main
       port ( CLKin_100Hz : in    std_logic; 
              SW0         : in    std_logic; 
@@ -2155,7 +2064,6 @@ architecture BEHAVIORAL of main is
              SevenSegment_Mode3 : in    std_logic_vector (6 downto 0); 
              SevenSegment_Mode5 : in    std_logic_vector (6 downto 0); 
              SevenSegment_Mode6 : in    std_logic_vector (6 downto 0); 
-             SevenSegment_Mode7 : in    std_logic_vector (6 downto 0); 
              SevenSegment_Mode8 : in    std_logic_vector (6 downto 0); 
              Sel                : in    std_logic_vector (3 downto 0); 
              SevenSegment       : out   std_logic_vector (6 downto 0));
@@ -2167,7 +2075,6 @@ architecture BEHAVIORAL of main is
              DigitControl_mode3 : in    std_logic_vector (3 downto 0); 
              DigitControl_mode5 : in    std_logic_vector (3 downto 0); 
              DigitControl_mode6 : in    std_logic_vector (3 downto 0); 
-             DigitControl_mode7 : in    std_logic_vector (3 downto 0); 
              DigitControl_mode8 : in    std_logic_vector (3 downto 0); 
              Sel                : in    std_logic_vector (3 downto 0); 
              Common             : out   std_logic_vector (3 downto 0));
@@ -2181,15 +2088,6 @@ architecture BEHAVIORAL of main is
              O  : out   std_logic);
    end component;
    attribute BOX_TYPE of AND4B3 : component is "BLACK_BOX";
-   
-   component AND4B1
-      port ( I0 : in    std_logic; 
-             I1 : in    std_logic; 
-             I2 : in    std_logic; 
-             I3 : in    std_logic; 
-             O  : out   std_logic);
-   end component;
-   attribute BOX_TYPE of AND4B1 : component is "BLACK_BOX";
    
    component AND4B2
       port ( I0 : in    std_logic; 
@@ -2213,19 +2111,6 @@ architecture BEHAVIORAL of main is
    end component;
    attribute BOX_TYPE of BUF : component is "BLACK_BOX";
    
-   component Div100k
-      port ( In_CLK  : in    std_logic; 
-             CLR     : in    std_logic; 
-             Out_CLK : out   std_logic);
-   end component;
-   
-   component FTC_HXILINX_main
-      port ( C   : in    std_logic; 
-             CLR : in    std_logic; 
-             T   : in    std_logic; 
-             Q   : out   std_logic);
-   end component;
-   
    component VCC
       port ( P : out   std_logic);
    end component;
@@ -2236,16 +2121,24 @@ architecture BEHAVIORAL of main is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   component BUFG
-      port ( I : in    std_logic; 
-             O : out   std_logic);
+   component Div100knn
+      port ( clkIN  : in    std_logic; 
+             clr    : in    std_logic; 
+             clkOUT : out   std_logic);
    end component;
-   attribute BOX_TYPE of BUFG : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_117 : label is "XLXI_117_55";
+   component FTC_HXILINX_main
+      port ( C   : in    std_logic; 
+             CLR : in    std_logic; 
+             T   : in    std_logic; 
+             Q   : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_170 : label is "XLXI_170_16";
+   attribute HU_SET of XLXI_173 : label is "XLXI_173_17";
 begin
    XLXI_1 : BasicLogicGate_MUSER_main
-      port map (CLKin_100Hz=>XLXN_260,
+      port map (CLKin_100Hz=>XLXN_423,
                 State_1=>XLXN_249,
                 State_2=>XLXN_248,
                 State_3=>XLXN_247,
@@ -2261,8 +2154,8 @@ begin
                 Segment(6 downto 0)=>XLXN_1(6 downto 0));
    
    XLXI_2 : moduleLab02_MUSER_main
-      port map (CLKin_20MHz=>XLXN_381,
-                CLKin_100Hz=>XLXN_260,
+      port map (CLKin_20MHz=>OSC,
+                CLKin_100Hz=>XLXN_423,
                 State_1=>XLXN_339,
                 State_2=>XLXN_340,
                 State_3=>XLXN_341,
@@ -2291,7 +2184,7 @@ begin
                 Buzzer=>XLXN_70);
    
    XLXI_5 : moduleLab05_MUSER_main
-      port map (CLKin_20MHz=>XLXN_390,
+      port map (CLKin_20MHz=>XLXN_409,
                 PB1=>XLXN_322,
                 PB4=>XLXN_329,
                 SelMode5=>XLXN_182,
@@ -2299,24 +2192,15 @@ begin
                 Segment(6 downto 0)=>XLXN_4(6 downto 0));
    
    XLXI_11 : moduleLab06_MUSER_main
-      port map (CLKin_20MHz=>XLXN_385,
+      port map (CLKin_20MHz=>XLXN_409,
                 PB3=>XLXN_326,
                 SelMode6=>XLXN_37,
                 Buzzer=>XLXN_69,
                 Digit(3 downto 0)=>XLXN_22(3 downto 0),
                 Segment(6 downto 0)=>XLXN_5(6 downto 0));
    
-   XLXI_12 : moduleLab07_MUSER_main
-      port map (CLKin_20MHz=>XLXN_386,
-                PB1=>XLXN_322,
-                PB2=>XLXN_328,
-                SelMode7=>XLXN_36,
-                Digit(3 downto 0)=>XLXN_21(3 downto 0),
-                Segment(6 downto 0)=>XLXN_8(6 downto 0),
-                SegmentDp=>SegmentDp);
-   
    XLXI_13 : moduleLab08_09_MUSER_main
-      port map (CLKin_100Hz=>XLXN_260,
+      port map (CLKin_100Hz=>XLXN_423,
                 DIP0=>XLXN_220,
                 DIP1=>XLXN_219,
                 DIP2=>XLXN_218,
@@ -2326,7 +2210,7 @@ begin
                 DIP6=>XLXN_196,
                 DIP7=>XLXN_195,
                 PB1=>XLXN_322,
-                PB2=>XLXN_328,
+                PB2=>XLXN_397,
                 PB3=>XLXN_326,
                 PB4=>XLXN_329,
                 SelMode8=>XLXN_35,
@@ -2348,7 +2232,6 @@ begin
                 SevenSegment_Mode3(6 downto 0)=>XLXN_3(6 downto 0),
                 SevenSegment_Mode5(6 downto 0)=>XLXN_4(6 downto 0),
                 SevenSegment_Mode6(6 downto 0)=>XLXN_5(6 downto 0),
-                SevenSegment_Mode7(6 downto 0)=>XLXN_8(6 downto 0),
                 SevenSegment_Mode8(6 downto 0)=>XLXN_9(6 downto 0),
                 SevenSegment(6 downto 0)=>Segment(6 downto 0));
    
@@ -2358,7 +2241,6 @@ begin
                 DigitControl_mode3(3 downto 0)=>XLXN_26(3 downto 0),
                 DigitControl_mode5(3 downto 0)=>XLXN_23(3 downto 0),
                 DigitControl_mode6(3 downto 0)=>XLXN_22(3 downto 0),
-                DigitControl_mode7(3 downto 0)=>XLXN_21(3 downto 0),
                 DigitControl_mode8(3 downto 0)=>XLXN_17(3 downto 0),
                 Sel(3 downto 0)=>Mode_Bin(3 downto 0),
                 Common(3 downto 0)=>Digit(3 downto 0));
@@ -2369,13 +2251,6 @@ begin
                 I2=>Mode_Bin(0),
                 I3=>Mode_Bin(3),
                 O=>XLXN_35);
-   
-   XLXI_18 : AND4B1
-      port map (I0=>Mode_Bin(3),
-                I1=>Mode_Bin(2),
-                I2=>Mode_Bin(1),
-                I3=>Mode_Bin(0),
-                O=>XLXN_36);
    
    XLXI_19 : AND4B2
       port map (I0=>Mode_Bin(0),
@@ -2573,19 +2448,8 @@ begin
       port map (I=>SW0,
                 O=>XLXN_252);
    
-   XLXI_116 : Div100k
-      port map (CLR=>XLXN_395,
-                In_CLK=>OSC,
-                Out_CLK=>XLXN_254);
-   
-   XLXI_117 : FTC_HXILINX_main
-      port map (C=>XLXN_254,
-                CLR=>XLXN_395,
-                T=>XLXN_258,
-                Q=>XLXN_260);
-   
    XLXI_118 : VCC
-      port map (P=>XLXN_258);
+      port map (P=>XLXN_411);
    
    XLXI_125 : GND
       port map (G=>XLXN_395);
@@ -2596,7 +2460,7 @@ begin
    
    XLXI_131 : BUF
       port map (I=>PB2,
-                O=>XLXN_328);
+                O=>XLXN_397);
    
    XLXI_132 : BUF
       port map (I=>PB3,
@@ -2606,29 +2470,25 @@ begin
       port map (I=>PB4,
                 O=>XLXN_329);
    
-   XLXI_156 : BUF
-      port map (I=>XLXN_391,
-                O=>XLXN_385);
+   XLXI_165 : Div100knn
+      port map (clkIN=>OSC,
+                clr=>XLXN_395,
+                clkOUT=>XLXN_425);
    
-   XLXI_157 : BUF
-      port map (I=>XLXN_381,
-                O=>XLXN_390);
+   XLXI_170 : FTC_HXILINX_main
+      port map (C=>OSC,
+                CLR=>XLXN_395,
+                T=>XLXN_411,
+                Q=>XLXN_409);
    
-   XLXI_158 : BUF
-      port map (I=>XLXN_392,
-                O=>XLXN_386);
+   XLXI_173 : FTC_HXILINX_main
+      port map (C=>XLXN_425,
+                CLR=>XLXN_395,
+                T=>XLXN_427,
+                Q=>XLXN_423);
    
-   XLXI_159 : BUF
-      port map (I=>XLXN_391,
-                O=>XLXN_392);
-   
-   XLXI_161 : BUF
-      port map (I=>XLXN_381,
-                O=>XLXN_391);
-   
-   XLXI_164 : BUFG
-      port map (I=>OSC,
-                O=>XLXN_381);
+   XLXI_174 : VCC
+      port map (P=>XLXN_427);
    
 end BEHAVIORAL;
 

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Lab05_no2.vhf
--- /___/   /\     Timestamp : 12/13/2022 01:05:27
+-- /___/   /\     Timestamp : 12/13/2022 10:04:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -87,75 +87,75 @@ entity Lab05_no2 is
           d_P34     : out   std_logic; 
           e_P32     : out   std_logic; 
           f_P29     : out   std_logic; 
-          g_P27     : out   std_logic; 
-          XLXN_1075 : out   std_logic);
+          g_P27     : out   std_logic);
 end Lab05_no2;
 
 architecture BEHAVIORAL of Lab05_no2 is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
-   signal A_P58           : std_logic;
-   signal B_P57           : std_logic;
-   signal C_P56           : std_logic;
-   signal D_P55           : std_logic;
-   signal XLXN_234        : std_logic;
-   signal XLXN_238        : std_logic;
-   signal XLXN_241        : std_logic;
-   signal XLXN_242        : std_logic;
-   signal XLXN_243        : std_logic;
-   signal XLXN_249        : std_logic;
-   signal XLXN_250        : std_logic;
-   signal XLXN_251        : std_logic;
-   signal XLXN_253        : std_logic;
-   signal XLXN_254        : std_logic;
-   signal XLXN_263        : std_logic;
-   signal XLXN_277        : std_logic;
-   signal XLXN_278        : std_logic;
-   signal XLXN_279        : std_logic;
-   signal XLXN_293        : std_logic;
-   signal XLXN_320        : std_logic;
-   signal XLXN_322        : std_logic;
-   signal XLXN_323        : std_logic;
-   signal XLXN_328        : std_logic;
-   signal XLXN_329        : std_logic;
-   signal XLXN_330        : std_logic;
-   signal XLXN_333        : std_logic;
-   signal XLXN_380        : std_logic;
-   signal XLXN_381        : std_logic;
-   signal XLXN_382        : std_logic;
-   signal XLXN_383        : std_logic;
-   signal XLXN_384        : std_logic;
-   signal XLXN_386        : std_logic;
-   signal XLXN_387        : std_logic;
-   signal XLXN_513        : std_logic;
-   signal XLXN_514        : std_logic;
-   signal XLXN_519        : std_logic;
-   signal XLXN_520        : std_logic;
-   signal XLXN_532        : std_logic;
-   signal XLXN_533        : std_logic;
-   signal XLXN_536        : std_logic;
-   signal XLXN_545        : std_logic;
-   signal XLXN_879        : std_logic;
-   signal XLXN_888        : std_logic;
-   signal XLXN_891        : std_logic;
-   signal XLXN_892        : std_logic;
-   signal XLXN_893        : std_logic;
-   signal XLXN_895        : std_logic;
-   signal XLXN_896        : std_logic;
-   signal XLXN_907        : std_logic;
-   signal XLXN_910        : std_logic;
-   signal XLXN_912        : std_logic;
-   signal XLXN_920        : std_logic;
-   signal XLXN_921        : std_logic;
-   signal XLXN_1032       : std_logic;
-   signal XLXN_1060       : std_logic;
-   signal XLXN_1063       : std_logic;
-   signal XLXN_1064       : std_logic;
-   signal XLXN_1069       : std_logic;
-   signal XLXN_1083       : std_logic;
-   signal XLXN_1084       : std_logic;
-   signal XLXN_1075_DUMMY : std_logic;
-   signal Common0_DUMMY   : std_logic;
+   signal A_P58         : std_logic;
+   signal B_P57         : std_logic;
+   signal C_P56         : std_logic;
+   signal D_P55         : std_logic;
+   signal XLXN_234      : std_logic;
+   signal XLXN_238      : std_logic;
+   signal XLXN_241      : std_logic;
+   signal XLXN_242      : std_logic;
+   signal XLXN_243      : std_logic;
+   signal XLXN_249      : std_logic;
+   signal XLXN_250      : std_logic;
+   signal XLXN_251      : std_logic;
+   signal XLXN_253      : std_logic;
+   signal XLXN_254      : std_logic;
+   signal XLXN_263      : std_logic;
+   signal XLXN_277      : std_logic;
+   signal XLXN_278      : std_logic;
+   signal XLXN_279      : std_logic;
+   signal XLXN_293      : std_logic;
+   signal XLXN_320      : std_logic;
+   signal XLXN_322      : std_logic;
+   signal XLXN_323      : std_logic;
+   signal XLXN_328      : std_logic;
+   signal XLXN_329      : std_logic;
+   signal XLXN_330      : std_logic;
+   signal XLXN_333      : std_logic;
+   signal XLXN_380      : std_logic;
+   signal XLXN_381      : std_logic;
+   signal XLXN_382      : std_logic;
+   signal XLXN_383      : std_logic;
+   signal XLXN_384      : std_logic;
+   signal XLXN_386      : std_logic;
+   signal XLXN_387      : std_logic;
+   signal XLXN_513      : std_logic;
+   signal XLXN_514      : std_logic;
+   signal XLXN_519      : std_logic;
+   signal XLXN_520      : std_logic;
+   signal XLXN_532      : std_logic;
+   signal XLXN_533      : std_logic;
+   signal XLXN_536      : std_logic;
+   signal XLXN_545      : std_logic;
+   signal XLXN_879      : std_logic;
+   signal XLXN_888      : std_logic;
+   signal XLXN_891      : std_logic;
+   signal XLXN_892      : std_logic;
+   signal XLXN_893      : std_logic;
+   signal XLXN_895      : std_logic;
+   signal XLXN_896      : std_logic;
+   signal XLXN_907      : std_logic;
+   signal XLXN_910      : std_logic;
+   signal XLXN_912      : std_logic;
+   signal XLXN_920      : std_logic;
+   signal XLXN_921      : std_logic;
+   signal XLXN_1032     : std_logic;
+   signal XLXN_1060     : std_logic;
+   signal XLXN_1063     : std_logic;
+   signal XLXN_1064     : std_logic;
+   signal XLXN_1069     : std_logic;
+   signal XLXN_1083     : std_logic;
+   signal XLXN_1084     : std_logic;
+   signal XLXN_1085     : std_logic;
+   signal XLXN_1086     : std_logic;
+   signal Common0_DUMMY : std_logic;
    component OR3
       port ( I0 : in    std_logic; 
              I1 : in    std_logic; 
@@ -220,12 +220,6 @@ architecture BEHAVIORAL of Lab05_no2 is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   component Div100k
-      port ( In_CLK  : in    std_logic; 
-             CLR     : in    std_logic; 
-             Out_CLK : out   std_logic);
-   end component;
-   
    component Div200
       port ( In_CLK  : in    std_logic; 
              CLR     : in    std_logic; 
@@ -244,12 +238,25 @@ architecture BEHAVIORAL of Lab05_no2 is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_513 : label is "XLXI_513_0";
-   attribute HU_SET of XLXI_514 : label is "XLXI_514_1";
-   attribute HU_SET of XLXI_515 : label is "XLXI_515_2";
+   component Div100knn
+      port ( clkIN  : in    std_logic; 
+             clr    : in    std_logic; 
+             clkOUT : out   std_logic);
+   end component;
+   
+   component FD
+      generic( INIT : bit :=  '0');
+      port ( C : in    std_logic; 
+             D : in    std_logic; 
+             Q : out   std_logic);
+   end component;
+   attribute BOX_TYPE of FD : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_513 : label is "XLXI_513_37";
+   attribute HU_SET of XLXI_514 : label is "XLXI_514_38";
+   attribute HU_SET of XLXI_515 : label is "XLXI_515_39";
 begin
    Common0 <= Common0_DUMMY;
-   XLXN_1075 <= XLXN_1075_DUMMY;
    XLXI_94 : OR3
       port map (I0=>XLXN_241,
                 I1=>XLXN_234,
@@ -559,7 +566,7 @@ begin
    
    XLXI_638 : OR2
       port map (I0=>XLXN_1083,
-                I1=>XLXN_1075_DUMMY,
+                I1=>XLXN_1086,
                 O=>XLXN_1060);
    
    XLXI_650 : GND
@@ -570,15 +577,10 @@ begin
                 I1=>Pin123,
                 O=>XLXN_1063);
    
-   XLXI_670 : Div100k
-      port map (CLR=>XLXN_1069,
-                In_CLK=>XLXN_1063,
-                Out_CLK=>XLXN_1064);
-   
    XLXI_671 : Div200
       port map (CLR=>XLXN_1069,
                 In_CLK=>XLXN_1064,
-                Out_CLK=>XLXN_1075_DUMMY);
+                Out_CLK=>XLXN_1085);
    
    XLXI_672 : INV
       port map (I=>Clock_P48,
@@ -591,6 +593,16 @@ begin
    
    XLXI_676 : VCC
       port map (P=>XLXN_1084);
+   
+   XLXI_677 : Div100knn
+      port map (clkIN=>XLXN_1063,
+                clr=>XLXN_1069,
+                clkOUT=>XLXN_1064);
+   
+   XLXI_678 : FD
+      port map (C=>Pin123,
+                D=>XLXN_1085,
+                Q=>XLXN_1086);
    
 end BEHAVIORAL;
 

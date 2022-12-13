@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-12-12T22:10:23</DateModified>
+  <DateModified>2022-12-14T01:42:45</DateModified>
   <ModuleName>Main</ModuleName>
-  <SummaryTimeStamp>2022-12-12T22:06:19</SummaryTimeStamp>
+  <SummaryTimeStamp>2022-12-13T10:02:25</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/iseconfig/main.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2\</ImplementationReportsDirectory>
   <DateInitialized>2022-12-11T19:58:58</DateInitialized>

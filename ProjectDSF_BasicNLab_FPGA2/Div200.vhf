@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Div200.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:08:54
+-- /___/   /\     Timestamp : 12/13/2022 10:04:42
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -177,10 +177,10 @@ architecture BEHAVIORAL of COUNTER0_9_MUSER_Div200 is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_4";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_5";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_6";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_7";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_30";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_31";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_32";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_33";
 begin
    bit(3 downto 0) <= bit_DUMMY(3 downto 0);
    XLXI_1 : FJKC_HXILINX_Div200
@@ -290,7 +290,7 @@ architecture BEHAVIORAL of Div200 is
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_8";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_34";
 begin
    XLXI_1 : COUNTER0_9_MUSER_Div200
       port map (CLK=>In_CLK,

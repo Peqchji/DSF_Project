@@ -13,6 +13,11 @@
          <ClosedNode>/Display C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF|LAB08|DIsplay.sch</ClosedNode>
          <ClosedNode>/Div100k C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF|LAB07|Div100k.sch</ClosedNode>
          <ClosedNode>/Div200 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF|LAB07|Div200.sch</ClosedNode>
+         <ClosedNode>/Lab7 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|Lab7|Lab7.sch/XLXI_39 - Timernn</ClosedNode>
+         <ClosedNode>/Lab7 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|Lab7|Lab7.sch/XLXI_40 - Div200nn</ClosedNode>
+         <ClosedNode>/Lab7 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|Lab7|Lab7.sch/XLXI_41 - Div100knn</ClosedNode>
+         <ClosedNode>/Lab7 C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|Lab7|Lab7.sch/XLXI_42 - Div100knn</ClosedNode>
+         <ClosedNode>/Main C:|Users|Peqch|Desktop|Digital system Fundamental|ISE|DSF_Project|ProjectDSF_BasicNLab|Main.sch/XLXI_56 - Lab7</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>Main (C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/Main.sch)</SelectedItem>
@@ -46,7 +51,7 @@
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000028e000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000001c20000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>counter0_5nn.sch</CurrentItem>
    </ItemView>
    <ItemView guiview="Library" >
       <ClosedNodes>
@@ -69,13 +74,13 @@
          <ClosedNode>Synthesize - XST</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem>Design Summary/Reports</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >6</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >4</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem>Design Summary/Reports</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
       <ClosedNodes>
@@ -104,6 +109,19 @@
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
    </ItemView>
-   <SourceProcessView>000000ff0000000000000002000000a3000000a201000000050100000002</SourceProcessView>
+   <SourceProcessView>000000ff0000000000000002000000b1000000b701000000050100000002</SourceProcessView>
    <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Create Schematic Symbol</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Create Schematic Symbol</CurrentItem>
+   </ItemView>
 </Project>

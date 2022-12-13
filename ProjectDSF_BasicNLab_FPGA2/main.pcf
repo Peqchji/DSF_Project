@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Dec 13 01:10:54 2022
+// Written by: Map P.20131013 on Tue Dec 13 10:13:44 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -40,8 +40,5 @@ COMP "Mode_Bin<1>" LOCATE = SITE "P132" LEVEL 1;
 COMP "Mode_Bin<2>" LOCATE = SITE "P127" LEVEL 1;
 COMP "Mode_Bin<3>" LOCATE = SITE "P124" LEVEL 1;
 COMP "Buzzer" LOCATE = SITE "P83" LEVEL 1;
-COMP "SegmentDp" LOCATE = SITE "P26" LEVEL 1;
-PIN XLXI_164_pin<1> = BEL "XLXI_164" PINNAME O;
-PIN "XLXI_164_pin<1>" CLOCK_DEDICATED_ROUTE = FALSE;
 SCHEMATIC END;
 

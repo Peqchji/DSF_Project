@@ -1,0 +1,157 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Div100knn.vf
+// /___/   /\     Timestamp : 12/13/2022 03:18:21
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog C:/Users/pinai/Downloads/Compressed/Lab7/Div100knn.vf -w C:/Users/pinai/Downloads/Compressed/Lab7/Div100knn.sch
+//Design Name: Div100knn
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Div100knn(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module mod10nn_MUSER_Div100knn(CLK, 
+                               clr, 
+                               TC);
+
+    input CLK;
+    input clr;
+   output TC;
+   
+   wire bit0;
+   wire bit1;
+   wire bit2;
+   wire bit3;
+   wire XLXN_1;
+   wire XLXN_62;
+   wire XLXN_63;
+   wire XLXN_65;
+   wire XLXN_68;
+   wire XLXN_69;
+   wire XLXN_72;
+   
+   (* HU_SET = "XLXI_1_38" *) 
+   FJKC_HXILINX_Div100knn  XLXI_1 (.C(CLK), 
+                                  .CLR(clr), 
+                                  .J(XLXN_1), 
+                                  .K(XLXN_1), 
+                                  .Q(bit3));
+   VCC  XLXI_2 (.P(XLXN_1));
+   (* HU_SET = "XLXI_3_39" *) 
+   FJKC_HXILINX_Div100knn  XLXI_3 (.C(CLK), 
+                                  .CLR(clr), 
+                                  .J(XLXN_62), 
+                                  .K(bit3), 
+                                  .Q(bit2));
+   (* HU_SET = "XLXI_4_40" *) 
+   FJKC_HXILINX_Div100knn  XLXI_4 (.C(CLK), 
+                                  .CLR(clr), 
+                                  .J(XLXN_63), 
+                                  .K(XLXN_63), 
+                                  .Q(bit1));
+   (* HU_SET = "XLXI_5_41" *) 
+   FJKC_HXILINX_Div100knn  XLXI_5 (.C(CLK), 
+                                  .CLR(clr), 
+                                  .J(XLXN_65), 
+                                  .K(bit3), 
+                                  .Q(bit0));
+   AND2B1  XLXI_37 (.I0(bit0), 
+                   .I1(bit3), 
+                   .O(XLXN_62));
+   AND2  XLXI_38 (.I0(bit2), 
+                 .I1(bit3), 
+                 .O(XLXN_63));
+   AND3  XLXI_40 (.I0(bit1), 
+                 .I1(bit2), 
+                 .I2(bit3), 
+                 .O(XLXN_65));
+   OR2  XLXI_42 (.I0(bit2), 
+                .I1(bit3), 
+                .O(XLXN_68));
+   OR2  XLXI_43 (.I0(bit0), 
+                .I1(bit1), 
+                .O(XLXN_69));
+   OR2  XLXI_45 (.I0(XLXN_69), 
+                .I1(XLXN_68), 
+                .O(XLXN_72));
+   INV  XLXI_46 (.I(XLXN_72), 
+                .O(TC));
+endmodule
+`timescale 1ns / 1ps
+
+module Div100knn(clkIN, 
+                 clr, 
+                 clkOUT);
+
+    input clkIN;
+    input clr;
+   output clkOUT;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   
+   mod10nn_MUSER_Div100knn  XLXI_6 (.CLK(clkIN), 
+                                   .clr(clr), 
+                                   .TC(XLXN_1));
+   mod10nn_MUSER_Div100knn  XLXI_7 (.CLK(XLXN_1), 
+                                   .clr(clr), 
+                                   .TC(XLXN_2));
+   mod10nn_MUSER_Div100knn  XLXI_8 (.CLK(XLXN_2), 
+                                   .clr(clr), 
+                                   .TC(XLXN_3));
+   mod10nn_MUSER_Div100knn  XLXI_9 (.CLK(XLXN_3), 
+                                   .clr(clr), 
+                                   .TC(XLXN_4));
+   mod10nn_MUSER_Div100knn  XLXI_10 (.CLK(XLXN_4), 
+                                    .clr(clr), 
+                                    .TC(clkOUT));
+endmodule

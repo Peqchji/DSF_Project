@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\main.vhf</arg>&quot; line <arg fmt="%s" index="2">1217</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_51</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\main.vhf</arg>&quot; line <arg fmt="%s" index="2">1144</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_51</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\ADJCLK.vhf</arg>&quot; line <arg fmt="%s" index="2">178</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
@@ -18,24 +18,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\DIsplay.vhf</arg>&quot; line <arg fmt="%s" index="2">209</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\main.vhf</arg>&quot; line <arg fmt="%s" index="2">589</arg>: Output port &lt;<arg fmt="%s" index="3">XLXN_1075</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Div100k.vhf</arg>&quot; line <arg fmt="%s" index="2">243</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Div100k.vhf</arg>&quot; line <arg fmt="%s" index="2">249</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Div100k.vhf</arg>&quot; line <arg fmt="%s" index="2">255</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Div100k.vhf</arg>&quot; line <arg fmt="%s" index="2">261</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Div100k.vhf</arg>&quot; line <arg fmt="%s" index="2">267</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Div200.vhf</arg>&quot; line <arg fmt="%s" index="2">295</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
@@ -84,39 +66,6 @@
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\LAB6.vhf</arg>&quot; line <arg fmt="%s" index="2">844</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">1010</arg>: Output port &lt;<arg fmt="%s" index="3">XLXN_148</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">897</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_13</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">392</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">398</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">404</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">410</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">416</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_5</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">342</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">348</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">626</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_31</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">626</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_31</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab_FPGA2\lab9.vhf</arg>&quot; line <arg fmt="%s" index="2">427</arg>: Output port &lt;<arg fmt="%s" index="3">Q3</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_62</arg>&gt; is unconnected or connected to loadless signal.

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : LAB6.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:09
+-- /___/   /\     Timestamp : 12/13/2022 10:04:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -680,8 +680,8 @@ architecture BEHAVIORAL of Div4M_MUSER_LAB6 is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_74";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_75";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_41";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_42";
 begin
    XLXI_1 : Div1k_MUSER_LAB6
       port map (In_CLK=>In_CLK,
@@ -760,7 +760,7 @@ architecture BEHAVIORAL of Div16K_MUSER_LAB6 is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_76";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_43";
 begin
    XLXI_1 : Div1k_MUSER_LAB6
       port map (In_CLK=>In_CLK,
@@ -835,7 +835,7 @@ architecture BEHAVIORAL of Div20K_MUSER_LAB6 is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_77";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_44";
 begin
    XLXI_1 : Div1k_MUSER_LAB6
       port map (In_CLK=>In_CLK,
@@ -1018,7 +1018,7 @@ architecture BEHAVIORAL of Comparator_MUSER_LAB6 is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_78";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_45";
 begin
    XLXI_1 : COMP4_HXILINX_LAB6
       port map (A0=>Var2(0),
@@ -1088,7 +1088,7 @@ architecture BEHAVIORAL of Div1M_MUSER_LAB6 is
    end component;
    attribute BOX_TYPE of GND : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_79";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_46";
 begin
    XLXI_1 : Div1k_MUSER_LAB6
       port map (In_CLK=>In_CLK,

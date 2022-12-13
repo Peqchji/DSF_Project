@@ -31,113 +31,195 @@ Data Sheet report:
 -----------------
 All values displayed in nanoseconds (ns)
 
+Setup/Hold to clock OSC
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+PB2         |    0.193(R)|      SLOW  |    0.593(R)|      SLOW  |XLXI_56/XLXN_72   |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock PB1 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+SegmentDp   |         9.587(R)|      SLOW  |         5.687(R)|      FAST  |XLXN_173          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock State_7 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+SegmentDp   |        10.449(R)|      SLOW  |         6.153(R)|      FAST  |XLXN_173          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock State_8 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+SegmentDp   |        10.296(R)|      SLOW  |         6.056(R)|      FAST  |XLXN_173          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock OSC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OSC            |    1.447|         |         |         |
+PB1            |    1.931|         |         |         |
+State_7        |    1.931|    1.864|         |         |
+State_8        |    1.931|    1.711|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PB1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB1            |    0.988|         |         |         |
+State_7        |    0.988|         |         |         |
+State_8        |    0.988|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock State_7
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB1            |    0.988|         |         |         |
+State_7        |    0.988|         |         |         |
+State_8        |    0.988|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock State_8
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB1            |    0.988|         |         |         |
+State_7        |    0.988|         |         |         |
+State_8        |    0.988|         |         |         |
+---------------+---------+---------+---------+---------+
+
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-OSC            |Driver         |    6.781|
-State_1        |L0_P82         |    8.796|
-State_1        |P11            |   10.870|
-State_1        |Segment0       |    9.121|
-State_1        |Segment1       |    9.196|
-State_1        |Segment2       |    8.687|
-State_1        |Segment3       |    9.055|
-State_1        |Segment4       |    8.637|
-State_1        |Segment5       |    9.317|
-State_1        |Segment6       |    9.703|
-State_2        |L0_P82         |    8.103|
-State_2        |L1_P81         |   10.990|
-State_2        |P9             |   12.065|
-State_2        |P11            |   10.177|
-State_2        |Segment0       |    9.098|
-State_2        |Segment1       |    9.446|
-State_2        |Segment2       |    9.180|
-State_2        |Segment3       |    9.126|
-State_2        |Segment4       |    8.855|
-State_2        |Segment5       |   10.029|
-State_2        |Segment6       |   10.539|
-State_3        |L0_P82         |    8.216|
-State_3        |L1_P81         |   11.144|
-State_3        |P9             |   12.219|
-State_3        |P11            |   10.290|
-State_3        |Segment0       |    9.252|
-State_3        |Segment1       |    9.600|
-State_3        |Segment2       |    9.334|
-State_3        |Segment3       |    9.280|
-State_3        |Segment4       |    9.009|
-State_3        |Segment5       |   10.183|
-State_3        |Segment6       |   10.693|
-State_4        |L0_P82         |    8.491|
-State_4        |L1_P81         |   10.995|
-State_4        |L2_P80         |    8.659|
-State_4        |P7             |   11.502|
-State_4        |P9             |   12.070|
-State_4        |P11            |   10.565|
-State_4        |Segment0       |    9.103|
-State_4        |Segment1       |    9.451|
-State_4        |Segment2       |    9.185|
-State_4        |Segment3       |    9.131|
-State_4        |Segment4       |    8.860|
-State_4        |Segment5       |   10.034|
-State_4        |Segment6       |   10.544|
-State_5        |L0_P82         |    8.807|
-State_5        |L1_P81         |   10.924|
-State_5        |L2_P80         |    8.814|
-State_5        |P7             |   11.657|
-State_5        |P9             |   11.999|
-State_5        |P11            |   10.881|
-State_5        |Segment0       |    9.132|
-State_5        |Segment1       |    9.380|
-State_5        |Segment2       |    9.114|
-State_5        |Segment3       |    9.066|
-State_5        |Segment4       |    8.789|
-State_5        |Segment5       |    9.963|
-State_5        |Segment6       |   10.473|
-State_6        |L0_P82         |    8.827|
-State_6        |L1_P81         |   11.123|
-State_6        |L2_P80         |    9.054|
-State_6        |P7             |   11.897|
-State_6        |P9             |   12.198|
-State_6        |P11            |   10.901|
-State_6        |Segment0       |    9.302|
-State_6        |Segment1       |    9.579|
-State_6        |Segment2       |    9.313|
-State_6        |Segment3       |    9.259|
-State_6        |Segment4       |    8.988|
-State_6        |Segment5       |   10.162|
-State_6        |Segment6       |   10.672|
-State_7        |L0_P82         |    9.077|
-State_7        |L1_P81         |   11.221|
-State_7        |L2_P80         |    9.073|
-State_7        |P7             |   11.916|
-State_7        |P9             |   12.296|
-State_7        |P11            |   11.151|
-State_7        |Segment0       |    9.402|
-State_7        |Segment1       |    9.677|
-State_7        |Segment2       |    9.411|
-State_7        |Segment3       |    9.357|
-State_7        |Segment4       |    9.086|
-State_7        |Segment5       |   10.260|
-State_7        |Segment6       |   10.770|
-State_8        |L0_P82         |    9.416|
-State_8        |L1_P81         |   11.529|
-State_8        |L2_P80         |    9.225|
-State_8        |L3_P79         |    6.480|
-State_8        |P5             |    9.842|
-State_8        |P7             |   12.068|
-State_8        |P9             |   12.604|
-State_8        |P11            |   11.490|
-State_8        |Segment0       |    9.741|
-State_8        |Segment1       |    9.985|
-State_8        |Segment2       |    9.719|
-State_8        |Segment3       |    9.675|
-State_8        |Segment4       |    9.394|
-State_8        |Segment5       |   10.568|
-State_8        |Segment6       |   11.078|
+State_1        |L0_P82         |    8.646|
+State_1        |P11            |   10.934|
+State_1        |Segment<0>     |    9.233|
+State_1        |Segment<1>     |    9.481|
+State_1        |Segment<2>     |    9.040|
+State_1        |Segment<3>     |    8.942|
+State_1        |Segment<4>     |    8.961|
+State_1        |Segment<5>     |    9.837|
+State_1        |Segment<6>     |   10.319|
+State_2        |L0_P82         |    8.227|
+State_2        |L1_P81         |    8.954|
+State_2        |P9             |   11.329|
+State_2        |P11            |   10.515|
+State_2        |Segment<0>     |    9.824|
+State_2        |Segment<1>     |    9.596|
+State_2        |Segment<2>     |    9.621|
+State_2        |Segment<3>     |    9.678|
+State_2        |Segment<4>     |    9.651|
+State_2        |Segment<5>     |   10.160|
+State_2        |Segment<6>     |   10.609|
+State_3        |L0_P82         |    8.909|
+State_3        |L1_P81         |    8.713|
+State_3        |P9             |   11.088|
+State_3        |P11            |   11.197|
+State_3        |Segment<0>     |    9.583|
+State_3        |Segment<1>     |    9.744|
+State_3        |Segment<2>     |    9.380|
+State_3        |Segment<3>     |    9.437|
+State_3        |Segment<4>     |    9.410|
+State_3        |Segment<5>     |   10.100|
+State_3        |Segment<6>     |   10.582|
+State_4        |L0_P82         |    8.844|
+State_4        |L1_P81         |    9.032|
+State_4        |L2_P80         |    8.347|
+State_4        |P7             |   11.268|
+State_4        |P9             |   11.407|
+State_4        |P11            |   11.132|
+State_4        |Segment<0>     |    9.902|
+State_4        |Segment<1>     |    9.679|
+State_4        |Segment<2>     |    9.699|
+State_4        |Segment<3>     |    9.756|
+State_4        |Segment<4>     |    9.729|
+State_4        |Segment<5>     |   10.238|
+State_4        |Segment<6>     |   10.687|
+State_5        |L0_P82         |    8.939|
+State_5        |L1_P81         |    8.746|
+State_5        |L2_P80         |    8.677|
+State_5        |P7             |   11.598|
+State_5        |P9             |   11.121|
+State_5        |P11            |   11.227|
+State_5        |Segment<0>     |    9.864|
+State_5        |Segment<1>     |    9.774|
+State_5        |Segment<2>     |    9.659|
+State_5        |Segment<3>     |    9.766|
+State_5        |Segment<4>     |    9.715|
+State_5        |Segment<5>     |   10.130|
+State_5        |Segment<6>     |   10.612|
+State_6        |L0_P82         |    9.017|
+State_6        |L1_P81         |    9.097|
+State_6        |L2_P80         |    8.934|
+State_6        |P7             |   11.855|
+State_6        |P9             |   11.472|
+State_6        |P11            |   11.305|
+State_6        |Segment<0>     |   10.121|
+State_6        |Segment<1>     |    9.852|
+State_6        |Segment<2>     |    9.916|
+State_6        |Segment<3>     |   10.023|
+State_6        |Segment<4>     |    9.972|
+State_6        |Segment<5>     |   10.317|
+State_6        |Segment<6>     |   10.805|
+State_7        |Digit0         |    9.702|
+State_7        |Digit1         |    9.628|
+State_7        |Digit2         |    9.403|
+State_7        |Digit3         |    9.125|
+State_7        |L0_P82         |    9.883|
+State_7        |L1_P81         |    9.603|
+State_7        |L2_P80         |    9.822|
+State_7        |P7             |   12.743|
+State_7        |P9             |   11.978|
+State_7        |P11            |   12.171|
+State_7        |Segment<0>     |   11.009|
+State_7        |Segment<1>     |   10.718|
+State_7        |Segment<2>     |   10.804|
+State_7        |Segment<3>     |   10.911|
+State_7        |Segment<4>     |   10.860|
+State_7        |Segment<5>     |   11.205|
+State_7        |Segment<6>     |   11.693|
+State_7        |SegmentDp      |    9.370|
+State_8        |Digit0         |    9.549|
+State_8        |Digit1         |    9.475|
+State_8        |Digit2         |    9.250|
+State_8        |Digit3         |    8.972|
+State_8        |L0_P82         |    9.730|
+State_8        |L1_P81         |    9.450|
+State_8        |L2_P80         |    9.669|
+State_8        |L3_P79         |    7.620|
+State_8        |P5             |   10.264|
+State_8        |P7             |   12.590|
+State_8        |P9             |   11.825|
+State_8        |P11            |   12.018|
+State_8        |Segment<0>     |   10.856|
+State_8        |Segment<1>     |   10.565|
+State_8        |Segment<2>     |   10.651|
+State_8        |Segment<3>     |   10.758|
+State_8        |Segment<4>     |   10.707|
+State_8        |Segment<5>     |   11.052|
+State_8        |Segment<6>     |   11.540|
+State_8        |SegmentDp      |    9.217|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon Dec 12 22:45:27 2022 
+Analysis completed Tue Dec 13 08:34:35 2022 
 --------------------------------------------------------------------------------
 
 Trace Settings:

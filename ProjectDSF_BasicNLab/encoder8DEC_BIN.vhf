@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : encoder8DEC_BIN.vhf
--- /___/   /\     Timestamp : 12/12/2022 19:30:14
+-- /___/   /\     Timestamp : 12/13/2022 08:24:02
 -- \   \  /  \ 
 --  \___\/\___\ 
 --

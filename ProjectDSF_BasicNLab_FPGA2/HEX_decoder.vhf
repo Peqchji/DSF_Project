@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : HEX_decoder.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:08:57
+-- /___/   /\     Timestamp : 12/13/2022 10:04:37
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -145,7 +145,7 @@ architecture BEHAVIORAL of HEX_decoder is
    end component;
    attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_23 : label is "XLXI_23_29";
+   attribute HU_SET of XLXI_23 : label is "XLXI_23_0";
 begin
    XLXI_1 : INV
       port map (I=>BCD(3),

@@ -1,0 +1,10 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/Lab7.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/Lab7.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/counter0_9nn.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/counter0_9nn.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/counter0_5nn.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/counter0_5nn.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/Timernn.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/Timernn.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/mod10nn.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/mod10nn.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/Div200nn.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/Div200nn.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/Div100knn.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/Div100knn.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/Mux4_1_4nn.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/Mux4_1_4nn.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/decodernn.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/decodernn.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,C:/Users/pinai/Downloads/Compressed/Lab7/Displaynn.vf,-w,C:/Users/pinai/Downloads/Compressed/Lab7/Displaynn.sch

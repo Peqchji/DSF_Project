@@ -35,7 +35,6 @@ entity OutputSelect_LEDCommon is
            DigitControl_mode3 : in  STD_LOGIC_VECTOR (3 downto 0);
            DigitControl_mode5 : in  STD_LOGIC_VECTOR (3 downto 0);
            DigitControl_mode6 : in  STD_LOGIC_VECTOR (3 downto 0);
-           DigitControl_mode7 : in  STD_LOGIC_VECTOR (3 downto 0);
            DigitControl_mode8 : in  STD_LOGIC_VECTOR (3 downto 0);
            Common : out  STD_LOGIC_VECTOR (3 downto 0);
            Sel : in  STD_LOGIC_VECTOR (3 downto 0));
@@ -50,7 +49,6 @@ with Sel select
 					 DigitControl_mode3(0) when "0011",
 					 DigitControl_mode5(0) when "0101",
 					 DigitControl_mode6(0) when "0110",
-					 DigitControl_mode7(0) when "0111",
 					 DigitControl_mode8(0) when "1000",
 					 '1' when others;
 with Sel select						
@@ -59,7 +57,6 @@ with Sel select
 					 DigitControl_mode3(1) when "0011",
 					 DigitControl_mode5(1) when "0101",
 					 DigitControl_mode6(1) when "0110",
-					 DigitControl_mode7(1) when "0111",
 					 DigitControl_mode8(1) when "1000",
 					 '1' when others;
 with Sel select							
@@ -68,7 +65,6 @@ with Sel select
 					 DigitControl_mode3(2) when "0011",
 					 DigitControl_mode5(2) when "0101",
 					 DigitControl_mode6(2) when "0110",
-					 DigitControl_mode7(2) when "0111",
 					 DigitControl_mode8(2) when "1000",
 					 '1' when others;
 with Sel select						
@@ -77,7 +73,6 @@ with Sel select
 					 DigitControl_mode3(3) when "0011",
 					 DigitControl_mode5(3) when "0101",
 					 DigitControl_mode6(3) when "0110",
-					 DigitControl_mode7(3) when "0111",
 					 DigitControl_mode8(3) when "1000",
 					 '1' when others;
 

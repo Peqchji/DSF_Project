@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : moduleLab06.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:31:40
+-- /___/   /\     Timestamp : 12/13/2022 10:04:44
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -129,7 +129,7 @@ architecture BEHAVIORAL of moduleLab06 is
    end component;
    attribute BOX_TYPE of FD : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_1";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_40";
 begin
    XLXI_4 : FTC_HXILINX_moduleLab06
       port map (C=>CLKin_20MHz,

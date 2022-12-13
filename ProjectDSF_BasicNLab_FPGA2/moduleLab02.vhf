@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : moduleLab02.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:08:56
+-- /___/   /\     Timestamp : 12/13/2022 10:04:41
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -355,13 +355,13 @@ architecture BEHAVIORAL of moduleLab02 is
              Digit3      : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_16";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_17";
-   attribute HU_SET of XLXI_26 : label is "XLXI_26_18";
-   attribute HU_SET of XLXI_27 : label is "XLXI_27_19";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_20";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_21";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_22";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_13";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_14";
+   attribute HU_SET of XLXI_26 : label is "XLXI_26_15";
+   attribute HU_SET of XLXI_27 : label is "XLXI_27_16";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_17";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_18";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_19";
 begin
    XLXI_1 : AND4B3
       port map (I0=>State_8,

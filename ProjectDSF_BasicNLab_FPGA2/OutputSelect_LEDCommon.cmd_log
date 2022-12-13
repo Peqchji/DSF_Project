@@ -1,2 +1,4 @@
 vhdtdtfi -lib work OutputSelect_LEDCommon.vhd -prj ProjectDSF_BasicNLab_FPGA2 -o OutputSelect_LEDCommon.spl -module OutputSelect_LEDCommon -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
 spl2sym -intstyle ise -family spartan6 -w OutputSelect_LEDCommon.spl {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/OutputSelect_LEDCommon.sym} 
+vhdtdtfi -lib work OutputSelect_LEDCommon.vhd -prj ProjectDSF_BasicNLab_FPGA2 -o OutputSelect_LEDCommon.spl -module OutputSelect_LEDCommon -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w OutputSelect_LEDCommon.spl {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/OutputSelect_LEDCommon.sym} 

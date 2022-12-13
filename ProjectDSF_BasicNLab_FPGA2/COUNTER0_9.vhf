@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : COUNTER0_9.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:08:55
+-- /___/   /\     Timestamp : 12/13/2022 10:04:41
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -139,10 +139,10 @@ architecture BEHAVIORAL of COUNTER0_9 is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_12";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_13";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_14";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_15";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_20";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_21";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_22";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_23";
 begin
    bit(3 downto 0) <= bit_DUMMY(3 downto 0);
    XLXI_1 : FJKC_HXILINX_COUNTER0_9

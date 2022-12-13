@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym counter0_9nn C:/Users/pinai/Downloads/Compressed/Lab7/counter0_9nn.sch C:/Users/pinai/Downloads/Compressed/Lab7/counter0_9nn.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym counter0_9nn C:/Users/pinai/Downloads/Compressed/Lab7/counter0_9nn.sch C:/Users/pinai/Downloads/Compressed/Lab7/counter0_9nn.sym 

@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Comparator.vhf
--- /___/   /\     Timestamp : 12/13/2022 00:09:06
+-- /___/   /\     Timestamp : 12/13/2022 10:04:43
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -80,7 +80,7 @@ architecture BEHAVIORAL of Comparator is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_66";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_35";
 begin
    XLXI_1 : COMP4_HXILINX_Comparator
       port map (A0=>Var2(0),
