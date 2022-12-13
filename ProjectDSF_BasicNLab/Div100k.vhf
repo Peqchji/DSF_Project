@@ -6,25 +6,25 @@
 -- /___/  \  /    Vendor: Xilinx 
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
---  /   /         Filename : Div100knn.vhf
--- /___/   /\     Timestamp : 12/13/2022 08:24:03
+--  /   /         Filename : Div100k.vhf
+-- /___/   /\     Timestamp : 12/14/2022 04:40:07
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/Div100knn.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab7/Div100knn.sch"
---Design Name: Div100knn
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/Div100k.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div100k.sch"
+--Design Name: Div100k
 --Device: spartan6
 --Purpose:
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
------ CELL FJKC_HXILINX_Div100knn -----
+----- CELL FJKC_HXILINX_Div100k -----
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity FJKC_HXILINX_Div100knn is
+entity FJKC_HXILINX_Div100k is
 generic(
     INIT : bit := '0'
     );
@@ -36,9 +36,9 @@ generic(
     J   : in STD_LOGIC;
     K   : in STD_LOGIC
     );
-end FJKC_HXILINX_Div100knn;
+end FJKC_HXILINX_Div100k;
 
-architecture Behavioral of FJKC_HXILINX_Div100knn is
+architecture Behavioral of FJKC_HXILINX_Div100k is
 signal q_tmp : std_logic := TO_X01(INIT);
 
 begin
@@ -73,27 +73,25 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity mod10nn_MUSER_Div100knn is
+entity COUNTER0_9_MUSER_Div100k is
    port ( CLK : in    std_logic; 
-          clr : in    std_logic; 
+          Clr : in    std_logic; 
+          bit : out   std_logic_vector (3 downto 0); 
           TC  : out   std_logic);
-end mod10nn_MUSER_Div100knn;
+end COUNTER0_9_MUSER_Div100k;
 
-architecture BEHAVIORAL of mod10nn_MUSER_Div100knn is
+architecture BEHAVIORAL of COUNTER0_9_MUSER_Div100k is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal bit0    : std_logic;
-   signal bit1    : std_logic;
-   signal bit2    : std_logic;
-   signal bit3    : std_logic;
-   signal XLXN_1  : std_logic;
-   signal XLXN_62 : std_logic;
-   signal XLXN_63 : std_logic;
-   signal XLXN_65 : std_logic;
-   signal XLXN_68 : std_logic;
-   signal XLXN_69 : std_logic;
-   signal XLXN_72 : std_logic;
-   component FJKC_HXILINX_Div100knn
+   signal XLXN_3    : std_logic;
+   signal XLXN_62   : std_logic;
+   signal XLXN_63   : std_logic;
+   signal XLXN_65   : std_logic;
+   signal XLXN_93   : std_logic;
+   signal XLXN_95   : std_logic;
+   signal XLXN_96   : std_logic;
+   signal bit_DUMMY : std_logic_vector (3 downto 0);
+   component FJKC_HXILINX_Div100k
       port ( C   : in    std_logic; 
              CLR : in    std_logic; 
              J   : in    std_logic; 
@@ -141,75 +139,76 @@ architecture BEHAVIORAL of mod10nn_MUSER_Div100knn is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_10";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_11";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_12";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_13";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_29";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_30";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_31";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_32";
 begin
-   XLXI_1 : FJKC_HXILINX_Div100knn
+   bit(3 downto 0) <= bit_DUMMY(3 downto 0);
+   XLXI_1 : FJKC_HXILINX_Div100k
       port map (C=>CLK,
-                CLR=>clr,
-                J=>XLXN_1,
-                K=>XLXN_1,
-                Q=>bit3);
+                CLR=>Clr,
+                J=>XLXN_3,
+                K=>XLXN_3,
+                Q=>bit_DUMMY(0));
    
-   XLXI_2 : VCC
-      port map (P=>XLXN_1);
+   XLXI_3 : VCC
+      port map (P=>XLXN_3);
    
-   XLXI_3 : FJKC_HXILINX_Div100knn
+   XLXI_4 : FJKC_HXILINX_Div100k
       port map (C=>CLK,
-                CLR=>clr,
+                CLR=>Clr,
                 J=>XLXN_62,
-                K=>bit3,
-                Q=>bit2);
+                K=>bit_DUMMY(0),
+                Q=>bit_DUMMY(1));
    
-   XLXI_4 : FJKC_HXILINX_Div100knn
+   XLXI_5 : FJKC_HXILINX_Div100k
       port map (C=>CLK,
-                CLR=>clr,
+                CLR=>Clr,
                 J=>XLXN_63,
                 K=>XLXN_63,
-                Q=>bit1);
+                Q=>bit_DUMMY(2));
    
-   XLXI_5 : FJKC_HXILINX_Div100knn
+   XLXI_9 : FJKC_HXILINX_Div100k
       port map (C=>CLK,
-                CLR=>clr,
+                CLR=>Clr,
                 J=>XLXN_65,
-                K=>bit3,
-                Q=>bit0);
+                K=>bit_DUMMY(0),
+                Q=>bit_DUMMY(3));
    
    XLXI_37 : AND2B1
-      port map (I0=>bit0,
-                I1=>bit3,
+      port map (I0=>bit_DUMMY(3),
+                I1=>bit_DUMMY(0),
                 O=>XLXN_62);
    
    XLXI_38 : AND2
-      port map (I0=>bit2,
-                I1=>bit3,
+      port map (I0=>bit_DUMMY(1),
+                I1=>bit_DUMMY(0),
                 O=>XLXN_63);
    
    XLXI_40 : AND3
-      port map (I0=>bit1,
-                I1=>bit2,
-                I2=>bit3,
+      port map (I0=>bit_DUMMY(2),
+                I1=>bit_DUMMY(1),
+                I2=>bit_DUMMY(0),
                 O=>XLXN_65);
    
-   XLXI_42 : OR2
-      port map (I0=>bit2,
-                I1=>bit3,
-                O=>XLXN_68);
+   XLXI_53 : OR2
+      port map (I0=>bit_DUMMY(1),
+                I1=>bit_DUMMY(0),
+                O=>XLXN_95);
    
-   XLXI_43 : OR2
-      port map (I0=>bit0,
-                I1=>bit1,
-                O=>XLXN_69);
+   XLXI_54 : OR2
+      port map (I0=>bit_DUMMY(3),
+                I1=>bit_DUMMY(2),
+                O=>XLXN_96);
    
-   XLXI_45 : OR2
-      port map (I0=>XLXN_69,
-                I1=>XLXN_68,
-                O=>XLXN_72);
+   XLXI_55 : OR2
+      port map (I0=>XLXN_96,
+                I1=>XLXN_95,
+                O=>XLXN_93);
    
-   XLXI_46 : INV
-      port map (I=>XLXN_72,
+   XLXI_56 : INV
+      port map (I=>XLXN_93,
                 O=>TC);
    
 end BEHAVIORAL;
@@ -222,48 +221,54 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity Div100knn is
-   port ( clkIN  : in    std_logic; 
-          clr    : in    std_logic; 
-          clkOUT : out   std_logic);
-end Div100knn;
+entity Div100k is
+   port ( CLR     : in    std_logic; 
+          In_CLK  : in    std_logic; 
+          Out_CLK : out   std_logic);
+end Div100k;
 
-architecture BEHAVIORAL of Div100knn is
-   signal XLXN_1 : std_logic;
-   signal XLXN_2 : std_logic;
-   signal XLXN_3 : std_logic;
-   signal XLXN_4 : std_logic;
-   component mod10nn_MUSER_Div100knn
+architecture BEHAVIORAL of Div100k is
+   signal XLXN_1  : std_logic;
+   signal XLXN_2  : std_logic;
+   signal XLXN_3  : std_logic;
+   signal XLXN_11 : std_logic;
+   component COUNTER0_9_MUSER_Div100k
       port ( CLK : in    std_logic; 
-             clr : in    std_logic; 
+             Clr : in    std_logic; 
+             bit : out   std_logic_vector (3 downto 0); 
              TC  : out   std_logic);
    end component;
    
 begin
-   XLXI_6 : mod10nn_MUSER_Div100knn
-      port map (CLK=>clkIN,
-                clr=>clr,
+   XLXI_1 : COUNTER0_9_MUSER_Div100k
+      port map (CLK=>In_CLK,
+                Clr=>CLR,
+                bit=>open,
                 TC=>XLXN_1);
    
-   XLXI_7 : mod10nn_MUSER_Div100knn
+   XLXI_2 : COUNTER0_9_MUSER_Div100k
       port map (CLK=>XLXN_1,
-                clr=>clr,
+                Clr=>CLR,
+                bit=>open,
                 TC=>XLXN_2);
    
-   XLXI_8 : mod10nn_MUSER_Div100knn
+   XLXI_3 : COUNTER0_9_MUSER_Div100k
       port map (CLK=>XLXN_2,
-                clr=>clr,
+                Clr=>CLR,
+                bit=>open,
                 TC=>XLXN_3);
    
-   XLXI_9 : mod10nn_MUSER_Div100knn
+   XLXI_4 : COUNTER0_9_MUSER_Div100k
       port map (CLK=>XLXN_3,
-                clr=>clr,
-                TC=>XLXN_4);
+                Clr=>CLR,
+                bit=>open,
+                TC=>XLXN_11);
    
-   XLXI_10 : mod10nn_MUSER_Div100knn
-      port map (CLK=>XLXN_4,
-                clr=>clr,
-                TC=>clkOUT);
+   XLXI_5 : COUNTER0_9_MUSER_Div100k
+      port map (CLK=>XLXN_11,
+                Clr=>CLR,
+                bit=>open,
+                TC=>Out_CLK);
    
 end BEHAVIORAL;
 

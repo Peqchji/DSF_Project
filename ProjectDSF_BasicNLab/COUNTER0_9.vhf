@@ -6,25 +6,25 @@
 -- /___/  \  /    Vendor: Xilinx 
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
---  /   /         Filename : counter0_9nn.vhf
--- /___/   /\     Timestamp : 12/13/2022 08:24:02
+--  /   /         Filename : COUNTER0_9.vhf
+-- /___/   /\     Timestamp : 12/14/2022 04:40:07
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/counter0_9nn.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab7/counter0_9nn.sch"
---Design Name: counter0_9nn
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/COUNTER0_9.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/COUNTER0_9.sch"
+--Design Name: COUNTER0_9
 --Device: spartan6
 --Purpose:
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
------ CELL FJKC_HXILINX_counter0_9nn -----
+----- CELL FJKC_HXILINX_COUNTER0_9 -----
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity FJKC_HXILINX_counter0_9nn is
+entity FJKC_HXILINX_COUNTER0_9 is
 generic(
     INIT : bit := '0'
     );
@@ -36,9 +36,9 @@ generic(
     J   : in STD_LOGIC;
     K   : in STD_LOGIC
     );
-end FJKC_HXILINX_counter0_9nn;
+end FJKC_HXILINX_COUNTER0_9;
 
-architecture Behavioral of FJKC_HXILINX_counter0_9nn is
+architecture Behavioral of FJKC_HXILINX_COUNTER0_9 is
 signal q_tmp : std_logic := TO_X01(INIT);
 
 begin
@@ -73,17 +73,17 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity counter0_9nn is
+entity COUNTER0_9 is
    port ( CLK : in    std_logic; 
           Clr : in    std_logic; 
           bit : out   std_logic_vector (3 downto 0); 
           TC  : out   std_logic);
-end counter0_9nn;
+end COUNTER0_9;
 
-architecture BEHAVIORAL of counter0_9nn is
+architecture BEHAVIORAL of COUNTER0_9 is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_1    : std_logic;
+   signal XLXN_3    : std_logic;
    signal XLXN_62   : std_logic;
    signal XLXN_63   : std_logic;
    signal XLXN_65   : std_logic;
@@ -91,7 +91,7 @@ architecture BEHAVIORAL of counter0_9nn is
    signal XLXN_95   : std_logic;
    signal XLXN_96   : std_logic;
    signal bit_DUMMY : std_logic_vector (3 downto 0);
-   component FJKC_HXILINX_counter0_9nn
+   component FJKC_HXILINX_COUNTER0_9
       port ( C   : in    std_logic; 
              CLR : in    std_logic; 
              J   : in    std_logic; 
@@ -139,37 +139,37 @@ architecture BEHAVIORAL of counter0_9nn is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_6";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_7";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_8";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_9";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_22";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_23";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_24";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_25";
 begin
    bit(3 downto 0) <= bit_DUMMY(3 downto 0);
-   XLXI_1 : FJKC_HXILINX_counter0_9nn
+   XLXI_1 : FJKC_HXILINX_COUNTER0_9
       port map (C=>CLK,
                 CLR=>Clr,
-                J=>XLXN_1,
-                K=>XLXN_1,
+                J=>XLXN_3,
+                K=>XLXN_3,
                 Q=>bit_DUMMY(0));
    
-   XLXI_2 : VCC
-      port map (P=>XLXN_1);
+   XLXI_3 : VCC
+      port map (P=>XLXN_3);
    
-   XLXI_3 : FJKC_HXILINX_counter0_9nn
+   XLXI_4 : FJKC_HXILINX_COUNTER0_9
       port map (C=>CLK,
                 CLR=>Clr,
                 J=>XLXN_62,
                 K=>bit_DUMMY(0),
                 Q=>bit_DUMMY(1));
    
-   XLXI_4 : FJKC_HXILINX_counter0_9nn
+   XLXI_5 : FJKC_HXILINX_COUNTER0_9
       port map (C=>CLK,
                 CLR=>Clr,
                 J=>XLXN_63,
                 K=>XLXN_63,
                 Q=>bit_DUMMY(2));
    
-   XLXI_5 : FJKC_HXILINX_counter0_9nn
+   XLXI_9 : FJKC_HXILINX_COUNTER0_9
       port map (C=>CLK,
                 CLR=>Clr,
                 J=>XLXN_65,

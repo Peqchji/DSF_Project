@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Timer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Timer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/Timer.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym Timer {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Timer.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/Timer.sym} 

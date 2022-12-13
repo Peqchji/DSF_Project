@@ -1,7 +1,0 @@
-[Inputs]
-Sel
-=Mode7[6:0]=
-=OthersMode[6:0]=
-[Outputs]
-=Segment[6:0]=
-[BiDir]

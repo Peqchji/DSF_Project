@@ -10,36 +10,36 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Dec 13 08:34:08 2022
+Mapped Date    : Wed Dec 14 04:51:46 2022
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   17
+Number of warnings:   19
 Slice Logic Utilization:
-  Number of Slice Registers:                    67 out of  11,440    1%
-    Number used as Flip Flops:                  67
+  Number of Slice Registers:                    77 out of  11,440    1%
+    Number used as Flip Flops:                  77
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        128 out of   5,720    2%
-    Number used as logic:                      128 out of   5,720    2%
-      Number using O6 output only:             126
+  Number of Slice LUTs:                        140 out of   5,720    2%
+    Number used as logic:                      140 out of   5,720    2%
+      Number using O6 output only:             138
       Number using O5 output only:               0
       Number using O5 and O6:                    2
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    50 out of   1,430    3%
+  Number of occupied Slices:                    57 out of   1,430    3%
   Number of MUXCYs used:                         0 out of   2,860    0%
-  Number of LUT Flip Flop pairs used:          128
-    Number with an unused Flip Flop:            61 out of     128   47%
-    Number with an unused LUT:                   0 out of     128    0%
-    Number of fully used LUT-FF pairs:          67 out of     128   52%
-    Number of unique control sets:              20
+  Number of LUT Flip Flop pairs used:          141
+    Number with an unused Flip Flop:            64 out of     141   45%
+    Number with an unused LUT:                   1 out of     141    1%
+    Number of fully used LUT-FF pairs:          76 out of     141   53%
+    Number of unique control sets:              22
     Number of slice register sites lost
-      to control set restrictions:              93 out of  11,440    1%
+      to control set restrictions:              99 out of  11,440    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -76,7 +76,7 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                3.87
+Average Fanout of Non-Clock Nets:                4.03
 
 Peak Memory Usage:  4509 MB
 Total REAL time to MAP completion:  9 secs 
@@ -103,69 +103,73 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_41/XLXI_10/XLXN_72 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_42/XLXI_6/XLXN_72 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_42/XLXI_8/XLXN_72 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_41/XLXI_7/XLXN_72 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_40/XLXI_6/XLXN_72 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_56/XLXN_72 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/XLXN_50 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_41/XLXI_9/XLXN_72 is sourced by a combinatorial pin. This is not
+   XLXI_6/XLXI_46/XLXI_1/XLXN_93 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_39/XLXI_30/XLXN_93 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_39/XLXI_31/XLXN_93 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_42/XLXI_10/XLXN_72 is sourced by a combinatorial pin. This is
-   not good design practice. Use the CE pin to control the loading of data into
-   the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_41/XLXI_8/XLXN_72 is sourced by a combinatorial pin. This is not
+   XLXI_6/XLXI_32/XLXI_2/XLXN_93 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_41/XLXI_6/XLXN_72 is sourced by a combinatorial pin. This is not
-   good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_56/XLXI_39/XLXN_74 is
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/XLXI_20/XLXN_93 is
    sourced by a combinatorial pin. This is not good design practice. Use the CE
    pin to control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_42/XLXI_7/XLXN_72 is sourced by a combinatorial pin. This is not
+   XLXI_6/XLXI_32/XLXI_3/XLXN_93 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_42/XLXI_9/XLXN_72 is sourced by a combinatorial pin. This is not
+   XLXI_7/XLXI_17/XLXI_5/XLXN_93 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net
-   XLXI_56/XLXI_40/XLXI_7/XLXN_72 is sourced by a combinatorial pin. This is not
+   XLXI_6/XLXI_32/XLXI_4/XLXN_93 is sourced by a combinatorial pin. This is not
    good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_173 is sourced by a
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_7/XLXI_17/XLXI_1/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_6/XLXI_32/XLXI_5/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/XLXN_42 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/XLXI_19/XLXN_93 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_7/XLXI_17/XLXI_2/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/XLXI_15/XLXN_93 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_7/XLXI_17/XLXI_3/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_6/XLXI_32/XLXI_1/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_7/XLXI_17/XLXI_4/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net
+   XLXI_6/XLXI_46/XLXI_2/XLXN_93 is sourced by a combinatorial pin. This is not
+   good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_7/XLXI_14/XLXN_93 is
+   sourced by a combinatorial pin. This is not good design practice. Use the CE
+   pin to control the loading of data into the flip-flop.
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXN_236 is sourced by a
    combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 
@@ -202,16 +206,17 @@ To quickly locate the original cause for the removal of a chain of logic, look
 above the place where that logic is listed in the trimming report, then locate
 the lines that are least indented (begin at the leftmost edge).
 
-Loadless block "XLXI_56/XLXI_39/XLXI_32/XLXI_56" (BUF) removed.
- The signal "XLXI_56/XLXI_39/XLXI_32/XLXN_93" is loadless and has been removed.
-  Loadless block "XLXI_56/XLXI_39/XLXI_32/XLXI_55" (OR) removed.
-   The signal "XLXI_56/XLXI_39/XLXI_32/XLXN_96" is loadless and has been removed.
-    Loadless block "XLXI_56/XLXI_39/XLXI_32/XLXI_54" (OR) removed.
-   The signal "XLXI_56/XLXI_39/XLXI_32/XLXN_95" is loadless and has been removed.
-    Loadless block "XLXI_56/XLXI_39/XLXI_32/XLXI_53" (OR) removed.
+Loadless block "XLXI_7/XLXI_13/XLXI_56" (BUF) removed.
+ The signal "XLXI_7/XLXI_13/XLXN_93" is loadless and has been removed.
+  Loadless block "XLXI_7/XLXI_13/XLXI_55" (OR) removed.
+   The signal "XLXI_7/XLXI_13/XLXN_96" is loadless and has been removed.
+    Loadless block "XLXI_7/XLXI_13/XLXI_54" (OR) removed.
+   The signal "XLXI_7/XLXI_13/XLXN_95" is loadless and has been removed.
+    Loadless block "XLXI_7/XLXI_13/XLXI_53" (OR) removed.
 
 Optimized Block(s):
 TYPE 		BLOCK
+GND 		XLXI_105
 VCC 		XLXI_39
 BUF 		XLXI_43
 BUF 		XLXI_44
@@ -219,8 +224,7 @@ BUF 		XLXI_45
 BUF 		XLXI_51
 BUF 		XLXI_52
 BUF 		XLXI_53
-AND2 		XLXI_56/XLXI_43/XLXI_39/XLXI_14
-GND 		XLXI_87
+AND2 		XLXI_6/XLXI_1/XLXI_69
 
 To enable printing of redundant blocks removed and signals merged, set the
 detailed map report option and rerun map.
@@ -249,8 +253,7 @@ Section 6 - IOB Properties
 | P7                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | P9                                 | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | P11                                | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
-| PB1                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
-| PB2                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| Reset                              | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | Segment<0>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | Segment<1>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | Segment<2>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
@@ -259,6 +262,7 @@ Section 6 - IOB Properties
 | Segment<5>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | Segment<6>                         | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | SegmentDp                          | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
+| StartStop                          | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | State_1                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | State_2                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | State_3                            | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |

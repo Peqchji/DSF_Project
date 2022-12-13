@@ -1,7 +1,0 @@
-[Inputs]
-Sel
-=Mode7[3:0]=
-=OtherMode[3:0]=
-[Outputs]
-=Common[3:0]=
-[BiDir]

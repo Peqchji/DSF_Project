@@ -5,7 +5,55 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\Lab7.vhf</arg>&quot; line <arg fmt="%s" index="2">1362</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_32</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\DisplayTimer.vhf</arg>&quot; line <arg fmt="%s" index="2">626</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_31</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\DisplayTimer.vhf</arg>&quot; line <arg fmt="%s" index="2">626</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_31</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\DisplayTimer.vhf</arg>&quot; line <arg fmt="%s" index="2">392</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\DisplayTimer.vhf</arg>&quot; line <arg fmt="%s" index="2">398</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\DisplayTimer.vhf</arg>&quot; line <arg fmt="%s" index="2">404</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\DisplayTimer.vhf</arg>&quot; line <arg fmt="%s" index="2">410</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\DisplayTimer.vhf</arg>&quot; line <arg fmt="%s" index="2">416</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_5</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\DisplayTimer.vhf</arg>&quot; line <arg fmt="%s" index="2">342</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\DisplayTimer.vhf</arg>&quot; line <arg fmt="%s" index="2">348</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\Timer.vhf</arg>&quot; line <arg fmt="%s" index="2">545</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_13</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\Timer.vhf</arg>&quot; line <arg fmt="%s" index="2">572</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_19</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\Timer.vhf</arg>&quot; line <arg fmt="%s" index="2">578</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_20</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\Timer.vhf</arg>&quot; line <arg fmt="%s" index="2">393</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\Timer.vhf</arg>&quot; line <arg fmt="%s" index="2">399</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\Timer.vhf</arg>&quot; line <arg fmt="%s" index="2">405</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\Timer.vhf</arg>&quot; line <arg fmt="%s" index="2">411</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+</msg>
+
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">C:\Users\Peqch\Desktop\Digital system Fundamental\ISE\DSF_Project\ProjectDSF_BasicNLab\Timer.vhf</arg>&quot; line <arg fmt="%s" index="2">417</arg>: Output port &lt;<arg fmt="%s" index="3">bit</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_5</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.

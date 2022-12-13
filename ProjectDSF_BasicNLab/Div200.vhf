@@ -6,25 +6,25 @@
 -- /___/  \  /    Vendor: Xilinx 
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
---  /   /         Filename : Div200nn.vhf
--- /___/   /\     Timestamp : 12/13/2022 08:24:04
+--  /   /         Filename : Div200.vhf
+-- /___/   /\     Timestamp : 12/14/2022 04:40:08
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/Div200nn.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab7/Div200nn.sch"
---Design Name: Div200nn
+--Command: sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab/Div200.vhf" -w "C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB07/Div200.sch"
+--Design Name: Div200
 --Device: spartan6
 --Purpose:
 --    This vhdl netlist is translated from an ECS schematic. It can be 
 --    synthesized and simulated, but it should not be modified. 
 --
------ CELL FTC_HXILINX_Div200nn -----
+----- CELL FTC_HXILINX_Div200 -----
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity FTC_HXILINX_Div200nn is
+entity FTC_HXILINX_Div200 is
 generic(
     INIT : bit := '0'
     );
@@ -35,9 +35,9 @@ generic(
     CLR : in STD_LOGIC;
     T   : in STD_LOGIC
     );
-end FTC_HXILINX_Div200nn;
+end FTC_HXILINX_Div200;
 
-architecture Behavioral of FTC_HXILINX_Div200nn is
+architecture Behavioral of FTC_HXILINX_Div200 is
 signal q_tmp : std_logic := TO_X01(INIT);
 begin
 
@@ -56,13 +56,13 @@ Q <= q_tmp;
 
 end Behavioral;
 
------ CELL FJKC_HXILINX_Div200nn -----
+----- CELL FJKC_HXILINX_Div200 -----
 
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity FJKC_HXILINX_Div200nn is
+entity FJKC_HXILINX_Div200 is
 generic(
     INIT : bit := '0'
     );
@@ -74,9 +74,9 @@ generic(
     J   : in STD_LOGIC;
     K   : in STD_LOGIC
     );
-end FJKC_HXILINX_Div200nn;
+end FJKC_HXILINX_Div200;
 
-architecture Behavioral of FJKC_HXILINX_Div200nn is
+architecture Behavioral of FJKC_HXILINX_Div200 is
 signal q_tmp : std_logic := TO_X01(INIT);
 
 begin
@@ -111,27 +111,25 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity mod10nn_MUSER_Div200nn is
+entity COUNTER0_9_MUSER_Div200 is
    port ( CLK : in    std_logic; 
-          clr : in    std_logic; 
+          Clr : in    std_logic; 
+          bit : out   std_logic_vector (3 downto 0); 
           TC  : out   std_logic);
-end mod10nn_MUSER_Div200nn;
+end COUNTER0_9_MUSER_Div200;
 
-architecture BEHAVIORAL of mod10nn_MUSER_Div200nn is
+architecture BEHAVIORAL of COUNTER0_9_MUSER_Div200 is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal bit0    : std_logic;
-   signal bit1    : std_logic;
-   signal bit2    : std_logic;
-   signal bit3    : std_logic;
-   signal XLXN_1  : std_logic;
-   signal XLXN_62 : std_logic;
-   signal XLXN_63 : std_logic;
-   signal XLXN_65 : std_logic;
-   signal XLXN_68 : std_logic;
-   signal XLXN_69 : std_logic;
-   signal XLXN_72 : std_logic;
-   component FJKC_HXILINX_Div200nn
+   signal XLXN_3    : std_logic;
+   signal XLXN_62   : std_logic;
+   signal XLXN_63   : std_logic;
+   signal XLXN_65   : std_logic;
+   signal XLXN_93   : std_logic;
+   signal XLXN_95   : std_logic;
+   signal XLXN_96   : std_logic;
+   signal bit_DUMMY : std_logic_vector (3 downto 0);
+   component FJKC_HXILINX_Div200
       port ( C   : in    std_logic; 
              CLR : in    std_logic; 
              J   : in    std_logic; 
@@ -179,75 +177,76 @@ architecture BEHAVIORAL of mod10nn_MUSER_Div200nn is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_17";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_18";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_19";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_20";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_33";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_34";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_35";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_36";
 begin
-   XLXI_1 : FJKC_HXILINX_Div200nn
+   bit(3 downto 0) <= bit_DUMMY(3 downto 0);
+   XLXI_1 : FJKC_HXILINX_Div200
       port map (C=>CLK,
-                CLR=>clr,
-                J=>XLXN_1,
-                K=>XLXN_1,
-                Q=>bit3);
+                CLR=>Clr,
+                J=>XLXN_3,
+                K=>XLXN_3,
+                Q=>bit_DUMMY(0));
    
-   XLXI_2 : VCC
-      port map (P=>XLXN_1);
+   XLXI_3 : VCC
+      port map (P=>XLXN_3);
    
-   XLXI_3 : FJKC_HXILINX_Div200nn
+   XLXI_4 : FJKC_HXILINX_Div200
       port map (C=>CLK,
-                CLR=>clr,
+                CLR=>Clr,
                 J=>XLXN_62,
-                K=>bit3,
-                Q=>bit2);
+                K=>bit_DUMMY(0),
+                Q=>bit_DUMMY(1));
    
-   XLXI_4 : FJKC_HXILINX_Div200nn
+   XLXI_5 : FJKC_HXILINX_Div200
       port map (C=>CLK,
-                CLR=>clr,
+                CLR=>Clr,
                 J=>XLXN_63,
                 K=>XLXN_63,
-                Q=>bit1);
+                Q=>bit_DUMMY(2));
    
-   XLXI_5 : FJKC_HXILINX_Div200nn
+   XLXI_9 : FJKC_HXILINX_Div200
       port map (C=>CLK,
-                CLR=>clr,
+                CLR=>Clr,
                 J=>XLXN_65,
-                K=>bit3,
-                Q=>bit0);
+                K=>bit_DUMMY(0),
+                Q=>bit_DUMMY(3));
    
    XLXI_37 : AND2B1
-      port map (I0=>bit0,
-                I1=>bit3,
+      port map (I0=>bit_DUMMY(3),
+                I1=>bit_DUMMY(0),
                 O=>XLXN_62);
    
    XLXI_38 : AND2
-      port map (I0=>bit2,
-                I1=>bit3,
+      port map (I0=>bit_DUMMY(1),
+                I1=>bit_DUMMY(0),
                 O=>XLXN_63);
    
    XLXI_40 : AND3
-      port map (I0=>bit1,
-                I1=>bit2,
-                I2=>bit3,
+      port map (I0=>bit_DUMMY(2),
+                I1=>bit_DUMMY(1),
+                I2=>bit_DUMMY(0),
                 O=>XLXN_65);
    
-   XLXI_42 : OR2
-      port map (I0=>bit2,
-                I1=>bit3,
-                O=>XLXN_68);
+   XLXI_53 : OR2
+      port map (I0=>bit_DUMMY(1),
+                I1=>bit_DUMMY(0),
+                O=>XLXN_95);
    
-   XLXI_43 : OR2
-      port map (I0=>bit0,
-                I1=>bit1,
-                O=>XLXN_69);
+   XLXI_54 : OR2
+      port map (I0=>bit_DUMMY(3),
+                I1=>bit_DUMMY(2),
+                O=>XLXN_96);
    
-   XLXI_45 : OR2
-      port map (I0=>XLXN_69,
-                I1=>XLXN_68,
-                O=>XLXN_72);
+   XLXI_55 : OR2
+      port map (I0=>XLXN_96,
+                I1=>XLXN_95,
+                O=>XLXN_93);
    
-   XLXI_46 : INV
-      port map (I=>XLXN_72,
+   XLXI_56 : INV
+      port map (I=>XLXN_93,
                 O=>TC);
    
 end BEHAVIORAL;
@@ -260,65 +259,59 @@ use ieee.numeric_std.ALL;
 library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
-entity Div200nn is
-   port ( clkIN  : in    std_logic; 
-          clr    : in    std_logic; 
-          clkOUT : out   std_logic);
-end Div200nn;
+entity Div200 is
+   port ( CLR     : in    std_logic; 
+          In_CLK  : in    std_logic; 
+          Out_CLK : out   std_logic);
+end Div200;
 
-architecture BEHAVIORAL of Div200nn is
+architecture BEHAVIORAL of Div200 is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal XLXN_1 : std_logic;
-   signal XLXN_2 : std_logic;
-   signal XLXN_4 : std_logic;
-   signal XLXN_5 : std_logic;
-   component FTC_HXILINX_Div200nn
+   signal XLXN_1  : std_logic;
+   signal XLXN_2  : std_logic;
+   signal XLXN_3  : std_logic;
+   component COUNTER0_9_MUSER_Div200
+      port ( CLK : in    std_logic; 
+             Clr : in    std_logic; 
+             bit : out   std_logic_vector (3 downto 0); 
+             TC  : out   std_logic);
+   end component;
+   
+   component FTC_HXILINX_Div200
       port ( C   : in    std_logic; 
              CLR : in    std_logic; 
              T   : in    std_logic; 
              Q   : out   std_logic);
    end component;
    
-   component GND
-      port ( G : out   std_logic);
-   end component;
-   attribute BOX_TYPE of GND : component is "BLACK_BOX";
-   
    component VCC
       port ( P : out   std_logic);
    end component;
    attribute BOX_TYPE of VCC : component is "BLACK_BOX";
    
-   component mod10nn_MUSER_Div200nn
-      port ( CLK : in    std_logic; 
-             clr : in    std_logic; 
-             TC  : out   std_logic);
-   end component;
-   
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_21";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_37";
 begin
-   XLXI_1 : FTC_HXILINX_Div200nn
-      port map (C=>XLXN_2,
-                CLR=>XLXN_4,
-                T=>XLXN_5,
-                Q=>clkOUT);
-   
-   XLXI_2 : GND
-      port map (G=>XLXN_4);
-   
-   XLXI_3 : VCC
-      port map (P=>XLXN_5);
-   
-   XLXI_6 : mod10nn_MUSER_Div200nn
-      port map (CLK=>clkIN,
-                clr=>clr,
+   XLXI_1 : COUNTER0_9_MUSER_Div200
+      port map (CLK=>In_CLK,
+                Clr=>CLR,
+                bit=>open,
                 TC=>XLXN_1);
    
-   XLXI_7 : mod10nn_MUSER_Div200nn
+   XLXI_2 : COUNTER0_9_MUSER_Div200
       port map (CLK=>XLXN_1,
-                clr=>clr,
+                Clr=>CLR,
+                bit=>open,
                 TC=>XLXN_2);
+   
+   XLXI_3 : FTC_HXILINX_Div200
+      port map (C=>XLXN_2,
+                CLR=>CLR,
+                T=>XLXN_3,
+                Q=>Out_CLK);
+   
+   XLXI_4 : VCC
+      port map (P=>XLXN_3);
    
 end BEHAVIORAL;
 
