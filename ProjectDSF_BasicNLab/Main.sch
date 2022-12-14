@@ -67,7 +67,6 @@
         <signal name="Digit2" />
         <signal name="Digit1" />
         <signal name="Digit0" />
-        <signal name="XLXN_171(3:0)" />
         <signal name="XLXN_119" />
         <signal name="OtherMode(0)" />
         <signal name="OtherMode(3:0)" />
@@ -76,7 +75,6 @@
         <signal name="OtherMode(3)" />
         <signal name="XLXN_183" />
         <signal name="SegmentDp" />
-        <signal name="XLXN_197(6:0)" />
         <signal name="Segment(6:0)" />
         <signal name="Segment(0)" />
         <signal name="Segment(1)" />
@@ -87,21 +85,12 @@
         <signal name="Segment(6)" />
         <signal name="XLXN_2(3:0)" />
         <signal name="XLXN_3(3:0)" />
-        <signal name="XLXN_200(3:0)" />
-        <signal name="XLXN_201(3:0)" />
         <signal name="XLXN_4(3:0)" />
         <signal name="XLXN_1(3:0)" />
-        <signal name="XLXN_204(3:0)" />
-        <signal name="XLXN_205" />
-        <signal name="XLXN_207" />
         <signal name="OSC" />
-        <signal name="XLXN_222" />
         <signal name="XLXN_97" />
         <signal name="XLXN_98" />
-        <signal name="XLXN_226" />
-        <signal name="XLXN_227" />
         <signal name="StartStop" />
-        <signal name="XLXN_232" />
         <signal name="Reset" />
         <signal name="XLXN_234" />
         <signal name="XLXN_235" />
@@ -119,14 +108,9 @@
         <signal name="SegmentLab7(4)" />
         <signal name="SegmentLab7(5)" />
         <signal name="SegmentLab7(6)" />
-        <signal name="XLXN_251" />
-        <signal name="XLXN_256" />
-        <signal name="XLXN_257" />
-        <signal name="XLXN_258" />
         <signal name="XLXN_259" />
         <signal name="XLXN_260" />
         <signal name="XLXN_261" />
-        <signal name="XLXN_262" />
         <port polarity="Input" name="State_7" />
         <port polarity="Input" name="State_8" />
         <port polarity="Output" name="L1_P81" />
@@ -413,7 +397,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="Timer">
-            <timestamp>2022-12-13T21:14:12</timestamp>
+            <timestamp>2022-12-13T21:50:48</timestamp>
             <rect width="256" x="64" y="-384" height="384" />
             <line x2="0" y1="-352" y2="-352" x1="64" />
             <line x2="0" y1="-192" y2="-192" x1="64" />

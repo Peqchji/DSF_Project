@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym decoder {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/moduleForDSF/decoder.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/decoder.sym} 

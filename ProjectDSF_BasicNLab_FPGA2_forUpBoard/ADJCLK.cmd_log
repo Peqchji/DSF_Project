@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym ADJCLK {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab02/ADJCLK.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/ADJCLK.sym} 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl ADJCLK_drc.vhf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab02/ADJCLK.sch} 
+sch2hdl -intstyle ise -family spartan6 -flat -suppress -vhdl ADJCLK_drc.vhf -w {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/Lab02/ADJCLK.sch} 

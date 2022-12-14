@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Div100k {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/LAB07/Div100k.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF_Project/ProjectDSF_BasicNLab_FPGA2/Div100k.sym} 

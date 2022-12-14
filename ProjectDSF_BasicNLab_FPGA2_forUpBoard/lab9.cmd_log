@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym lab9 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB09/lab9.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/lab9.sym} 

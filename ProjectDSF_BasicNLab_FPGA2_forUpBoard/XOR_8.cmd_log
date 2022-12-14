@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym XOR_8 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/XOR_8.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/XOR_8.sym} 
+sch2sym -intstyle ise -family spartan6 -w -refsym XOR_8 {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/LAB9/XOR_8.sch} {C:/Users/Peqch/Desktop/Digital system Fundamental/ISE/DSF/ProjectDSF_BasicNLab_FPGA2/XOR_8.sym} 
